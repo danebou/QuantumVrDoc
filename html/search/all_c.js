@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['nonvisualinactions_0',['nonVisualInActions',['../class_valve_1_1_v_r_1_1_steam_v_r___action_set.html#ac0c94124b2bccf8f0af077de0191e000',1,'Valve.VR.SteamVR_ActionSet.nonVisualInActions()'],['../class_valve_1_1_v_r_1_1_steam_v_r___action_set___data.html#ad4be45256c30ef6a6a3ffb3720ff477d',1,'Valve.VR.SteamVR_ActionSet_Data.nonVisualInActions()'],['../interface_valve_1_1_v_r_1_1_i_steam_v_r___action_set.html#a49ce18ae625e4d1677f3069d028a8445',1,'Valve.VR.ISteamVR_ActionSet.nonVisualInActions()']]],
-  ['notificationbitmap_5ft_1',['NotificationBitmap_t',['../struct_valve_1_1_v_r_1_1_notification_bitmap__t.html',1,'Valve::VR']]]
+  ['p_5fbasis_0',['p_basis',['../class_atom_sim_controller.html#a4e30a78450d3d5bc9f7315102698a35f',1,'AtomSimController']]],
+  ['p_5fgrid_1',['p_grid',['../class_atom_sim_controller.html#ade5f187ca0689eba53bbae5df7dc98e1',1,'AtomSimController']]],
+  ['planetaryatommodel_2',['PlanetaryAtomModel',['../class_planetary_atom_model.html',1,'']]],
+  ['probabilitycolorscale_3',['ProbabilityColorScale',['../class_probability_color_scale.html',1,'']]],
+  ['psi_5fgrid_4',['psi_grid',['../class_atom_sim_controller.html#a4375c79a500d94a3d2eba78d8f275923',1,'AtomSimController']]]
 ];

@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['deactivate_0',['Deactivate',['../class_valve_1_1_v_r_1_1_steam_v_r___action_set.html#ac1cf6b278cd4df49f18da3f59d8d9fc4',1,'Valve.VR.SteamVR_ActionSet.Deactivate()'],['../class_valve_1_1_v_r_1_1_steam_v_r___action_set___data.html#ab1c62e54114fb68c3f6c8f5a80f96cc8',1,'Valve.VR.SteamVR_ActionSet_Data.Deactivate()'],['../interface_valve_1_1_v_r_1_1_i_steam_v_r___action_set.html#a7f2befeb3e536b020c6a9a72ac16597b',1,'Valve.VR.ISteamVR_ActionSet.Deactivate()']]],
-  ['deletemanifestandbindings_1',['DeleteManifestAndBindings',['../class_valve_1_1_v_r_1_1_steam_v_r___input.html#a8f968e5a31e70c560ee75b6f7734ca47',1,'Valve::VR::SteamVR_Input']]],
-  ['disableallactionsets_2',['DisableAllActionSets',['../class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager.html#ab519f1a44be218b706b8b7e79dd4fbed',1,'Valve::VR::SteamVR_ActionSet_Manager']]]
+  ['setenergylevel_0',['SetEnergyLevel',['../class_atom_sim_controller.html#a26e837e6540a091fcdfdfd0bad0e17d7',1,'AtomSimController']]],
+  ['setmeasurement_1',['SetMeasurement',['../class_atom_sim_controller.html#a6b8bae23ae4dc5b7f2ac9e98ca3afdfb',1,'AtomSimController']]],
+  ['start_2',['Start',['../class_cutout_hint.html#ab52da28e965afd68857fa1abd698db99',1,'CutoutHint.Start()'],['../class_energy_level_text.html#a57c0828aed54917650fadaf1c3bed96e',1,'EnergyLevelText.Start()']]],
+  ['step_3',['Step',['../class_atom_sim_controller.html#a2647c64b4c05e17ae7f2f41e94137f07',1,'AtomSimController']]],
+  ['stopmeasurement_4',['StopMeasurement',['../class_atom_sim_controller.html#a054a2d1cb5e5504cb5130cc983be5f63',1,'AtomSimController']]]
 ];

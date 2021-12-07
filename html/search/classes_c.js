@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['notificationbitmap_5ft_0',['NotificationBitmap_t',['../struct_valve_1_1_v_r_1_1_notification_bitmap__t.html',1,'Valve::VR']]]
+  ['steamvrinputmodule_0',['SteamVRInputModule',['../class_steam_v_r_input_module.html',1,'']]]
 ];

@@ -1,73 +1,159 @@
 \hypertarget{class_atom_sim_controller}{}\doxysection{Atom\+Sim\+Controller Class Reference}
 \label{class_atom_sim_controller}\index{AtomSimController@{AtomSimController}}
+
+
+A wrapper class used to control and run the simulation  
+
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_atom_sim_controller_afa1f7cf9e7d0bd1a69b6be255ccbf8f8}\label{class_atom_sim_controller_afa1f7cf9e7d0bd1a69b6be255ccbf8f8}} 
-{\bfseries Atom\+Sim\+Controller} (\mbox{\hyperlink{classvr__hydrogen__backend_1_1_atom_sim}{Atom\+Sim}} sim)
-\item 
-\mbox{\Hypertarget{class_atom_sim_controller_a2647c64b4c05e17ae7f2f41e94137f07}\label{class_atom_sim_controller_a2647c64b4c05e17ae7f2f41e94137f07}} 
-void {\bfseries Step} (double dt)
-\item 
-\mbox{\Hypertarget{class_atom_sim_controller_a9c7a0f9305dd4969b912e4e1debb2fef}\label{class_atom_sim_controller_a9c7a0f9305dd4969b912e4e1debb2fef}} 
-bool {\bfseries Check\+For\+Update} ()
-\item 
-\mbox{\Hypertarget{class_atom_sim_controller_a6b8bae23ae4dc5b7f2ac9e98ca3afdfb}\label{class_atom_sim_controller_a6b8bae23ae4dc5b7f2ac9e98ca3afdfb}} 
-void {\bfseries Set\+Measurement} (double gamma, Unity\+Engine.\+Vector3 measurement\+Position, bool force\+Measurement=false)
-\item 
+\mbox{\hyperlink{class_atom_sim_controller_afa1f7cf9e7d0bd1a69b6be255ccbf8f8}{Atom\+Sim\+Controller}} (\mbox{\hyperlink{classvr__hydrogen__backend_1_1_atom_sim}{Atom\+Sim}} sim)
+\begin{DoxyCompactList}\small\item\em Construct a new simulation controller \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_atom_sim_controller_a2647c64b4c05e17ae7f2f41e94137f07}{Step}} (double dt)
+\begin{DoxyCompactList}\small\item\em Asynchronously runs the time\+\_\+evolve atom simulation update. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_atom_sim_controller_a9c7a0f9305dd4969b912e4e1debb2fef}{Check\+For\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Determine if the simulation has updated the last quantum state. If so, clear this check so this will return false again. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_atom_sim_controller_a6b8bae23ae4dc5b7f2ac9e98ca3afdfb}{Set\+Measurement}} (double gamma, Unity\+Engine.\+Vector3 measurement\+Position, bool force\+Measurement=false)
+\begin{DoxyCompactList}\small\item\em Set and enable measurements. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_atom_sim_controller_a054a2d1cb5e5504cb5130cc983be5f63}\label{class_atom_sim_controller_a054a2d1cb5e5504cb5130cc983be5f63}} 
 void {\bfseries Stop\+Measurement} ()
-\item 
-\mbox{\Hypertarget{class_atom_sim_controller_a26e837e6540a091fcdfdfd0bad0e17d7}\label{class_atom_sim_controller_a26e837e6540a091fcdfdfd0bad0e17d7}} 
-void {\bfseries Set\+Energy\+Level} (int energy\+Level)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Stop and disable measurements \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_atom_sim_controller_a26e837e6540a091fcdfdfd0bad0e17d7}{Set\+Energy\+Level}} (int energy\+Level)
+\begin{DoxyCompactList}\small\item\em Set the atom to a specific energy level \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_atom_sim_controller_a1c632fa0176cf636c84002e548dfdf72}\label{class_atom_sim_controller_a1c632fa0176cf636c84002e548dfdf72}} 
 double {\bfseries \+\_\+gamma}
-\item 
+\begin{DoxyCompactList}\small\item\em The measurement gamma parameter. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_atom_sim_controller_ae3f815655339d23d6dca9c3cd317d12f}\label{class_atom_sim_controller_ae3f815655339d23d6dca9c3cd317d12f}} 
 bool {\bfseries Measurement\+Success} = false
-\item 
+\begin{DoxyCompactList}\small\item\em The last measurement was successful \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_atom_sim_controller_a6b4761758e8e253ca466ad310c9834f0}\label{class_atom_sim_controller_a6b4761758e8e253ca466ad310c9834f0}} 
 int {\bfseries Which\+Decay} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em The result of the decay \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_atom_sim_controller_a4375c79a500d94a3d2eba78d8f275923}\label{class_atom_sim_controller_a4375c79a500d94a3d2eba78d8f275923}} 
 Vector$<$ Complex $>$ {\bfseries psi\+\_\+grid}
-\item 
+\begin{DoxyCompactList}\small\item\em A list of quantum vectors for each voxel. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_atom_sim_controller_ade5f187ca0689eba53bbae5df7dc98e1}\label{class_atom_sim_controller_ade5f187ca0689eba53bbae5df7dc98e1}} 
 Vector$<$ double $>$ {\bfseries p\+\_\+grid}
-\item 
+\begin{DoxyCompactList}\small\item\em A list of probabilities for each voxel, representing the chance the electron is in the corresponding voxel. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_atom_sim_controller_a4e30a78450d3d5bc9f7315102698a35f}\label{class_atom_sim_controller_a4e30a78450d3d5bc9f7315102698a35f}} 
 Vector$<$ double $>$ {\bfseries p\+\_\+basis}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The probability of each basis (energy levels) the atom is in. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_atom_sim_controller_aa1ec2510351262274461266cfaad84ca}\label{class_atom_sim_controller_aa1ec2510351262274461266cfaad84ca}} 
 \mbox{\hyperlink{classvr__hydrogen__backend_1_1_atom_sim}{Atom\+Sim}} {\bfseries \+\_\+sim}
-\item 
+\begin{DoxyCompactList}\small\item\em The atom simulation to control \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_atom_sim_controller_a56956b00464a3e45d8f7e90e353559e7}\label{class_atom_sim_controller_a56956b00464a3e45d8f7e90e353559e7}} 
 double {\bfseries \+\_\+time\+Step} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em How much time was passed in the simulation \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_atom_sim_controller_a6a61ea7770275afc7c89a3187d4bb364}\label{class_atom_sim_controller_a6a61ea7770275afc7c89a3187d4bb364}} 
 bool {\bfseries \+\_\+is\+Measuring} = false
-\item 
+\begin{DoxyCompactList}\small\item\em Are measurements enabled \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_atom_sim_controller_a43c95b05cc66b36e4f2cc7b2f4231180}\label{class_atom_sim_controller_a43c95b05cc66b36e4f2cc7b2f4231180}} 
 bool {\bfseries \+\_\+force\+Measurement} = false
-\item 
+\begin{DoxyCompactList}\small\item\em Are successful measurements force (successful measurements will occur every time) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_atom_sim_controller_a5d9d44ab8828c684ba9b2c0988340bf8}\label{class_atom_sim_controller_a5d9d44ab8828c684ba9b2c0988340bf8}} 
 Unity\+Engine.\+Vector3 {\bfseries \+\_\+measure\+Position}
-\item 
+\begin{DoxyCompactList}\small\item\em The position the measurement is taken. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_atom_sim_controller_a39ea7232383b26739cbf10e5382459f5}\label{class_atom_sim_controller_a39ea7232383b26739cbf10e5382459f5}} 
 bool {\bfseries \+\_\+has\+Update} = true
-\item 
+\begin{DoxyCompactList}\small\item\em Has the quantum state been updated \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_atom_sim_controller_a1d59ace32fbc2bfe074b433fe8997ac1}\label{class_atom_sim_controller_a1d59ace32fbc2bfe074b433fe8997ac1}} 
 int? {\bfseries \+\_\+energy\+Level} = null
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em If non-\/null, the energy level will be set to this value \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A wrapper class used to control and run the simulation 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_atom_sim_controller_afa1f7cf9e7d0bd1a69b6be255ccbf8f8}\label{class_atom_sim_controller_afa1f7cf9e7d0bd1a69b6be255ccbf8f8}} 
+\index{AtomSimController@{AtomSimController}!AtomSimController@{AtomSimController}}
+\index{AtomSimController@{AtomSimController}!AtomSimController@{AtomSimController}}
+\doxysubsubsection{\texorpdfstring{AtomSimController()}{AtomSimController()}}
+{\footnotesize\ttfamily Atom\+Sim\+Controller.\+Atom\+Sim\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvr__hydrogen__backend_1_1_atom_sim}{Atom\+Sim}}}]{sim }\end{DoxyParamCaption})}
+
+
+
+Construct a new simulation controller 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sim} & The controller to simulate\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_atom_sim_controller_a9c7a0f9305dd4969b912e4e1debb2fef}\label{class_atom_sim_controller_a9c7a0f9305dd4969b912e4e1debb2fef}} 
+\index{AtomSimController@{AtomSimController}!CheckForUpdate@{CheckForUpdate}}
+\index{CheckForUpdate@{CheckForUpdate}!AtomSimController@{AtomSimController}}
+\doxysubsubsection{\texorpdfstring{CheckForUpdate()}{CheckForUpdate()}}
+{\footnotesize\ttfamily bool Atom\+Sim\+Controller.\+Check\+For\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determine if the simulation has updated the last quantum state. If so, clear this check so this will return false again. 
+
+\begin{DoxyReturn}{Returns}
+True if the simulation has updated the last quantum state
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_atom_sim_controller_a26e837e6540a091fcdfdfd0bad0e17d7}\label{class_atom_sim_controller_a26e837e6540a091fcdfdfd0bad0e17d7}} 
+\index{AtomSimController@{AtomSimController}!SetEnergyLevel@{SetEnergyLevel}}
+\index{SetEnergyLevel@{SetEnergyLevel}!AtomSimController@{AtomSimController}}
+\doxysubsubsection{\texorpdfstring{SetEnergyLevel()}{SetEnergyLevel()}}
+{\footnotesize\ttfamily void Atom\+Sim\+Controller.\+Set\+Energy\+Level (\begin{DoxyParamCaption}\item[{int}]{energy\+Level }\end{DoxyParamCaption})}
+
+
+
+Set the atom to a specific energy level 
+
+
+\begin{DoxyParams}{Parameters}
+{\em energy\+Level} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_atom_sim_controller_a6b8bae23ae4dc5b7f2ac9e98ca3afdfb}\label{class_atom_sim_controller_a6b8bae23ae4dc5b7f2ac9e98ca3afdfb}} 
+\index{AtomSimController@{AtomSimController}!SetMeasurement@{SetMeasurement}}
+\index{SetMeasurement@{SetMeasurement}!AtomSimController@{AtomSimController}}
+\doxysubsubsection{\texorpdfstring{SetMeasurement()}{SetMeasurement()}}
+{\footnotesize\ttfamily void Atom\+Sim\+Controller.\+Set\+Measurement (\begin{DoxyParamCaption}\item[{double}]{gamma,  }\item[{Unity\+Engine.\+Vector3}]{measurement\+Position,  }\item[{bool}]{force\+Measurement = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Set and enable measurements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gamma} & The measurement gamma\\
+\hline
+{\em measurement\+Position} & The measurement position\\
+\hline
+{\em force\+Measurement} & If true, force a successful measurement\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_atom_sim_controller_a2647c64b4c05e17ae7f2f41e94137f07}\label{class_atom_sim_controller_a2647c64b4c05e17ae7f2f41e94137f07}} 
+\index{AtomSimController@{AtomSimController}!Step@{Step}}
+\index{Step@{Step}!AtomSimController@{AtomSimController}}
+\doxysubsubsection{\texorpdfstring{Step()}{Step()}}
+{\footnotesize\ttfamily void Atom\+Sim\+Controller.\+Step (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})}
+
+
+
+Asynchronously runs the time\+\_\+evolve atom simulation update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & The delta time that has passed (to be given to the simulation)\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Quantum\+Backend/Atom\+Sim\+Controller.\+cs\end{DoxyCompactItemize}
+Assets/\+Quantum\+Backend/Atom\+Sim\+Controller.\+cs\end{DoxyCompactItemize}
