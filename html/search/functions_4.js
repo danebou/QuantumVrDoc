@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['update_0',['Update',['../class_energy_level_text.html#a960953a97a52bb167b401466dc4561c0',1,'EnergyLevelText']]]
+  ['endtutorial_0',['EndTutorial',['../class_tutorial_controls.html#aeb07ac3fdbb314df537e0f98b137d57b',1,'TutorialControls']]]
 ];

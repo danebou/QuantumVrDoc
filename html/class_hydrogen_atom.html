@@ -74,6 +74,9 @@ $(function() {
   <div class="headertitle"><div class="title">HydrogenAtom Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The Unity gameobject behavior controlling and representing the atom simulation  
+ <a href="class_hydrogen_atom.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for HydrogenAtom:</div>
 <div class="dyncontent">
@@ -84,173 +87,499 @@ Inheritance diagram for HydrogenAtom:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_hydrogen_atom_1_1atom_state.html">atomState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct used to save the initial state of the atom See associated <a class="el" href="class_hydrogen_atom.html" title="The Unity gameobject behavior controlling and representing the atom simulation">HydrogenAtom</a> properties for a description.  <a href="struct_hydrogen_atom_1_1atom_state.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a99372be0e732a8baca2077724388b450"><td class="memItemLeft" align="right" valign="top"><a id="a99372be0e732a8baca2077724388b450" name="a99372be0e732a8baca2077724388b450"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
+<tr class="memdesc:a99372be0e732a8baca2077724388b450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unity function: <a class="el" href="class_hydrogen_atom.html#a99372be0e732a8baca2077724388b450" title="Unity function: Start()">Start()</a> <br /></td></tr>
 <tr class="separator:a99372be0e732a8baca2077724388b450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af984d6cdee2c229f9a8cc5f7ac80d48f"><td class="memItemLeft" align="right" valign="top"><a id="af984d6cdee2c229f9a8cc5f7ac80d48f" name="af984d6cdee2c229f9a8cc5f7ac80d48f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Setup</b> ()</td></tr>
+<tr class="memdesc:af984d6cdee2c229f9a8cc5f7ac80d48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up the atom simulation and visualizations <br /></td></tr>
 <tr class="separator:af984d6cdee2c229f9a8cc5f7ac80d48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e201392ff57f97ac2df18ece16e9211"><td class="memItemLeft" align="right" valign="top"><a id="a9e201392ff57f97ac2df18ece16e9211" name="a9e201392ff57f97ac2df18ece16e9211"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Step</b> ()</td></tr>
+<tr class="memdesc:a9e201392ff57f97ac2df18ece16e9211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a single timestep and stores the results. This function will do nothing if the paused variable is true <br /></td></tr>
 <tr class="separator:a9e201392ff57f97ac2df18ece16e9211"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15b5dfb5276c44be6a5bff4e1917eedf"><td class="memItemLeft" align="right" valign="top"><a id="a15b5dfb5276c44be6a5bff4e1917eedf" name="a15b5dfb5276c44be6a5bff4e1917eedf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMeasurement</b> (bool hit, double gamma, UnityEngine.Vector3 mPosition, bool forceMeasurement=false)</td></tr>
+<tr class="memitem:a15b5dfb5276c44be6a5bff4e1917eedf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydrogen_atom.html#a15b5dfb5276c44be6a5bff4e1917eedf">SetMeasurement</a> (bool hit, double gamma, UnityEngine.Vector3 mPosition, bool forceMeasurement=false)</td></tr>
+<tr class="memdesc:a15b5dfb5276c44be6a5bff4e1917eedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the atom measurement state (enable/disable, position, and force successful)  <a href="class_hydrogen_atom.html#a15b5dfb5276c44be6a5bff4e1917eedf">More...</a><br /></td></tr>
 <tr class="separator:a15b5dfb5276c44be6a5bff4e1917eedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0296fbca441f44f0c3d5db2ff1ace815"><td class="memItemLeft" align="right" valign="top"><a id="a0296fbca441f44f0c3d5db2ff1ace815" name="a0296fbca441f44f0c3d5db2ff1ace815"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPaused</b> (bool newState)</td></tr>
+<tr class="memitem:a0296fbca441f44f0c3d5db2ff1ace815"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydrogen_atom.html#a0296fbca441f44f0c3d5db2ff1ace815">SetPaused</a> (bool newState)</td></tr>
+<tr class="memdesc:a0296fbca441f44f0c3d5db2ff1ace815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the simulation paused property. See associated property for details  <a href="class_hydrogen_atom.html#a0296fbca441f44f0c3d5db2ff1ace815">More...</a><br /></td></tr>
 <tr class="separator:a0296fbca441f44f0c3d5db2ff1ace815"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa15b18f000cf0a62340bda0b6704216b"><td class="memItemLeft" align="right" valign="top"><a id="aa15b18f000cf0a62340bda0b6704216b" name="aa15b18f000cf0a62340bda0b6704216b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPhaseVisualization</b> (bool newState)</td></tr>
+<tr class="memitem:aa15b18f000cf0a62340bda0b6704216b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydrogen_atom.html#aa15b18f000cf0a62340bda0b6704216b">SetPhaseVisualization</a> (bool newState)</td></tr>
+<tr class="memdesc:aa15b18f000cf0a62340bda0b6704216b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the simulation phase visualization property. See associated property for details  <a href="class_hydrogen_atom.html#aa15b18f000cf0a62340bda0b6704216b">More...</a><br /></td></tr>
 <tr class="separator:aa15b18f000cf0a62340bda0b6704216b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dea8ea4e37bb798d4bbd9d93f62814f"><td class="memItemLeft" align="right" valign="top"><a id="a1dea8ea4e37bb798d4bbd9d93f62814f" name="a1dea8ea4e37bb798d4bbd9d93f62814f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGammaDecay</b> (float newValue)</td></tr>
+<tr class="memitem:a1dea8ea4e37bb798d4bbd9d93f62814f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydrogen_atom.html#a1dea8ea4e37bb798d4bbd9d93f62814f">SetGammaDecay</a> (float newValue)</td></tr>
+<tr class="memdesc:a1dea8ea4e37bb798d4bbd9d93f62814f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the simulation gamma decay. See associated property for details  <a href="class_hydrogen_atom.html#a1dea8ea4e37bb798d4bbd9d93f62814f">More...</a><br /></td></tr>
 <tr class="separator:a1dea8ea4e37bb798d4bbd9d93f62814f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88b67961ea0e5d42a1d0f343419ab94d"><td class="memItemLeft" align="right" valign="top"><a id="a88b67961ea0e5d42a1d0f343419ab94d" name="a88b67961ea0e5d42a1d0f343419ab94d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMeasurementGamma</b> (float newValue)</td></tr>
+<tr class="memitem:a88b67961ea0e5d42a1d0f343419ab94d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydrogen_atom.html#a88b67961ea0e5d42a1d0f343419ab94d">SetMeasurementGamma</a> (float newValue)</td></tr>
+<tr class="memdesc:a88b67961ea0e5d42a1d0f343419ab94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the simulation measurement property. See associated property for details  <a href="class_hydrogen_atom.html#a88b67961ea0e5d42a1d0f343419ab94d">More...</a><br /></td></tr>
 <tr class="separator:a88b67961ea0e5d42a1d0f343419ab94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1a5102747bad06bb1e8f7bbdb76e203"><td class="memItemLeft" align="right" valign="top"><a id="aa1a5102747bad06bb1e8f7bbdb76e203" name="aa1a5102747bad06bb1e8f7bbdb76e203"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSimulationTimeDilation</b> (float newValue)</td></tr>
+<tr class="memitem:aa1a5102747bad06bb1e8f7bbdb76e203"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydrogen_atom.html#aa1a5102747bad06bb1e8f7bbdb76e203">SetSimulationTimeDilation</a> (float newValue)</td></tr>
+<tr class="memdesc:aa1a5102747bad06bb1e8f7bbdb76e203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the simulation time dilation property. See associated property for details  <a href="class_hydrogen_atom.html#aa1a5102747bad06bb1e8f7bbdb76e203">More...</a><br /></td></tr>
 <tr class="separator:aa1a5102747bad06bb1e8f7bbdb76e203"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3d98e2e1c1a85a048b7a0cf6a6016ad"><td class="memItemLeft" align="right" valign="top"><a id="ae3d98e2e1c1a85a048b7a0cf6a6016ad" name="ae3d98e2e1c1a85a048b7a0cf6a6016ad"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEnergyLevel</b> (float level)</td></tr>
+<tr class="memitem:ae3d98e2e1c1a85a048b7a0cf6a6016ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydrogen_atom.html#ae3d98e2e1c1a85a048b7a0cf6a6016ad">SetEnergyLevel</a> (float level)</td></tr>
+<tr class="memdesc:ae3d98e2e1c1a85a048b7a0cf6a6016ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the energy level (given a float parameter)  <a href="class_hydrogen_atom.html#ae3d98e2e1c1a85a048b7a0cf6a6016ad">More...</a><br /></td></tr>
 <tr class="separator:ae3d98e2e1c1a85a048b7a0cf6a6016ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec9791e8a6c4b7a3b54f2ba4103b6fe8"><td class="memItemLeft" align="right" valign="top"><a id="aec9791e8a6c4b7a3b54f2ba4103b6fe8" name="aec9791e8a6c4b7a3b54f2ba4103b6fe8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEnergyLevel</b> (int level)</td></tr>
+<tr class="memitem:aec9791e8a6c4b7a3b54f2ba4103b6fe8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydrogen_atom.html#aec9791e8a6c4b7a3b54f2ba4103b6fe8">SetEnergyLevel</a> (int level)</td></tr>
+<tr class="memdesc:aec9791e8a6c4b7a3b54f2ba4103b6fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current energy level  <a href="class_hydrogen_atom.html#aec9791e8a6c4b7a3b54f2ba4103b6fe8">More...</a><br /></td></tr>
 <tr class="separator:aec9791e8a6c4b7a3b54f2ba4103b6fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ad94dde58e4b89ae090ae27f181f49a"><td class="memItemLeft" align="right" valign="top"><a id="a8ad94dde58e4b89ae090ae27f181f49a" name="a8ad94dde58e4b89ae090ae27f181f49a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetAtom</b> ()</td></tr>
+<tr class="memdesc:a8ad94dde58e4b89ae090ae27f181f49a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the atom back to its original state <br /></td></tr>
 <tr class="separator:a8ad94dde58e4b89ae090ae27f181f49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a984aa2544b94b91753d1059ba3eebdfa"><td class="memItemLeft" align="right" valign="top"><a id="a984aa2544b94b91753d1059ba3eebdfa" name="a984aa2544b94b91753d1059ba3eebdfa"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>evolutionTimeScaling</b> = 1</td></tr>
+<tr class="memdesc:a984aa2544b94b91753d1059ba3eebdfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ratio of real time to simulation time <br /></td></tr>
 <tr class="separator:a984aa2544b94b91753d1059ba3eebdfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6b350f9eae4f6aa378e72abec8898ee"><td class="memItemLeft" align="right" valign="top"><a id="ad6b350f9eae4f6aa378e72abec8898ee" name="ad6b350f9eae4f6aa378e72abec8898ee"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>paused</b></td></tr>
+<tr class="memdesc:ad6b350f9eae4f6aa378e72abec8898ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the simulatin currently paused <br /></td></tr>
 <tr class="separator:ad6b350f9eae4f6aa378e72abec8898ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7748fb0821e3d3752c8b1adad26896d"><td class="memItemLeft" align="right" valign="top"><a id="aa7748fb0821e3d3752c8b1adad26896d" name="aa7748fb0821e3d3752c8b1adad26896d"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>dt</b> =0.1</td></tr>
+<tr class="memdesc:aa7748fb0821e3d3752c8b1adad26896d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Time step for atom simulation time evolution. <br /></td></tr>
 <tr class="separator:aa7748fb0821e3d3752c8b1adad26896d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48521c65dadb5ed2f847263708431de5"><td class="memItemLeft" align="right" valign="top"><a id="a48521c65dadb5ed2f847263708431de5" name="a48521c65dadb5ed2f847263708431de5"></a>
-GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>voxelPrefab</b></td></tr>
-<tr class="separator:a48521c65dadb5ed2f847263708431de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9945894106332df1ff5c1c6b76a8c0f5"><td class="memItemLeft" align="right" valign="top"><a id="a9945894106332df1ff5c1c6b76a8c0f5" name="a9945894106332df1ff5c1c6b76a8c0f5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>phaseVisualization</b> = false</td></tr>
+<tr class="memdesc:a9945894106332df1ff5c1c6b76a8c0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">When true, shows phase visualization instead of probability <br /></td></tr>
 <tr class="separator:a9945894106332df1ff5c1c6b76a8c0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d6e6e37fb2747865e82e3bd84b65165"><td class="memItemLeft" align="right" valign="top"><a id="a9d6e6e37fb2747865e82e3bd84b65165" name="a9d6e6e37fb2747865e82e3bd84b65165"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>debugMessages</b> = false</td></tr>
+<tr class="memdesc:a9d6e6e37fb2747865e82e3bd84b65165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Are debug messages enabled (warning, this might super-lag the unity editor if running to quickly) <br /></td></tr>
 <tr class="separator:a9d6e6e37fb2747865e82e3bd84b65165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d3c2b7b298bd7b1973d4b012be08b68"><td class="memItemLeft" align="right" valign="top"><a id="a6d3c2b7b298bd7b1973d4b012be08b68" name="a6d3c2b7b298bd7b1973d4b012be08b68"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>setEnergyLevel</b> = -1</td></tr>
+<tr class="memdesc:a6d3c2b7b298bd7b1973d4b012be08b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">When not set to -1, will set the energy level to specified value, then go back to -1. <br /></td></tr>
 <tr class="separator:a6d3c2b7b298bd7b1973d4b012be08b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b148a4f6f394f66bd341947429afff9"><td class="memItemLeft" align="right" valign="top"><a id="a0b148a4f6f394f66bd341947429afff9" name="a0b148a4f6f394f66bd341947429afff9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>mostProbableEnergyLevel</b> = 0</td></tr>
+<tr class="memdesc:a0b148a4f6f394f66bd341947429afff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current most probabable energy level (read-only) <br /></td></tr>
 <tr class="separator:a0b148a4f6f394f66bd341947429afff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaad362b2f9be1c5fa7fad820a1f3bcad"><td class="memItemLeft" align="right" valign="top"><a id="aaad362b2f9be1c5fa7fad820a1f3bcad" name="aaad362b2f9be1c5fa7fad820a1f3bcad"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isMeasuring</b> = false</td></tr>
+<tr class="memdesc:aaad362b2f9be1c5fa7fad820a1f3bcad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Are measurements currently enabled <br /></td></tr>
 <tr class="separator:aaad362b2f9be1c5fa7fad820a1f3bcad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8676b6725daa925d3829ea6e19cc97c9"><td class="memItemLeft" align="right" valign="top"><a id="a8676b6725daa925d3829ea6e19cc97c9" name="a8676b6725daa925d3829ea6e19cc97c9"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ForceMeasurement</b> = false</td></tr>
+<tr class="memdesc:a8676b6725daa925d3829ea6e19cc97c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">When true, will always force successful measurements <br /></td></tr>
 <tr class="separator:a8676b6725daa925d3829ea6e19cc97c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac91db6dfe405708ffd4f85f4596905cd"><td class="memItemLeft" align="right" valign="top"><a id="ac91db6dfe405708ffd4f85f4596905cd" name="ac91db6dfe405708ffd4f85f4596905cd"></a>
 UnityEngine.Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>measurementLocation</b> = new UnityEngine.Vector3(0, 0, 0.5f)</td></tr>
+<tr class="memdesc:ac91db6dfe405708ffd4f85f4596905cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The location measurements are made <br /></td></tr>
 <tr class="separator:ac91db6dfe405708ffd4f85f4596905cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab82aa796a7b04f9a85fae1a0897151c"><td class="memItemLeft" align="right" valign="top"><a id="aab82aa796a7b04f9a85fae1a0897151c" name="aab82aa796a7b04f9a85fae1a0897151c"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>measurementGamma</b> = 1.0f</td></tr>
+<tr class="memdesc:aab82aa796a7b04f9a85fae1a0897151c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The measurement gamma, roughly the measurement "strength" (Must be smaller or equal to 1.0). <br /></td></tr>
 <tr class="separator:aab82aa796a7b04f9a85fae1a0897151c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a264dd872a49d1a46ac05ca8cdc5f38f7"><td class="memItemLeft" align="right" valign="top"><a id="a264dd872a49d1a46ac05ca8cdc5f38f7" name="a264dd872a49d1a46ac05ca8cdc5f38f7"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>outcomeOfLastMeasurement</b> = false</td></tr>
+<tr class="memdesc:a264dd872a49d1a46ac05ca8cdc5f38f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The outcome (successful = true) of the last measurement <br /></td></tr>
 <tr class="separator:a264dd872a49d1a46ac05ca8cdc5f38f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a83c6906d0cbbc35e5392efd06d626c"><td class="memItemLeft" align="right" valign="top"><a id="a6a83c6906d0cbbc35e5392efd06d626c" name="a6a83c6906d0cbbc35e5392efd06d626c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>PauseAfterSuccessfulMeasurement</b> = false</td></tr>
+<tr class="memdesc:a6a83c6906d0cbbc35e5392efd06d626c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, the simulation will pause after a successful measurement <br /></td></tr>
 <tr class="separator:a6a83c6906d0cbbc35e5392efd06d626c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af205e89045e398b42fecbf917ecfa4b6"><td class="memItemLeft" align="right" valign="top"><a id="af205e89045e398b42fecbf917ecfa4b6" name="af205e89045e398b42fecbf917ecfa4b6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>RotateThroughStates</b></td></tr>
+<tr class="memdesc:af205e89045e398b42fecbf917ecfa4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">When set to true, animate through the first few energy level states <br /></td></tr>
 <tr class="separator:af205e89045e398b42fecbf917ecfa4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73d7937333eebdc3f2eeb890e62c8770"><td class="memItemLeft" align="right" valign="top"><a id="a73d7937333eebdc3f2eeb890e62c8770" name="a73d7937333eebdc3f2eeb890e62c8770"></a>
 Transform&#160;</td><td class="memItemRight" valign="bottom"><b>CutoutStart</b></td></tr>
+<tr class="memdesc:a73d7937333eebdc3f2eeb890e62c8770"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transform represent the cutout plane (rotation and position) <br /></td></tr>
 <tr class="separator:a73d7937333eebdc3f2eeb890e62c8770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1875cc155839f022bd208f310e4df761"><td class="memItemLeft" align="right" valign="top"><a id="a1875cc155839f022bd208f310e4df761" name="a1875cc155839f022bd208f310e4df761"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsCutoutEnabled</b></td></tr>
+<tr class="memdesc:a1875cc155839f022bd208f310e4df761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Are cutouts enabled <br /></td></tr>
 <tr class="separator:a1875cc155839f022bd208f310e4df761"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c9736c57679d856e08d3da8d912d73c"><td class="memItemLeft" align="right" valign="top"><a id="a1c9736c57679d856e08d3da8d912d73c" name="a1c9736c57679d856e08d3da8d912d73c"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>MaxProbability</b> = 0</td></tr>
+<tr class="memdesc:a1c9736c57679d856e08d3da8d912d73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The most probable voxel's probability (read only) <br /></td></tr>
 <tr class="separator:a1c9736c57679d856e08d3da8d912d73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9962ccc0a0216e8348740c910747e9cb"><td class="memItemLeft" align="right" valign="top"><a id="a9962ccc0a0216e8348740c910747e9cb" name="a9962ccc0a0216e8348740c910747e9cb"></a>
 GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>ProbabilityScaleObject</b></td></tr>
+<tr class="memdesc:a9962ccc0a0216e8348740c910747e9cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The probability scale object for the simulation to control <br /></td></tr>
 <tr class="separator:a9962ccc0a0216e8348740c910747e9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee8d1689cf8869bb25cfd47e5eb965c"><td class="memItemLeft" align="right" valign="top"><a id="aaee8d1689cf8869bb25cfd47e5eb965c" name="aaee8d1689cf8869bb25cfd47e5eb965c"></a>
 GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>PhaseScaleObject</b></td></tr>
+<tr class="memdesc:aaee8d1689cf8869bb25cfd47e5eb965c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The phase scale object for the simulation to control <br /></td></tr>
 <tr class="separator:aaee8d1689cf8869bb25cfd47e5eb965c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a664cb21050b98c45a91ff1e43f075d56"><td class="memItemLeft" align="right" valign="top"><a id="a664cb21050b98c45a91ff1e43f075d56" name="a664cb21050b98c45a91ff1e43f075d56"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGradient</b> ()</td></tr>
+<tr class="memdesc:a664cb21050b98c45a91ff1e43f075d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup and create the atom probability color gradient <br /></td></tr>
 <tr class="separator:a664cb21050b98c45a91ff1e43f075d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab150db1639952e2a1c1caaab98934d79"><td class="memItemLeft" align="right" valign="top"><a id="ab150db1639952e2a1c1caaab98934d79" name="ab150db1639952e2a1c1caaab98934d79"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeVisualization</b> ()</td></tr>
+<tr class="memdesc:ab150db1639952e2a1c1caaab98934d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the atom visualizations <br /></td></tr>
 <tr class="separator:ab150db1639952e2a1c1caaab98934d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c2c826fd86518fb40b361870ba61495"><td class="memItemLeft" align="right" valign="top"><a id="a1c2c826fd86518fb40b361870ba61495" name="a1c2c826fd86518fb40b361870ba61495"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateVisualization</b> (Vector&lt; double &gt; p_grid, Vector&lt; Complex &gt; psiGrid, Vector&lt; double &gt; p_basis, bool measurementSuccess)</td></tr>
+<tr class="memitem:a1c2c826fd86518fb40b361870ba61495"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydrogen_atom.html#a1c2c826fd86518fb40b361870ba61495">UpdateVisualization</a> (Vector&lt; double &gt; p_grid, Vector&lt; Complex &gt; psiGrid, Vector&lt; double &gt; p_basis, bool measurementSuccess)</td></tr>
+<tr class="memdesc:a1c2c826fd86518fb40b361870ba61495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the atom visualization  <a href="class_hydrogen_atom.html#a1c2c826fd86518fb40b361870ba61495">More...</a><br /></td></tr>
 <tr class="separator:a1c2c826fd86518fb40b361870ba61495"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:af1f700b2ed1c522e0d5a5027a8df3404"><td class="memItemLeft" align="right" valign="top"><a id="af1f700b2ed1c522e0d5a5027a8df3404" name="af1f700b2ed1c522e0d5a5027a8df3404"></a>
 <a class="el" href="struct_hydrogen_atom_1_1atom_state.html">atomState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>startState</b></td></tr>
+<tr class="memdesc:af1f700b2ed1c522e0d5a5027a8df3404"><td class="mdescLeft">&#160;</td><td class="mdescRight">The atom starting state <br /></td></tr>
 <tr class="separator:af1f700b2ed1c522e0d5a5027a8df3404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c9dda7aa9f5356b7a1bf3ba211f46c"><td class="memItemLeft" align="right" valign="top"><a id="a22c9dda7aa9f5356b7a1bf3ba211f46c" name="a22c9dda7aa9f5356b7a1bf3ba211f46c"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>BasisVectors</b> = &quot;&quot;</td></tr>
+<tr class="memdesc:a22c9dda7aa9f5356b7a1bf3ba211f46c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A basis vector debug output (readonly) <br /></td></tr>
 <tr class="separator:a22c9dda7aa9f5356b7a1bf3ba211f46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0cedfc66566fcb9b3f7ead6777473d4"><td class="memItemLeft" align="right" valign="top"><a id="af0cedfc66566fcb9b3f7ead6777473d4" name="af0cedfc66566fcb9b3f7ead6777473d4"></a>
 Gradient&#160;</td><td class="memItemRight" valign="bottom"><b>gradient</b></td></tr>
+<tr class="memdesc:af0cedfc66566fcb9b3f7ead6777473d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The probability color gradient <br /></td></tr>
 <tr class="separator:af0cedfc66566fcb9b3f7ead6777473d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5e32495f311fe730ee66e4a7d14fc92"><td class="memItemLeft" align="right" valign="top"><a id="af5e32495f311fe730ee66e4a7d14fc92" name="af5e32495f311fe730ee66e4a7d14fc92"></a>
 GradientColorKey[]&#160;</td><td class="memItemRight" valign="bottom"><b>colorKey</b></td></tr>
+<tr class="memdesc:af5e32495f311fe730ee66e4a7d14fc92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probability color gradient color keys <br /></td></tr>
 <tr class="separator:af5e32495f311fe730ee66e4a7d14fc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01839f663b9925e344c6612788d7fe2d"><td class="memItemLeft" align="right" valign="top"><a id="a01839f663b9925e344c6612788d7fe2d" name="a01839f663b9925e344c6612788d7fe2d"></a>
 GradientAlphaKey[]&#160;</td><td class="memItemRight" valign="bottom"><b>alphaKey</b></td></tr>
+<tr class="memdesc:a01839f663b9925e344c6612788d7fe2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probability color gradient alpha keys <br /></td></tr>
 <tr class="separator:a01839f663b9925e344c6612788d7fe2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0d612c435fe96e5a313a8f3e6035895"><td class="memItemLeft" align="right" valign="top"><a id="af0d612c435fe96e5a313a8f3e6035895" name="af0d612c435fe96e5a313a8f3e6035895"></a>
 Texture3D&#160;</td><td class="memItemRight" valign="bottom"><b>texture</b></td></tr>
+<tr class="memdesc:af0d612c435fe96e5a313a8f3e6035895"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 3D atom texture (each represents an atom voxel color for the shader) <br /></td></tr>
 <tr class="separator:af0d612c435fe96e5a313a8f3e6035895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad230d65c61ed05e9560e76fd17f7dbeb"><td class="memItemLeft" align="right" valign="top"><a id="ad230d65c61ed05e9560e76fd17f7dbeb" name="ad230d65c61ed05e9560e76fd17f7dbeb"></a>
 Color[]&#160;</td><td class="memItemRight" valign="bottom"><b>textureColors</b></td></tr>
+<tr class="memdesc:ad230d65c61ed05e9560e76fd17f7dbeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The atom voxels colors used in the 3D texture <br /></td></tr>
 <tr class="separator:ad230d65c61ed05e9560e76fd17f7dbeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab295c71179a50956ba58baf362ba4736"><td class="memItemLeft" align="right" valign="top"><a id="ab295c71179a50956ba58baf362ba4736" name="ab295c71179a50956ba58baf362ba4736"></a>
 UnityEngine.Vector3[]&#160;</td><td class="memItemRight" valign="bottom"><b>atomToPos</b></td></tr>
+<tr class="memdesc:ab295c71179a50956ba58baf362ba4736"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array converting the atom sim voxel index, to the Unity 3D object coordinate position <br /></td></tr>
 <tr class="separator:ab295c71179a50956ba58baf362ba4736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb591ff616fd60fa4eb2cfb496e50a5"><td class="memItemLeft" align="right" valign="top"><a id="a3eb591ff616fd60fa4eb2cfb496e50a5" name="a3eb591ff616fd60fa4eb2cfb496e50a5"></a>
 int[]&#160;</td><td class="memItemRight" valign="bottom"><b>atomToTextureColorIndex</b></td></tr>
+<tr class="memdesc:a3eb591ff616fd60fa4eb2cfb496e50a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array converting the atom sim voxel index, to the textureColor index <br /></td></tr>
 <tr class="separator:a3eb591ff616fd60fa4eb2cfb496e50a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ee68fc98752b0cb1eca2b5fbba9f0b8"><td class="memItemLeft" align="right" valign="top"><a id="a1ee68fc98752b0cb1eca2b5fbba9f0b8" name="a1ee68fc98752b0cb1eca2b5fbba9f0b8"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>voxelSize</b></td></tr>
+<tr class="memdesc:a1ee68fc98752b0cb1eca2b5fbba9f0b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size (in game object coordiantes) of a voxel <br /></td></tr>
 <tr class="separator:a1ee68fc98752b0cb1eca2b5fbba9f0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f2b1f5300f6ad614f53d68c8aa6ff6b"><td class="memItemLeft" align="right" valign="top"><a id="a5f2b1f5300f6ad614f53d68c8aa6ff6b" name="a5f2b1f5300f6ad614f53d68c8aa6ff6b"></a>
 Renderer&#160;</td><td class="memItemRight" valign="bottom"><b>nucleusRenderer</b></td></tr>
+<tr class="memdesc:a5f2b1f5300f6ad614f53d68c8aa6ff6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The renderer for the nucleus object <br /></td></tr>
 <tr class="separator:a5f2b1f5300f6ad614f53d68c8aa6ff6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9001cc38f815e24c8d2850eaf49e45f2"><td class="memItemLeft" align="right" valign="top"><a id="a9001cc38f815e24c8d2850eaf49e45f2" name="a9001cc38f815e24c8d2850eaf49e45f2"></a>
-GameObject[]&#160;</td><td class="memItemRight" valign="bottom"><b>voxelVisualizations</b></td></tr>
-<tr class="separator:a9001cc38f815e24c8d2850eaf49e45f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c01ca7ccd8a6211793d0b84c0846b40"><td class="memItemLeft" align="right" valign="top"><a id="a7c01ca7ccd8a6211793d0b84c0846b40" name="a7c01ca7ccd8a6211793d0b84c0846b40"></a>
-Renderer[]&#160;</td><td class="memItemRight" valign="bottom"><b>voxelVisualizationsRenders</b></td></tr>
-<tr class="separator:a7c01ca7ccd8a6211793d0b84c0846b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18340f2576772d3c8b10465ea5da76a4"><td class="memItemLeft" align="right" valign="top"><a id="a18340f2576772d3c8b10465ea5da76a4" name="a18340f2576772d3c8b10465ea5da76a4"></a>
 <a class="el" href="class_atom_sim_controller.html">AtomSimController</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_simController</b></td></tr>
+<tr class="memdesc:a18340f2576772d3c8b10465ea5da76a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The atom simulation controller <br /></td></tr>
 <tr class="separator:a18340f2576772d3c8b10465ea5da76a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a650345d431246ec6c038bdf4e466b64a"><td class="memItemLeft" align="right" valign="top"><a id="a650345d431246ec6c038bdf4e466b64a" name="a650345d431246ec6c038bdf4e466b64a"></a>
 <a class="el" href="classvr__hydrogen__backend_1_1_atom_sim.html">AtomSim</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_sim</b></td></tr>
+<tr class="memdesc:a650345d431246ec6c038bdf4e466b64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The raw atom simulation <br /></td></tr>
 <tr class="separator:a650345d431246ec6c038bdf4e466b64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1da704ed87c58ec3e2b5f4a90e90d5ef"><td class="memItemLeft" align="right" valign="top"><a id="a1da704ed87c58ec3e2b5f4a90e90d5ef" name="a1da704ed87c58ec3e2b5f4a90e90d5ef"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>_timeOfLastRotation</b></td></tr>
+<tr class="memdesc:a1da704ed87c58ec3e2b5f4a90e90d5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time the last energy level was changed (for energy level rotation animation) <br /></td></tr>
 <tr class="separator:a1da704ed87c58ec3e2b5f4a90e90d5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >The Unity gameobject behavior controlling and representing the atom simulation </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae3d98e2e1c1a85a048b7a0cf6a6016ad" name="ae3d98e2e1c1a85a048b7a0cf6a6016ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3d98e2e1c1a85a048b7a0cf6a6016ad">&#9670;&nbsp;</a></span>SetEnergyLevel() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HydrogenAtom.SetEnergyLevel </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the energy level (given a float parameter) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>The level to set as a float. It will be truncated to an integer.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aec9791e8a6c4b7a3b54f2ba4103b6fe8" name="aec9791e8a6c4b7a3b54f2ba4103b6fe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec9791e8a6c4b7a3b54f2ba4103b6fe8">&#9670;&nbsp;</a></span>SetEnergyLevel() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HydrogenAtom.SetEnergyLevel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the current energy level </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>The energy level to set to (0 to the maximum energy level)</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1dea8ea4e37bb798d4bbd9d93f62814f" name="a1dea8ea4e37bb798d4bbd9d93f62814f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dea8ea4e37bb798d4bbd9d93f62814f">&#9670;&nbsp;</a></span>SetGammaDecay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HydrogenAtom.SetGammaDecay </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>newValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the simulation gamma decay. See associated property for details </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newValue</td><td>The new value</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a15b5dfb5276c44be6a5bff4e1917eedf" name="a15b5dfb5276c44be6a5bff4e1917eedf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b5dfb5276c44be6a5bff4e1917eedf">&#9670;&nbsp;</a></span>SetMeasurement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HydrogenAtom.SetMeasurement </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>gamma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UnityEngine.Vector3&#160;</td>
+          <td class="paramname"><em>mPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>forceMeasurement</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the atom measurement state (enable/disable, position, and force successful) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hit</td><td>Set to true to enable measurements, false to disable measurements</td></tr>
+    <tr><td class="paramname">gamma</td><td>The gamma value (measurement strength). Must be less than 1</td></tr>
+    <tr><td class="paramname">mPosition</td><td>The position of the measurement</td></tr>
+    <tr><td class="paramname">forceMeasurement</td><td>Set to true if successful measurements should be forced</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a88b67961ea0e5d42a1d0f343419ab94d" name="a88b67961ea0e5d42a1d0f343419ab94d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b67961ea0e5d42a1d0f343419ab94d">&#9670;&nbsp;</a></span>SetMeasurementGamma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HydrogenAtom.SetMeasurementGamma </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>newValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the simulation measurement property. See associated property for details </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newValue</td><td>The new value</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0296fbca441f44f0c3d5db2ff1ace815" name="a0296fbca441f44f0c3d5db2ff1ace815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0296fbca441f44f0c3d5db2ff1ace815">&#9670;&nbsp;</a></span>SetPaused()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HydrogenAtom.SetPaused </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>newState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the simulation paused property. See associated property for details </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newValue</td><td>The new value</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa15b18f000cf0a62340bda0b6704216b" name="aa15b18f000cf0a62340bda0b6704216b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa15b18f000cf0a62340bda0b6704216b">&#9670;&nbsp;</a></span>SetPhaseVisualization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HydrogenAtom.SetPhaseVisualization </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>newState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the simulation phase visualization property. See associated property for details </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newValue</td><td>The new value</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa1a5102747bad06bb1e8f7bbdb76e203" name="aa1a5102747bad06bb1e8f7bbdb76e203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a5102747bad06bb1e8f7bbdb76e203">&#9670;&nbsp;</a></span>SetSimulationTimeDilation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HydrogenAtom.SetSimulationTimeDilation </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>newValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the simulation time dilation property. See associated property for details </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newValue</td><td>The new value</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1c2c826fd86518fb40b361870ba61495" name="a1c2c826fd86518fb40b361870ba61495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2c826fd86518fb40b361870ba61495">&#9670;&nbsp;</a></span>UpdateVisualization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HydrogenAtom.UpdateVisualization </td>
+          <td>(</td>
+          <td class="paramtype">Vector&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>p_grid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector&lt; Complex &gt;&#160;</td>
+          <td class="paramname"><em>psiGrid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>p_basis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>measurementSuccess</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the atom visualization </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_grid</td><td>New p_grid atom simulation. (see controller from details)</td></tr>
+    <tr><td class="paramname">psiGrid</td><td>New psiGrid atom simulation. (see controller from details)</td></tr>
+    <tr><td class="paramname">p_basis</td><td>New p_basis atom simulation. (see controller from details)</td></tr>
+    <tr><td class="paramname">measurementSuccess</td><td>Was the last measurement successful</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Assets/QuantumBackend/HydrogenAtom.cs</li>
 </ul>

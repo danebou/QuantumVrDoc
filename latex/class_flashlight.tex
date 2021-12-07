@@ -1,5 +1,10 @@
 \hypertarget{class_flashlight}{}\doxysection{Flashlight Class Reference}
 \label{class_flashlight}\index{Flashlight@{Flashlight}}
+
+
+The flashlight tool behavior  
+
+
 Inheritance diagram for Flashlight\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,73 +16,139 @@ Inheritance diagram for Flashlight\+:\begin{figure}[H]
 \item 
 \mbox{\Hypertarget{class_flashlight_a79893e596c82a730341f837e0f918db0}\label{class_flashlight_a79893e596c82a730341f837e0f918db0}} 
 void {\bfseries call\+On\+Off} ()
-\item 
-\mbox{\Hypertarget{class_flashlight_ad475925957776a10c7ba22c338a0a3fe}\label{class_flashlight_ad475925957776a10c7ba22c338a0a3fe}} 
-void {\bfseries Turn\+On\+Off} (bool on\+Off)
-\item 
-\mbox{\Hypertarget{class_flashlight_a7cbda518fa012c9b77719f4283698f25}\label{class_flashlight_a7cbda518fa012c9b77719f4283698f25}} 
-void {\bfseries Set\+Gamma} (double new\+Gamma)
-\item 
-\mbox{\Hypertarget{class_flashlight_a2f4f49a585fbab330161d70ef62b7625}\label{class_flashlight_a2f4f49a585fbab330161d70ef62b7625}} 
-void {\bfseries Trigger\+Up} (Steam\+VR\+\_\+\+Action\+\_\+\+Boolean from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source)
-\item 
-\mbox{\Hypertarget{class_flashlight_a992d3cc6b145a57ff1a21a2e82974033}\label{class_flashlight_a992d3cc6b145a57ff1a21a2e82974033}} 
-void {\bfseries Trigger\+Down} (Steam\+VR\+\_\+\+Action\+\_\+\+Boolean from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Toggle the flashlight \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flashlight_ad475925957776a10c7ba22c338a0a3fe}{Turn\+On\+Off}} (bool on\+Off)
+\begin{DoxyCompactList}\small\item\em Enable or disable the flashlight \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flashlight_a7cbda518fa012c9b77719f4283698f25}{Set\+Gamma}} (double new\+Gamma)
+\begin{DoxyCompactList}\small\item\em Set the atom measurement gamma property (strength). Should be less than 1 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flashlight_a2f4f49a585fbab330161d70ef62b7625}{Trigger\+Up}} (Steam\+VR\+\_\+\+Action\+\_\+\+Boolean from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source)
+\begin{DoxyCompactList}\small\item\em Called when the trigger is up \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flashlight_a992d3cc6b145a57ff1a21a2e82974033}{Trigger\+Down}} (Steam\+VR\+\_\+\+Action\+\_\+\+Boolean from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source)
+\begin{DoxyCompactList}\small\item\em Called when the trigger is down \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_flashlight_aa8847918404ef13b446ad8ca1934c139}\label{class_flashlight_aa8847918404ef13b446ad8ca1934c139}} 
 bool {\bfseries flashlight\+On}
-\item 
+\begin{DoxyCompactList}\small\item\em Is the flashlight on \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_flashlight_a9293e9fca729b5b9ba007d76f508a87c}\label{class_flashlight_a9293e9fca729b5b9ba007d76f508a87c}} 
 double {\bfseries gamma}
-\item 
+\begin{DoxyCompactList}\small\item\em The measurement gamma property (strength) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_flashlight_a34e3558262be9b0d0fd7c9d292421f26}\label{class_flashlight_a34e3558262be9b0d0fd7c9d292421f26}} 
 Game\+Object {\bfseries light\+Beam}
-\item 
+\begin{DoxyCompactList}\small\item\em The light beam game object to control \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_flashlight_ab4f28dec62aee071b5b2fbb12f281fed}\label{class_flashlight_ab4f28dec62aee071b5b2fbb12f281fed}} 
 \mbox{\hyperlink{class_hydrogen_atom}{Hydrogen\+Atom}} {\bfseries atom}
-\item 
+\begin{DoxyCompactList}\small\item\em The atom simulation to control \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_flashlight_a84c4caf9fac690daa8040a1cbd1fd560}\label{class_flashlight_a84c4caf9fac690daa8040a1cbd1fd560}} 
 Steam\+VR\+\_\+\+Action\+\_\+\+Boolean {\bfseries Trigger\+Flashlight}
-\item 
+\begin{DoxyCompactList}\small\item\em The trigger action to trigger the flashlight \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_flashlight_a3647653d83e54834a0150499c9af8881}\label{class_flashlight_a3647653d83e54834a0150499c9af8881}} 
 Steam\+VR\+\_\+\+Input\+\_\+\+Sources {\bfseries hand\+Type}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The hand to trigger the flashlight \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_flashlight_a723455da39c1c4642ca911b7dd43c128}\label{class_flashlight_a723455da39c1c4642ca911b7dd43c128}} 
 void {\bfseries Awake} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Unity function\+: \mbox{\hyperlink{class_flashlight_a723455da39c1c4642ca911b7dd43c128}{Awake()}} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_flashlight_a3fb2f42f17eba4ac8dec27797869cade}\label{class_flashlight_a3fb2f42f17eba4ac8dec27797869cade}} 
 void {\bfseries On\+Enable} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Unity function\+: \mbox{\hyperlink{class_flashlight_a3fb2f42f17eba4ac8dec27797869cade}{On\+Enable()}} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_flashlight_a11474bed3dc15a75947acd261ceba6a9}\label{class_flashlight_a11474bed3dc15a75947acd261ceba6a9}} 
 void {\bfseries On\+Disable} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Unity function\+: \mbox{\hyperlink{class_flashlight_a11474bed3dc15a75947acd261ceba6a9}{On\+Disable()}} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_flashlight_a8a06240b9671e7d35e38f1893dba9868}\label{class_flashlight_a8a06240b9671e7d35e38f1893dba9868}} 
 void {\bfseries Update} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Unity function\+: \mbox{\hyperlink{class_flashlight_a8a06240b9671e7d35e38f1893dba9868}{Update()}} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_flashlight_a049ff9501d93c1ef174eb31e20f4d235}\label{class_flashlight_a049ff9501d93c1ef174eb31e20f4d235}} 
 void {\bfseries Detached\+From\+Hand} (Hand hand)
-\item 
+\begin{DoxyCompactList}\small\item\em Called when the object is detached from a hand. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_flashlight_a6f81e58be9227e718b5dab7341b51cbd}\label{class_flashlight_a6f81e58be9227e718b5dab7341b51cbd}} 
 void {\bfseries Attached\+To\+Hand} (Hand hand)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Called when the object is attached to a hand. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_flashlight_aaf209ae83bbf77384c09c5cd1550923b}\label{class_flashlight_aaf209ae83bbf77384c09c5cd1550923b}} 
 Raycast\+Hit {\bfseries hit}
-\item 
+\begin{DoxyCompactList}\small\item\em The last result of the raycast from the beam to the atom \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_flashlight_ab0249ad470365d9201907aafe3d0eff6}\label{class_flashlight_ab0249ad470365d9201907aafe3d0eff6}} 
 Material {\bfseries lightbeam\+Material}
-\item 
+\begin{DoxyCompactList}\small\item\em The light beam material to control \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_flashlight_a52a974e838af4a803f62dfc18d42e6e1}\label{class_flashlight_a52a974e838af4a803f62dfc18d42e6e1}} 
 Interactable {\bfseries interactable}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The interactable behavior of the flashlight \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The flashlight tool behavior 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_flashlight_a7cbda518fa012c9b77719f4283698f25}\label{class_flashlight_a7cbda518fa012c9b77719f4283698f25}} 
+\index{Flashlight@{Flashlight}!SetGamma@{SetGamma}}
+\index{SetGamma@{SetGamma}!Flashlight@{Flashlight}}
+\doxysubsubsection{\texorpdfstring{SetGamma()}{SetGamma()}}
+{\footnotesize\ttfamily void Flashlight.\+Set\+Gamma (\begin{DoxyParamCaption}\item[{double}]{new\+Gamma }\end{DoxyParamCaption})}
+
+
+
+Set the atom measurement gamma property (strength). Should be less than 1 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Gamma} & The new gamma value to use\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_flashlight_a992d3cc6b145a57ff1a21a2e82974033}\label{class_flashlight_a992d3cc6b145a57ff1a21a2e82974033}} 
+\index{Flashlight@{Flashlight}!TriggerDown@{TriggerDown}}
+\index{TriggerDown@{TriggerDown}!Flashlight@{Flashlight}}
+\doxysubsubsection{\texorpdfstring{TriggerDown()}{TriggerDown()}}
+{\footnotesize\ttfamily void Flashlight.\+Trigger\+Down (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Action\+\_\+\+Boolean}]{from\+Action,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{from\+Source }\end{DoxyParamCaption})}
+
+
+
+Called when the trigger is down 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from\+Action} & The action source\\
+\hline
+{\em from\+Source} & The input source\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_flashlight_a2f4f49a585fbab330161d70ef62b7625}\label{class_flashlight_a2f4f49a585fbab330161d70ef62b7625}} 
+\index{Flashlight@{Flashlight}!TriggerUp@{TriggerUp}}
+\index{TriggerUp@{TriggerUp}!Flashlight@{Flashlight}}
+\doxysubsubsection{\texorpdfstring{TriggerUp()}{TriggerUp()}}
+{\footnotesize\ttfamily void Flashlight.\+Trigger\+Up (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Action\+\_\+\+Boolean}]{from\+Action,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{from\+Source }\end{DoxyParamCaption})}
+
+
+
+Called when the trigger is up 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from\+Action} & The action source\\
+\hline
+{\em from\+Source} & The input source\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_flashlight_ad475925957776a10c7ba22c338a0a3fe}\label{class_flashlight_ad475925957776a10c7ba22c338a0a3fe}} 
+\index{Flashlight@{Flashlight}!TurnOnOff@{TurnOnOff}}
+\index{TurnOnOff@{TurnOnOff}!Flashlight@{Flashlight}}
+\doxysubsubsection{\texorpdfstring{TurnOnOff()}{TurnOnOff()}}
+{\footnotesize\ttfamily void Flashlight.\+Turn\+On\+Off (\begin{DoxyParamCaption}\item[{bool}]{on\+Off }\end{DoxyParamCaption})}
+
+
+
+Enable or disable the flashlight 
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Off} & True to enable, false to disable\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

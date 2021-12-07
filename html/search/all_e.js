@@ -1,9 +1,21 @@
 var searchData=
 [
-  ['setenergylevel_0',['SetEnergyLevel',['../class_atom_sim_controller.html#a26e837e6540a091fcdfdfd0bad0e17d7',1,'AtomSimController']]],
-  ['setmeasurement_1',['SetMeasurement',['../class_atom_sim_controller.html#a6b8bae23ae4dc5b7f2ac9e98ca3afdfb',1,'AtomSimController']]],
-  ['start_2',['Start',['../class_cutout_hint.html#ab52da28e965afd68857fa1abd698db99',1,'CutoutHint.Start()'],['../class_energy_level_text.html#a57c0828aed54917650fadaf1c3bed96e',1,'EnergyLevelText.Start()']]],
-  ['steamvrinputmodule_3',['SteamVRInputModule',['../class_steam_v_r_input_module.html',1,'']]],
-  ['step_4',['Step',['../class_atom_sim_controller.html#a2647c64b4c05e17ae7f2f41e94137f07',1,'AtomSimController']]],
-  ['stopmeasurement_5',['StopMeasurement',['../class_atom_sim_controller.html#a054a2d1cb5e5504cb5130cc983be5f63',1,'AtomSimController']]]
+  ['p_5fbasis_0',['p_basis',['../class_atom_sim_controller.html#a4e30a78450d3d5bc9f7315102698a35f',1,'AtomSimController']]],
+  ['p_5fgrid_1',['p_grid',['../class_atom_sim_controller.html#ade5f187ca0689eba53bbae5df7dc98e1',1,'AtomSimController']]],
+  ['pause_2',['Pause',['../class_tutorial_controls.html#a10dc404eca6846dc9add3f46f338fd2a',1,'TutorialControls']]],
+  ['pauseaftersuccessfulmeasurement_3',['PauseAfterSuccessfulMeasurement',['../class_hydrogen_atom.html#a6a83c6906d0cbbc35e5392efd06d626c',1,'HydrogenAtom']]],
+  ['paused_4',['paused',['../class_hydrogen_atom.html#ad6b350f9eae4f6aa378e72abec8898ee',1,'HydrogenAtom']]],
+  ['phasescaleobject_5',['PhaseScaleObject',['../class_hydrogen_atom.html#aaee8d1689cf8869bb25cfd47e5eb965c',1,'HydrogenAtom']]],
+  ['phasevisualization_6',['phaseVisualization',['../class_hydrogen_atom.html#a9945894106332df1ff5c1c6b76a8c0f5',1,'HydrogenAtom']]],
+  ['planeobject_7',['PlaneObject',['../class_cutout_tool.html#a1a43bdebcd7ecd970751da954fe945ab',1,'CutoutTool']]],
+  ['planetaryatom_8',['planetaryAtom',['../class_tutorial_controls.html#a9d01053d86f2d256c2562c302b170a1f',1,'TutorialControls']]],
+  ['planetaryatommodel_9',['PlanetaryAtomModel',['../class_planetary_atom_model.html',1,'']]],
+  ['play_10',['Play',['../class_tutorial_controls.html#acc8fa674d65880d1a77b110a8221a9fb',1,'TutorialControls']]],
+  ['playchapter_11',['PlayChapter',['../class_tutorial_controls.html#a34f224655e954278a83c98a2ab776e45',1,'TutorialControls']]],
+  ['playpause_12',['PlayPause',['../class_tutorial_controls.html#a572e7c8f2ed50d965e6e39f21b9bf7c5',1,'TutorialControls']]],
+  ['prevchapter_13',['PrevChapter',['../class_tutorial_controls.html#a887d419c5d29c5d0107417eaa18c9736',1,'TutorialControls']]],
+  ['probabilitycolorscale_14',['ProbabilityColorScale',['../class_probability_color_scale.html',1,'']]],
+  ['probabilityscaleobject_15',['ProbabilityScaleObject',['../class_hydrogen_atom.html#a9962ccc0a0216e8348740c910747e9cb',1,'HydrogenAtom']]],
+  ['process_16',['Process',['../class_steam_v_r_input_module.html#af7e2835594df651d39e9e42d4e05d48d',1,'SteamVRInputModule']]],
+  ['psi_5fgrid_17',['psi_grid',['../class_atom_sim_controller.html#a4375c79a500d94a3d2eba78d8f275923',1,'AtomSimController']]]
 ];

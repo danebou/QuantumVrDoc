@@ -1,5 +1,10 @@
 \hypertarget{class_retractable_lanyard}{}\doxysection{Retractable\+Lanyard Class Reference}
 \label{class_retractable_lanyard}\index{RetractableLanyard@{RetractableLanyard}}
+
+
+Snaps an object back to the toolbelt after a time.  
+
+
 Inheritance diagram for Retractable\+Lanyard\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,47 +16,50 @@ Inheritance diagram for Retractable\+Lanyard\+:\begin{figure}[H]
 \item 
 \mbox{\Hypertarget{class_retractable_lanyard_a5fcdb5ac89e2b702c613671c72009996}\label{class_retractable_lanyard_a5fcdb5ac89e2b702c613671c72009996}} 
 Game\+Object {\bfseries root\+Object}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The object to retract \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_retractable_lanyard_a6eaff00df0121cd0f64f7b06a38a9602}\label{class_retractable_lanyard_a6eaff00df0121cd0f64f7b06a38a9602}} 
 void {\bfseries Awake} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Unity function\+: \mbox{\hyperlink{class_retractable_lanyard_a6eaff00df0121cd0f64f7b06a38a9602}{Awake()}} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_retractable_lanyard_a2dd1a4ebd5c762a1abe5bc5efa04732d}\label{class_retractable_lanyard_a2dd1a4ebd5c762a1abe5bc5efa04732d}} 
 void {\bfseries On\+Enable} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Unity function\+: \mbox{\hyperlink{class_retractable_lanyard_a2dd1a4ebd5c762a1abe5bc5efa04732d}{On\+Enable()}} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_retractable_lanyard_af886df5876827a053919b506e91bfb04}\label{class_retractable_lanyard_af886df5876827a053919b506e91bfb04}} 
 void {\bfseries On\+Disable} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Unity function\+: \mbox{\hyperlink{class_retractable_lanyard_af886df5876827a053919b506e91bfb04}{On\+Disable()}} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_retractable_lanyard_a9d777b76be6c850aa32854871e572b6f}\label{class_retractable_lanyard_a9d777b76be6c850aa32854871e572b6f}} 
 void {\bfseries Update} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Unity function\+: \mbox{\hyperlink{class_retractable_lanyard_a9d777b76be6c850aa32854871e572b6f}{Update()}} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_retractable_lanyard_a3557f4d86ec8376f08406e3db7b4c591}\label{class_retractable_lanyard_a3557f4d86ec8376f08406e3db7b4c591}} 
 void {\bfseries Attached\+To\+Hand} (Hand hand)
-\item 
+\begin{DoxyCompactList}\small\item\em Called when the item is attached to the hand \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_retractable_lanyard_a83afc40c570ad1c7f5ad6653481979aa}\label{class_retractable_lanyard_a83afc40c570ad1c7f5ad6653481979aa}} 
 void {\bfseries Detached\+From\+Hand} (Hand hand)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Called when the item is detached from the hand \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_retractable_lanyard_a8c6d40913d0cbfcfb831ceabab972fff}\label{class_retractable_lanyard_a8c6d40913d0cbfcfb831ceabab972fff}} 
 Interactable {\bfseries interactable}
-\item 
+\begin{DoxyCompactList}\small\item\em The object to retract\textquotesingle{}s interactable behavior \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_retractable_lanyard_a8d6f431597ba911ceea33c3fc085d125}\label{class_retractable_lanyard_a8d6f431597ba911ceea33c3fc085d125}} 
 bool {\bfseries retracted} = true
-\item 
+\begin{DoxyCompactList}\small\item\em Is the item on the belt \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_retractable_lanyard_a093489d0050a9236455dc5f2439811f9}\label{class_retractable_lanyard_a093489d0050a9236455dc5f2439811f9}} 
 bool {\bfseries released} = true
-\item 
+\begin{DoxyCompactList}\small\item\em Was the item dropped \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_retractable_lanyard_aed53fff76a675ec2fa6449d57e26555a}\label{class_retractable_lanyard_aed53fff76a675ec2fa6449d57e26555a}} 
-float {\bfseries time\+Before\+Retraction} =3
-\item 
+float {\bfseries time\+Before\+Retraction} = 3
+\begin{DoxyCompactList}\small\item\em The time after the item is dropped for it to be retracted \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_retractable_lanyard_a8f3ec485a46d8edee1d8eb11b5b2a966}\label{class_retractable_lanyard_a8f3ec485a46d8edee1d8eb11b5b2a966}} 
 float {\bfseries time\+Remaining}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The time until the item will be retracted \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Snaps an object back to the toolbelt after a time. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

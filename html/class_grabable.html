@@ -72,6 +72,9 @@ $(function() {
   <div class="headertitle"><div class="title">Grabable Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A script for resizing, rotating, and position an object, with single grip (position only) or double-grib (sizing, rotation) behavior.  
+ <a href="class_grabable.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Grabable:</div>
 <div class="dyncontent">
@@ -83,44 +86,157 @@ Inheritance diagram for Grabable:</div>
 Public Attributes</h2></td></tr>
 <tr class="memitem:abc0435d4cff88e0cbdb0a06a6280d743"><td class="memItemLeft" align="right" valign="top"><a id="abc0435d4cff88e0cbdb0a06a6280d743" name="abc0435d4cff88e0cbdb0a06a6280d743"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>GrapSizeThreshold</b> = 0.3f</td></tr>
+<tr class="memdesc:abc0435d4cff88e0cbdb0a06a6280d743"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum size the object needs to be in order to enable single hand grabbing <br /></td></tr>
 <tr class="separator:abc0435d4cff88e0cbdb0a06a6280d743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56a00682261266d96cc154aabbf4de02"><td class="memItemLeft" align="right" valign="top"><a id="a56a00682261266d96cc154aabbf4de02" name="a56a00682261266d96cc154aabbf4de02"></a>
 SteamVR_Action_Boolean&#160;</td><td class="memItemRight" valign="bottom"><b>ToggleGripButton</b></td></tr>
+<tr class="memdesc:a56a00682261266d96cc154aabbf4de02"><td class="mdescLeft">&#160;</td><td class="mdescRight">The button to toggle positioning the atom <br /></td></tr>
 <tr class="separator:a56a00682261266d96cc154aabbf4de02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:affe788eda53c00b19b253e1069a7b698"><td class="memItemLeft" align="right" valign="top"><a id="affe788eda53c00b19b253e1069a7b698" name="affe788eda53c00b19b253e1069a7b698"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
+<tr class="memdesc:affe788eda53c00b19b253e1069a7b698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unity function: <a class="el" href="class_grabable.html#affe788eda53c00b19b253e1069a7b698" title="Unity function: Start()">Start()</a> <br /></td></tr>
 <tr class="separator:affe788eda53c00b19b253e1069a7b698"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a143282f7b79b058dd7eab12f909fc413"><td class="memItemLeft" align="right" valign="top"><a id="a143282f7b79b058dd7eab12f909fc413" name="a143282f7b79b058dd7eab12f909fc413"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
+<tr class="memdesc:a143282f7b79b058dd7eab12f909fc413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unity function: <a class="el" href="class_grabable.html#a143282f7b79b058dd7eab12f909fc413" title="Unity function: Update()">Update()</a> <br /></td></tr>
 <tr class="separator:a143282f7b79b058dd7eab12f909fc413"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba886a3ff514b0c1815542419e69008a"><td class="memItemLeft" align="right" valign="top"><a id="aba886a3ff514b0c1815542419e69008a" name="aba886a3ff514b0c1815542419e69008a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnHandHoverBegin</b> (Hand hand)</td></tr>
+<tr class="memitem:aba886a3ff514b0c1815542419e69008a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grabable.html#aba886a3ff514b0c1815542419e69008a">OnHandHoverBegin</a> (Hand hand)</td></tr>
+<tr class="memdesc:aba886a3ff514b0c1815542419e69008a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the hand has started hovering on the interactable  <a href="class_grabable.html#aba886a3ff514b0c1815542419e69008a">More...</a><br /></td></tr>
 <tr class="separator:aba886a3ff514b0c1815542419e69008a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03e485db7eeadf72c2ef34f3d3c6f8f7"><td class="memItemLeft" align="right" valign="top"><a id="a03e485db7eeadf72c2ef34f3d3c6f8f7" name="a03e485db7eeadf72c2ef34f3d3c6f8f7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnHandHoverEnd</b> (Hand hand)</td></tr>
+<tr class="memitem:a03e485db7eeadf72c2ef34f3d3c6f8f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grabable.html#a03e485db7eeadf72c2ef34f3d3c6f8f7">OnHandHoverEnd</a> (Hand hand)</td></tr>
+<tr class="memdesc:a03e485db7eeadf72c2ef34f3d3c6f8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the hand has stopped hovering on the interactable and has been removed  <a href="class_grabable.html#a03e485db7eeadf72c2ef34f3d3c6f8f7">More...</a><br /></td></tr>
 <tr class="separator:a03e485db7eeadf72c2ef34f3d3c6f8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44ea761b9f922f92b13b2449713e960c"><td class="memItemLeft" align="right" valign="top"><a id="a44ea761b9f922f92b13b2449713e960c" name="a44ea761b9f922f92b13b2449713e960c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandHoverUpdate</b> (Hand hand)</td></tr>
+<tr class="memitem:a44ea761b9f922f92b13b2449713e960c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grabable.html#a44ea761b9f922f92b13b2449713e960c">HandHoverUpdate</a> (Hand hand)</td></tr>
+<tr class="memdesc:a44ea761b9f922f92b13b2449713e960c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the hand is currently hovering on the interactable object  <a href="class_grabable.html#a44ea761b9f922f92b13b2449713e960c">More...</a><br /></td></tr>
 <tr class="separator:a44ea761b9f922f92b13b2449713e960c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a089529d5d383bdb84fb4bde5b85b97d5"><td class="memItemLeft" align="right" valign="top"><a id="a089529d5d383bdb84fb4bde5b85b97d5" name="a089529d5d383bdb84fb4bde5b85b97d5"></a>
 Interactable&#160;</td><td class="memItemRight" valign="bottom"><b>_interactable</b></td></tr>
+<tr class="memdesc:a089529d5d383bdb84fb4bde5b85b97d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interactable behavior of the current object <br /></td></tr>
 <tr class="separator:a089529d5d383bdb84fb4bde5b85b97d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd4ee01d385b5a5bf347e68ec7fa015f"><td class="memItemLeft" align="right" valign="top"><a id="acd4ee01d385b5a5bf347e68ec7fa015f" name="acd4ee01d385b5a5bf347e68ec7fa015f"></a>
 MeshRenderer&#160;</td><td class="memItemRight" valign="bottom"><b>_meshRenderer</b></td></tr>
+<tr class="memdesc:acd4ee01d385b5a5bf347e68ec7fa015f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mesh renderer behavior of the current object <br /></td></tr>
 <tr class="separator:acd4ee01d385b5a5bf347e68ec7fa015f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa48e45f3e8cb2e4be518a8608717480b"><td class="memItemLeft" align="right" valign="top"><a id="aa48e45f3e8cb2e4be518a8608717480b" name="aa48e45f3e8cb2e4be518a8608717480b"></a>
 Collider&#160;</td><td class="memItemRight" valign="bottom"><b>_collider</b></td></tr>
+<tr class="memdesc:aa48e45f3e8cb2e4be518a8608717480b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The collider behavior of the current object <br /></td></tr>
 <tr class="separator:aa48e45f3e8cb2e4be518a8608717480b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c1e08852f197137c5df8e7db31cc6d5"><td class="memItemLeft" align="right" valign="top"><a id="a9c1e08852f197137c5df8e7db31cc6d5" name="a9c1e08852f197137c5df8e7db31cc6d5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>_isDoubleGrab</b></td></tr>
+<tr class="memdesc:a9c1e08852f197137c5df8e7db31cc6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Are both hands gripping <br /></td></tr>
 <tr class="separator:a9c1e08852f197137c5df8e7db31cc6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A script for resizing, rotating, and position an object, with single grip (position only) or double-grib (sizing, rotation) behavior. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a44ea761b9f922f92b13b2449713e960c" name="a44ea761b9f922f92b13b2449713e960c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44ea761b9f922f92b13b2449713e960c">&#9670;&nbsp;</a></span>HandHoverUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grabable.HandHoverUpdate </td>
+          <td>(</td>
+          <td class="paramtype">Hand&#160;</td>
+          <td class="paramname"><em>hand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the hand is currently hovering on the interactable object </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hand</td><td>The hand that is currently hovering</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aba886a3ff514b0c1815542419e69008a" name="aba886a3ff514b0c1815542419e69008a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba886a3ff514b0c1815542419e69008a">&#9670;&nbsp;</a></span>OnHandHoverBegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grabable.OnHandHoverBegin </td>
+          <td>(</td>
+          <td class="paramtype">Hand&#160;</td>
+          <td class="paramname"><em>hand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the hand has started hovering on the interactable </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hand</td><td>The hand that started hovering</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a03e485db7eeadf72c2ef34f3d3c6f8f7" name="a03e485db7eeadf72c2ef34f3d3c6f8f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e485db7eeadf72c2ef34f3d3c6f8f7">&#9670;&nbsp;</a></span>OnHandHoverEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Grabable.OnHandHoverEnd </td>
+          <td>(</td>
+          <td class="paramtype">Hand&#160;</td>
+          <td class="paramname"><em>hand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the hand has stopped hovering on the interactable and has been removed </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hand</td><td>The hand that was removed</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Assets/Grabable.cs</li>
 </ul>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hasfileinmemorybeenmodified_0',['HasFileInMemoryBeenModified',['../class_valve_1_1_v_r_1_1_steam_v_r___input.html#a7dcd55f6d1d832f6bff18860868d70ba',1,'Valve::VR::SteamVR_Input']]]
+  ['initializevisualization_0',['InitializeVisualization',['../class_hydrogen_atom.html#ab150db1639952e2a1c1caaab98934d79',1,'HydrogenAtom']]]
 ];

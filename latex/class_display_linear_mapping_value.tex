@@ -1,5 +1,10 @@
 \hypertarget{class_display_linear_mapping_value}{}\doxysection{Display\+Linear\+Mapping\+Value Class Reference}
 \label{class_display_linear_mapping_value}\index{DisplayLinearMappingValue@{DisplayLinearMappingValue}}
+
+
+Updates the object text given a value from 0 to 1, to a new range.  
+
+
 Inheritance diagram for Display\+Linear\+Mapping\+Value\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,45 +14,76 @@ Inheritance diagram for Display\+Linear\+Mapping\+Value\+:\begin{figure}[H]
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_display_linear_mapping_value_a6b4ae25fada0c42ccaa036e36af0b2bb}\label{class_display_linear_mapping_value_a6b4ae25fada0c42ccaa036e36af0b2bb}} 
-static float {\bfseries Map} (float value, float from1, float to1, float from2, float to2)
-\end{DoxyCompactItemize}
+static float \mbox{\hyperlink{class_display_linear_mapping_value_a6b4ae25fada0c42ccaa036e36af0b2bb}{Map}} (float value, float from1, float to1, float from2, float to2)
+\begin{DoxyCompactList}\small\item\em Linearlly map a value from one range to another \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_display_linear_mapping_value_a34262737aa63cad7ba325cc55c381971}\label{class_display_linear_mapping_value_a34262737aa63cad7ba325cc55c381971}} 
 float {\bfseries out\+Value}
-\item 
+\begin{DoxyCompactList}\small\item\em The converted value using the new range \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_display_linear_mapping_value_a86297958759f3ecf3ccba2b39aee148b}\label{class_display_linear_mapping_value_a86297958759f3ecf3ccba2b39aee148b}} 
 bool {\bfseries map\+Range}
-\item 
+\begin{DoxyCompactList}\small\item\em Should the range be mapped, if false, the original range i sued \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_display_linear_mapping_value_a356aa2babd4285cddc6cc2904de7f126}\label{class_display_linear_mapping_value_a356aa2babd4285cddc6cc2904de7f126}} 
 bool {\bfseries to\+Integer}
-\item 
+\begin{DoxyCompactList}\small\item\em Convert the float value to an integer \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_display_linear_mapping_value_a64bc0bd73f4feadd32aa79e2d8b66453}\label{class_display_linear_mapping_value_a64bc0bd73f4feadd32aa79e2d8b66453}} 
 Vector2 {\bfseries map\+Out}
-\item 
+\begin{DoxyCompactList}\small\item\em The new range to map the value to (minimum, maximum) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_display_linear_mapping_value_a81502086a937b1ca2fcca42abb2a4a9d}\label{class_display_linear_mapping_value_a81502086a937b1ca2fcca42abb2a4a9d}} 
 \mbox{\hyperlink{class_float_event}{Float\+Event}} {\bfseries On\+Value\+Changed}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The action to call when the value has changed \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_display_linear_mapping_value_af951903c865b75e42978fe6db56af6df}\label{class_display_linear_mapping_value_af951903c865b75e42978fe6db56af6df}} 
 void {\bfseries Start} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Unity function\+: \mbox{\hyperlink{class_display_linear_mapping_value_af951903c865b75e42978fe6db56af6df}{Start()}} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_display_linear_mapping_value_acd5adb77949f164924d8b59173b7830f}\label{class_display_linear_mapping_value_acd5adb77949f164924d8b59173b7830f}} 
 void {\bfseries Update} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Unity function\+: \mbox{\hyperlink{class_display_linear_mapping_value_acd5adb77949f164924d8b59173b7830f}{Update()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_display_linear_mapping_value_a5211b14a55281d074c7d831ea4859bb2}\label{class_display_linear_mapping_value_a5211b14a55281d074c7d831ea4859bb2}} 
 Text\+Mesh\+Pro {\bfseries text}
-\item 
+\begin{DoxyCompactList}\small\item\em The text behavior to update \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_display_linear_mapping_value_a569f9352127a92153989fa9bffad51e9}\label{class_display_linear_mapping_value_a569f9352127a92153989fa9bffad51e9}} 
 float {\bfseries old\+Value}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The last value \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Updates the object text given a value from 0 to 1, to a new range. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_display_linear_mapping_value_a6b4ae25fada0c42ccaa036e36af0b2bb}\label{class_display_linear_mapping_value_a6b4ae25fada0c42ccaa036e36af0b2bb}} 
+\index{DisplayLinearMappingValue@{DisplayLinearMappingValue}!Map@{Map}}
+\index{Map@{Map}!DisplayLinearMappingValue@{DisplayLinearMappingValue}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}}
+{\footnotesize\ttfamily static float Display\+Linear\+Mapping\+Value.\+Map (\begin{DoxyParamCaption}\item[{float}]{value,  }\item[{float}]{from1,  }\item[{float}]{to1,  }\item[{float}]{from2,  }\item[{float}]{to2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Linearlly map a value from one range to another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The old value to map onto the new scale\\
+\hline
+{\em from1} & The old range minimum value\\
+\hline
+{\em to1} & The old range maximum value\\
+\hline
+{\em from2} & The new range minimum value\\
+\hline
+{\em to2} & The new range maximum value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

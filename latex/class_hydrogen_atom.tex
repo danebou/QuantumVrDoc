@@ -1,5 +1,10 @@
 \hypertarget{class_hydrogen_atom}{}\doxysection{Hydrogen\+Atom Class Reference}
 \label{class_hydrogen_atom}\index{HydrogenAtom@{HydrogenAtom}}
+
+
+The Unity gameobject behavior controlling and representing the atom simulation  
+
+
 Inheritance diagram for Hydrogen\+Atom\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,172 +15,307 @@ Inheritance diagram for Hydrogen\+Atom\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_hydrogen_atom_1_1atom_state}{atom\+State}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A struct used to save the initial state of the atom See associated \mbox{\hyperlink{class_hydrogen_atom}{Hydrogen\+Atom}} properties for a description. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_hydrogen_atom_a99372be0e732a8baca2077724388b450}\label{class_hydrogen_atom_a99372be0e732a8baca2077724388b450}} 
 void {\bfseries Start} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Unity function\+: \mbox{\hyperlink{class_hydrogen_atom_a99372be0e732a8baca2077724388b450}{Start()}} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_af984d6cdee2c229f9a8cc5f7ac80d48f}\label{class_hydrogen_atom_af984d6cdee2c229f9a8cc5f7ac80d48f}} 
 void {\bfseries Setup} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Set up the atom simulation and visualizations \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a9e201392ff57f97ac2df18ece16e9211}\label{class_hydrogen_atom_a9e201392ff57f97ac2df18ece16e9211}} 
 void {\bfseries Step} ()
-\item 
-\mbox{\Hypertarget{class_hydrogen_atom_a15b5dfb5276c44be6a5bff4e1917eedf}\label{class_hydrogen_atom_a15b5dfb5276c44be6a5bff4e1917eedf}} 
-void {\bfseries Set\+Measurement} (bool hit, double gamma, Unity\+Engine.\+Vector3 m\+Position, bool force\+Measurement=false)
-\item 
-\mbox{\Hypertarget{class_hydrogen_atom_a0296fbca441f44f0c3d5db2ff1ace815}\label{class_hydrogen_atom_a0296fbca441f44f0c3d5db2ff1ace815}} 
-void {\bfseries Set\+Paused} (bool new\+State)
-\item 
-\mbox{\Hypertarget{class_hydrogen_atom_aa15b18f000cf0a62340bda0b6704216b}\label{class_hydrogen_atom_aa15b18f000cf0a62340bda0b6704216b}} 
-void {\bfseries Set\+Phase\+Visualization} (bool new\+State)
-\item 
-\mbox{\Hypertarget{class_hydrogen_atom_a1dea8ea4e37bb798d4bbd9d93f62814f}\label{class_hydrogen_atom_a1dea8ea4e37bb798d4bbd9d93f62814f}} 
-void {\bfseries Set\+Gamma\+Decay} (float new\+Value)
-\item 
-\mbox{\Hypertarget{class_hydrogen_atom_a88b67961ea0e5d42a1d0f343419ab94d}\label{class_hydrogen_atom_a88b67961ea0e5d42a1d0f343419ab94d}} 
-void {\bfseries Set\+Measurement\+Gamma} (float new\+Value)
-\item 
-\mbox{\Hypertarget{class_hydrogen_atom_aa1a5102747bad06bb1e8f7bbdb76e203}\label{class_hydrogen_atom_aa1a5102747bad06bb1e8f7bbdb76e203}} 
-void {\bfseries Set\+Simulation\+Time\+Dilation} (float new\+Value)
-\item 
-\mbox{\Hypertarget{class_hydrogen_atom_ae3d98e2e1c1a85a048b7a0cf6a6016ad}\label{class_hydrogen_atom_ae3d98e2e1c1a85a048b7a0cf6a6016ad}} 
-void {\bfseries Set\+Energy\+Level} (float level)
-\item 
-\mbox{\Hypertarget{class_hydrogen_atom_aec9791e8a6c4b7a3b54f2ba4103b6fe8}\label{class_hydrogen_atom_aec9791e8a6c4b7a3b54f2ba4103b6fe8}} 
-void {\bfseries Set\+Energy\+Level} (int level)
-\item 
+\begin{DoxyCompactList}\small\item\em Performs a single timestep and stores the results. This function will do nothing if the paused variable is true \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hydrogen_atom_a15b5dfb5276c44be6a5bff4e1917eedf}{Set\+Measurement}} (bool hit, double gamma, Unity\+Engine.\+Vector3 m\+Position, bool force\+Measurement=false)
+\begin{DoxyCompactList}\small\item\em Set the atom measurement state (enable/disable, position, and force successful) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hydrogen_atom_a0296fbca441f44f0c3d5db2ff1ace815}{Set\+Paused}} (bool new\+State)
+\begin{DoxyCompactList}\small\item\em Set the simulation paused property. See associated property for details \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hydrogen_atom_aa15b18f000cf0a62340bda0b6704216b}{Set\+Phase\+Visualization}} (bool new\+State)
+\begin{DoxyCompactList}\small\item\em Set the simulation phase visualization property. See associated property for details \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hydrogen_atom_a1dea8ea4e37bb798d4bbd9d93f62814f}{Set\+Gamma\+Decay}} (float new\+Value)
+\begin{DoxyCompactList}\small\item\em Set the simulation gamma decay. See associated property for details \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hydrogen_atom_a88b67961ea0e5d42a1d0f343419ab94d}{Set\+Measurement\+Gamma}} (float new\+Value)
+\begin{DoxyCompactList}\small\item\em Set the simulation measurement property. See associated property for details \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hydrogen_atom_aa1a5102747bad06bb1e8f7bbdb76e203}{Set\+Simulation\+Time\+Dilation}} (float new\+Value)
+\begin{DoxyCompactList}\small\item\em Set the simulation time dilation property. See associated property for details \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hydrogen_atom_ae3d98e2e1c1a85a048b7a0cf6a6016ad}{Set\+Energy\+Level}} (float level)
+\begin{DoxyCompactList}\small\item\em Set the energy level (given a float parameter) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hydrogen_atom_aec9791e8a6c4b7a3b54f2ba4103b6fe8}{Set\+Energy\+Level}} (int level)
+\begin{DoxyCompactList}\small\item\em Set the current energy level \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a8ad94dde58e4b89ae090ae27f181f49a}\label{class_hydrogen_atom_a8ad94dde58e4b89ae090ae27f181f49a}} 
 void {\bfseries Reset\+Atom} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Resets the atom back to its original state \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_hydrogen_atom_a984aa2544b94b91753d1059ba3eebdfa}\label{class_hydrogen_atom_a984aa2544b94b91753d1059ba3eebdfa}} 
 float {\bfseries evolution\+Time\+Scaling} = 1
-\item 
+\begin{DoxyCompactList}\small\item\em The ratio of real time to simulation time \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_ad6b350f9eae4f6aa378e72abec8898ee}\label{class_hydrogen_atom_ad6b350f9eae4f6aa378e72abec8898ee}} 
 bool {\bfseries paused}
-\item 
+\begin{DoxyCompactList}\small\item\em Is the simulatin currently paused \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_aa7748fb0821e3d3752c8b1adad26896d}\label{class_hydrogen_atom_aa7748fb0821e3d3752c8b1adad26896d}} 
 double {\bfseries dt} =0.\+1
-\item 
-\mbox{\Hypertarget{class_hydrogen_atom_a48521c65dadb5ed2f847263708431de5}\label{class_hydrogen_atom_a48521c65dadb5ed2f847263708431de5}} 
-Game\+Object {\bfseries voxel\+Prefab}
-\item 
+\begin{DoxyCompactList}\small\item\em The Time step for atom simulation time evolution. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a9945894106332df1ff5c1c6b76a8c0f5}\label{class_hydrogen_atom_a9945894106332df1ff5c1c6b76a8c0f5}} 
 bool {\bfseries phase\+Visualization} = false
-\item 
+\begin{DoxyCompactList}\small\item\em When true, shows phase visualization instead of probability \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a9d6e6e37fb2747865e82e3bd84b65165}\label{class_hydrogen_atom_a9d6e6e37fb2747865e82e3bd84b65165}} 
 bool {\bfseries debug\+Messages} = false
-\item 
+\begin{DoxyCompactList}\small\item\em Are debug messages enabled (warning, this might super-\/lag the unity editor if running to quickly) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a6d3c2b7b298bd7b1973d4b012be08b68}\label{class_hydrogen_atom_a6d3c2b7b298bd7b1973d4b012be08b68}} 
 int {\bfseries set\+Energy\+Level} = -\/1
-\item 
+\begin{DoxyCompactList}\small\item\em When not set to -\/1, will set the energy level to specified value, then go back to -\/1. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a0b148a4f6f394f66bd341947429afff9}\label{class_hydrogen_atom_a0b148a4f6f394f66bd341947429afff9}} 
 int {\bfseries most\+Probable\+Energy\+Level} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em The current most probabable energy level (read-\/only) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_aaad362b2f9be1c5fa7fad820a1f3bcad}\label{class_hydrogen_atom_aaad362b2f9be1c5fa7fad820a1f3bcad}} 
 bool {\bfseries is\+Measuring} = false
-\item 
+\begin{DoxyCompactList}\small\item\em Are measurements currently enabled \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a8676b6725daa925d3829ea6e19cc97c9}\label{class_hydrogen_atom_a8676b6725daa925d3829ea6e19cc97c9}} 
 bool {\bfseries Force\+Measurement} = false
-\item 
+\begin{DoxyCompactList}\small\item\em When true, will always force successful measurements \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_ac91db6dfe405708ffd4f85f4596905cd}\label{class_hydrogen_atom_ac91db6dfe405708ffd4f85f4596905cd}} 
 Unity\+Engine.\+Vector3 {\bfseries measurement\+Location} = new Unity\+Engine.\+Vector3(0, 0, 0.\+5f)
-\item 
+\begin{DoxyCompactList}\small\item\em The location measurements are made \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_aab82aa796a7b04f9a85fae1a0897151c}\label{class_hydrogen_atom_aab82aa796a7b04f9a85fae1a0897151c}} 
 float {\bfseries measurement\+Gamma} = 1.\+0f
-\item 
+\begin{DoxyCompactList}\small\item\em The measurement gamma, roughly the measurement \char`\"{}strength\char`\"{} (Must be smaller or equal to 1.\+0). \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a264dd872a49d1a46ac05ca8cdc5f38f7}\label{class_hydrogen_atom_a264dd872a49d1a46ac05ca8cdc5f38f7}} 
 bool {\bfseries outcome\+Of\+Last\+Measurement} = false
-\item 
+\begin{DoxyCompactList}\small\item\em The outcome (successful = true) of the last measurement \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a6a83c6906d0cbbc35e5392efd06d626c}\label{class_hydrogen_atom_a6a83c6906d0cbbc35e5392efd06d626c}} 
 bool {\bfseries Pause\+After\+Successful\+Measurement} = false
-\item 
+\begin{DoxyCompactList}\small\item\em If true, the simulation will pause after a successful measurement \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_af205e89045e398b42fecbf917ecfa4b6}\label{class_hydrogen_atom_af205e89045e398b42fecbf917ecfa4b6}} 
 bool {\bfseries Rotate\+Through\+States}
-\item 
+\begin{DoxyCompactList}\small\item\em When set to true, animate through the first few energy level states \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a73d7937333eebdc3f2eeb890e62c8770}\label{class_hydrogen_atom_a73d7937333eebdc3f2eeb890e62c8770}} 
 Transform {\bfseries Cutout\+Start}
-\item 
+\begin{DoxyCompactList}\small\item\em The transform represent the cutout plane (rotation and position) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a1875cc155839f022bd208f310e4df761}\label{class_hydrogen_atom_a1875cc155839f022bd208f310e4df761}} 
 bool {\bfseries Is\+Cutout\+Enabled}
-\item 
+\begin{DoxyCompactList}\small\item\em Are cutouts enabled \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a1c9736c57679d856e08d3da8d912d73c}\label{class_hydrogen_atom_a1c9736c57679d856e08d3da8d912d73c}} 
 float {\bfseries Max\+Probability} = 0
-\item 
+\begin{DoxyCompactList}\small\item\em The most probable voxel\textquotesingle{}s probability (read only) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a9962ccc0a0216e8348740c910747e9cb}\label{class_hydrogen_atom_a9962ccc0a0216e8348740c910747e9cb}} 
 Game\+Object {\bfseries Probability\+Scale\+Object}
-\item 
+\begin{DoxyCompactList}\small\item\em The probability scale object for the simulation to control \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_aaee8d1689cf8869bb25cfd47e5eb965c}\label{class_hydrogen_atom_aaee8d1689cf8869bb25cfd47e5eb965c}} 
 Game\+Object {\bfseries Phase\+Scale\+Object}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The phase scale object for the simulation to control \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_hydrogen_atom_a664cb21050b98c45a91ff1e43f075d56}\label{class_hydrogen_atom_a664cb21050b98c45a91ff1e43f075d56}} 
 void {\bfseries Create\+Gradient} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Setup and create the atom probability color gradient \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_ab150db1639952e2a1c1caaab98934d79}\label{class_hydrogen_atom_ab150db1639952e2a1c1caaab98934d79}} 
 void {\bfseries Initialize\+Visualization} ()
-\item 
-\mbox{\Hypertarget{class_hydrogen_atom_a1c2c826fd86518fb40b361870ba61495}\label{class_hydrogen_atom_a1c2c826fd86518fb40b361870ba61495}} 
-void {\bfseries Update\+Visualization} (Vector$<$ double $>$ p\+\_\+grid, Vector$<$ Complex $>$ psi\+Grid, Vector$<$ double $>$ p\+\_\+basis, bool measurement\+Success)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Initialize the atom visualizations \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hydrogen_atom_a1c2c826fd86518fb40b361870ba61495}{Update\+Visualization}} (Vector$<$ double $>$ p\+\_\+grid, Vector$<$ Complex $>$ psi\+Grid, Vector$<$ double $>$ p\+\_\+basis, bool measurement\+Success)
+\begin{DoxyCompactList}\small\item\em Update the atom visualization \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_hydrogen_atom_af1f700b2ed1c522e0d5a5027a8df3404}\label{class_hydrogen_atom_af1f700b2ed1c522e0d5a5027a8df3404}} 
 \mbox{\hyperlink{struct_hydrogen_atom_1_1atom_state}{atom\+State}} {\bfseries start\+State}
-\item 
+\begin{DoxyCompactList}\small\item\em The atom starting state \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a22c9dda7aa9f5356b7a1bf3ba211f46c}\label{class_hydrogen_atom_a22c9dda7aa9f5356b7a1bf3ba211f46c}} 
 string {\bfseries Basis\+Vectors} = \char`\"{}\char`\"{}
-\item 
+\begin{DoxyCompactList}\small\item\em A basis vector debug output (readonly) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_af0cedfc66566fcb9b3f7ead6777473d4}\label{class_hydrogen_atom_af0cedfc66566fcb9b3f7ead6777473d4}} 
 Gradient {\bfseries gradient}
-\item 
+\begin{DoxyCompactList}\small\item\em The probability color gradient \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_af5e32495f311fe730ee66e4a7d14fc92}\label{class_hydrogen_atom_af5e32495f311fe730ee66e4a7d14fc92}} 
 Gradient\+Color\+Key\mbox{[}$\,$\mbox{]} {\bfseries color\+Key}
-\item 
+\begin{DoxyCompactList}\small\item\em Probability color gradient color keys \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a01839f663b9925e344c6612788d7fe2d}\label{class_hydrogen_atom_a01839f663b9925e344c6612788d7fe2d}} 
 Gradient\+Alpha\+Key\mbox{[}$\,$\mbox{]} {\bfseries alpha\+Key}
-\item 
+\begin{DoxyCompactList}\small\item\em Probability color gradient alpha keys \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_af0d612c435fe96e5a313a8f3e6035895}\label{class_hydrogen_atom_af0d612c435fe96e5a313a8f3e6035895}} 
 Texture3D {\bfseries texture}
-\item 
+\begin{DoxyCompactList}\small\item\em The 3D atom texture (each represents an atom voxel color for the shader) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_ad230d65c61ed05e9560e76fd17f7dbeb}\label{class_hydrogen_atom_ad230d65c61ed05e9560e76fd17f7dbeb}} 
 Color\mbox{[}$\,$\mbox{]} {\bfseries texture\+Colors}
-\item 
+\begin{DoxyCompactList}\small\item\em The atom voxels colors used in the 3D texture \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_ab295c71179a50956ba58baf362ba4736}\label{class_hydrogen_atom_ab295c71179a50956ba58baf362ba4736}} 
 Unity\+Engine.\+Vector3\mbox{[}$\,$\mbox{]} {\bfseries atom\+To\+Pos}
-\item 
+\begin{DoxyCompactList}\small\item\em An array converting the atom sim voxel index, to the Unity 3D object coordinate position \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a3eb591ff616fd60fa4eb2cfb496e50a5}\label{class_hydrogen_atom_a3eb591ff616fd60fa4eb2cfb496e50a5}} 
 int\mbox{[}$\,$\mbox{]} {\bfseries atom\+To\+Texture\+Color\+Index}
-\item 
+\begin{DoxyCompactList}\small\item\em An array converting the atom sim voxel index, to the texture\+Color index \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a1ee68fc98752b0cb1eca2b5fbba9f0b8}\label{class_hydrogen_atom_a1ee68fc98752b0cb1eca2b5fbba9f0b8}} 
 float {\bfseries voxel\+Size}
-\item 
+\begin{DoxyCompactList}\small\item\em The size (in game object coordiantes) of a voxel \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a5f2b1f5300f6ad614f53d68c8aa6ff6b}\label{class_hydrogen_atom_a5f2b1f5300f6ad614f53d68c8aa6ff6b}} 
 Renderer {\bfseries nucleus\+Renderer}
-\item 
-\mbox{\Hypertarget{class_hydrogen_atom_a9001cc38f815e24c8d2850eaf49e45f2}\label{class_hydrogen_atom_a9001cc38f815e24c8d2850eaf49e45f2}} 
-Game\+Object\mbox{[}$\,$\mbox{]} {\bfseries voxel\+Visualizations}
-\item 
-\mbox{\Hypertarget{class_hydrogen_atom_a7c01ca7ccd8a6211793d0b84c0846b40}\label{class_hydrogen_atom_a7c01ca7ccd8a6211793d0b84c0846b40}} 
-Renderer\mbox{[}$\,$\mbox{]} {\bfseries voxel\+Visualizations\+Renders}
-\item 
+\begin{DoxyCompactList}\small\item\em The renderer for the nucleus object \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a18340f2576772d3c8b10465ea5da76a4}\label{class_hydrogen_atom_a18340f2576772d3c8b10465ea5da76a4}} 
 \mbox{\hyperlink{class_atom_sim_controller}{Atom\+Sim\+Controller}} {\bfseries \+\_\+sim\+Controller}
-\item 
+\begin{DoxyCompactList}\small\item\em The atom simulation controller \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a650345d431246ec6c038bdf4e466b64a}\label{class_hydrogen_atom_a650345d431246ec6c038bdf4e466b64a}} 
 \mbox{\hyperlink{classvr__hydrogen__backend_1_1_atom_sim}{Atom\+Sim}} {\bfseries \+\_\+sim}
-\item 
+\begin{DoxyCompactList}\small\item\em The raw atom simulation \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hydrogen_atom_a1da704ed87c58ec3e2b5f4a90e90d5ef}\label{class_hydrogen_atom_a1da704ed87c58ec3e2b5f4a90e90d5ef}} 
 float {\bfseries \+\_\+time\+Of\+Last\+Rotation}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Time the last energy level was changed (for energy level rotation animation) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Unity gameobject behavior controlling and representing the atom simulation 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hydrogen_atom_ae3d98e2e1c1a85a048b7a0cf6a6016ad}\label{class_hydrogen_atom_ae3d98e2e1c1a85a048b7a0cf6a6016ad}} 
+\index{HydrogenAtom@{HydrogenAtom}!SetEnergyLevel@{SetEnergyLevel}}
+\index{SetEnergyLevel@{SetEnergyLevel}!HydrogenAtom@{HydrogenAtom}}
+\doxysubsubsection{\texorpdfstring{SetEnergyLevel()}{SetEnergyLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Hydrogen\+Atom.\+Set\+Energy\+Level (\begin{DoxyParamCaption}\item[{float}]{level }\end{DoxyParamCaption})}
+
+
+
+Set the energy level (given a float parameter) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The level to set as a float. It will be truncated to an integer.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hydrogen_atom_aec9791e8a6c4b7a3b54f2ba4103b6fe8}\label{class_hydrogen_atom_aec9791e8a6c4b7a3b54f2ba4103b6fe8}} 
+\index{HydrogenAtom@{HydrogenAtom}!SetEnergyLevel@{SetEnergyLevel}}
+\index{SetEnergyLevel@{SetEnergyLevel}!HydrogenAtom@{HydrogenAtom}}
+\doxysubsubsection{\texorpdfstring{SetEnergyLevel()}{SetEnergyLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Hydrogen\+Atom.\+Set\+Energy\+Level (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption})}
+
+
+
+Set the current energy level 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The energy level to set to (0 to the maximum energy level)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hydrogen_atom_a1dea8ea4e37bb798d4bbd9d93f62814f}\label{class_hydrogen_atom_a1dea8ea4e37bb798d4bbd9d93f62814f}} 
+\index{HydrogenAtom@{HydrogenAtom}!SetGammaDecay@{SetGammaDecay}}
+\index{SetGammaDecay@{SetGammaDecay}!HydrogenAtom@{HydrogenAtom}}
+\doxysubsubsection{\texorpdfstring{SetGammaDecay()}{SetGammaDecay()}}
+{\footnotesize\ttfamily void Hydrogen\+Atom.\+Set\+Gamma\+Decay (\begin{DoxyParamCaption}\item[{float}]{new\+Value }\end{DoxyParamCaption})}
+
+
+
+Set the simulation gamma decay. See associated property for details 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Value} & The new value\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hydrogen_atom_a15b5dfb5276c44be6a5bff4e1917eedf}\label{class_hydrogen_atom_a15b5dfb5276c44be6a5bff4e1917eedf}} 
+\index{HydrogenAtom@{HydrogenAtom}!SetMeasurement@{SetMeasurement}}
+\index{SetMeasurement@{SetMeasurement}!HydrogenAtom@{HydrogenAtom}}
+\doxysubsubsection{\texorpdfstring{SetMeasurement()}{SetMeasurement()}}
+{\footnotesize\ttfamily void Hydrogen\+Atom.\+Set\+Measurement (\begin{DoxyParamCaption}\item[{bool}]{hit,  }\item[{double}]{gamma,  }\item[{Unity\+Engine.\+Vector3}]{m\+Position,  }\item[{bool}]{force\+Measurement = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Set the atom measurement state (enable/disable, position, and force successful) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hit} & Set to true to enable measurements, false to disable measurements\\
+\hline
+{\em gamma} & The gamma value (measurement strength). Must be less than 1\\
+\hline
+{\em m\+Position} & The position of the measurement\\
+\hline
+{\em force\+Measurement} & Set to true if successful measurements should be forced\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hydrogen_atom_a88b67961ea0e5d42a1d0f343419ab94d}\label{class_hydrogen_atom_a88b67961ea0e5d42a1d0f343419ab94d}} 
+\index{HydrogenAtom@{HydrogenAtom}!SetMeasurementGamma@{SetMeasurementGamma}}
+\index{SetMeasurementGamma@{SetMeasurementGamma}!HydrogenAtom@{HydrogenAtom}}
+\doxysubsubsection{\texorpdfstring{SetMeasurementGamma()}{SetMeasurementGamma()}}
+{\footnotesize\ttfamily void Hydrogen\+Atom.\+Set\+Measurement\+Gamma (\begin{DoxyParamCaption}\item[{float}]{new\+Value }\end{DoxyParamCaption})}
+
+
+
+Set the simulation measurement property. See associated property for details 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Value} & The new value\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hydrogen_atom_a0296fbca441f44f0c3d5db2ff1ace815}\label{class_hydrogen_atom_a0296fbca441f44f0c3d5db2ff1ace815}} 
+\index{HydrogenAtom@{HydrogenAtom}!SetPaused@{SetPaused}}
+\index{SetPaused@{SetPaused}!HydrogenAtom@{HydrogenAtom}}
+\doxysubsubsection{\texorpdfstring{SetPaused()}{SetPaused()}}
+{\footnotesize\ttfamily void Hydrogen\+Atom.\+Set\+Paused (\begin{DoxyParamCaption}\item[{bool}]{new\+State }\end{DoxyParamCaption})}
+
+
+
+Set the simulation paused property. See associated property for details 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Value} & The new value\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hydrogen_atom_aa15b18f000cf0a62340bda0b6704216b}\label{class_hydrogen_atom_aa15b18f000cf0a62340bda0b6704216b}} 
+\index{HydrogenAtom@{HydrogenAtom}!SetPhaseVisualization@{SetPhaseVisualization}}
+\index{SetPhaseVisualization@{SetPhaseVisualization}!HydrogenAtom@{HydrogenAtom}}
+\doxysubsubsection{\texorpdfstring{SetPhaseVisualization()}{SetPhaseVisualization()}}
+{\footnotesize\ttfamily void Hydrogen\+Atom.\+Set\+Phase\+Visualization (\begin{DoxyParamCaption}\item[{bool}]{new\+State }\end{DoxyParamCaption})}
+
+
+
+Set the simulation phase visualization property. See associated property for details 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Value} & The new value\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hydrogen_atom_aa1a5102747bad06bb1e8f7bbdb76e203}\label{class_hydrogen_atom_aa1a5102747bad06bb1e8f7bbdb76e203}} 
+\index{HydrogenAtom@{HydrogenAtom}!SetSimulationTimeDilation@{SetSimulationTimeDilation}}
+\index{SetSimulationTimeDilation@{SetSimulationTimeDilation}!HydrogenAtom@{HydrogenAtom}}
+\doxysubsubsection{\texorpdfstring{SetSimulationTimeDilation()}{SetSimulationTimeDilation()}}
+{\footnotesize\ttfamily void Hydrogen\+Atom.\+Set\+Simulation\+Time\+Dilation (\begin{DoxyParamCaption}\item[{float}]{new\+Value }\end{DoxyParamCaption})}
+
+
+
+Set the simulation time dilation property. See associated property for details 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Value} & The new value\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hydrogen_atom_a1c2c826fd86518fb40b361870ba61495}\label{class_hydrogen_atom_a1c2c826fd86518fb40b361870ba61495}} 
+\index{HydrogenAtom@{HydrogenAtom}!UpdateVisualization@{UpdateVisualization}}
+\index{UpdateVisualization@{UpdateVisualization}!HydrogenAtom@{HydrogenAtom}}
+\doxysubsubsection{\texorpdfstring{UpdateVisualization()}{UpdateVisualization()}}
+{\footnotesize\ttfamily void Hydrogen\+Atom.\+Update\+Visualization (\begin{DoxyParamCaption}\item[{Vector$<$ double $>$}]{p\+\_\+grid,  }\item[{Vector$<$ Complex $>$}]{psi\+Grid,  }\item[{Vector$<$ double $>$}]{p\+\_\+basis,  }\item[{bool}]{measurement\+Success }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update the atom visualization 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+grid} & New p\+\_\+grid atom simulation. (see controller from details)\\
+\hline
+{\em psi\+Grid} & New psi\+Grid atom simulation. (see controller from details)\\
+\hline
+{\em p\+\_\+basis} & New p\+\_\+basis atom simulation. (see controller from details)\\
+\hline
+{\em measurement\+Success} & Was the last measurement successful\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

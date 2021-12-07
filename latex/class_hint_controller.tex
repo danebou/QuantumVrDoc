@@ -1,5 +1,10 @@
 \hypertarget{class_hint_controller}{}\doxysection{Hint\+Controller Class Reference}
 \label{class_hint_controller}\index{HintController@{HintController}}
+
+
+Controls hints to show the user various buttons to press  
+
+
 Inheritance diagram for Hint\+Controller\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,33 +14,73 @@ Inheritance diagram for Hint\+Controller\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_hint_controller_a83303c8825d03e107c30c085bf409651}\label{class_hint_controller_a83303c8825d03e107c30c085bf409651}} 
-void {\bfseries Show\+Button\+Hint} (Hand hand, int action\+Index)
-\item 
-\mbox{\Hypertarget{class_hint_controller_a7c0d789d682ec2b0fbc9fc80cfd39758}\label{class_hint_controller_a7c0d789d682ec2b0fbc9fc80cfd39758}} 
-void {\bfseries Show\+Text\+Hints} (Hand hand, int action\+Index, string display\+String)
-\item 
+void \mbox{\hyperlink{class_hint_controller_a83303c8825d03e107c30c085bf409651}{Show\+Button\+Hint}} (Hand hand, int action\+Index)
+\begin{DoxyCompactList}\small\item\em Shows a button hint \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hint_controller_a7c0d789d682ec2b0fbc9fc80cfd39758}{Show\+Text\+Hints}} (Hand hand, int action\+Index, string display\+String)
+\begin{DoxyCompactList}\small\item\em Shows text hints \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hint_controller_ae73ec845e6ecb511b3ca2ba34d7dd956}\label{class_hint_controller_ae73ec845e6ecb511b3ca2ba34d7dd956}} 
 void {\bfseries Disable\+Hints} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Disables all currently shown hints \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_hint_controller_a79fc0fbccc9b772ca91b438c26816884}\label{class_hint_controller_a79fc0fbccc9b772ca91b438c26816884}} 
 IEnumerator {\bfseries Button\+Hint} (Hand hand, int action\+Index)
-\item 
+\begin{DoxyCompactList}\small\item\em The button hint Coroutine function \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hint_controller_a07494c43cef9f6fd7eb7c49755c1e9e9}\label{class_hint_controller_a07494c43cef9f6fd7eb7c49755c1e9e9}} 
 IEnumerator {\bfseries Test\+Text\+Hints} (Hand hand, int action\+Index, string display\+String)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The Text hint Coroutine function \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_hint_controller_a7b34d5d82e9f0dc148d02bba6d3ec900}\label{class_hint_controller_a7b34d5d82e9f0dc148d02bba6d3ec900}} 
 Coroutine {\bfseries button\+Hint\+Coroutine}
-\item 
+\begin{DoxyCompactList}\small\item\em The corountine that controls button hints \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_hint_controller_a436f5883de519282ad38c282ba96a0cb}\label{class_hint_controller_a436f5883de519282ad38c282ba96a0cb}} 
 Coroutine {\bfseries text\+Hint\+Coroutine}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The text that controls hint text \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controls hints to show the user various buttons to press 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hint_controller_a83303c8825d03e107c30c085bf409651}\label{class_hint_controller_a83303c8825d03e107c30c085bf409651}} 
+\index{HintController@{HintController}!ShowButtonHint@{ShowButtonHint}}
+\index{ShowButtonHint@{ShowButtonHint}!HintController@{HintController}}
+\doxysubsubsection{\texorpdfstring{ShowButtonHint()}{ShowButtonHint()}}
+{\footnotesize\ttfamily void Hint\+Controller.\+Show\+Button\+Hint (\begin{DoxyParamCaption}\item[{Hand}]{hand,  }\item[{int}]{action\+Index }\end{DoxyParamCaption})}
+
+
+
+Shows a button hint 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hand} & The hand to show the button hint\\
+\hline
+{\em action\+Index} & The index of the action to show the hint on\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hint_controller_a7c0d789d682ec2b0fbc9fc80cfd39758}\label{class_hint_controller_a7c0d789d682ec2b0fbc9fc80cfd39758}} 
+\index{HintController@{HintController}!ShowTextHints@{ShowTextHints}}
+\index{ShowTextHints@{ShowTextHints}!HintController@{HintController}}
+\doxysubsubsection{\texorpdfstring{ShowTextHints()}{ShowTextHints()}}
+{\footnotesize\ttfamily void Hint\+Controller.\+Show\+Text\+Hints (\begin{DoxyParamCaption}\item[{Hand}]{hand,  }\item[{int}]{action\+Index,  }\item[{string}]{display\+String }\end{DoxyParamCaption})}
+
+
+
+Shows text hints 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hand} & The hand to show the hint on\\
+\hline
+{\em action\+Index} & The index of the action to show the hint on\\
+\hline
+{\em display\+String} & The hint text to show\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

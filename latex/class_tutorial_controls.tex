@@ -1,5 +1,10 @@
 \hypertarget{class_tutorial_controls}{}\doxysection{Tutorial\+Controls Class Reference}
 \label{class_tutorial_controls}\index{TutorialControls@{TutorialControls}}
+
+
+Controls the tutorial  
+
+
 Inheritance diagram for Tutorial\+Controls\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,60 +14,94 @@ Inheritance diagram for Tutorial\+Controls\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_tutorial_controls_a34f224655e954278a83c98a2ab776e45}\label{class_tutorial_controls_a34f224655e954278a83c98a2ab776e45}} 
-void {\bfseries Play\+Chapter} (int ch)
-\item 
+void \mbox{\hyperlink{class_tutorial_controls_a34f224655e954278a83c98a2ab776e45}{Play\+Chapter}} (int ch)
+\begin{DoxyCompactList}\small\item\em Play a chapter \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_tutorial_controls_a572e7c8f2ed50d965e6e39f21b9bf7c5}\label{class_tutorial_controls_a572e7c8f2ed50d965e6e39f21b9bf7c5}} 
 void {\bfseries Play\+Pause} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Pause or unpause the current chapter \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_tutorial_controls_acc8fa674d65880d1a77b110a8221a9fb}\label{class_tutorial_controls_acc8fa674d65880d1a77b110a8221a9fb}} 
 void {\bfseries Play} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Play the current chapter \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_tutorial_controls_a10dc404eca6846dc9add3f46f338fd2a}\label{class_tutorial_controls_a10dc404eca6846dc9add3f46f338fd2a}} 
 void {\bfseries Pause} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Pause the current chapter. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_tutorial_controls_a887d419c5d29c5d0107417eaa18c9736}\label{class_tutorial_controls_a887d419c5d29c5d0107417eaa18c9736}} 
 void {\bfseries Prev\+Chapter} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Go back to the previous chapter \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_tutorial_controls_a98bcc983e67503f772d0e7e5bb463d83}\label{class_tutorial_controls_a98bcc983e67503f772d0e7e5bb463d83}} 
 void {\bfseries Next\+Chapter} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Go to the next chapter \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_tutorial_controls_aeb07ac3fdbb314df537e0f98b137d57b}\label{class_tutorial_controls_aeb07ac3fdbb314df537e0f98b137d57b}} 
 void {\bfseries End\+Tutorial} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Exit the tutorial \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_tutorial_controls_aab664ebeefcd86422893a284359237c1}\label{class_tutorial_controls_aab664ebeefcd86422893a284359237c1}} 
 void {\bfseries Repeat} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Repeat the last played chapter \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_tutorial_controls_a951ad0a917ef601bf09f10821d560c5f}\label{class_tutorial_controls_a951ad0a917ef601bf09f10821d560c5f}} 
 \mbox{\hyperlink{class_hydrogen_atom}{Hydrogen\+Atom}} {\bfseries atom}
-\item 
+\begin{DoxyCompactList}\small\item\em The atom simulation \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_tutorial_controls_a9d01053d86f2d256c2562c302b170a1f}\label{class_tutorial_controls_a9d01053d86f2d256c2562c302b170a1f}} 
 Game\+Object {\bfseries planetary\+Atom}
-\item 
+\begin{DoxyCompactList}\small\item\em The planetary version of the atom \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_tutorial_controls_a915680dadea28d7c9998bb41f13d2075}\label{class_tutorial_controls_a915680dadea28d7c9998bb41f13d2075}} 
 Playable\+Director\mbox{[}$\,$\mbox{]} {\bfseries timelines}
-\item 
+\begin{DoxyCompactList}\small\item\em The list of tutorial timelines to control \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_tutorial_controls_a7c052996b38c5988fb21c0604f8c31dd}\label{class_tutorial_controls_a7c052996b38c5988fb21c0604f8c31dd}} 
 Game\+Object\mbox{[}$\,$\mbox{]} {\bfseries tutorial\+Texts}
-\item 
+\begin{DoxyCompactList}\small\item\em The tutorial text objects to display \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_tutorial_controls_aed33e7dcaae21a53247c04204f4148c8}\label{class_tutorial_controls_aed33e7dcaae21a53247c04204f4148c8}} 
 Playable\+Director {\bfseries clear\+TL}
-\item 
+\begin{DoxyCompactList}\small\item\em The timeline that resets and clears all states (used between each chapter) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_tutorial_controls_af67296583bf666ff633137aa991d6187}\label{class_tutorial_controls_af67296583bf666ff633137aa991d6187}} 
 int {\bfseries current\+Chapter} = -\/1
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The current chapter index \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_tutorial_controls_a79fe19ce49ae96a3da35c5ca4aa6e832}\label{class_tutorial_controls_a79fe19ce49ae96a3da35c5ca4aa6e832}} 
-void {\bfseries Set\+Chapter} (int ch)
-\item 
+void \mbox{\hyperlink{class_tutorial_controls_a79fe19ce49ae96a3da35c5ca4aa6e832}{Set\+Chapter}} (int ch)
+\begin{DoxyCompactList}\small\item\em Set the current chapter \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_tutorial_controls_a7c45e2bc2a4ef8e2ebc4d26506c64006}\label{class_tutorial_controls_a7c45e2bc2a4ef8e2ebc4d26506c64006}} 
 void {\bfseries Reset} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Unity function\+: \mbox{\hyperlink{class_tutorial_controls_a7c45e2bc2a4ef8e2ebc4d26506c64006}{Reset()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controls the tutorial 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tutorial_controls_a34f224655e954278a83c98a2ab776e45}\label{class_tutorial_controls_a34f224655e954278a83c98a2ab776e45}} 
+\index{TutorialControls@{TutorialControls}!PlayChapter@{PlayChapter}}
+\index{PlayChapter@{PlayChapter}!TutorialControls@{TutorialControls}}
+\doxysubsubsection{\texorpdfstring{PlayChapter()}{PlayChapter()}}
+{\footnotesize\ttfamily void Tutorial\+Controls.\+Play\+Chapter (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})}
+
+
+
+Play a chapter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ch} & The chapter to play\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tutorial_controls_a79fe19ce49ae96a3da35c5ca4aa6e832}\label{class_tutorial_controls_a79fe19ce49ae96a3da35c5ca4aa6e832}} 
+\index{TutorialControls@{TutorialControls}!SetChapter@{SetChapter}}
+\index{SetChapter@{SetChapter}!TutorialControls@{TutorialControls}}
+\doxysubsubsection{\texorpdfstring{SetChapter()}{SetChapter()}}
+{\footnotesize\ttfamily void Tutorial\+Controls.\+Set\+Chapter (\begin{DoxyParamCaption}\item[{int}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Set the current chapter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ch} & The chapter index to set\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

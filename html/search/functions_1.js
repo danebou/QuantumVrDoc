@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['checkforupdate_0',['CheckForUpdate',['../class_atom_sim_controller.html#a9c7a0f9305dd4969b912e4e1debb2fef',1,'AtomSimController']]]
+  ['buttonhint_0',['ButtonHint',['../class_hint_controller.html#a79fc0fbccc9b772ca91b438c26816884',1,'HintController']]]
 ];

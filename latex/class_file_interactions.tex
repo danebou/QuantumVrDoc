@@ -1,5 +1,10 @@
 \hypertarget{class_file_interactions}{}\doxysection{File\+Interactions Class Reference}
 \label{class_file_interactions}\index{FileInteractions@{FileInteractions}}
+
+
+File read/write utilities  
+
+
 Inheritance diagram for File\+Interactions\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,12 +14,48 @@ Inheritance diagram for File\+Interactions\+:\begin{figure}[H]
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_file_interactions_a5ed9f1e705ab8eb9a5ede70cfac1a27d}\label{class_file_interactions_a5ed9f1e705ab8eb9a5ede70cfac1a27d}} 
-static void {\bfseries Write\+String} (string filename, string data)
-\item 
+static void \mbox{\hyperlink{class_file_interactions_a5ed9f1e705ab8eb9a5ede70cfac1a27d}{Write\+String}} (string filename, string data)
+\begin{DoxyCompactList}\small\item\em Write a string to a file \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_file_interactions_a04e8361d3fab661f3ee58655d2f31e52}{Read\+String}} (string filename)
+\begin{DoxyCompactList}\small\item\em Read a string from a file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File read/write utilities 
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_file_interactions_a04e8361d3fab661f3ee58655d2f31e52}\label{class_file_interactions_a04e8361d3fab661f3ee58655d2f31e52}} 
-static void {\bfseries Read\+String} (string filename)
-\end{DoxyCompactItemize}
+\index{FileInteractions@{FileInteractions}!ReadString@{ReadString}}
+\index{ReadString@{ReadString}!FileInteractions@{FileInteractions}}
+\doxysubsubsection{\texorpdfstring{ReadString()}{ReadString()}}
+{\footnotesize\ttfamily static void File\+Interactions.\+Read\+String (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Read a string from a file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The file path to read from\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_file_interactions_a5ed9f1e705ab8eb9a5ede70cfac1a27d}\label{class_file_interactions_a5ed9f1e705ab8eb9a5ede70cfac1a27d}} 
+\index{FileInteractions@{FileInteractions}!WriteString@{WriteString}}
+\index{WriteString@{WriteString}!FileInteractions@{FileInteractions}}
+\doxysubsubsection{\texorpdfstring{WriteString()}{WriteString()}}
+{\footnotesize\ttfamily static void File\+Interactions.\+Write\+String (\begin{DoxyParamCaption}\item[{string}]{filename,  }\item[{string}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Write a string to a file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The file path to write to\\
+\hline
+{\em data} & The string data to write\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

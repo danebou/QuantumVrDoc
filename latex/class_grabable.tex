@@ -1,5 +1,10 @@
 \hypertarget{class_grabable}{}\doxysection{Grabable Class Reference}
 \label{class_grabable}\index{Grabable@{Grabable}}
+
+
+A script for resizing, rotating, and position an object, with single grip (position only) or double-\/grib (sizing, rotation) behavior.  
+
+
 Inheritance diagram for Grabable\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,43 +16,91 @@ Inheritance diagram for Grabable\+:\begin{figure}[H]
 \item 
 \mbox{\Hypertarget{class_grabable_abc0435d4cff88e0cbdb0a06a6280d743}\label{class_grabable_abc0435d4cff88e0cbdb0a06a6280d743}} 
 float {\bfseries Grap\+Size\+Threshold} = 0.\+3f
-\item 
+\begin{DoxyCompactList}\small\item\em The minimum size the object needs to be in order to enable single hand grabbing \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_grabable_a56a00682261266d96cc154aabbf4de02}\label{class_grabable_a56a00682261266d96cc154aabbf4de02}} 
 Steam\+VR\+\_\+\+Action\+\_\+\+Boolean {\bfseries Toggle\+Grip\+Button}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The button to toggle positioning the atom \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_grabable_affe788eda53c00b19b253e1069a7b698}\label{class_grabable_affe788eda53c00b19b253e1069a7b698}} 
 void {\bfseries Start} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Unity function\+: \mbox{\hyperlink{class_grabable_affe788eda53c00b19b253e1069a7b698}{Start()}} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_grabable_a143282f7b79b058dd7eab12f909fc413}\label{class_grabable_a143282f7b79b058dd7eab12f909fc413}} 
 void {\bfseries Update} ()
-\item 
-\mbox{\Hypertarget{class_grabable_aba886a3ff514b0c1815542419e69008a}\label{class_grabable_aba886a3ff514b0c1815542419e69008a}} 
-void {\bfseries On\+Hand\+Hover\+Begin} (Hand hand)
-\item 
-\mbox{\Hypertarget{class_grabable_a03e485db7eeadf72c2ef34f3d3c6f8f7}\label{class_grabable_a03e485db7eeadf72c2ef34f3d3c6f8f7}} 
-void {\bfseries On\+Hand\+Hover\+End} (Hand hand)
-\item 
-\mbox{\Hypertarget{class_grabable_a44ea761b9f922f92b13b2449713e960c}\label{class_grabable_a44ea761b9f922f92b13b2449713e960c}} 
-void {\bfseries Hand\+Hover\+Update} (Hand hand)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Unity function\+: \mbox{\hyperlink{class_grabable_a143282f7b79b058dd7eab12f909fc413}{Update()}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_grabable_aba886a3ff514b0c1815542419e69008a}{On\+Hand\+Hover\+Begin}} (Hand hand)
+\begin{DoxyCompactList}\small\item\em Called when the hand has started hovering on the interactable \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_grabable_a03e485db7eeadf72c2ef34f3d3c6f8f7}{On\+Hand\+Hover\+End}} (Hand hand)
+\begin{DoxyCompactList}\small\item\em Called when the hand has stopped hovering on the interactable and has been removed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_grabable_a44ea761b9f922f92b13b2449713e960c}{Hand\+Hover\+Update}} (Hand hand)
+\begin{DoxyCompactList}\small\item\em Called when the hand is currently hovering on the interactable object \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_grabable_a089529d5d383bdb84fb4bde5b85b97d5}\label{class_grabable_a089529d5d383bdb84fb4bde5b85b97d5}} 
 Interactable {\bfseries \+\_\+interactable}
-\item 
+\begin{DoxyCompactList}\small\item\em The interactable behavior of the current object \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_grabable_acd4ee01d385b5a5bf347e68ec7fa015f}\label{class_grabable_acd4ee01d385b5a5bf347e68ec7fa015f}} 
 Mesh\+Renderer {\bfseries \+\_\+mesh\+Renderer}
-\item 
+\begin{DoxyCompactList}\small\item\em The mesh renderer behavior of the current object \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_grabable_aa48e45f3e8cb2e4be518a8608717480b}\label{class_grabable_aa48e45f3e8cb2e4be518a8608717480b}} 
 Collider {\bfseries \+\_\+collider}
-\item 
+\begin{DoxyCompactList}\small\item\em The collider behavior of the current object \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_grabable_a9c1e08852f197137c5df8e7db31cc6d5}\label{class_grabable_a9c1e08852f197137c5df8e7db31cc6d5}} 
 bool {\bfseries \+\_\+is\+Double\+Grab}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Are both hands gripping \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A script for resizing, rotating, and position an object, with single grip (position only) or double-\/grib (sizing, rotation) behavior. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_grabable_a44ea761b9f922f92b13b2449713e960c}\label{class_grabable_a44ea761b9f922f92b13b2449713e960c}} 
+\index{Grabable@{Grabable}!HandHoverUpdate@{HandHoverUpdate}}
+\index{HandHoverUpdate@{HandHoverUpdate}!Grabable@{Grabable}}
+\doxysubsubsection{\texorpdfstring{HandHoverUpdate()}{HandHoverUpdate()}}
+{\footnotesize\ttfamily void Grabable.\+Hand\+Hover\+Update (\begin{DoxyParamCaption}\item[{Hand}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Called when the hand is currently hovering on the interactable object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hand} & The hand that is currently hovering\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_grabable_aba886a3ff514b0c1815542419e69008a}\label{class_grabable_aba886a3ff514b0c1815542419e69008a}} 
+\index{Grabable@{Grabable}!OnHandHoverBegin@{OnHandHoverBegin}}
+\index{OnHandHoverBegin@{OnHandHoverBegin}!Grabable@{Grabable}}
+\doxysubsubsection{\texorpdfstring{OnHandHoverBegin()}{OnHandHoverBegin()}}
+{\footnotesize\ttfamily void Grabable.\+On\+Hand\+Hover\+Begin (\begin{DoxyParamCaption}\item[{Hand}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Called when the hand has started hovering on the interactable 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hand} & The hand that started hovering\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_grabable_a03e485db7eeadf72c2ef34f3d3c6f8f7}\label{class_grabable_a03e485db7eeadf72c2ef34f3d3c6f8f7}} 
+\index{Grabable@{Grabable}!OnHandHoverEnd@{OnHandHoverEnd}}
+\index{OnHandHoverEnd@{OnHandHoverEnd}!Grabable@{Grabable}}
+\doxysubsubsection{\texorpdfstring{OnHandHoverEnd()}{OnHandHoverEnd()}}
+{\footnotesize\ttfamily void Grabable.\+On\+Hand\+Hover\+End (\begin{DoxyParamCaption}\item[{Hand}]{hand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Called when the hand has stopped hovering on the interactable and has been removed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hand} & The hand that was removed\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
