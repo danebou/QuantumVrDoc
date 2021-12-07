@@ -1,0 +1,169 @@
+\hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor}{}\doxysection{Valve.\+VR.\+CVRCompositor Class Reference}
+\label{class_valve_1_1_v_r_1_1_c_v_r_compositor}\index{Valve.VR.CVRCompositor@{Valve.VR.CVRCompositor}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a6449a49b452246bc9275562c06ff98c6}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a6449a49b452246bc9275562c06ff98c6}} 
+void {\bfseries Set\+Tracking\+Space} (ETracking\+Universe\+Origin e\+Origin)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a37b4fe9a440cd92ad46659a5f809ecbd}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a37b4fe9a440cd92ad46659a5f809ecbd}} 
+ETracking\+Universe\+Origin {\bfseries Get\+Tracking\+Space} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_ae29f55c9006ff53b9241eac1f7c971fd}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_ae29f55c9006ff53b9241eac1f7c971fd}} 
+EVRCompositor\+Error {\bfseries Wait\+Get\+Poses} (\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_tracked_device_pose__t}{Tracked\+Device\+Pose\+\_\+t}}\mbox{[}$\,$\mbox{]} p\+Render\+Pose\+Array, \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_tracked_device_pose__t}{Tracked\+Device\+Pose\+\_\+t}}\mbox{[}$\,$\mbox{]} p\+Game\+Pose\+Array)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a83d29faa0ccfd0a0619b131ec05a97c4}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a83d29faa0ccfd0a0619b131ec05a97c4}} 
+EVRCompositor\+Error {\bfseries Get\+Last\+Poses} (\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_tracked_device_pose__t}{Tracked\+Device\+Pose\+\_\+t}}\mbox{[}$\,$\mbox{]} p\+Render\+Pose\+Array, \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_tracked_device_pose__t}{Tracked\+Device\+Pose\+\_\+t}}\mbox{[}$\,$\mbox{]} p\+Game\+Pose\+Array)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_aeeee06f40622e4a4bea086266d4b73b4}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_aeeee06f40622e4a4bea086266d4b73b4}} 
+EVRCompositor\+Error {\bfseries Get\+Last\+Pose\+For\+Tracked\+Device\+Index} (uint un\+Device\+Index, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_tracked_device_pose__t}{Tracked\+Device\+Pose\+\_\+t}} p\+Output\+Pose, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_tracked_device_pose__t}{Tracked\+Device\+Pose\+\_\+t}} p\+Output\+Game\+Pose)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a7976402c028a04424c1c8c2afc7352cf}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a7976402c028a04424c1c8c2afc7352cf}} 
+EVRCompositor\+Error {\bfseries Submit} (EVREye e\+Eye, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_texture__t}{Texture\+\_\+t}} p\+Texture, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_texture_bounds__t}{VRTexture\+Bounds\+\_\+t}} p\+Bounds, EVRSubmit\+Flags n\+Submit\+Flags)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_ad8a809c0934f27e815138b1b5b1c3ac6}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_ad8a809c0934f27e815138b1b5b1c3ac6}} 
+void {\bfseries Clear\+Last\+Submitted\+Frame} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_af0edf4a5daeb306c684e8fce57fbb4d2}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_af0edf4a5daeb306c684e8fce57fbb4d2}} 
+void {\bfseries Post\+Present\+Handoff} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a71bfd8b0a546740f5a6f5cc5bcb1e8a8}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a71bfd8b0a546740f5a6f5cc5bcb1e8a8}} 
+bool {\bfseries Get\+Frame\+Timing} (ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_compositor___frame_timing}{Compositor\+\_\+\+Frame\+Timing}} p\+Timing, uint un\+Frames\+Ago)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_ad93e285a10ced22780870f3db1b460a8}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_ad93e285a10ced22780870f3db1b460a8}} 
+uint {\bfseries Get\+Frame\+Timings} (\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_compositor___frame_timing}{Compositor\+\_\+\+Frame\+Timing}}\mbox{[}$\,$\mbox{]} p\+Timing)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_aee1331fd25c50a38f937bcac4480bcd5}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_aee1331fd25c50a38f937bcac4480bcd5}} 
+float {\bfseries Get\+Frame\+Time\+Remaining} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a47169fba7086633b916298a44925c873}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a47169fba7086633b916298a44925c873}} 
+void {\bfseries Get\+Cumulative\+Stats} (ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_compositor___cumulative_stats}{Compositor\+\_\+\+Cumulative\+Stats}} p\+Stats, uint n\+Stats\+Size\+In\+Bytes)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a3fbfe2e11f720a212192694e79d3171e}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a3fbfe2e11f720a212192694e79d3171e}} 
+void {\bfseries Fade\+To\+Color} (float f\+Seconds, float f\+Red, float f\+Green, float f\+Blue, float f\+Alpha, bool b\+Background)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_af73cb9a5be70dc579ba8f08200c8e602}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_af73cb9a5be70dc579ba8f08200c8e602}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_color__t}{Hmd\+Color\+\_\+t}} {\bfseries Get\+Current\+Fade\+Color} (bool b\+Background)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a5a3244fc83b8da0ac59d8e9099947684}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a5a3244fc83b8da0ac59d8e9099947684}} 
+void {\bfseries Fade\+Grid} (float f\+Seconds, bool b\+Fade\+In)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a2d0070dfc0c115fd4901bc0cd03893dd}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a2d0070dfc0c115fd4901bc0cd03893dd}} 
+float {\bfseries Get\+Current\+Grid\+Alpha} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a044a2625ce490ce01e6f304cafe2dfdb}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a044a2625ce490ce01e6f304cafe2dfdb}} 
+EVRCompositor\+Error {\bfseries Set\+Skybox\+Override} (\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_texture__t}{Texture\+\_\+t}}\mbox{[}$\,$\mbox{]} p\+Textures)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a307b9e6e784e7654e1f6a209ba283bdc}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a307b9e6e784e7654e1f6a209ba283bdc}} 
+void {\bfseries Clear\+Skybox\+Override} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_ae669a3f67583f54b0800ad402abc9a4c}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_ae669a3f67583f54b0800ad402abc9a4c}} 
+void {\bfseries Compositor\+Bring\+To\+Front} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a911ea002d43e94430f1c832fbf2809cd}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a911ea002d43e94430f1c832fbf2809cd}} 
+void {\bfseries Compositor\+Go\+To\+Back} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a29223e5d21d6b16ad657d830c3ee0aad}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a29223e5d21d6b16ad657d830c3ee0aad}} 
+void {\bfseries Compositor\+Quit} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a8d9c2a37367803beea6f015e65d37cf8}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a8d9c2a37367803beea6f015e65d37cf8}} 
+bool {\bfseries Is\+Fullscreen} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a7029fd08d6f8b4e2f725ca7488039601}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a7029fd08d6f8b4e2f725ca7488039601}} 
+uint {\bfseries Get\+Current\+Scene\+Focus\+Process} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a562621ffd7698e2c7dbdaf653a73ff00}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a562621ffd7698e2c7dbdaf653a73ff00}} 
+uint {\bfseries Get\+Last\+Frame\+Renderer} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a6b732598f98df9faaef2687f95e72582}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a6b732598f98df9faaef2687f95e72582}} 
+bool {\bfseries Can\+Render\+Scene} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_af78edd931b782d5e579515cb4f3fa1b9}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_af78edd931b782d5e579515cb4f3fa1b9}} 
+void {\bfseries Show\+Mirror\+Window} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a083c0219863318019461d31b512de406}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a083c0219863318019461d31b512de406}} 
+void {\bfseries Hide\+Mirror\+Window} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a70ed72ae8e8e200649b4bff2e54d0f5d}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a70ed72ae8e8e200649b4bff2e54d0f5d}} 
+bool {\bfseries Is\+Mirror\+Window\+Visible} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_ab099eb9b5f55c98faf732ba9130af86e}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_ab099eb9b5f55c98faf732ba9130af86e}} 
+void {\bfseries Compositor\+Dump\+Images} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_ae18c2535546a02e4232b221ae6e29ced}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_ae18c2535546a02e4232b221ae6e29ced}} 
+bool {\bfseries Should\+App\+Render\+With\+Low\+Resources} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_aa8d3addc5e840e029af92349f4bfee99}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_aa8d3addc5e840e029af92349f4bfee99}} 
+void {\bfseries Force\+Interleaved\+Reprojection\+On} (bool b\+Override)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_ac898f49a56bea56a40856b0a28e2245b}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_ac898f49a56bea56a40856b0a28e2245b}} 
+void {\bfseries Force\+Reconnect\+Process} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a1fa8f68ecca3092ff6bb5262dddb7d16}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a1fa8f68ecca3092ff6bb5262dddb7d16}} 
+void {\bfseries Suspend\+Rendering} (bool b\+Suspend)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a4f2dd54d640a7035332b10f5fb0a58ee}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a4f2dd54d640a7035332b10f5fb0a58ee}} 
+EVRCompositor\+Error {\bfseries Get\+Mirror\+Texture\+D3\+D11} (EVREye e\+Eye, Int\+Ptr p\+D3\+D11\+Device\+Or\+Resource, ref Int\+Ptr pp\+D3\+D11\+Shader\+Resource\+View)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a68315ad4dd077f5f48917ec1ab9502d8}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a68315ad4dd077f5f48917ec1ab9502d8}} 
+void {\bfseries Release\+Mirror\+Texture\+D3\+D11} (Int\+Ptr p\+D3\+D11\+Shader\+Resource\+View)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a619e42191292bab5ef28e27141101888}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a619e42191292bab5ef28e27141101888}} 
+EVRCompositor\+Error {\bfseries Get\+Mirror\+Texture\+GL} (EVREye e\+Eye, ref uint pgl\+Texture\+Id, Int\+Ptr pgl\+Shared\+Texture\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a2f9575f73ab285f0b944b4c4757b07ba}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a2f9575f73ab285f0b944b4c4757b07ba}} 
+bool {\bfseries Release\+Shared\+GLTexture} (uint gl\+Texture\+Id, Int\+Ptr gl\+Shared\+Texture\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a9f44c2f5cafe863f930abc4d11da7fec}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a9f44c2f5cafe863f930abc4d11da7fec}} 
+void {\bfseries Lock\+GLShared\+Texture\+For\+Access} (Int\+Ptr gl\+Shared\+Texture\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a59a5f3ef4b8f461efb78a6050e50d07f}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a59a5f3ef4b8f461efb78a6050e50d07f}} 
+void {\bfseries Unlock\+GLShared\+Texture\+For\+Access} (Int\+Ptr gl\+Shared\+Texture\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a523c233f1c331d3ea933d232ea30a240}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a523c233f1c331d3ea933d232ea30a240}} 
+uint {\bfseries Get\+Vulkan\+Instance\+Extensions\+Required} (System.\+Text.\+String\+Builder pch\+Value, uint un\+Buffer\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a1b8bff776ef6b0c4440d8c9735875cc2}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a1b8bff776ef6b0c4440d8c9735875cc2}} 
+uint {\bfseries Get\+Vulkan\+Device\+Extensions\+Required} (Int\+Ptr p\+Physical\+Device, System.\+Text.\+String\+Builder pch\+Value, uint un\+Buffer\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a2c85589e4811758a11387e005218b55b}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a2c85589e4811758a11387e005218b55b}} 
+void {\bfseries Set\+Explicit\+Timing\+Mode} (EVRCompositor\+Timing\+Mode e\+Timing\+Mode)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a0e8337d82a7bad865f61247681800e54}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a0e8337d82a7bad865f61247681800e54}} 
+EVRCompositor\+Error {\bfseries Submit\+Explicit\+Timing\+Data} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a67073ace392a3be7d0ccbf1781f0d2cd}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a67073ace392a3be7d0ccbf1781f0d2cd}} 
+bool {\bfseries Is\+Motion\+Smoothing\+Enabled} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a385782f8b24162b2e5ded41bf0dca74e}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a385782f8b24162b2e5ded41bf0dca74e}} 
+bool {\bfseries Is\+Motion\+Smoothing\+Supported} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a4fb53f4aaf762e590209810faae93a1b}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a4fb53f4aaf762e590209810faae93a1b}} 
+bool {\bfseries Is\+Current\+Scene\+Focus\+App\+Loading} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a744596fcb58a8f1c17f3165c27aa2a80}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a744596fcb58a8f1c17f3165c27aa2a80}} 
+EVRCompositor\+Error {\bfseries Set\+Stage\+Override\+\_\+\+Async} (string pch\+Render\+Model\+Path, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix34__t}{Hmd\+Matrix34\+\_\+t}} p\+Transform, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_compositor___stage_render_settings}{Compositor\+\_\+\+Stage\+Render\+Settings}} p\+Render\+Settings, uint n\+Size\+Of\+Render\+Settings)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a431cce48f07dea58563a1b5e71ef915c}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a431cce48f07dea58563a1b5e71ef915c}} 
+void {\bfseries Clear\+Stage\+Override} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a7d5ba1b8c3fb2c98a0024e2a7a26413e}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a7d5ba1b8c3fb2c98a0024e2a7a26413e}} 
+bool {\bfseries Get\+Compositor\+Benchmark\+Results} (ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_compositor___benchmark_results}{Compositor\+\_\+\+Benchmark\+Results}} p\+Benchmark\+Results, uint n\+Size\+Of\+Benchmark\+Results)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_aa740260136e0be8ee79daeac0ea504ba}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_aa740260136e0be8ee79daeac0ea504ba}} 
+EVRCompositor\+Error {\bfseries Get\+Last\+Pose\+Prediction\+IDs} (ref uint p\+Render\+Pose\+Prediction\+ID, ref uint p\+Game\+Pose\+Prediction\+ID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_ae8a4b473cfc3b10737920666445062e4}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_ae8a4b473cfc3b10737920666445062e4}} 
+EVRCompositor\+Error {\bfseries Get\+Poses\+For\+Frame} (uint un\+Pose\+Prediction\+ID, \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_tracked_device_pose__t}{Tracked\+Device\+Pose\+\_\+t}}\mbox{[}$\,$\mbox{]} p\+Pose\+Array)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_compositor_a733a485fe36ad8a6facd1f71095ad7e7}\label{class_valve_1_1_v_r_1_1_c_v_r_compositor_a733a485fe36ad8a6facd1f71095ad7e7}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_i_v_r_compositor}{IVRCompositor}} {\bfseries Fn\+Table}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Plugins/openvr\+\_\+api.\+cs\end{DoxyCompactItemize}

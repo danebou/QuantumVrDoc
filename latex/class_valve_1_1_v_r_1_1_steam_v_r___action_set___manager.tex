@@ -1,0 +1,66 @@
+\hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager}{}\doxysection{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+Set\+\_\+\+Manager Class Reference}
+\label{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager}\index{Valve.VR.SteamVR\_ActionSet\_Manager@{Valve.VR.SteamVR\_ActionSet\_Manager}}
+
+
+Action sets are logical groupings of actions. Multiple sets can be active at one time.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_a8934da1b984cd4d82fa3a8c3387a5a17}\label{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_a8934da1b984cd4d82fa3a8c3387a5a17}} 
+static void {\bfseries Initialize} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_ab519f1a44be218b706b8b7e79dd4fbed}\label{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_ab519f1a44be218b706b8b7e79dd4fbed}} 
+static void {\bfseries Disable\+All\+Action\+Sets} ()
+\begin{DoxyCompactList}\small\item\em Disable all known action sets. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_aab6c3a8e6a8277c5be7b85a63aa09834}\label{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_aab6c3a8e6a8277c5be7b85a63aa09834}} 
+static void {\bfseries Update\+Action\+States} (bool force=false)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_a839b71e529727bff6df32077b17cbb15}\label{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_a839b71e529727bff6df32077b17cbb15}} 
+static void {\bfseries Set\+Changed} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_a46dc0d3e500bcfa343523a773b10795f}\label{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_a46dc0d3e500bcfa343523a773b10795f}} 
+static \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action_set}{Steam\+VR\+\_\+\+Action\+Set}} {\bfseries Get\+Set\+From\+Handle} (ulong handle)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_ad6e7da609aa967ca96ab87d45e53dd3f}\label{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_ad6e7da609aa967ca96ab87d45e53dd3f}} 
+static \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_active_action_set__t}{VRActive\+Action\+Set\+\_\+t}}\mbox{[}$\,$\mbox{]} {\bfseries raw\+Active\+Action\+Set\+Array}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_ae4b532e892706e9c629af37d4ceff256}\label{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_ae4b532e892706e9c629af37d4ceff256}} 
+static string {\bfseries debug\+Active\+Set\+List\+Text}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_a9a84d3fd897dc5e7f7f92b3e10664dae}\label{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_a9a84d3fd897dc5e7f7f92b3e10664dae}} 
+static bool {\bfseries update\+Debug\+Text\+In\+Builds} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_aaec1a96c3548d6ed1eefa95c996f4a68}\label{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_aaec1a96c3548d6ed1eefa95c996f4a68}} 
+static void {\bfseries Update\+Action\+Sets\+Array} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_a206b708b1d99f26421c8f8ec29f0eba4}\label{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_a206b708b1d99f26421c8f8ec29f0eba4}} 
+static void {\bfseries Update\+Debug\+Text} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_a19efa931fad16af5353d2d546a8b7864}\label{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_a19efa931fad16af5353d2d546a8b7864}} 
+static uint {\bfseries active\+Action\+Set\+Size}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_a9b933334210676bae2f322ac875ad6a4}\label{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_a9b933334210676bae2f322ac875ad6a4}} 
+static bool {\bfseries changed} = false
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_aea13017b4129d65325374967a704cfdc}\label{class_valve_1_1_v_r_1_1_steam_v_r___action_set___manager_aea13017b4129d65325374967a704cfdc}} 
+static int {\bfseries last\+Frame\+Updated}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Action sets are logical groupings of actions. Multiple sets can be active at one time. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Input/Steam\+VR\+\_\+\+Action\+Set\+\_\+\+Manager.\+cs\end{DoxyCompactItemize}

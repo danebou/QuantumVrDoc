@@ -1,0 +1,53 @@
+\hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skybox_editor}{}\doxysection{Valve.\+VR.\+Steam\+VR\+\_\+\+Skybox\+Editor Class Reference}
+\label{class_valve_1_1_v_r_1_1_steam_v_r___skybox_editor}\index{Valve.VR.SteamVR\_SkyboxEditor@{Valve.VR.SteamVR\_SkyboxEditor}}
+Inheritance diagram for Valve.\+VR.\+Steam\+VR\+\_\+\+Skybox\+Editor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_v_r_1_1_steam_v_r___skybox_editor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skybox_editor_a0f1f225778cc38c179782d00e74d0bf9}\label{class_valve_1_1_v_r_1_1_steam_v_r___skybox_editor_a0f1f225778cc38c179782d00e74d0bf9}} 
+override void {\bfseries On\+Inspector\+GUI} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skybox_editor_aba3815f598fee39d8cd684b2b10b406d}\label{class_valve_1_1_v_r_1_1_steam_v_r___skybox_editor_aba3815f598fee39d8cd684b2b10b406d}} 
+const string {\bfseries name\+Format} = \char`\"{}\{0\}/\{1\}-\/\{2\}.png\char`\"{}
+\item 
+const string \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skybox_editor_a8ed5dabb94d0d20381abd06417565f6a}{help\+Text}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skybox_editor_a8ed5dabb94d0d20381abd06417565f6a}\label{class_valve_1_1_v_r_1_1_steam_v_r___skybox_editor_a8ed5dabb94d0d20381abd06417565f6a}} 
+\index{Valve.VR.SteamVR\_SkyboxEditor@{Valve.VR.SteamVR\_SkyboxEditor}!helpText@{helpText}}
+\index{helpText@{helpText}!Valve.VR.SteamVR\_SkyboxEditor@{Valve.VR.SteamVR\_SkyboxEditor}}
+\doxysubsubsection{\texorpdfstring{helpText}{helpText}}
+{\footnotesize\ttfamily const string Valve.\+VR.\+Steam\+VR\+\_\+\+Skybox\+Editor.\+help\+Text\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{stringliteral}{"{}Take snapshot will use the current "{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}position and rotation to capture six directional screenshots to use as this "{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}skybox's textures.  Note: This skybox is only used to override what shows up "{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}in the compositor (e.g. when loading levels).  Add a Camera component to this "{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}object to override default settings like which layers to render.  Additionally, "{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}by specifying your own targetTexture, you can control the size of the textures "{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}and other properties like antialiasing.  Don't forget to disable the camera.\(\backslash\)n\(\backslash\)n"{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}For stereo screenshots, a panorama is render for each eye using the specified "{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}ipd (in millimeters) broken up into segments cellSize pixels square to optimize "{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}generation.\(\backslash\)n(32x32 takes about 10 seconds depending on scene complexity, 16x16 "{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}takes around a minute, while will 8x8 take several minutes.)\(\backslash\)n\(\backslash\)nTo test, hit "{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}play then pause -\/ this will activate the skybox settings, and then drop you to "{}} +}
+\DoxyCodeLine{            \textcolor{stringliteral}{"{}the compositor where the skybox is rendered."{}}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Editor/Steam\+VR\+\_\+\+Skybox\+Editor.\+cs\end{DoxyCompactItemize}

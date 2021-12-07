@@ -1,0 +1,106 @@
+\hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications}{}\doxysection{Valve.\+VR.\+CVRApplications Class Reference}
+\label{class_valve_1_1_v_r_1_1_c_v_r_applications}\index{Valve.VR.CVRApplications@{Valve.VR.CVRApplications}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a227ab31b106e3038d88e51fcfaa9380d}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a227ab31b106e3038d88e51fcfaa9380d}} 
+EVRApplication\+Error {\bfseries Add\+Application\+Manifest} (string pch\+Application\+Manifest\+Full\+Path, bool b\+Temporary)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a1185bc8e37e263c6963c9c59fd6b0dd9}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a1185bc8e37e263c6963c9c59fd6b0dd9}} 
+EVRApplication\+Error {\bfseries Remove\+Application\+Manifest} (string pch\+Application\+Manifest\+Full\+Path)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a85a594e9e20b45a193d9145f0243eb00}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a85a594e9e20b45a193d9145f0243eb00}} 
+bool {\bfseries Is\+Application\+Installed} (string pch\+App\+Key)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a257f814362d6c86e93a3645f689daad5}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a257f814362d6c86e93a3645f689daad5}} 
+uint {\bfseries Get\+Application\+Count} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a796a099a422f00861a3c8190494e4b29}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a796a099a422f00861a3c8190494e4b29}} 
+EVRApplication\+Error {\bfseries Get\+Application\+Key\+By\+Index} (uint un\+Application\+Index, System.\+Text.\+String\+Builder pch\+App\+Key\+Buffer, uint un\+App\+Key\+Buffer\+Len)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a426c0a54264e05dc34a9e82d8922e451}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a426c0a54264e05dc34a9e82d8922e451}} 
+EVRApplication\+Error {\bfseries Get\+Application\+Key\+By\+Process\+Id} (uint un\+Process\+Id, System.\+Text.\+String\+Builder pch\+App\+Key\+Buffer, uint un\+App\+Key\+Buffer\+Len)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_aa6792921394b584d65f6782cae386469}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_aa6792921394b584d65f6782cae386469}} 
+EVRApplication\+Error {\bfseries Launch\+Application} (string pch\+App\+Key)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a851f331b0f4180df67284e3b9adaad40}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a851f331b0f4180df67284e3b9adaad40}} 
+EVRApplication\+Error {\bfseries Launch\+Template\+Application} (string pch\+Template\+App\+Key, string pch\+New\+App\+Key, \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_app_override_keys__t}{App\+Override\+Keys\+\_\+t}}\mbox{[}$\,$\mbox{]} p\+Keys)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_ae713c2611618b1e6e45694375fab52b7}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_ae713c2611618b1e6e45694375fab52b7}} 
+EVRApplication\+Error {\bfseries Launch\+Application\+From\+Mime\+Type} (string pch\+Mime\+Type, string pch\+Args)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a33117092ab66989cc378f6f41f2fc772}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a33117092ab66989cc378f6f41f2fc772}} 
+EVRApplication\+Error {\bfseries Launch\+Dashboard\+Overlay} (string pch\+App\+Key)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_af537811353d75ea94719196f08fd6729}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_af537811353d75ea94719196f08fd6729}} 
+bool {\bfseries Cancel\+Application\+Launch} (string pch\+App\+Key)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a095be14493fca1fabadbec251a216bb6}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a095be14493fca1fabadbec251a216bb6}} 
+EVRApplication\+Error {\bfseries Identify\+Application} (uint un\+Process\+Id, string pch\+App\+Key)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_aa87e0096153994caab063d57a3b7bd0b}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_aa87e0096153994caab063d57a3b7bd0b}} 
+uint {\bfseries Get\+Application\+Process\+Id} (string pch\+App\+Key)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_ac5275c11f9ff77cc7a68f11e1ba1ba5c}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_ac5275c11f9ff77cc7a68f11e1ba1ba5c}} 
+string {\bfseries Get\+Applications\+Error\+Name\+From\+Enum} (EVRApplication\+Error error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a623fedcbaacfe1e1b7d74ff709a9d869}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a623fedcbaacfe1e1b7d74ff709a9d869}} 
+uint {\bfseries Get\+Application\+Property\+String} (string pch\+App\+Key, EVRApplication\+Property e\+Property, System.\+Text.\+String\+Builder pch\+Property\+Value\+Buffer, uint un\+Property\+Value\+Buffer\+Len, ref EVRApplication\+Error pe\+Error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a74331bcd543f67a795e07b5b488ea492}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a74331bcd543f67a795e07b5b488ea492}} 
+bool {\bfseries Get\+Application\+Property\+Bool} (string pch\+App\+Key, EVRApplication\+Property e\+Property, ref EVRApplication\+Error pe\+Error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_aaf2b2e7b063089791120ecc1be6653f9}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_aaf2b2e7b063089791120ecc1be6653f9}} 
+ulong {\bfseries Get\+Application\+Property\+Uint64} (string pch\+App\+Key, EVRApplication\+Property e\+Property, ref EVRApplication\+Error pe\+Error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_af7ec150b8228b6af3d2ea930df7cd2a5}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_af7ec150b8228b6af3d2ea930df7cd2a5}} 
+EVRApplication\+Error {\bfseries Set\+Application\+Auto\+Launch} (string pch\+App\+Key, bool b\+Auto\+Launch)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a22d741776c2c6ba49488b3f74b1308d4}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a22d741776c2c6ba49488b3f74b1308d4}} 
+bool {\bfseries Get\+Application\+Auto\+Launch} (string pch\+App\+Key)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_afa7ac9cfb351f15a0127e3008f90ae02}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_afa7ac9cfb351f15a0127e3008f90ae02}} 
+EVRApplication\+Error {\bfseries Set\+Default\+Application\+For\+Mime\+Type} (string pch\+App\+Key, string pch\+Mime\+Type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a528bd8591b4d08aac8cff149c19f0b89}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a528bd8591b4d08aac8cff149c19f0b89}} 
+bool {\bfseries Get\+Default\+Application\+For\+Mime\+Type} (string pch\+Mime\+Type, System.\+Text.\+String\+Builder pch\+App\+Key\+Buffer, uint un\+App\+Key\+Buffer\+Len)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_ae01c2c507726be5dcce1121e7c4ad78a}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_ae01c2c507726be5dcce1121e7c4ad78a}} 
+bool {\bfseries Get\+Application\+Supported\+Mime\+Types} (string pch\+App\+Key, System.\+Text.\+String\+Builder pch\+Mime\+Types\+Buffer, uint un\+Mime\+Types\+Buffer)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_af02538684a9bf0bbdac9e0e956c3b658}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_af02538684a9bf0bbdac9e0e956c3b658}} 
+uint {\bfseries Get\+Applications\+That\+Support\+Mime\+Type} (string pch\+Mime\+Type, System.\+Text.\+String\+Builder pch\+App\+Keys\+That\+Support\+Buffer, uint un\+App\+Keys\+That\+Support\+Buffer)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a611d0f32e55ad2f8efda056a608ac678}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a611d0f32e55ad2f8efda056a608ac678}} 
+uint {\bfseries Get\+Application\+Launch\+Arguments} (uint un\+Handle, System.\+Text.\+String\+Builder pch\+Args, uint un\+Args)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_aa29b29431a7d099a1c81dfdf8b3be280}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_aa29b29431a7d099a1c81dfdf8b3be280}} 
+EVRApplication\+Error {\bfseries Get\+Starting\+Application} (System.\+Text.\+String\+Builder pch\+App\+Key\+Buffer, uint un\+App\+Key\+Buffer\+Len)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a189a92b35692ab6f01d5a5da6f99219e}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a189a92b35692ab6f01d5a5da6f99219e}} 
+EVRScene\+Application\+State {\bfseries Get\+Scene\+Application\+State} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a0cafe190f23f3170b18c68d3ae758d47}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a0cafe190f23f3170b18c68d3ae758d47}} 
+EVRApplication\+Error {\bfseries Perform\+Application\+Prelaunch\+Check} (string pch\+App\+Key)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a9f009d1e355981cf7ce814f77c61d8d3}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a9f009d1e355981cf7ce814f77c61d8d3}} 
+string {\bfseries Get\+Scene\+Application\+State\+Name\+From\+Enum} (EVRScene\+Application\+State state)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_aecc547aa078162f39cc95d6eb7191f0d}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_aecc547aa078162f39cc95d6eb7191f0d}} 
+EVRApplication\+Error {\bfseries Launch\+Internal\+Process} (string pch\+Binary\+Path, string pch\+Arguments, string pch\+Working\+Directory)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_a978ad099c27b5b3984395bd42d5d56a4}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_a978ad099c27b5b3984395bd42d5d56a4}} 
+uint {\bfseries Get\+Current\+Scene\+Process\+Id} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_applications_aeb279fec27f5ff7d1aea48f56bfa972f}\label{class_valve_1_1_v_r_1_1_c_v_r_applications_aeb279fec27f5ff7d1aea48f56bfa972f}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_i_v_r_applications}{IVRApplications}} {\bfseries Fn\+Table}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Plugins/openvr\+\_\+api.\+cs\end{DoxyCompactItemize}

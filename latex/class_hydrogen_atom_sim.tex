@@ -1,0 +1,361 @@
+\hypertarget{class_hydrogen_atom_sim}{}\doxysection{Hydrogen\+Atom\+Sim Class Reference}
+\label{class_hydrogen_atom_sim}\index{HydrogenAtomSim@{HydrogenAtomSim}}
+Inheritance diagram for Hydrogen\+Atom\+Sim\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hydrogen_atom_sim}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a2a0f1520f2727043fcb22b9ae5abde03}\label{class_hydrogen_atom_sim_a2a0f1520f2727043fcb22b9ae5abde03}} 
+void {\bfseries Awake} ()
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a67096653ecc9038a27961d6147a2b61e}\label{class_hydrogen_atom_sim_a67096653ecc9038a27961d6147a2b61e}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a7493ff8d24c5676d23aaab6b706fb987}\label{class_hydrogen_atom_sim_a7493ff8d24c5676d23aaab6b706fb987}} 
+void {\bfseries Setup} ()
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aef2a9e1d9879c72327bd198fedbd9267}\label{class_hydrogen_atom_sim_aef2a9e1d9879c72327bd198fedbd9267}} 
+void {\bfseries Step} ()
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a478597848cb1c9a5a4e7f315396b6fb0}\label{class_hydrogen_atom_sim_a478597848cb1c9a5a4e7f315396b6fb0}} 
+void {\bfseries Set\+Measurement} (bool hit, double gamma, Vector3 m\+Position)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a71edd707c3a6d6f507859253068f83cc}\label{class_hydrogen_atom_sim_a71edd707c3a6d6f507859253068f83cc}} 
+int {\bfseries timestep} =1
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a42d0d67ee747e3299c575ba1950ab997}\label{class_hydrogen_atom_sim_a42d0d67ee747e3299c575ba1950ab997}} 
+float {\bfseries evolution\+Time\+Scaling} = 1
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a7adff732905d77bd8b22b9e8bdf2ff70}\label{class_hydrogen_atom_sim_a7adff732905d77bd8b22b9e8bdf2ff70}} 
+bool {\bfseries paused}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ab6d45d283d517c1ae8d7927b9f8d2f43}\label{class_hydrogen_atom_sim_ab6d45d283d517c1ae8d7927b9f8d2f43}} 
+double {\bfseries dt} =0.\+1
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ac1ec3fa7ed12124b3cd369f00842fed2}\label{class_hydrogen_atom_sim_ac1ec3fa7ed12124b3cd369f00842fed2}} 
+double {\bfseries t\+\_\+max} =100
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a4576d34cee5d58c9bc9bc39b16feea42}\label{class_hydrogen_atom_sim_a4576d34cee5d58c9bc9bc39b16feea42}} 
+Game\+Object {\bfseries core}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ace8c357c65367fb4b685e3e02c82fa71}\label{class_hydrogen_atom_sim_ace8c357c65367fb4b685e3e02c82fa71}} 
+Game\+Object {\bfseries voxel\+Prefab}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ab50236d6d477d3a501869ccab0633d23}\label{class_hydrogen_atom_sim_ab50236d6d477d3a501869ccab0633d23}} 
+double {\bfseries Gamma\+\_\+decay} = 0.\+5
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ac021893ec9d5abee6ec25469bd299d3f}\label{class_hydrogen_atom_sim_ac021893ec9d5abee6ec25469bd299d3f}} 
+Vector$<$ double $>$ {\bfseries get\+\_\+p\+\_\+basis} ()
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ada00f97bf8d1a14d8c56c2308e09d44a}\label{class_hydrogen_atom_sim_ada00f97bf8d1a14d8c56c2308e09d44a}} 
+Vector$<$ double $>$ {\bfseries get\+\_\+p\+\_\+grid} ()
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aa70aea1805495a438b44df8fea264973}\label{class_hydrogen_atom_sim_aa70aea1805495a438b44df8fea264973}} 
+double {\bfseries get\+\_\+norm\+\_\+sq} (Vector$<$ Complex $>$ psi)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ab0c4dd2d6846b473ad3e3cc2cdb02347}\label{class_hydrogen_atom_sim_ab0c4dd2d6846b473ad3e3cc2cdb02347}} 
+double {\bfseries get\+\_\+norm} (Vector$<$ Complex $>$ psi)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a272af937cff6842a238d5218ed02707d}\label{class_hydrogen_atom_sim_a272af937cff6842a238d5218ed02707d}} 
+int bool meas\+\_\+success {\bfseries time\+\_\+evolve} (double dt, bool do\+\_\+meas=false, double gamma\+\_\+meas=0, double x\+\_\+meas=0, double y\+\_\+meas=0, double z\+\_\+meas=0)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a7a830476c3f4c3aa8896f61c1a49fcda}\label{class_hydrogen_atom_sim_a7a830476c3f4c3aa8896f61c1a49fcda}} 
+void {\bfseries Create\+Gradient} ()
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aed28ea3552094ae9310e4a427e0667c3}\label{class_hydrogen_atom_sim_aed28ea3552094ae9310e4a427e0667c3}} 
+void {\bfseries Initialize\+Visualization} ()
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aa16a425c4e0cc73d9a5fee43db517c6b}\label{class_hydrogen_atom_sim_aa16a425c4e0cc73d9a5fee43db517c6b}} 
+void {\bfseries Update\+Visualization} (int timestep, int wd, bool ms)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a2904d22aa3670c3db9838cd8b9dbf4ad}\label{class_hydrogen_atom_sim_a2904d22aa3670c3db9838cd8b9dbf4ad}} 
+void {\bfseries Output} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ab196ce440fc2401818f98bfa2a1a57dd}\label{class_hydrogen_atom_sim_ab196ce440fc2401818f98bfa2a1a57dd}} 
+static double {\bfseries laguerre\+Calculate} (int k, double x, int alpha)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a26b0b0a27fe1109f31f22468a9ea1a69}\label{class_hydrogen_atom_sim_a26b0b0a27fe1109f31f22468a9ea1a69}} 
+static double {\bfseries legendre\+\_\+\+Pmm} (int m, double x)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a7789f18c6aac2a4d51960f0aec6142ff}\label{class_hydrogen_atom_sim_a7789f18c6aac2a4d51960f0aec6142ff}} 
+static double {\bfseries legendre\+Calculate} (int l, int m, double x)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a3ac7a22549a2a2ff7664dd864524a014}\label{class_hydrogen_atom_sim_a3ac7a22549a2a2ff7664dd864524a014}} 
+static double {\bfseries get\+\_\+psi\+\_\+r} (double r, int n, int l, int m)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ad568c425f529a14f8999640af5d8c45b}\label{class_hydrogen_atom_sim_ad568c425f529a14f8999640af5d8c45b}} 
+static double {\bfseries get\+\_\+psi\+\_\+th} (double cth, int l, int m)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a4ec8c41b0ce1fb12190f7068b2552b5b}\label{class_hydrogen_atom_sim_a4ec8c41b0ce1fb12190f7068b2552b5b}} 
+static Complex {\bfseries get\+\_\+psi} (double r, double cth, double phi, int n, int l, int m)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a4c3655f86dd697ac1e3d5b4d8645a274}\label{class_hydrogen_atom_sim_a4c3655f86dd697ac1e3d5b4d8645a274}} 
+Gradient {\bfseries gradient}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a688f59537a0656443a0034cb158b5f83}\label{class_hydrogen_atom_sim_a688f59537a0656443a0034cb158b5f83}} 
+Gradient\+Color\+Key\mbox{[}$\,$\mbox{]} {\bfseries color\+Key}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a94ef6edc09fd4bc562b133d36539b440}\label{class_hydrogen_atom_sim_a94ef6edc09fd4bc562b133d36539b440}} 
+Gradient\+Alpha\+Key\mbox{[}$\,$\mbox{]} {\bfseries alpha\+Key}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_acd21b1e0fdf3dc8285553757198ac89e}\label{class_hydrogen_atom_sim_acd21b1e0fdf3dc8285553757198ac89e}} 
+double {\bfseries sigma\+\_\+meas} = 1.\+0
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ac1eab4c1c14e78e6429f8d9f2d1e9aae}\label{class_hydrogen_atom_sim_ac1eab4c1c14e78e6429f8d9f2d1e9aae}} 
+int {\bfseries n\+\_\+max} = 10
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a1f1495318be29f159947111bd7f37a51}\label{class_hydrogen_atom_sim_a1f1495318be29f159947111bd7f37a51}} 
+double {\bfseries dx} = 0.\+5
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a8fd45837914dc24a43cc65bfb9fbd5df}\label{class_hydrogen_atom_sim_a8fd45837914dc24a43cc65bfb9fbd5df}} 
+double {\bfseries x\+\_\+max} = 5.\+25
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ac663617719e960a49a500d39da3d0157}\label{class_hydrogen_atom_sim_ac663617719e960a49a500d39da3d0157}} 
+int {\bfseries rand\+\_\+seed} = 0
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ad2e700c6b3d28f08783291737cde634a}\label{class_hydrogen_atom_sim_ad2e700c6b3d28f08783291737cde634a}} 
+int {\bfseries basis\+\_\+sz}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a92753ab0209bdf959b36e03e5f2563fd}\label{class_hydrogen_atom_sim_a92753ab0209bdf959b36e03e5f2563fd}} 
+int {\bfseries grid\+\_\+sz}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ad8b0a08e56b689cf87b320989f96765e}\label{class_hydrogen_atom_sim_ad8b0a08e56b689cf87b320989f96765e}} 
+System.\+Random {\bfseries rng}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a58d94648ac2a3113d17ffa0805fb4285}\label{class_hydrogen_atom_sim_a58d94648ac2a3113d17ffa0805fb4285}} 
+Vector$<$ Complex $>$ {\bfseries psi}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aa750822573eaa84f219211209d373d4d}\label{class_hydrogen_atom_sim_aa750822573eaa84f219211209d373d4d}} 
+Matrix$<$ Complex $>$ {\bfseries U\+\_\+grid}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a1d9c15364652941ef404adf27d79ae2b}\label{class_hydrogen_atom_sim_a1d9c15364652941ef404adf27d79ae2b}} 
+List$<$ double $>$ {\bfseries x}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_abd35e6ded44000939f320df90e9a411d}\label{class_hydrogen_atom_sim_abd35e6ded44000939f320df90e9a411d}} 
+List$<$ double $>$ {\bfseries y}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ad42cf11aec836e6c713978193adec34b}\label{class_hydrogen_atom_sim_ad42cf11aec836e6c713978193adec34b}} 
+List$<$ double $>$ {\bfseries z}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a34273951450c831dfb96f115ce3384c8}\label{class_hydrogen_atom_sim_a34273951450c831dfb96f115ce3384c8}} 
+List$<$ double $>$ {\bfseries r}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a20dba286ea6f41d5b45f9d5c64d8b5d6}\label{class_hydrogen_atom_sim_a20dba286ea6f41d5b45f9d5c64d8b5d6}} 
+List$<$ double $>$ {\bfseries cth}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a934e60626173355889d175a72e59c19f}\label{class_hydrogen_atom_sim_a934e60626173355889d175a72e59c19f}} 
+List$<$ double $>$ {\bfseries phi}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a5144e1f24db3ed70bdeca857d197e2c0}\label{class_hydrogen_atom_sim_a5144e1f24db3ed70bdeca857d197e2c0}} 
+List$<$ int $>$ {\bfseries n}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a06bef9c2141040401ea372601c1a0b45}\label{class_hydrogen_atom_sim_a06bef9c2141040401ea372601c1a0b45}} 
+List$<$ int $>$ {\bfseries l}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a923def099b4fb599d5f16341e4c0f976}\label{class_hydrogen_atom_sim_a923def099b4fb599d5f16341e4c0f976}} 
+List$<$ int $>$ {\bfseries m}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aba727cdad099b30da036cc746ad7ec14}\label{class_hydrogen_atom_sim_aba727cdad099b30da036cc746ad7ec14}} 
+Vector$<$ Complex $>$ {\bfseries E}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a1bc958393949b79799a8d0eea940b84f}\label{class_hydrogen_atom_sim_a1bc958393949b79799a8d0eea940b84f}} 
+Vector$<$ Complex $>$ {\bfseries H\+\_\+decay}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aece53a27195dd59d06a92cc1577325ab}\label{class_hydrogen_atom_sim_aece53a27195dd59d06a92cc1577325ab}} 
+List$<$ int $>$ {\bfseries state\+\_\+init\+\_\+lst}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aa91ed019c7f035062677da1c1aedb734}\label{class_hydrogen_atom_sim_aa91ed019c7f035062677da1c1aedb734}} 
+List$<$ int $>$ {\bfseries state\+\_\+final\+\_\+lst}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a82895d9e067f48aee8e86e64ea701ddf}\label{class_hydrogen_atom_sim_a82895d9e067f48aee8e86e64ea701ddf}} 
+List$<$ double $>$ {\bfseries decay\+\_\+rate\+\_\+lst}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ab7c2f6be29e1087cc43d83532dc29bc9}\label{class_hydrogen_atom_sim_ab7c2f6be29e1087cc43d83532dc29bc9}} 
+List$<$ Matrix$<$ Complex $>$ $>$ {\bfseries meas\+\_\+matr\+\_\+lst}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a905156dfe9718344e32f12f106f8f2e7}\label{class_hydrogen_atom_sim_a905156dfe9718344e32f12f106f8f2e7}} 
+double {\bfseries dz0\+\_\+meas} = 0.\+1
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a7a84a7d54dbe10bdc969f03ac3df41b1}\label{class_hydrogen_atom_sim_a7a84a7d54dbe10bdc969f03ac3df41b1}} 
+double {\bfseries z0\+\_\+meas\+\_\+max} = 10.\+0
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aefccd041849adf6d584af3e3da4f0ce9}\label{class_hydrogen_atom_sim_aefccd041849adf6d584af3e3da4f0ce9}} 
+List$<$ double $>$ {\bfseries t} = new List$<$double$>$()
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aecf579599cdff123713290e90c75bcf4}\label{class_hydrogen_atom_sim_aecf579599cdff123713290e90c75bcf4}} 
+Matrix$<$ double $>$ {\bfseries p\+\_\+grid}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_afd290f818f13e82c2539ad97c09a3719}\label{class_hydrogen_atom_sim_afd290f818f13e82c2539ad97c09a3719}} 
+Matrix$<$ double $>$ {\bfseries p\+\_\+basis}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aa9b0c6380b6174d22d727558bbe7035d}\label{class_hydrogen_atom_sim_aa9b0c6380b6174d22d727558bbe7035d}} 
+List$<$ int $>$ {\bfseries which\+\_\+decay\+\_\+lst}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_af8e109b1d755836eb8ecb9db372c642f}\label{class_hydrogen_atom_sim_af8e109b1d755836eb8ecb9db372c642f}} 
+List$<$ bool $>$ {\bfseries meas\+\_\+success\+\_\+lst}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aabf21c2eb6f032d4de7d091b3cf362e8}\label{class_hydrogen_atom_sim_aabf21c2eb6f032d4de7d091b3cf362e8}} 
+Game\+Object\mbox{[}$\,$\mbox{]} {\bfseries voxel\+Visualizations}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_abd646b2c7f7b8d960811131dea155788}\label{class_hydrogen_atom_sim_abd646b2c7f7b8d960811131dea155788}} 
+Color {\bfseries voxel\+Visualization\+Color}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a9bf3605f77c9dfcd9095ccd50b8b5b4a}\label{class_hydrogen_atom_sim_a9bf3605f77c9dfcd9095ccd50b8b5b4a}} 
+bool {\bfseries measuring}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aac67d3787d535ed6609567a2e7cfaa7b}\label{class_hydrogen_atom_sim_aac67d3787d535ed6609567a2e7cfaa7b}} 
+double {\bfseries measuring\+Gamma}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aaecce9ef1aa3b7ac5d73a261ef62f6ec}\label{class_hydrogen_atom_sim_aaecce9ef1aa3b7ac5d73a261ef62f6ec}} 
+Vector3 {\bfseries measuring\+Position}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a2e6d48d493948c48cbe1212d34615b0d}\label{class_hydrogen_atom_sim_a2e6d48d493948c48cbe1212d34615b0d}} 
+double {\bfseries norm\+\_\+sq}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a51fd0220ff2de65a8aa92cf5992e8813}\label{class_hydrogen_atom_sim_a51fd0220ff2de65a8aa92cf5992e8813}} 
+int {\bfseries j}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_afd50a0b2fb86af66b546792b04ac1064}\label{class_hydrogen_atom_sim_afd50a0b2fb86af66b546792b04ac1064}} 
+int {\bfseries which\+\_\+decay}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_af61a97cb672eb57f8df4b093cba26a3c}\label{class_hydrogen_atom_sim_af61a97cb672eb57f8df4b093cba26a3c}} 
+bool {\bfseries meas\+\_\+success}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a8bd005aa1781d860abbdeddf63cdbfbc}\label{class_hydrogen_atom_sim_a8bd005aa1781d860abbdeddf63cdbfbc}} 
+double {\bfseries random\+Double}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ab8c97b9f5ebcd2b0e513a917ff1558a5}\label{class_hydrogen_atom_sim_ab8c97b9f5ebcd2b0e513a917ff1558a5}} 
+Vector$<$ Complex $>$ {\bfseries U\+\_\+eff}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aaef79911a7606673830c6ce18a067a2d}\label{class_hydrogen_atom_sim_aaef79911a7606673830c6ce18a067a2d}} 
+List$<$ double $>$ {\bfseries cum\+\_\+prob}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a430f346c031c48d3a4f79c356ddb23f8}\label{class_hydrogen_atom_sim_a430f346c031c48d3a4f79c356ddb23f8}} 
+double {\bfseries prob}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ad407a116ae30e835cf3fa76a4c13a818}\label{class_hydrogen_atom_sim_ad407a116ae30e835cf3fa76a4c13a818}} 
+double {\bfseries r\+\_\+meas}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a8ae877bb0d7fba678ab75cf1269fbefa}\label{class_hydrogen_atom_sim_a8ae877bb0d7fba678ab75cf1269fbefa}} 
+double {\bfseries theta\+\_\+meas}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a73d069ec493efce3533efe1d9abbf392}\label{class_hydrogen_atom_sim_a73d069ec493efce3533efe1d9abbf392}} 
+double {\bfseries phi\+\_\+meas}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_af708576b8b0558a3410753f19e5d1901}\label{class_hydrogen_atom_sim_af708576b8b0558a3410753f19e5d1901}} 
+int {\bfseries meas\+\_\+ind}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a685d364b62a0adb7ee37a546dc5a4580}\label{class_hydrogen_atom_sim_a685d364b62a0adb7ee37a546dc5a4580}} 
+Vector$<$ Complex $>$ {\bfseries psi\+\_\+prime}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a58dd8619971a70817f4058a536583c0e}\label{class_hydrogen_atom_sim_a58dd8619971a70817f4058a536583c0e}} 
+double {\bfseries p\+\_\+meas}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_aebe76a8d2f8d638b3feff1f6c7d0a168}\label{class_hydrogen_atom_sim_aebe76a8d2f8d638b3feff1f6c7d0a168}} 
+static Complex {\bfseries im} = new Complex(0, 1)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a7d21d48039112a02cda9597dc672ff52}\label{class_hydrogen_atom_sim_a7d21d48039112a02cda9597dc672ff52}} 
+static double {\bfseries p\+\_\+mm}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a129b869f607609ed0119fda095c6c3ab}\label{class_hydrogen_atom_sim_a129b869f607609ed0119fda095c6c3ab}} 
+static double {\bfseries root\+\_\+factor}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a1b09f196ab03c238365269e64ebe9f6d}\label{class_hydrogen_atom_sim_a1b09f196ab03c238365269e64ebe9f6d}} 
+static double {\bfseries fact\+\_\+coeff} = 1.\+0
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a91ae01a03114d4236bf0c2737f2bffe6}\label{class_hydrogen_atom_sim_a91ae01a03114d4236bf0c2737f2bffe6}} 
+static int {\bfseries i}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a62ee8dd44739597ec9c07d0bb4050e67}\label{class_hydrogen_atom_sim_a62ee8dd44739597ec9c07d0bb4050e67}} 
+static double {\bfseries dif}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a723d620e0f575085f1ed1925e1af9659}\label{class_hydrogen_atom_sim_a723d620e0f575085f1ed1925e1af9659}} 
+static double {\bfseries sum}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a02a407e960b2e1a7ba1a38ad837e59a2}\label{class_hydrogen_atom_sim_a02a407e960b2e1a7ba1a38ad837e59a2}} 
+static double {\bfseries t\+\_\+d}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a151ce0d406099953828d68011807b7aa}\label{class_hydrogen_atom_sim_a151ce0d406099953828d68011807b7aa}} 
+static double {\bfseries t\+\_\+s}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a3e3a7890bcfc5296bc0cf953bdc13d1b}\label{class_hydrogen_atom_sim_a3e3a7890bcfc5296bc0cf953bdc13d1b}} 
+static double {\bfseries exp\+\_\+check}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_acfbddff9f65bf57e98b0fd9171768924}\label{class_hydrogen_atom_sim_acfbddff9f65bf57e98b0fd9171768924}} 
+static double {\bfseries epsilon}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a3656d94dd0bb712d2044d4a2e2654889}\label{class_hydrogen_atom_sim_a3656d94dd0bb712d2044d4a2e2654889}} 
+static double {\bfseries err\+\_\+amp}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a1b85e007043f4d025cea59bc9889d36a}\label{class_hydrogen_atom_sim_a1b85e007043f4d025cea59bc9889d36a}} 
+static double {\bfseries p\+\_\+mmp1}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a8073971cd9d7dd983473673002f736db}\label{class_hydrogen_atom_sim_a8073971cd9d7dd983473673002f736db}} 
+static double {\bfseries val}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a71bdc021fb99e9de729351108ae4377e}\label{class_hydrogen_atom_sim_a71bdc021fb99e9de729351108ae4377e}} 
+static double {\bfseries err}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a9891cea34d87db94c931d0278dc9a24b}\label{class_hydrogen_atom_sim_a9891cea34d87db94c931d0278dc9a24b}} 
+static double {\bfseries p\+\_\+ellm2}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a6790aa8a7149e598d8ee93111481a0fc}\label{class_hydrogen_atom_sim_a6790aa8a7149e598d8ee93111481a0fc}} 
+static double {\bfseries p\+\_\+ellm1}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a80bd14b06fa9809bf3d012522298b39d}\label{class_hydrogen_atom_sim_a80bd14b06fa9809bf3d012522298b39d}} 
+static double {\bfseries p\+\_\+ell}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ae4fea58a306133098008184cd8dd83e5}\label{class_hydrogen_atom_sim_ae4fea58a306133098008184cd8dd83e5}} 
+static int {\bfseries ell}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a53cee25d5fedf87b7f274c91f822c89a}\label{class_hydrogen_atom_sim_a53cee25d5fedf87b7f274c91f822c89a}} 
+static double {\bfseries rho1}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a1fc62856056da2691cd9906cf3f13aa4}\label{class_hydrogen_atom_sim_a1fc62856056da2691cd9906cf3f13aa4}} 
+static double {\bfseries rho}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a7529e117b7196b17364f7be92c2192c0}\label{class_hydrogen_atom_sim_a7529e117b7196b17364f7be92c2192c0}} 
+static double {\bfseries first}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_acce73cafc92adf3700b97ad4b127c75a}\label{class_hydrogen_atom_sim_acce73cafc92adf3700b97ad4b127c75a}} 
+static double {\bfseries second}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a5f29d9b12c31dc3a64e5f1e35342119a}\label{class_hydrogen_atom_sim_a5f29d9b12c31dc3a64e5f1e35342119a}} 
+static double {\bfseries fn1}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_acb41a90dd3581c7fbf6940365edd1e90}\label{class_hydrogen_atom_sim_acb41a90dd3581c7fbf6940365edd1e90}} 
+static double {\bfseries my\+\_\+norm}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a782764e7406b00aa1395044a103f8c9d}\label{class_hydrogen_atom_sim_a782764e7406b00aa1395044a103f8c9d}} 
+static double {\bfseries lg\+\_\+fn1}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_ae93072cacb1219b1a9e3d58b802f6a0a}\label{class_hydrogen_atom_sim_ae93072cacb1219b1a9e3d58b802f6a0a}} 
+static double {\bfseries lg\+\_\+fn2}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_sim_a7ba95cb9feaf5c286d60ce5efd0bba6c}\label{class_hydrogen_atom_sim_a7ba95cb9feaf5c286d60ce5efd0bba6c}} 
+static double {\bfseries result}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Quantum\+Backend/Hydrogen\+Atom\+Sim.\+cs\end{DoxyCompactItemize}

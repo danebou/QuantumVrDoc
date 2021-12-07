@@ -1,0 +1,67 @@
+\hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator}{}\doxysection{Valve.\+VR.\+Interaction\+System.\+Velocity\+Estimator Class Reference}
+\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator}\index{Valve.VR.InteractionSystem.VelocityEstimator@{Valve.VR.InteractionSystem.VelocityEstimator}}
+Inheritance diagram for Valve.\+VR.\+Interaction\+System.\+Velocity\+Estimator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_a7e6e08f723805cc2837f9e90aa8d583d}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_a7e6e08f723805cc2837f9e90aa8d583d}} 
+void {\bfseries Begin\+Estimating\+Velocity} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_aead319a66f9f5153e29b1979aa29c829}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_aead319a66f9f5153e29b1979aa29c829}} 
+void {\bfseries Finish\+Estimating\+Velocity} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_a559516108b17223f0ed8de71e52e8d49}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_a559516108b17223f0ed8de71e52e8d49}} 
+Vector3 {\bfseries Get\+Velocity\+Estimate} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_a83bd0335b0f4ac8f17d93403f9339026}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_a83bd0335b0f4ac8f17d93403f9339026}} 
+Vector3 {\bfseries Get\+Angular\+Velocity\+Estimate} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_ad8110ea3ac14d8687d55169587027003}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_ad8110ea3ac14d8687d55169587027003}} 
+Vector3 {\bfseries Get\+Acceleration\+Estimate} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_a838dbedcb8be448e4c2224296b3b2622}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_a838dbedcb8be448e4c2224296b3b2622}} 
+int {\bfseries velocity\+Average\+Frames} = 5
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_a7682e772901dd4d49493ec4073de3aff}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_a7682e772901dd4d49493ec4073de3aff}} 
+int {\bfseries angular\+Velocity\+Average\+Frames} = 11
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_a6f41731474b7149756386f9daef4ab1a}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_a6f41731474b7149756386f9daef4ab1a}} 
+bool {\bfseries estimate\+On\+Awake} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_aefc5e7e82fbcc8e79c509372eeeeac7d}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_aefc5e7e82fbcc8e79c509372eeeeac7d}} 
+void {\bfseries Awake} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_aae155e78c279bf23d29b2391984345c3}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_aae155e78c279bf23d29b2391984345c3}} 
+IEnumerator {\bfseries Estimate\+Velocity\+Coroutine} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_aced6804bc148d9b2206cdacd1c8c6c10}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_aced6804bc148d9b2206cdacd1c8c6c10}} 
+Coroutine {\bfseries routine}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_af717f158d253540c2456795548be7ea2}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_af717f158d253540c2456795548be7ea2}} 
+int {\bfseries sample\+Count}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_a85e3c55d0c92b7f1692e4fda4a60b429}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_a85e3c55d0c92b7f1692e4fda4a60b429}} 
+Vector3\mbox{[}$\,$\mbox{]} {\bfseries velocity\+Samples}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_aae8c4f93a60f2344e6640349a25abaea}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_velocity_estimator_aae8c4f93a60f2344e6640349a25abaea}} 
+Vector3\mbox{[}$\,$\mbox{]} {\bfseries angular\+Velocity\+Samples}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Interaction\+System/\+Core/\+Scripts/Velocity\+Estimator.\+cs\end{DoxyCompactItemize}

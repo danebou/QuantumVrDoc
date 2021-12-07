@@ -1,0 +1,66 @@
+\hypertarget{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose}{}\doxysection{Valve.\+VR.\+ISteam\+VR\+\_\+\+Action\+\_\+\+Pose Interface Reference}
+\label{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose}\index{Valve.VR.ISteamVR\_Action\_Pose@{Valve.VR.ISteamVR\_Action\_Pose}}
+
+
+Boolean actions are either true or false. There is an on\+State\+Up and on\+State\+Down event for the rising and falling edge.  
+
+
+Inheritance diagram for Valve.\+VR.\+ISteam\+VR\+\_\+\+Action\+\_\+\+Pose\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.286385cm]{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_af4aa96a619188955df2435a5d025bcd0}\label{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_af4aa96a619188955df2435a5d025bcd0}} 
+Vector3 {\bfseries local\+Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The local position of this action relative to the universe origin\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a16e3cc27d2204c99da1a72cd9df722bc}\label{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a16e3cc27d2204c99da1a72cd9df722bc}} 
+Quaternion {\bfseries local\+Rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The local rotation of this action relative to the universe origin\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a9e1c745cb4003d1cad5ea7df89971e5e}\label{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a9e1c745cb4003d1cad5ea7df89971e5e}} 
+ETracking\+Result {\bfseries tracking\+State}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The state of the tracking system that is used to create pose data (position, rotation, etc)\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a3e9fbbea68d0351c964de8ad71701c0f}\label{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a3e9fbbea68d0351c964de8ad71701c0f}} 
+Vector3 {\bfseries velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The local velocity of this pose relative to the universe origin\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a7f31eba29e24c48263a1106a7cae1510}\label{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a7f31eba29e24c48263a1106a7cae1510}} 
+Vector3 {\bfseries angular\+Velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The local angular velocity of this pose relative to the universe origin\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_ae23cc436bf3b70f17a7f3b46be350853}\label{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_ae23cc436bf3b70f17a7f3b46be350853}} 
+bool {\bfseries pose\+Is\+Valid}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if the pose retrieved for this action and input source is valid (good data from the tracking source)\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_acc2b4cbb97eb5fc582f82eaf48134daf}\label{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_acc2b4cbb97eb5fc582f82eaf48134daf}} 
+bool {\bfseries device\+Is\+Connected}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if the device bound to this action and input source is connected\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a183bdae7febd2ac8c78d3b3912eb9f72}\label{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a183bdae7febd2ac8c78d3b3912eb9f72}} 
+Vector3 {\bfseries last\+Local\+Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The local position for this pose during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_aa132a0b4f55cd4b11a6ca99965835343}\label{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_aa132a0b4f55cd4b11a6ca99965835343}} 
+Quaternion {\bfseries last\+Local\+Rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The local rotation for this pose during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a83d1cfa62995bc1b06fefb47923baff6}\label{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a83d1cfa62995bc1b06fefb47923baff6}} 
+ETracking\+Result {\bfseries last\+Tracking\+State}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The tracking state for this pose during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a4d80572375879d684549fc318028131c}\label{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a4d80572375879d684549fc318028131c}} 
+Vector3 {\bfseries last\+Velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The velocity for this pose during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_afb4337fcf08a6e62d0fe6fd43e7e7c1d}\label{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_afb4337fcf08a6e62d0fe6fd43e7e7c1d}} 
+Vector3 {\bfseries last\+Angular\+Velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The angular velocity for this pose during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a710f0141d26fe73390796c725474d214}\label{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_a710f0141d26fe73390796c725474d214}} 
+bool {\bfseries last\+Pose\+Is\+Valid}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if the pose was valid during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_ab394813e83a7e73620f0c98bca90915a}\label{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___pose_ab394813e83a7e73620f0c98bca90915a}} 
+bool {\bfseries last\+Device\+Is\+Connected}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if the device bound to this action was connected during the previous update\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Boolean actions are either true or false. There is an on\+State\+Up and on\+State\+Down event for the rising and falling edge. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Input/Steam\+VR\+\_\+\+Action\+\_\+\+Pose.\+cs\end{DoxyCompactItemize}

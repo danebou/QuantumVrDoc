@@ -1,0 +1,188 @@
+\hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose}{}\doxysection{Valve.\+VR.\+Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose Class Reference}
+\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose}\index{Valve.VR.SteamVR\_Behaviour\_Pose@{Valve.VR.SteamVR\_Behaviour\_Pose}}
+
+
+This component simplifies the use of Pose actions. Adding it to a gameobject will auto set that transform\textquotesingle{}s position and rotation every update to match the pose. Advanced velocity estimation is handled through a buffer of the last 30 updates.  
+
+
+Inheritance diagram for Valve.\+VR.\+Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a045c834f9f876b6eb28c916fe0a4c503}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a045c834f9f876b6eb28c916fe0a4c503}} 
+int {\bfseries Get\+Device\+Index} ()
+\begin{DoxyCompactList}\small\item\em Returns the device index for the device bound to the pose. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_ac36bf2a333805b149722844bf2994256}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_ac36bf2a333805b149722844bf2994256}} 
+Vector3 {\bfseries Get\+Velocity} ()
+\begin{DoxyCompactList}\small\item\em Returns the current velocity of the pose (as of the last update)\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_aa89766e6a3e7d4704441f6ccdc0930f3}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_aa89766e6a3e7d4704441f6ccdc0930f3}} 
+Vector3 {\bfseries Get\+Angular\+Velocity} ()
+\begin{DoxyCompactList}\small\item\em Returns the current angular velocity of the pose (as of the last update)\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a5074775b7384f0eb3754b52b4c46df17}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a5074775b7384f0eb3754b52b4c46df17}} 
+bool {\bfseries Get\+Velocities\+At\+Time\+Offset} (float seconds\+From\+Now, out Vector3 velocity, out Vector3 angular\+Velocity)
+\begin{DoxyCompactList}\small\item\em Returns the velocities of the pose at the time specified. Can predict in the future or return past values.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_aff9156a545cb6722a73421ac20ebeba9}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_aff9156a545cb6722a73421ac20ebeba9}} 
+void {\bfseries Get\+Estimated\+Peak\+Velocities} (out Vector3 velocity, out Vector3 angular\+Velocity)
+\begin{DoxyCompactList}\small\item\em Uses previously recorded values to find the peak speed of the pose and returns the corresponding velocity and angular velocity\end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a8ce88c34c63f922b59292680a5c0803a}{Get\+Localized\+Name}} (params EVRInput\+String\+Bits\mbox{[}$\,$\mbox{]} localized\+Parts)
+\begin{DoxyCompactList}\small\item\em Gets the localized name of the device that the action corresponds to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a7730a086ee26d198ce89285c305151d1}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a7730a086ee26d198ce89285c305151d1}} 
+delegate void {\bfseries Active\+Change\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, bool active)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_abfdfc35f49754198589572579c59bcc2}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_abfdfc35f49754198589572579c59bcc2}} 
+delegate void {\bfseries Change\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_af2fee0ef3ee6fee2917805bb050216c2}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_af2fee0ef3ee6fee2917805bb050216c2}} 
+delegate void {\bfseries Update\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a699268c8115abe175fc4cbd41cb99c11}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a699268c8115abe175fc4cbd41cb99c11}} 
+delegate void {\bfseries Tracking\+Change\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, ETracking\+Result tracking\+State)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_abe1b44cd414dbcb2eff3ce7b0ea7fb94}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_abe1b44cd414dbcb2eff3ce7b0ea7fb94}} 
+delegate void {\bfseries Valid\+Pose\+Change\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, bool valid\+Pose)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_abb026a5887e19143d6b95452453dc8de}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_abb026a5887e19143d6b95452453dc8de}} 
+delegate void {\bfseries Device\+Connected\+Change\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, bool device\+Connected)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_ac81003e896ac2766c36b5c7a3438ef7f}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_ac81003e896ac2766c36b5c7a3438ef7f}} 
+delegate void {\bfseries Device\+Index\+Changed\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, int new\+Device\+Index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a7d8dfcf694264e0a7bc878bee6eaa30b}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a7d8dfcf694264e0a7bc878bee6eaa30b}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose}{Steam\+VR\+\_\+\+Action\+\_\+\+Pose}} {\bfseries pose\+Action} = Steam\+VR\+\_\+\+Input.\+Get\+Action$<$\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose}{Steam\+VR\+\_\+\+Action\+\_\+\+Pose}}$>$(\char`\"{}Pose\char`\"{})
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a95ff5e8947fe7780543e4c5679cfba52}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a95ff5e8947fe7780543e4c5679cfba52}} 
+Steam\+VR\+\_\+\+Input\+\_\+\+Sources {\bfseries input\+Source}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a59ea726c397c04757378717e6bf5a8a7}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a59ea726c397c04757378717e6bf5a8a7}} 
+Transform {\bfseries origin}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_aa26155c725bb61edaebcf529645c77c4}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_aa26155c725bb61edaebcf529645c77c4}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_event}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose\+Event}} {\bfseries on\+Transform\+Updated}
+\begin{DoxyCompactList}\small\item\em This Unity event will fire whenever the position or rotation of this transform is updated.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a1d23c9fc3364bc8d9a2e2047af2e2e92}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a1d23c9fc3364bc8d9a2e2047af2e2e92}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_event}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose\+Event}} {\bfseries on\+Transform\+Changed}
+\begin{DoxyCompactList}\small\item\em This Unity event will fire whenever the position or rotation of this transform is changed.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a5cb65c8eacdd57472f5c6e3d11302391}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a5cb65c8eacdd57472f5c6e3d11302391}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose___connected_changed_event}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose\+\_\+\+Connected\+Changed\+Event}} {\bfseries on\+Connected\+Changed}
+\begin{DoxyCompactList}\small\item\em This Unity event will fire whenever the device is connected or disconnected\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_ab6c888d7509d753ee3542eac9de67f85}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_ab6c888d7509d753ee3542eac9de67f85}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose___tracking_changed_event}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose\+\_\+\+Tracking\+Changed\+Event}} {\bfseries on\+Tracking\+Changed}
+\begin{DoxyCompactList}\small\item\em This Unity event will fire whenever the device\textquotesingle{}s tracking state changes\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a99f240404e0a47b614cb20246c395e47}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a99f240404e0a47b614cb20246c395e47}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose___device_index_changed_event}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose\+\_\+\+Device\+Index\+Changed\+Event}} {\bfseries on\+Device\+Index\+Changed}
+\begin{DoxyCompactList}\small\item\em This Unity event will fire whenever the device\textquotesingle{}s device\+Index changes\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_ad30505e3fea17998a4137dd2d987f65f}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_ad30505e3fea17998a4137dd2d987f65f}} 
+Update\+Handler {\bfseries on\+Transform\+Updated\+Event}
+\begin{DoxyCompactList}\small\item\em This C\# event will fire whenever the position or rotation of this transform is updated.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a2118c47de64b77f157864fb337bdee8b}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a2118c47de64b77f157864fb337bdee8b}} 
+Change\+Handler {\bfseries on\+Transform\+Changed\+Event}
+\begin{DoxyCompactList}\small\item\em This C\# event will fire whenever the position or rotation of this transform is changed.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a6892abf4f394100985f6f0caa4ee0471}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a6892abf4f394100985f6f0caa4ee0471}} 
+Device\+Connected\+Change\+Handler {\bfseries on\+Connected\+Changed\+Event}
+\begin{DoxyCompactList}\small\item\em This C\# event will fire whenever the device is connected or disconnected\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_ae3372c5ebd6a668a5d100243d58a2e45}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_ae3372c5ebd6a668a5d100243d58a2e45}} 
+Tracking\+Change\+Handler {\bfseries on\+Tracking\+Changed\+Event}
+\begin{DoxyCompactList}\small\item\em This C\# event will fire whenever the device\textquotesingle{}s tracking state changes\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a9dd0fe73f508419122ed56d737d78123}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a9dd0fe73f508419122ed56d737d78123}} 
+Device\+Index\+Changed\+Handler {\bfseries on\+Device\+Index\+Changed\+Event}
+\begin{DoxyCompactList}\small\item\em This C\# event will fire whenever the device\textquotesingle{}s device\+Index changes\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a0569eb1ab4a75608b24ffe1adb2c0e03}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a0569eb1ab4a75608b24ffe1adb2c0e03}} 
+bool {\bfseries broadcast\+Device\+Changes} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a8a71e7617dd2132c4ef9c1ffcad1697b}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a8a71e7617dd2132c4ef9c1ffcad1697b}} 
+virtual void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_acab997c4e82da2873b6462214a4ca96f}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_acab997c4e82da2873b6462214a4ca96f}} 
+virtual void {\bfseries On\+Enable} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_afa7656935133f0cc8a07ddcba75eef42}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_afa7656935133f0cc8a07ddcba75eef42}} 
+virtual void {\bfseries On\+Disable} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_ac02430d88b500c93031ed5b21b2783fe}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_ac02430d88b500c93031ed5b21b2783fe}} 
+virtual void {\bfseries Update\+Transform} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a482f66677a5fba6e3f4f78540ea1c449}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a482f66677a5fba6e3f4f78540ea1c449}} 
+virtual void {\bfseries On\+Device\+Connected\+Changed} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose}{Steam\+VR\+\_\+\+Action\+\_\+\+Pose}} changed\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources changed\+Source, bool connected)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a5f7af5e04519b2f061b96aaba64035b4}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a5f7af5e04519b2f061b96aaba64035b4}} 
+virtual void {\bfseries On\+Tracking\+Changed} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose}{Steam\+VR\+\_\+\+Action\+\_\+\+Pose}} changed\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources changed\+Source, ETracking\+Result tracking\+Changed)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_aec903264cd15509cc38de0fc70629472}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_aec903264cd15509cc38de0fc70629472}} 
+virtual void {\bfseries Check\+Device\+Index} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a1e7d5dd9ecc5dedfd163fc0bdc95684d}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a1e7d5dd9ecc5dedfd163fc0bdc95684d}} 
+void {\bfseries Update\+History\+Buffer} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a121b91b11f202d7dbca360a8a3b59af8}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a121b91b11f202d7dbca360a8a3b59af8}} 
+int {\bfseries device\+Index} = -\/1
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a41166eb791fb24922ce00e39c3c906d0}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a41166eb791fb24922ce00e39c3c906d0}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___history_buffer}{Steam\+VR\+\_\+\+History\+Buffer}} {\bfseries history\+Buffer} = new \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___history_buffer}{Steam\+VR\+\_\+\+History\+Buffer}}(30)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a8eda899639df2ab346fbc027c7e6e8da}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a8eda899639df2ab346fbc027c7e6e8da}} 
+int {\bfseries last\+Frame\+Updated}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a703ee83cb05c779ce0098824374a4fb1}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a703ee83cb05c779ce0098824374a4fb1}} 
+bool {\bfseries is\+Valid}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns whether or not the current pose is in a valid state\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a76fabf036c82c1731feaaa24244bc653}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a76fabf036c82c1731feaaa24244bc653}} 
+bool {\bfseries is\+Active}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns whether or not the pose action is bound and able to be updated\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_ab759ae3f6afa15b95267afbd412d37e1}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_ab759ae3f6afa15b95267afbd412d37e1}} 
+void {\bfseries Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose\+\_\+\+On\+Update} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose}{Steam\+VR\+\_\+\+Action\+\_\+\+Pose}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a2c10c876c02d99adb0bea333cf462b02}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a2c10c876c02d99adb0bea333cf462b02}} 
+void {\bfseries Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose\+\_\+\+On\+Change} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose}{Steam\+VR\+\_\+\+Action\+\_\+\+Pose}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This component simplifies the use of Pose actions. Adding it to a gameobject will auto set that transform\textquotesingle{}s position and rotation every update to match the pose. Advanced velocity estimation is handled through a buffer of the last 30 updates. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a8ce88c34c63f922b59292680a5c0803a}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose_a8ce88c34c63f922b59292680a5c0803a}} 
+\index{Valve.VR.SteamVR\_Behaviour\_Pose@{Valve.VR.SteamVR\_Behaviour\_Pose}!GetLocalizedName@{GetLocalizedName}}
+\index{GetLocalizedName@{GetLocalizedName}!Valve.VR.SteamVR\_Behaviour\_Pose@{Valve.VR.SteamVR\_Behaviour\_Pose}}
+\doxysubsubsection{\texorpdfstring{GetLocalizedName()}{GetLocalizedName()}}
+{\footnotesize\ttfamily string Valve.\+VR.\+Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose.\+Get\+Localized\+Name (\begin{DoxyParamCaption}\item[{params EVRInput\+String\+Bits\mbox{[}$\,$\mbox{]}}]{localized\+Parts }\end{DoxyParamCaption})}
+
+
+
+Gets the localized name of the device that the action corresponds to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em localized\+Parts} & 
+\begin{DoxyItemize}
+\item VRInput\+String\+\_\+\+Hand -\/ Which hand the origin is in. E.\+g. \char`\"{}\+Left Hand\char`\"{} 
+\item VRInput\+String\+\_\+\+Controller\+Type -\/ What kind of controller the user has in that hand.\+E.\+g. \char`\"{}\+Vive Controller\char`\"{} 
+\item VRInput\+String\+\_\+\+Input\+Source -\/ What part of that controller is the origin. E.\+g. \char`\"{}\+Trackpad\char`\"{} 
+\item VRInput\+String\+\_\+\+All -\/ All of the above. E.\+g. \char`\"{}\+Left Hand Vive Controller Trackpad\char`\"{} 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Input/Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose.\+cs\end{DoxyCompactItemize}

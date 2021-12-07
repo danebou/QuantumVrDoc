@@ -1,0 +1,420 @@
+\hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand}{}\doxysection{Valve.\+VR.\+Interaction\+System.\+Hand Class Reference}
+\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand}\index{Valve.VR.InteractionSystem.Hand@{Valve.VR.InteractionSystem.Hand}}
+Inheritance diagram for Valve.\+VR.\+Interaction\+System.\+Hand\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_interaction_system_1_1_hand_1_1_attached_object}{Attached\+Object}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a61701f82b8f3fac8818954ec71804cb5}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a61701f82b8f3fac8818954ec71804cb5}} 
+enum {\bfseries Attachment\+Flags} \{ \newline
+{\bfseries Snap\+On\+Attach} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 0
+, {\bfseries Detach\+Others} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 1
+, {\bfseries Detach\+From\+Other\+Hand} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 2
+, {\bfseries Parent\+To\+Hand} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 3
+, \newline
+{\bfseries Velocity\+Movement} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 4
+, {\bfseries Turn\+On\+Kinematic} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 5
+, {\bfseries Turn\+Off\+Gravity} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 6
+, {\bfseries Allow\+Sidegrade} = 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 7
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a66068d2f4971c3bb2889d95e63745e87}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a66068d2f4971c3bb2889d95e63745e87}} 
+void {\bfseries Show\+Controller} (bool permanent=false)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a3eaf975b231ccd8bec17ef88bd20f0f1}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a3eaf975b231ccd8bec17ef88bd20f0f1}} 
+void {\bfseries Hide\+Controller} (bool permanent=false)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aadca63a28b7a68eba58631525b8e1296}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aadca63a28b7a68eba58631525b8e1296}} 
+void {\bfseries Show\+Skeleton} (bool permanent=false)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_afbf22ceb410ba6e8e4056efb96c98bab}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_afbf22ceb410ba6e8e4056efb96c98bab}} 
+void {\bfseries Hide\+Skeleton} (bool permanent=false)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab31b480ec46183481868a463391c633f}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab31b480ec46183481868a463391c633f}} 
+bool {\bfseries Has\+Skeleton} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af3c098e17efc4697374e3ec76d80b45c}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af3c098e17efc4697374e3ec76d80b45c}} 
+void {\bfseries Show} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a9f1dbbb6c195ffc69d14396ab5f6296a}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a9f1dbbb6c195ffc69d14396ab5f6296a}} 
+void {\bfseries Hide} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aa0c76c11d150d1aa4e0dca00303fe07e}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aa0c76c11d150d1aa4e0dca00303fe07e}} 
+void {\bfseries Set\+Visibility} (bool visible)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_abc70f48307d26582cca196676e282d2a}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_abc70f48307d26582cca196676e282d2a}} 
+void {\bfseries Set\+Skeleton\+Range\+Of\+Motion} (EVRSkeletal\+Motion\+Range new\+Range\+Of\+Motion, float blend\+Over\+Seconds=0.\+1f)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_accf176fb5b39fbadddbddf7792a5f440}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_accf176fb5b39fbadddbddf7792a5f440}} 
+void {\bfseries Set\+Temporary\+Skeleton\+Range\+Of\+Motion} (\mbox{\hyperlink{namespace_valve_1_1_v_r_aabb506007a41244de5c315ff5519439f}{Skeletal\+Motion\+Range\+Change}} temporary\+Range\+Of\+Motion\+Change, float blend\+Over\+Seconds=0.\+1f)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a30924ebdc6a8c20f9109aaf38c7cfe46}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a30924ebdc6a8c20f9109aaf38c7cfe46}} 
+void {\bfseries Reset\+Temporary\+Skeleton\+Range\+Of\+Motion} (float blend\+Over\+Seconds=0.\+1f)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a509648d84a26947d728100b95e8b466a}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a509648d84a26947d728100b95e8b466a}} 
+void {\bfseries Set\+Animation\+State} (int state\+Value)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a8eb9659e16a599eefc256c596b30fcb7}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a8eb9659e16a599eefc256c596b30fcb7}} 
+void {\bfseries Stop\+Animation} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a73b0ea1d5b037fca1b7cb453061d98d6}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a73b0ea1d5b037fca1b7cb453061d98d6}} 
+void {\bfseries Attach\+Object} (Game\+Object object\+To\+Attach, Grab\+Types grabbed\+With\+Type, Attachment\+Flags flags=default\+Attachment\+Flags, Transform attachment\+Offset=null)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_adef8b762b3b3a6e997bfd6e33b39f6fe}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_adef8b762b3b3a6e997bfd6e33b39f6fe}} 
+bool {\bfseries Object\+Is\+Attached} (Game\+Object go)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a93b111e767435715745cb1dda7817b0c}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a93b111e767435715745cb1dda7817b0c}} 
+void {\bfseries Force\+Hover\+Unlock} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab0bccf232d1291c6c3000d9a967635ca}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab0bccf232d1291c6c3000d9a967635ca}} 
+void {\bfseries Detach\+Object} (Game\+Object object\+To\+Detach, bool restore\+Original\+Parent=true)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a128de24fb785ca4bfdb3e5516e20573e}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a128de24fb785ca4bfdb3e5516e20573e}} 
+Vector3 {\bfseries Get\+Tracked\+Object\+Velocity} (float time\+Offset=0)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a5b524967844a7d090649d90eb82aafe7}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a5b524967844a7d090649d90eb82aafe7}} 
+Vector3 {\bfseries Get\+Tracked\+Object\+Angular\+Velocity} (float time\+Offset=0)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a0fa717c485c85536493e1da9239ceed7}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a0fa717c485c85536493e1da9239ceed7}} 
+void {\bfseries Get\+Estimated\+Peak\+Velocities} (out Vector3 velocity, out Vector3 angular\+Velocity)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a8938a296cb903758925e20b7a314f7e5}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a8938a296cb903758925e20b7a314f7e5}} 
+bool {\bfseries Is\+Still\+Hovering} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_interactable}{Interactable}} interactable)
+\begin{DoxyCompactList}\small\item\em Returns true when the hand is currently hovering over the interactable passed in \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a6fc8b7ba95c6e033b51f25f946df48b2}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a6fc8b7ba95c6e033b51f25f946df48b2}} 
+void {\bfseries Reset\+Attached\+Transform} (\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_interaction_system_1_1_hand_1_1_attached_object}{Attached\+Object}} attached\+Object)
+\begin{DoxyCompactList}\small\item\em Snap an attached object to its target position and rotation. Good for error correction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a07600fb46d1bdbf3a02e70197d471134}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a07600fb46d1bdbf3a02e70197d471134}} 
+void {\bfseries Hover\+Lock} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_interactable}{Interactable}} interactable)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aebd333682282351892fcc4b9df395e30}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aebd333682282351892fcc4b9df395e30}} 
+void {\bfseries Hover\+Unlock} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_interactable}{Interactable}} interactable)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab9e8c722bbad5cb37f0268f4c1745118}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab9e8c722bbad5cb37f0268f4c1745118}} 
+void {\bfseries Trigger\+Haptic\+Pulse} (ushort micro\+Seconds\+Duration)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a84aea2a4f260ef66494bd28ab0d8a590}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a84aea2a4f260ef66494bd28ab0d8a590}} 
+void {\bfseries Trigger\+Haptic\+Pulse} (float duration, float frequency, float amplitude)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a261392cdd2f2a398b16738ea522fb099}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a261392cdd2f2a398b16738ea522fb099}} 
+void {\bfseries Show\+Grab\+Hint} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a186d8af3a990ec94164f6aa62ac1d2c4}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a186d8af3a990ec94164f6aa62ac1d2c4}} 
+void {\bfseries Hide\+Grab\+Hint} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_afbcf3d7dcdde4b461f890516debfba02}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_afbcf3d7dcdde4b461f890516debfba02}} 
+void {\bfseries Show\+Grab\+Hint} (string text)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a3708622be32d8aaca12d368c0fed2047}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a3708622be32d8aaca12d368c0fed2047}} 
+Grab\+Types {\bfseries Get\+Grab\+Starting} (Grab\+Types explicit\+Type=Grab\+Types.\+None)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a100e68b26d6ab2e0eeba965e1ef99989}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a100e68b26d6ab2e0eeba965e1ef99989}} 
+Grab\+Types {\bfseries Get\+Grab\+Ending} (Grab\+Types explicit\+Type=Grab\+Types.\+None)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af0f01b740ecc869ae14ec6c1be426461}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af0f01b740ecc869ae14ec6c1be426461}} 
+bool {\bfseries Is\+Grab\+Ending} (Game\+Object attached\+Object)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ac642ffef19ad03b4133a8ea5f3f15214}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ac642ffef19ad03b4133a8ea5f3f15214}} 
+bool {\bfseries Is\+Grabbing\+With\+Type} (Grab\+Types type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af1cc27ee298744bab84a74e7f69a266c}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af1cc27ee298744bab84a74e7f69a266c}} 
+bool {\bfseries Is\+Grabbing\+With\+Opposite\+Type} (Grab\+Types type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aef5b383b995bb0674bf3e53eaadd76e6}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aef5b383b995bb0674bf3e53eaadd76e6}} 
+Grab\+Types {\bfseries Get\+Best\+Grabbing\+Type} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a84aa1ad8bda624c7aeb2375e51f83797}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a84aa1ad8bda624c7aeb2375e51f83797}} 
+Grab\+Types {\bfseries Get\+Best\+Grabbing\+Type} (Grab\+Types preferred, bool force\+Preference=false)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a0f9adcb3132f27a46f2cc32aa5e81e9c}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a0f9adcb3132f27a46f2cc32aa5e81e9c}} 
+void {\bfseries Set\+Render\+Model} (Game\+Object prefab)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a72456d7c614cd98409a2170db64cf7de}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a72456d7c614cd98409a2170db64cf7de}} 
+void {\bfseries Set\+Hover\+Render\+Model} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_render_model}{Render\+Model}} hover\+Render\+Model)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a247041056841620b9fa58a5fbb0c3fc8}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a247041056841620b9fa58a5fbb0c3fc8}} 
+int {\bfseries Get\+Device\+Index} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af5e110dcf7ecc1498c8e8e1425636f81}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af5e110dcf7ecc1498c8e8e1425636f81}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand}{Hand}} {\bfseries other\+Hand}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a05520135148fd74ca10b8549d5c7354d}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a05520135148fd74ca10b8549d5c7354d}} 
+Steam\+VR\+\_\+\+Input\+\_\+\+Sources {\bfseries hand\+Type}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a43cfd26470a73ef7eb6e3b5528816b18}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a43cfd26470a73ef7eb6e3b5528816b18}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose}} {\bfseries tracked\+Object}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a5edbb151faace00054d6c6bff461c131}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a5edbb151faace00054d6c6bff461c131}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean}{Steam\+VR\+\_\+\+Action\+\_\+\+Boolean}} {\bfseries grab\+Pinch\+Action} = Steam\+VR\+\_\+\+Input.\+Get\+Action$<$\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean}{Steam\+VR\+\_\+\+Action\+\_\+\+Boolean}}$>$(\char`\"{}Grab\+Pinch\char`\"{})
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a814c456c88eddca79adeaada444bd3fa}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a814c456c88eddca79adeaada444bd3fa}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean}{Steam\+VR\+\_\+\+Action\+\_\+\+Boolean}} {\bfseries grab\+Grip\+Action} = Steam\+VR\+\_\+\+Input.\+Get\+Action$<$\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean}{Steam\+VR\+\_\+\+Action\+\_\+\+Boolean}}$>$(\char`\"{}Grab\+Grip\char`\"{})
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aa595f318a8edefcde45c293260a913a8}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aa595f318a8edefcde45c293260a913a8}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration}{Steam\+VR\+\_\+\+Action\+\_\+\+Vibration}} {\bfseries haptic\+Action} = Steam\+VR\+\_\+\+Input.\+Get\+Action$<$\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration}{Steam\+VR\+\_\+\+Action\+\_\+\+Vibration}}$>$(\char`\"{}Haptic\char`\"{})
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_afbfd52faf00100f0e2d919c1aa70369f}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_afbfd52faf00100f0e2d919c1aa70369f}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean}{Steam\+VR\+\_\+\+Action\+\_\+\+Boolean}} {\bfseries ui\+Interact\+Action} = Steam\+VR\+\_\+\+Input.\+Get\+Action$<$\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean}{Steam\+VR\+\_\+\+Action\+\_\+\+Boolean}}$>$(\char`\"{}Interact\+UI\char`\"{})
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a4515c9535954c2d15861f1d77c03583e}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a4515c9535954c2d15861f1d77c03583e}} 
+bool {\bfseries use\+Hover\+Sphere} = true
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a5248cf59c17fc539634027c699b7126b}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a5248cf59c17fc539634027c699b7126b}} 
+Transform {\bfseries hover\+Sphere\+Transform}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a96761a4bc7740a43c166c4f140e5d940}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a96761a4bc7740a43c166c4f140e5d940}} 
+float {\bfseries hover\+Sphere\+Radius} = 0.\+05f
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aaf9a9febdfac710b0f6e3797ddeda6c2}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aaf9a9febdfac710b0f6e3797ddeda6c2}} 
+Layer\+Mask {\bfseries hover\+Layer\+Mask} = -\/1
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ac6fb0d8b74fe8377590ef9be83c9406c}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ac6fb0d8b74fe8377590ef9be83c9406c}} 
+float {\bfseries hover\+Update\+Interval} = 0.\+1f
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a886a2752cf08cbf0097a3c63da335e2e}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a886a2752cf08cbf0097a3c63da335e2e}} 
+bool {\bfseries use\+Controller\+Hover\+Component} = true
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a841fd696c675a8c0c026c9189f3de30f}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a841fd696c675a8c0c026c9189f3de30f}} 
+string {\bfseries controller\+Hover\+Component} = \char`\"{}tip\char`\"{}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a3d3ac74514ff744d838297b153aac9ff}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a3d3ac74514ff744d838297b153aac9ff}} 
+float {\bfseries controller\+Hover\+Radius} = 0.\+075f
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aa39365be4208de10ee16491637bd0f56}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aa39365be4208de10ee16491637bd0f56}} 
+bool {\bfseries use\+Finger\+Joint\+Hover} = true
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a535e15906cee89bccbfff5e472d6b0e8}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a535e15906cee89bccbfff5e472d6b0e8}} 
+Steam\+VR\+\_\+\+Skeleton\+\_\+\+Joint\+Index\+Enum {\bfseries finger\+Joint\+Hover} = Steam\+VR\+\_\+\+Skeleton\+\_\+\+Joint\+Index\+Enum.\+index\+Tip
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ade86e307d47453ecbfd89365696d1c86}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ade86e307d47453ecbfd89365696d1c86}} 
+float {\bfseries finger\+Joint\+Hover\+Radius} = 0.\+025f
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a989d3b99573fcde9a1f451c6f56f4d0e}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a989d3b99573fcde9a1f451c6f56f4d0e}} 
+Transform {\bfseries object\+Attachment\+Point}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a287ff904313aa07224a718959bdee4c5}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a287ff904313aa07224a718959bdee4c5}} 
+Camera {\bfseries no\+Steam\+VRFallback\+Camera}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a649aab3a437b29d665e0e28f6c50dbf3}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a649aab3a437b29d665e0e28f6c50dbf3}} 
+float {\bfseries no\+Steam\+VRFallback\+Max\+Distance\+No\+Item} = 10.\+0f
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a639ec79ef8bd910ffafeebdf58696fd4}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a639ec79ef8bd910ffafeebdf58696fd4}} 
+float {\bfseries no\+Steam\+VRFallback\+Max\+Distance\+With\+Item} = 0.\+5f
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a99fb5c5223ef62ddb5e9fe69a918820a}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a99fb5c5223ef62ddb5e9fe69a918820a}} 
+Game\+Object {\bfseries render\+Model\+Prefab}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a2d9cb94fd131d6d802876c7089285089}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a2d9cb94fd131d6d802876c7089285089}} 
+List$<$ \mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_render_model}{Render\+Model}} $>$ {\bfseries render\+Models} = new List$<$\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_render_model}{Render\+Model}}$>$()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a9113cf2e9e54167ac9d88fa7454f5d3f}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a9113cf2e9e54167ac9d88fa7454f5d3f}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_render_model}{Render\+Model}} {\bfseries main\+Render\+Model}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af738f0e7f0d343d30ea67a3d03c7827e}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af738f0e7f0d343d30ea67a3d03c7827e}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_render_model}{Render\+Model}} {\bfseries hoverhighlight\+Render\+Model}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a38a3c203d007f2b2ca33f34649b4edbf}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a38a3c203d007f2b2ca33f34649b4edbf}} 
+bool {\bfseries show\+Debug\+Text} = false
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aa37856102a819d1def81a0e1df82623f}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aa37856102a819d1def81a0e1df82623f}} 
+bool {\bfseries spew\+Debug\+Text} = false
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aad8d9bb0007b16f7934d7cd3229923ae}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aad8d9bb0007b16f7934d7cd3229923ae}} 
+bool {\bfseries show\+Debug\+Interactables} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const Attachment\+Flags \mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a836a6cb55d2514dbed680981dfcc5505}{default\+Attachment\+Flags}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_abe0894861fa946c40c4d22508043e2e8}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_abe0894861fa946c40c4d22508043e2e8}} 
+virtual void {\bfseries Awake} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a05d74f1aa9338a92eff2e22eef5c7f51}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a05d74f1aa9338a92eff2e22eef5c7f51}} 
+virtual void {\bfseries On\+Destroy} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ad4f26820b32f5aada5ad753844351ece}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ad4f26820b32f5aada5ad753844351ece}} 
+virtual void {\bfseries On\+Transform\+Updated} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___pose}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Pose}} updated\+Pose, Steam\+VR\+\_\+\+Input\+\_\+\+Sources updated\+Source)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab033ec68d0f24fd69df60110e1b5296b}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab033ec68d0f24fd69df60110e1b5296b}} 
+virtual IEnumerator {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af2d137dfdef76e617733048b47daa86d}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af2d137dfdef76e617733048b47daa86d}} 
+virtual void {\bfseries Update\+Hovering} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ac17817bbf5f05013c7bda03762588c2e}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ac17817bbf5f05013c7bda03762588c2e}} 
+virtual bool {\bfseries Check\+Hovering\+For\+Transform} (Vector3 hover\+Position, float hover\+Radius, ref float closest\+Distance, ref \mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_interactable}{Interactable}} closest\+Interactable, Color debug\+Color)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aff74350cd7c236e0f35ba21d6509bfe3}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aff74350cd7c236e0f35ba21d6509bfe3}} 
+virtual void {\bfseries Update\+No\+Steam\+VRFallback} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ac96d89ed36b00b1128b28fa37cc43bc8}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ac96d89ed36b00b1128b28fa37cc43bc8}} 
+virtual void {\bfseries On\+Enable} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a954775ba0b9c02058f9585dc437aebfb}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a954775ba0b9c02058f9585dc437aebfb}} 
+virtual void {\bfseries On\+Disable} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a9fe442f7401b9842986d8b484b6a085c}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a9fe442f7401b9842986d8b484b6a085c}} 
+virtual void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a745bd3dbc5fba431b5e25052ba86931f}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a745bd3dbc5fba431b5e25052ba86931f}} 
+virtual void {\bfseries Hand\+Follow\+Update} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a5789f17ac9d2a2a7fa0a48b712a33150}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a5789f17ac9d2a2a7fa0a48b712a33150}} 
+virtual void {\bfseries Fixed\+Update} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af0e434a30d589846fd61538d0c50d851}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af0e434a30d589846fd61538d0c50d851}} 
+void {\bfseries Update\+Attached\+Velocity} (\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_interaction_system_1_1_hand_1_1_attached_object}{Attached\+Object}} attached\+Object\+Info)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab1ab126c3dffe760a7f66bccfa0fd381}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab1ab126c3dffe760a7f66bccfa0fd381}} 
+Vector3 {\bfseries Target\+Item\+Position} (\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_interaction_system_1_1_hand_1_1_attached_object}{Attached\+Object}} attached\+Object)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af914f594b0cdf64f757e57e4dbdda887}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_af914f594b0cdf64f757e57e4dbdda887}} 
+Quaternion {\bfseries Target\+Item\+Rotation} (\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_interaction_system_1_1_hand_1_1_attached_object}{Attached\+Object}} attached\+Object)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab81ca68cad92354d9b14d2f534ac1b94}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab81ca68cad92354d9b14d2f534ac1b94}} 
+bool {\bfseries Get\+Updated\+Attached\+Velocities} (\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_interaction_system_1_1_hand_1_1_attached_object}{Attached\+Object}} attached\+Object\+Info, out Vector3 velocity\+Target, out Vector3 angular\+Target)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a6a7b4c4ed02dd68f5515e1951d8c1ffd}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a6a7b4c4ed02dd68f5515e1951d8c1ffd}} 
+virtual void {\bfseries On\+Input\+Focus} (bool has\+Focus)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a7edee98254742907c27330ca8e5c7e42}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a7edee98254742907c27330ca8e5c7e42}} 
+virtual void {\bfseries On\+Draw\+Gizmos} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a9a4578771a67233b0d2a024a4d55348c}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a9a4578771a67233b0d2a024a4d55348c}} 
+const float {\bfseries Max\+Velocity\+Change} = 10f
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a0a383c6f14302a8415b81f1dbc5d9500}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a0a383c6f14302a8415b81f1dbc5d9500}} 
+const float {\bfseries Velocity\+Magic} = 6000f
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ae19a6949e140f556a347a529e3635215}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ae19a6949e140f556a347a529e3635215}} 
+const float {\bfseries Angular\+Velocity\+Magic} = 50f
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a3063a358d9e11ceba506db1d3fcff533}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a3063a358d9e11ceba506db1d3fcff533}} 
+const float {\bfseries Max\+Angular\+Velocity\+Change} = 20f
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a76f5019d199b8f37d77d9e7d03ca93ae}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a76f5019d199b8f37d77d9e7d03ca93ae}} 
+Read\+Only\+Collection$<$ \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_interaction_system_1_1_hand_1_1_attached_object}{Attached\+Object}} $>$ {\bfseries Attached\+Objects}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ae4b249fd953ffebf95b745821364166f}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ae4b249fd953ffebf95b745821364166f}} 
+bool {\bfseries hover\+Locked}\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a5171ff0d839ba09534a71011ed9a2dc2}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a5171ff0d839ba09534a71011ed9a2dc2}} 
+bool {\bfseries is\+Active}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab2370539dfe6446fc51463e1be0f015f}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab2370539dfe6446fc51463e1be0f015f}} 
+bool {\bfseries is\+Pose\+Valid}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a0e71fc0b3d20b5faa2b62f6b59f5dfec}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a0e71fc0b3d20b5faa2b62f6b59f5dfec}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_interactable}{Interactable}} {\bfseries hovering\+Interactable}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ad73d70c80ce508e57c01618f7797188e}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ad73d70c80ce508e57c01618f7797188e}} 
+Game\+Object {\bfseries current\+Attached\+Object}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a2ba850f3dedb0fe8e2e32ac32e45e92d}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a2ba850f3dedb0fe8e2e32ac32e45e92d}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_interaction_system_1_1_hand_1_1_attached_object}{Attached\+Object}}? {\bfseries current\+Attached\+Object\+Info}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aa2f800ee030592d347551eb923ae3d8d}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aa2f800ee030592d347551eb923ae3d8d}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_allow_teleport_while_attached_to_hand}{Allow\+Teleport\+While\+Attached\+To\+Hand}} {\bfseries current\+Attached\+Teleport\+Manager}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ad992f20640f09e339d3d933e013e4a4c}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ad992f20640f09e339d3d933e013e4a4c}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___skeleton}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Skeleton}} {\bfseries skeleton}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a782cdef429902e9ecffcec5b2a5ec8d1}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a782cdef429902e9ecffcec5b2a5ec8d1}} 
+void {\bfseries Clean\+Up\+Attached\+Object\+Stack} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a88a56defa6cd57afc617ba7f21f32ea7}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a88a56defa6cd57afc617ba7f21f32ea7}} 
+void {\bfseries Update\+Debug\+Text} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a06e4fcdea9c3bcf32fa16b2e2bf0eb2f}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a06e4fcdea9c3bcf32fa16b2e2bf0eb2f}} 
+void {\bfseries Hand\+Debug\+Log} (string msg)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a6aea6629ba7ae8f20a64e5ad7d99894f}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a6aea6629ba7ae8f20a64e5ad7d99894f}} 
+void {\bfseries Init\+Controller} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a7353e716c7e812eab02f4e9c3fab9765}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a7353e716c7e812eab02f4e9c3fab9765}} 
+float {\bfseries no\+Steam\+VRFallback\+Interactor\+Distance} = -\/1.\+0f
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_afb02ba45fe02890921423febf4999339}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_afb02ba45fe02890921423febf4999339}} 
+List$<$ \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_interaction_system_1_1_hand_1_1_attached_object}{Attached\+Object}} $>$ {\bfseries attached\+Objects} = new List$<$\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_interaction_system_1_1_hand_1_1_attached_object}{Attached\+Object}}$>$()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab940427f41ac2aeba802ee0710a3fd70}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_ab940427f41ac2aeba802ee0710a3fd70}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_interactable}{Interactable}} {\bfseries \+\_\+hovering\+Interactable}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a7207a2fd357019ff7edb11bece54b8e6}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a7207a2fd357019ff7edb11bece54b8e6}} 
+Text\+Mesh {\bfseries debug\+Text}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_adbd4126fbf0ff88dd309ecb30e4c3e25}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_adbd4126fbf0ff88dd309ecb30e4c3e25}} 
+int {\bfseries prev\+Overlapping\+Colliders} = 0
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a14ec375b7f36af40ca05045e3eaf0be4}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a14ec375b7f36af40ca05045e3eaf0be4}} 
+Collider\mbox{[}$\,$\mbox{]} {\bfseries overlapping\+Colliders}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a6f6dc4ef3a7e75168a6c1c7e34cad9ff}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a6f6dc4ef3a7e75168a6c1c7e34cad9ff}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_player}{Player}} {\bfseries player\+Instance}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a325a65c2b05307333e11be2c50a2cb69}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a325a65c2b05307333e11be2c50a2cb69}} 
+Game\+Object {\bfseries application\+Lost\+Focus\+Object}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a9b70c53e50fd522732272dc46473de1c}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a9b70c53e50fd522732272dc46473de1c}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___events_1_1_action}{Steam\+VR\+\_\+\+Events.\+Action}} {\bfseries input\+Focus\+Action}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aa4d222495a9ffd6aaa152f4687390528}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_aa4d222495a9ffd6aaa152f4687390528}} 
+const int {\bfseries Collider\+Array\+Size} = 32
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a836a6cb55d2514dbed680981dfcc5505}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand_a836a6cb55d2514dbed680981dfcc5505}} 
+\index{Valve.VR.InteractionSystem.Hand@{Valve.VR.InteractionSystem.Hand}!defaultAttachmentFlags@{defaultAttachmentFlags}}
+\index{defaultAttachmentFlags@{defaultAttachmentFlags}!Valve.VR.InteractionSystem.Hand@{Valve.VR.InteractionSystem.Hand}}
+\doxysubsubsection{\texorpdfstring{defaultAttachmentFlags}{defaultAttachmentFlags}}
+{\footnotesize\ttfamily const Attachment\+Flags Valve.\+VR.\+Interaction\+System.\+Hand.\+default\+Attachment\+Flags\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= AttachmentFlags.ParentToHand |}
+\DoxyCodeLine{                                                              AttachmentFlags.DetachOthers |}
+\DoxyCodeLine{                                                              AttachmentFlags.DetachFromOtherHand |}
+\DoxyCodeLine{                                                              AttachmentFlags.TurnOnKinematic |}
+\DoxyCodeLine{                                                              AttachmentFlags.SnapOnAttach}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Interaction\+System/\+Core/\+Scripts/Hand.\+cs\end{DoxyCompactItemize}

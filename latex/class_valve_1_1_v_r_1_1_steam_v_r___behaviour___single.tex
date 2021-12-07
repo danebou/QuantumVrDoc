@@ -1,0 +1,119 @@
+\hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single}{}\doxysection{Valve.\+VR.\+Steam\+VR\+\_\+\+Behaviour\+\_\+\+Single Class Reference}
+\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single}\index{Valve.VR.SteamVR\_Behaviour\_Single@{Valve.VR.SteamVR\_Behaviour\_Single}}
+
+
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Single}} simplifies the use of single actions. It gives an event to subscribe to for when the action has changed.  
+
+
+Inheritance diagram for Valve.\+VR.\+Steam\+VR\+\_\+\+Behaviour\+\_\+\+Single\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a352724349998074f0214563cb037a98e}{Get\+Localized\+Name}} (params EVRInput\+String\+Bits\mbox{[}$\,$\mbox{]} localized\+Parts)
+\begin{DoxyCompactList}\small\item\em Gets the localized name of the device that the action corresponds to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_ae61cad9d74c4df6b8efd9ead49b15ea9}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_ae61cad9d74c4df6b8efd9ead49b15ea9}} 
+delegate void {\bfseries Axis\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Single}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, float new\+Axis, float new\+Delta)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_aa4d7e1b4579edc552044b04551e0e490}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_aa4d7e1b4579edc552044b04551e0e490}} 
+delegate void {\bfseries Change\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Single}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, float new\+Axis, float new\+Delta)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_ab68f36a28374f77a1aeddacdf2194f52}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_ab68f36a28374f77a1aeddacdf2194f52}} 
+delegate void {\bfseries Update\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Single}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, float new\+Axis, float new\+Delta)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_ae14a5f6c6914256256c8961eb8a3cce5}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_ae14a5f6c6914256256c8961eb8a3cce5}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___single}{Steam\+VR\+\_\+\+Action\+\_\+\+Single}} {\bfseries single\+Action}
+\begin{DoxyCompactList}\small\item\em The single action to get data from.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a1898d51e6409a8995ffbbb2d9cb370ba}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a1898d51e6409a8995ffbbb2d9cb370ba}} 
+Steam\+VR\+\_\+\+Input\+\_\+\+Sources {\bfseries input\+Source}
+\begin{DoxyCompactList}\small\item\em The device this action applies to. Any if the action is not device specific.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a877767f14603dcc812da6df7aa60a590}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a877767f14603dcc812da6df7aa60a590}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_event}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Single\+Event}} {\bfseries on\+Change}
+\begin{DoxyCompactList}\small\item\em Unity event that Fires whenever the action\textquotesingle{}s value has changed since the last update.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a673dd50db992d919437c85839ebe0b80}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a673dd50db992d919437c85839ebe0b80}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_event}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Single\+Event}} {\bfseries on\+Update}
+\begin{DoxyCompactList}\small\item\em Unity event that Fires whenever the action\textquotesingle{}s value has been updated\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a38738e6004dda3a00cfadf0978ac868b}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a38738e6004dda3a00cfadf0978ac868b}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_event}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Single\+Event}} {\bfseries on\+Axis}
+\begin{DoxyCompactList}\small\item\em Unity event that Fires whenever the action\textquotesingle{}s value has been updated and is non-\/zero\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a4f4173db4aee743aa519fbc433c39f63}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a4f4173db4aee743aa519fbc433c39f63}} 
+Change\+Handler {\bfseries on\+Change\+Event}
+\begin{DoxyCompactList}\small\item\em C\# event that fires whenever the action\textquotesingle{}s value has changed since the last update.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a09bc692af0e78f5c1fec4ef689f1b8f0}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a09bc692af0e78f5c1fec4ef689f1b8f0}} 
+Update\+Handler {\bfseries on\+Update\+Event}
+\begin{DoxyCompactList}\small\item\em C\# event that fires whenever the action\textquotesingle{}s value has been updated\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_ae2824c4a3db3be7858785c35c47d2544}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_ae2824c4a3db3be7858785c35c47d2544}} 
+Axis\+Handler {\bfseries on\+Axis\+Event}
+\begin{DoxyCompactList}\small\item\em C\# event that fires whenever the action\textquotesingle{}s value has been updated and is non-\/zero\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a34136211e4b7c820b3a740654dc0b557}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a34136211e4b7c820b3a740654dc0b557}} 
+virtual void {\bfseries On\+Enable} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_ad3b8c3bd2e892429225af5fe85a3d85b}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_ad3b8c3bd2e892429225af5fe85a3d85b}} 
+virtual void {\bfseries On\+Disable} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a2e5be52bb32e7ac3a0c73d9a375a4e43}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a2e5be52bb32e7ac3a0c73d9a375a4e43}} 
+void {\bfseries Add\+Handlers} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a3bb2e5b7153fc7abb7b599748beca7c5}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a3bb2e5b7153fc7abb7b599748beca7c5}} 
+void {\bfseries Remove\+Handlers} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a757e6ba799cdbe24713de6c515e51f01}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a757e6ba799cdbe24713de6c515e51f01}} 
+bool {\bfseries is\+Active}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns whether this action is bound and the action set is active\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_afd36faee6053df646e619c40b63308f8}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_afd36faee6053df646e619c40b63308f8}} 
+void {\bfseries Steam\+VR\+\_\+\+Behaviour\+\_\+\+Single\+\_\+\+On\+Update} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___single}{Steam\+VR\+\_\+\+Action\+\_\+\+Single}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, float new\+Axis, float new\+Delta)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a1e3f4a590b2dc5c1b12cc4649c4aebfb}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a1e3f4a590b2dc5c1b12cc4649c4aebfb}} 
+void {\bfseries Steam\+VR\+\_\+\+Behaviour\+\_\+\+Single\+\_\+\+On\+Change} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___single}{Steam\+VR\+\_\+\+Action\+\_\+\+Single}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, float new\+Axis, float new\+Delta)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_aed6880d5fa83888769e47d629352c099}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_aed6880d5fa83888769e47d629352c099}} 
+void {\bfseries Steam\+VR\+\_\+\+Behaviour\+\_\+\+Single\+\_\+\+On\+Axis} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___single}{Steam\+VR\+\_\+\+Action\+\_\+\+Single}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, float new\+Axis, float new\+Delta)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Single}} simplifies the use of single actions. It gives an event to subscribe to for when the action has changed. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a352724349998074f0214563cb037a98e}\label{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___single_a352724349998074f0214563cb037a98e}} 
+\index{Valve.VR.SteamVR\_Behaviour\_Single@{Valve.VR.SteamVR\_Behaviour\_Single}!GetLocalizedName@{GetLocalizedName}}
+\index{GetLocalizedName@{GetLocalizedName}!Valve.VR.SteamVR\_Behaviour\_Single@{Valve.VR.SteamVR\_Behaviour\_Single}}
+\doxysubsubsection{\texorpdfstring{GetLocalizedName()}{GetLocalizedName()}}
+{\footnotesize\ttfamily string Valve.\+VR.\+Steam\+VR\+\_\+\+Behaviour\+\_\+\+Single.\+Get\+Localized\+Name (\begin{DoxyParamCaption}\item[{params EVRInput\+String\+Bits\mbox{[}$\,$\mbox{]}}]{localized\+Parts }\end{DoxyParamCaption})}
+
+
+
+Gets the localized name of the device that the action corresponds to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em localized\+Parts} & 
+\begin{DoxyItemize}
+\item VRInput\+String\+\_\+\+Hand -\/ Which hand the origin is in. E.\+g. \char`\"{}\+Left Hand\char`\"{} 
+\item VRInput\+String\+\_\+\+Controller\+Type -\/ What kind of controller the user has in that hand.\+E.\+g. \char`\"{}\+Vive Controller\char`\"{} 
+\item VRInput\+String\+\_\+\+Input\+Source -\/ What part of that controller is the origin. E.\+g. \char`\"{}\+Trackpad\char`\"{} 
+\item VRInput\+String\+\_\+\+All -\/ All of the above. E.\+g. \char`\"{}\+Left Hand Vive Controller Trackpad\char`\"{} 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Input/Steam\+VR\+\_\+\+Behaviour\+\_\+\+Single.\+cs\end{DoxyCompactItemize}

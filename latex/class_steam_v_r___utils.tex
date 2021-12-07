@@ -1,0 +1,107 @@
+\hypertarget{class_steam_v_r___utils}{}\doxysection{Steam\+VR\+\_\+\+Utils Class Reference}
+\label{class_steam_v_r___utils}\index{SteamVR\_Utils@{SteamVR\_Utils}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_steam_v_r___utils_1_1_event}{Event}}
+\item 
+struct \mbox{\hyperlink{struct_steam_v_r___utils_1_1_rigid_transform}{Rigid\+Transform}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a83cc2891ee1e7377835af506238c3f84}\label{class_steam_v_r___utils_a83cc2891ee1e7377835af506238c3f84}} 
+delegate object {\bfseries System\+Fn} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_c_v_r_system}{CVRSystem}} system, params object\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a36b0dd190618d945ba3bfa4511c3a28e}\label{class_steam_v_r___utils_a36b0dd190618d945ba3bfa4511c3a28e}} 
+static bool {\bfseries Is\+Valid} (Vector3 vector)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_acaa0c10e7006e68f73b69d40139d5f73}\label{class_steam_v_r___utils_acaa0c10e7006e68f73b69d40139d5f73}} 
+static bool {\bfseries Is\+Valid} (Quaternion rotation)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_ad52a6cebaf487213a0436c77d6be30a9}\label{class_steam_v_r___utils_ad52a6cebaf487213a0436c77d6be30a9}} 
+static Quaternion {\bfseries Slerp} (Quaternion A, Quaternion B, float t)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_ad5faeec510631a5806077389130bea6b}\label{class_steam_v_r___utils_ad5faeec510631a5806077389130bea6b}} 
+static Vector3 {\bfseries Lerp} (Vector3 A, Vector3 B, float t)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a7bc3ae6218a6fd2ee78d662267bfab90}\label{class_steam_v_r___utils_a7bc3ae6218a6fd2ee78d662267bfab90}} 
+static float {\bfseries Lerp} (float A, float B, float t)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a1deafe74fb06b2a4c4e2f3510c32521f}\label{class_steam_v_r___utils_a1deafe74fb06b2a4c4e2f3510c32521f}} 
+static double {\bfseries Lerp} (double A, double B, double t)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a528b767199c883b15c2749f7521e1b2f}\label{class_steam_v_r___utils_a528b767199c883b15c2749f7521e1b2f}} 
+static float {\bfseries Inverse\+Lerp} (Vector3 A, Vector3 B, Vector3 result)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a92a804be3f8e55125579f68e5d53e05c}\label{class_steam_v_r___utils_a92a804be3f8e55125579f68e5d53e05c}} 
+static float {\bfseries Inverse\+Lerp} (float A, float B, float result)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a0dde783d693eb32d1e0a5e9e7062e429}\label{class_steam_v_r___utils_a0dde783d693eb32d1e0a5e9e7062e429}} 
+static double {\bfseries Inverse\+Lerp} (double A, double B, double result)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a7bd9aecda7811205c618edb3a87ccebe}\label{class_steam_v_r___utils_a7bd9aecda7811205c618edb3a87ccebe}} 
+static float {\bfseries Saturate} (float A)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a5efc4ae60f200c310bc08f4ae4cd4177}\label{class_steam_v_r___utils_a5efc4ae60f200c310bc08f4ae4cd4177}} 
+static Vector2 {\bfseries Saturate} (Vector2 A)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a72036ea510620294663fceb347632144}\label{class_steam_v_r___utils_a72036ea510620294663fceb347632144}} 
+static float {\bfseries Abs} (float A)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a423a1573b42ccf0b3fe49f481d57f2c5}\label{class_steam_v_r___utils_a423a1573b42ccf0b3fe49f481d57f2c5}} 
+static Vector2 {\bfseries Abs} (Vector2 A)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a335ccb3bdde1d520d89c0063ac43f11d}\label{class_steam_v_r___utils_a335ccb3bdde1d520d89c0063ac43f11d}} 
+static Quaternion {\bfseries Get\+Rotation} (this Matrix4x4 matrix)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a3043d91c48f193f7c2129bd57e874c92}\label{class_steam_v_r___utils_a3043d91c48f193f7c2129bd57e874c92}} 
+static Vector3 {\bfseries Get\+Position} (this Matrix4x4 matrix)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a494d954619c53951f0a1fcabff1eeaad}\label{class_steam_v_r___utils_a494d954619c53951f0a1fcabff1eeaad}} 
+static Vector3 {\bfseries Get\+Scale} (this Matrix4x4 m)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_ac961c0db4f66f1f44bf565143a779fc5}\label{class_steam_v_r___utils_ac961c0db4f66f1f44bf565143a779fc5}} 
+static float {\bfseries Get\+Lossy\+Scale} (Transform t)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_af109ab7b3bb8658dc0fdb6d22faea037}\label{class_steam_v_r___utils_af109ab7b3bb8658dc0fdb6d22faea037}} 
+static string {\bfseries Get\+Bad\+MD5\+Hash} (string used\+String)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a0ab9555756331f4506972845f09a4d64}\label{class_steam_v_r___utils_a0ab9555756331f4506972845f09a4d64}} 
+static string {\bfseries Get\+Bad\+MD5\+Hash} (byte\mbox{[}$\,$\mbox{]} bytes)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_adbb1630edd7f3dff99859fc66e74c5fa}\label{class_steam_v_r___utils_adbb1630edd7f3dff99859fc66e74c5fa}} 
+static string {\bfseries Get\+Bad\+MD5\+Hash\+From\+File} (string file\+Path)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_aba46440b76328dc9f3684df4c5b99219}\label{class_steam_v_r___utils_aba46440b76328dc9f3684df4c5b99219}} 
+static string {\bfseries Sanitize\+Path} (string path, bool allow\+Leading\+Slash=true)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_ab0229fec4bbc8f61a39c2d843578167e}\label{class_steam_v_r___utils_ab0229fec4bbc8f61a39c2d843578167e}} 
+static System.\+Type {\bfseries Find\+Type} (string type\+Name)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_a7c880f97fa12b3f5674e15c6e003482c}\label{class_steam_v_r___utils_a7c880f97fa12b3f5674e15c6e003482c}} 
+static object {\bfseries Call\+System\+Fn} (System\+Fn fn, params object\mbox{[}$\,$\mbox{]} args)
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_ac95a47eb8d80d85b2d70c34d54ec13d3}\label{class_steam_v_r___utils_ac95a47eb8d80d85b2d70c34d54ec13d3}} 
+static void {\bfseries Take\+Stereo\+Screenshot} (uint screenshot\+Handle, Game\+Object target, int cell\+Size, float ipd, ref string preview\+Filename, ref string VRFilename)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_ab09875373cc6be235d8be5a98dd4cf68}\label{class_steam_v_r___utils_ab09875373cc6be235d8be5a98dd4cf68}} 
+static float {\bfseries \+\_\+copysign} (float sizeval, float signval)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_steam_v_r___utils_aaf963304d5988615d3ab8ab77c6524ac}\label{class_steam_v_r___utils_aaf963304d5988615d3ab8ab77c6524ac}} 
+const string {\bfseries secret\+Key} = \char`\"{}foobar\char`\"{}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Scripts/Steam\+VR\+\_\+\+Utils.\+cs\end{DoxyCompactItemize}

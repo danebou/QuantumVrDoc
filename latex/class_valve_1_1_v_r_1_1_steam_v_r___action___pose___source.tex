@@ -1,0 +1,321 @@
+\hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source}{}\doxysection{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source Class Reference}
+\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source}\index{Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}}
+Inheritance diagram for Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.393939cm]{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a2e4aacdbfb9d1a2c5edffcd42e2c3c0e}{Preinitialize}} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action}{Steam\+VR\+\_\+\+Action}} wrapping\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources for\+Input\+Source)
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Sets up the internals of the action source before \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} has been initialized. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ab25a681f8310683a3c6695973041acc0}{Initialize}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Initializes the handle for the input\+Source, the pose action data size, and any other related \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_af437a9f539f0ed22bd95cd70b620a4a3}{Remove\+All\+Listeners}} ()
+\begin{DoxyCompactList}\small\item\em Removes all listeners, useful for dispose pattern \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a2b299c57d8709519f9dfb91da28bde4e}{Update\+Value}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Updates the data for this action and this input source. Sends related events. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a0254cddea71deac6f822536c4232a452}{Update\+Value}} (bool skip\+State\+And\+Event\+Updates)
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Updates the data for this action and this input source. Sends related events. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a303a6f2c6b8f893f0a7776d5edcbd632}{Get\+Velocities\+At\+Time\+Offset}} (float seconds\+From\+Now, out Vector3 velocity\+At\+Time, out Vector3 angular\+Velocity\+At\+Time)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} keeps a log of past poses so you can retrieve old poses or estimated poses in the future by passing in a seconds\+From\+Now value that is negative or positive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_acac4de6fa4feee04ba8050e11716e97a}{Get\+Pose\+At\+Time\+Offset}} (float seconds\+From\+Now, out Vector3 position\+At\+Time, out Quaternion rotation\+At\+Time, out Vector3 velocity\+At\+Time, out Vector3 angular\+Velocity\+At\+Time)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} keeps a log of past poses so you can retrieve old poses or estimated poses in the future by passing in a seconds\+From\+Now value that is negative or positive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ae38259c05b8d3c9562e025d9efa18002}{Update\+Transform}} (Transform transform\+To\+Update)
+\begin{DoxyCompactList}\small\item\em Update a transform\textquotesingle{}s local position and local roation to match the pose. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a84921c535f9dbe0abdab0b905b383305}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a84921c535f9dbe0abdab0b905b383305}} 
+ETracking\+Universe\+Origin {\bfseries universe\+Origin} = ETracking\+Universe\+Origin.\+Tracking\+Universe\+Raw\+And\+Uncalibrated
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ac24988086bc9a48b2cd2ba3189795588}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ac24988086bc9a48b2cd2ba3189795588}} 
+float {\bfseries change\+Tolerance} = Mathf.\+Epsilon
+\begin{DoxyCompactList}\small\item\em The distance the pose needs to move/rotate before a change is detected\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a404e42eb73d6691f6ca6e2dfa07c5a93}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a404e42eb73d6691f6ca6e2dfa07c5a93}} 
+static float {\bfseries frames\+Ahead} = 2
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_aa488ac2a5021efb184e4b335188944e4}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_aa488ac2a5021efb184e4b335188944e4}} 
+void {\bfseries Set\+Cache\+Variables} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_afc0592915bfe736886dad8e8b97cbd7f}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_afc0592915bfe736886dad8e8b97cbd7f}} 
+bool {\bfseries Get\+Changed} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a3a0883dd58cb29e7cf549199e858c69f}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a3a0883dd58cb29e7cf549199e858c69f}} 
+virtual void {\bfseries Check\+And\+Send\+Events} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ab1ead535aac907d57cc7e064f34a6ea0}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ab1ead535aac907d57cc7e064f34a6ea0}} 
+Vector3 {\bfseries Get\+Unity\+Coordinate\+Velocity} (\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_vector3__t}{Hmd\+Vector3\+\_\+t}} vector)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a836f6fa0ef1c1c8d8bc4334607643f1b}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a836f6fa0ef1c1c8d8bc4334607643f1b}} 
+Vector3 {\bfseries Get\+Unity\+Coordinate\+Angular\+Velocity} (\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_vector3__t}{Hmd\+Vector3\+\_\+t}} vector)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a368631c6e4ff2b5fb92ef7903e5ef992}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a368631c6e4ff2b5fb92ef7903e5ef992}} 
+Vector3 {\bfseries Get\+Unity\+Coordinate\+Velocity} (float x, float y, float z)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a154bbe58d5e9307ffe84b0bf68c3d79a}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a154bbe58d5e9307ffe84b0bf68c3d79a}} 
+Vector3 {\bfseries Get\+Unity\+Coordinate\+Angular\+Velocity} (float x, float y, float z)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a78757cd4edeb5f2e67a57cdb6992574c}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a78757cd4edeb5f2e67a57cdb6992574c}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_pose_action_data__t}{Input\+Pose\+Action\+Data\+\_\+t}} {\bfseries pose\+Action\+Data} = new \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_pose_action_data__t}{Input\+Pose\+Action\+Data\+\_\+t}}()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a4b4ba298edd6befd45dd711517820e81}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a4b4ba298edd6befd45dd711517820e81}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_pose_action_data__t}{Input\+Pose\+Action\+Data\+\_\+t}} {\bfseries last\+Pose\+Action\+Data} = new \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_pose_action_data__t}{Input\+Pose\+Action\+Data\+\_\+t}}()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ac5b188566e843e649476bad50e8d2185}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ac5b188566e843e649476bad50e8d2185}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_pose_action_data__t}{Input\+Pose\+Action\+Data\+\_\+t}} {\bfseries temp\+Pose\+Action\+Data} = new \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_pose_action_data__t}{Input\+Pose\+Action\+Data\+\_\+t}}()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ae3e16be44c94dc655964dcad0ee73763}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ae3e16be44c94dc655964dcad0ee73763}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose}{Steam\+VR\+\_\+\+Action\+\_\+\+Pose}} {\bfseries pose\+Action}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a6797fa10a86039e240ed5e95ba2f739f}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a6797fa10a86039e240ed5e95ba2f739f}} 
+static uint {\bfseries pose\+Action\+Data\+\_\+size} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_abd28927b24762c29fed7b9debcf9bbc4}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_abd28927b24762c29fed7b9debcf9bbc4}} 
+override bool {\bfseries changed}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True when the orientation of the pose has changhed more than change\+Tolerance in the last update. Note\+: Will only return true if the action is also active.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a4761f3b3c89f794376359d900901189e}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a4761f3b3c89f794376359d900901189e}} 
+override bool {\bfseries last\+Changed}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of the action\textquotesingle{}s \textquotesingle{}changed\textquotesingle{} during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_afd8401aa4cc0b923479e13617bc28159}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_afd8401aa4cc0b923479e13617bc28159}} 
+override ulong {\bfseries active\+Origin}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The handle to the origin of the component that was used to update this pose\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a0e28c7700a0694b08cf85a4e68ed41e4}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a0e28c7700a0694b08cf85a4e68ed41e4}} 
+override ulong {\bfseries last\+Active\+Origin}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The handle to the origin of the component that was used to update the value for this action (for the previous update)\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a92f914b4e3978b25338835f695a437e0}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a92f914b4e3978b25338835f695a437e0}} 
+override bool {\bfseries active}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if this action is bound and the Action\+Set is active\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a4588c87bed6643e492f17d8b0cbb310e}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a4588c87bed6643e492f17d8b0cbb310e}} 
+override bool {\bfseries active\+Binding}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if the action is bound\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a120e4ed1bbaf248457fcaade042ce96d}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a120e4ed1bbaf248457fcaade042ce96d}} 
+override bool {\bfseries last\+Active}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If the action was active (Action\+Set active and binding active) during the last update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a3b73993862a63aafd1fceba531af6300}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a3b73993862a63aafd1fceba531af6300}} 
+override bool {\bfseries last\+Active\+Binding}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If the action\textquotesingle{}s binding was active during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ac34e76b909d5bae5549ef1254aee7334}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ac34e76b909d5bae5549ef1254aee7334}} 
+ETracking\+Result {\bfseries tracking\+State}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The state of the tracking system that is used to create pose data (position, rotation, etc)\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_aaceb2ef18d1322c219d3d29c2a74300f}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_aaceb2ef18d1322c219d3d29c2a74300f}} 
+ETracking\+Result {\bfseries last\+Tracking\+State}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The tracking state for this pose during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_aba5be433facceba27f69a1833ab9b2c5}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_aba5be433facceba27f69a1833ab9b2c5}} 
+bool {\bfseries pose\+Is\+Valid}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if the pose retrieved for this action and input source is valid (good data from the tracking source)\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a48916d9879663f513d2eaa4328aafc15}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a48916d9879663f513d2eaa4328aafc15}} 
+bool {\bfseries last\+Pose\+Is\+Valid}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if the pose was valid during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a09c882d2b6f8a42326f275afcaa2f763}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a09c882d2b6f8a42326f275afcaa2f763}} 
+bool {\bfseries device\+Is\+Connected}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if the device bound to this action and input source is connected\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_aeb0b6070720ed154363e6695c1f522e5}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_aeb0b6070720ed154363e6695c1f522e5}} 
+bool {\bfseries last\+Device\+Is\+Connected}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if the device bound to this action was connected during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_adf0a89fb5f105a09f2e59151bd14e107}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_adf0a89fb5f105a09f2e59151bd14e107}} 
+Vector3 {\bfseries local\+Position}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The local position of this action relative to the universe origin\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a2e2f84a6156ae78ba84497a3e4ef69ab}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a2e2f84a6156ae78ba84497a3e4ef69ab}} 
+Quaternion {\bfseries local\+Rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The local rotation of this action relative to the universe origin\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a30356d9d2fc9e4e03544406a493b36d8}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a30356d9d2fc9e4e03544406a493b36d8}} 
+Vector3 {\bfseries last\+Local\+Position}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The local position for this pose during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a28136f6855113693d54c7ffc3f23a2e7}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a28136f6855113693d54c7ffc3f23a2e7}} 
+Quaternion {\bfseries last\+Local\+Rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The local rotation for this pose during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a52549ae6b1ddc04aa27f439314440c5a}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a52549ae6b1ddc04aa27f439314440c5a}} 
+Vector3 {\bfseries velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The local velocity of this pose relative to the universe origin\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a9924e517cd19760a503d0e6e46eec613}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a9924e517cd19760a503d0e6e46eec613}} 
+Vector3 {\bfseries last\+Velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The velocity for this pose during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_aedacaebd65a9d294c1a54543b3115b5e}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_aedacaebd65a9d294c1a54543b3115b5e}} 
+Vector3 {\bfseries angular\+Velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The local angular velocity of this pose relative to the universe origin\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_aad9297276978e92547f6631931ffaa54}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_aad9297276978e92547f6631931ffaa54}} 
+Vector3 {\bfseries last\+Angular\+Velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The angular velocity for this pose during the previous update\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a18908de6ad641fca30dff7bdf36c44ad}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a18908de6ad641fca30dff7bdf36c44ad}} 
+Steam\+VR\+\_\+\+Action\+\_\+\+Pose.\+Active\+Change\+Handler {\bfseries on\+Active\+Change}
+\begin{DoxyCompactList}\small\item\em Event fires when the active state (Action\+Set active and binding active) changes\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a864a6c1c7588f9cb64cf927d0abde8d3}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a864a6c1c7588f9cb64cf927d0abde8d3}} 
+Steam\+VR\+\_\+\+Action\+\_\+\+Pose.\+Active\+Change\+Handler {\bfseries on\+Active\+Binding\+Change}
+\begin{DoxyCompactList}\small\item\em Event fires when the active state of the binding changes\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a471cf17f964e7592d160a27b85cf5102}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a471cf17f964e7592d160a27b85cf5102}} 
+Steam\+VR\+\_\+\+Action\+\_\+\+Pose.\+Change\+Handler {\bfseries on\+Change}
+\begin{DoxyCompactList}\small\item\em Event fires when the orientation of the pose changes more than the change\+Tolerance\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a0850a14fdf071a66d2c8009254d22855}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a0850a14fdf071a66d2c8009254d22855}} 
+Steam\+VR\+\_\+\+Action\+\_\+\+Pose.\+Update\+Handler {\bfseries on\+Update}
+\begin{DoxyCompactList}\small\item\em Event fires when the action is updated\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a609ff1f6d20188ba1a0866e7f8ec8735}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a609ff1f6d20188ba1a0866e7f8ec8735}} 
+Steam\+VR\+\_\+\+Action\+\_\+\+Pose.\+Tracking\+Change\+Handler {\bfseries on\+Tracking\+Changed}
+\begin{DoxyCompactList}\small\item\em Event fires when the state of the tracking system that is used to create pose data (position, rotation, etc) changes\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a0fbc1433f2809fe24d2581f5f326a6e2}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a0fbc1433f2809fe24d2581f5f326a6e2}} 
+Steam\+VR\+\_\+\+Action\+\_\+\+Pose.\+Valid\+Pose\+Change\+Handler {\bfseries on\+Valid\+Pose\+Changed}
+\begin{DoxyCompactList}\small\item\em Event fires when the state of the pose data retrieved for this action changes validity (good/bad data from the tracking source)\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ae279d76fd9d0b7ebd1999366897cfc6e}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ae279d76fd9d0b7ebd1999366897cfc6e}} 
+Steam\+VR\+\_\+\+Action\+\_\+\+Pose.\+Device\+Connected\+Change\+Handler {\bfseries on\+Device\+Connected\+Changed}
+\begin{DoxyCompactList}\small\item\em Event fires when the device bound to this action is connected or disconnected\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_acac4de6fa4feee04ba8050e11716e97a}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_acac4de6fa4feee04ba8050e11716e97a}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}!GetPoseAtTimeOffset@{GetPoseAtTimeOffset}}
+\index{GetPoseAtTimeOffset@{GetPoseAtTimeOffset}!Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}}
+\doxysubsubsection{\texorpdfstring{GetPoseAtTimeOffset()}{GetPoseAtTimeOffset()}}
+{\footnotesize\ttfamily bool Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source.\+Get\+Pose\+At\+Time\+Offset (\begin{DoxyParamCaption}\item[{float}]{seconds\+From\+Now,  }\item[{out Vector3}]{position\+At\+Time,  }\item[{out Quaternion}]{rotation\+At\+Time,  }\item[{out Vector3}]{velocity\+At\+Time,  }\item[{out Vector3}]{angular\+Velocity\+At\+Time }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} keeps a log of past poses so you can retrieve old poses or estimated poses in the future by passing in a seconds\+From\+Now value that is negative or positive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seconds\+From\+Now} & The time offset in the future (estimated) or in the past (previously recorded) you want to get data from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if we successfully returned a pose
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a303a6f2c6b8f893f0a7776d5edcbd632}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a303a6f2c6b8f893f0a7776d5edcbd632}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}!GetVelocitiesAtTimeOffset@{GetVelocitiesAtTimeOffset}}
+\index{GetVelocitiesAtTimeOffset@{GetVelocitiesAtTimeOffset}!Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}}
+\doxysubsubsection{\texorpdfstring{GetVelocitiesAtTimeOffset()}{GetVelocitiesAtTimeOffset()}}
+{\footnotesize\ttfamily bool Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source.\+Get\+Velocities\+At\+Time\+Offset (\begin{DoxyParamCaption}\item[{float}]{seconds\+From\+Now,  }\item[{out Vector3}]{velocity\+At\+Time,  }\item[{out Vector3}]{angular\+Velocity\+At\+Time }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} keeps a log of past poses so you can retrieve old poses or estimated poses in the future by passing in a seconds\+From\+Now value that is negative or positive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seconds\+From\+Now} & The time offset in the future (estimated) or in the past (previously recorded) you want to get data from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if we successfully returned a pose
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ab25a681f8310683a3c6695973041acc0}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ab25a681f8310683a3c6695973041acc0}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily override void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+{\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Initializes the handle for the input\+Source, the pose action data size, and any other related \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} data. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___in___source_a15f00851d0666c0f9f1836bf481f4f70}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+In\+\_\+\+Source}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_af437a90257ecb494eb2c0b77747fe9d4}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton\+\_\+\+Source}}.
+
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a2e4aacdbfb9d1a2c5edffcd42e2c3c0e}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a2e4aacdbfb9d1a2c5edffcd42e2c3c0e}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}!Preinitialize@{Preinitialize}}
+\index{Preinitialize@{Preinitialize}!Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}}
+\doxysubsubsection{\texorpdfstring{Preinitialize()}{Preinitialize()}}
+{\footnotesize\ttfamily override void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source.\+Preinitialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action}{Steam\+VR\+\_\+\+Action}}}]{wrapping\+Action,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{for\+Input\+Source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+{\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Sets up the internals of the action source before \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} has been initialized. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___source_aa2bec7f32b37595de01f1456a3fa5bfe}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Source}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a8341927740ab2699476e66d08d3124d3}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton\+\_\+\+Source}}.
+
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_af437a9f539f0ed22bd95cd70b620a4a3}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_af437a9f539f0ed22bd95cd70b620a4a3}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}!RemoveAllListeners@{RemoveAllListeners}}
+\index{RemoveAllListeners@{RemoveAllListeners}!Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}}
+\doxysubsubsection{\texorpdfstring{RemoveAllListeners()}{RemoveAllListeners()}}
+{\footnotesize\ttfamily virtual void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source.\+Remove\+All\+Listeners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes all listeners, useful for dispose pattern 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a1a82efaf01e75995c388b03acde03039}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton\+\_\+\+Source}}.
+
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ae38259c05b8d3c9562e025d9efa18002}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ae38259c05b8d3c9562e025d9efa18002}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}!UpdateTransform@{UpdateTransform}}
+\index{UpdateTransform@{UpdateTransform}!Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}}
+\doxysubsubsection{\texorpdfstring{UpdateTransform()}{UpdateTransform()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source.\+Update\+Transform (\begin{DoxyParamCaption}\item[{Transform}]{transform\+To\+Update }\end{DoxyParamCaption})}
+
+
+
+Update a transform\textquotesingle{}s local position and local roation to match the pose. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transform\+To\+Update} & The transform of the object to be updated\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a2b299c57d8709519f9dfb91da28bde4e}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a2b299c57d8709519f9dfb91da28bde4e}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}!UpdateValue@{UpdateValue}}
+\index{UpdateValue@{UpdateValue}!Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}}
+\doxysubsubsection{\texorpdfstring{UpdateValue()}{UpdateValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source.\+Update\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+{\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Updates the data for this action and this input source. Sends related events. 
+
+
+
+Implements \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___in___source_a800b521715c6cbfe32e9b0b6db7e0a16}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+In\+\_\+\+Source}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ab6af87a8b749735903ba744c168f7baa}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton\+\_\+\+Source}}.
+
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a0254cddea71deac6f822536c4232a452}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a0254cddea71deac6f822536c4232a452}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}!UpdateValue@{UpdateValue}}
+\index{UpdateValue@{UpdateValue}!Valve.VR.SteamVR\_Action\_Pose\_Source@{Valve.VR.SteamVR\_Action\_Pose\_Source}}
+\doxysubsubsection{\texorpdfstring{UpdateValue()}{UpdateValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source.\+Update\+Value (\begin{DoxyParamCaption}\item[{bool}]{skip\+State\+And\+Event\+Updates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+{\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Updates the data for this action and this input source. Sends related events. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a1b70de6042eb094c05dcd7f905ff3abd}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton\+\_\+\+Source}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Input/Steam\+VR\+\_\+\+Action\+\_\+\+Pose.\+cs\end{DoxyCompactItemize}

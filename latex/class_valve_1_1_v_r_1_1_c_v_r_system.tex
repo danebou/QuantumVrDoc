@@ -1,0 +1,163 @@
+\hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system}{}\doxysection{Valve.\+VR.\+CVRSystem Class Reference}
+\label{class_valve_1_1_v_r_1_1_c_v_r_system}\index{Valve.VR.CVRSystem@{Valve.VR.CVRSystem}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_c_v_r_system_1_1_get_controller_state_union}{Get\+Controller\+State\+Union}}
+\item 
+struct \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_c_v_r_system_1_1_get_controller_state_with_pose_union}{Get\+Controller\+State\+With\+Pose\+Union}}
+\item 
+struct \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_c_v_r_system_1_1_poll_next_event_union}{Poll\+Next\+Event\+Union}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a51783a0590f7d858c6b7a073c961e910}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a51783a0590f7d858c6b7a073c961e910}} 
+void {\bfseries Get\+Recommended\+Render\+Target\+Size} (ref uint pn\+Width, ref uint pn\+Height)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a8e06a8dc62a3d7d82a8672a024d4a3d3}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a8e06a8dc62a3d7d82a8672a024d4a3d3}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix44__t}{Hmd\+Matrix44\+\_\+t}} {\bfseries Get\+Projection\+Matrix} (EVREye e\+Eye, float f\+NearZ, float f\+FarZ)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a6154e9257dca79f7c208c3e737160d4f}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a6154e9257dca79f7c208c3e737160d4f}} 
+void {\bfseries Get\+Projection\+Raw} (EVREye e\+Eye, ref float pf\+Left, ref float pf\+Right, ref float pf\+Top, ref float pf\+Bottom)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a9df1c714a1b2d358f98a4028122ccedb}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a9df1c714a1b2d358f98a4028122ccedb}} 
+bool {\bfseries Compute\+Distortion} (EVREye e\+Eye, float fU, float fV, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_distortion_coordinates__t}{Distortion\+Coordinates\+\_\+t}} p\+Distortion\+Coordinates)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a71db4b263545bd87e2972eef7a27dca3}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a71db4b263545bd87e2972eef7a27dca3}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix34__t}{Hmd\+Matrix34\+\_\+t}} {\bfseries Get\+Eye\+To\+Head\+Transform} (EVREye e\+Eye)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_afd1fefe2c93366053820330d68303ad7}\label{class_valve_1_1_v_r_1_1_c_v_r_system_afd1fefe2c93366053820330d68303ad7}} 
+bool {\bfseries Get\+Time\+Since\+Last\+Vsync} (ref float pf\+Seconds\+Since\+Last\+Vsync, ref ulong pul\+Frame\+Counter)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a7afe0eda4e65687842208f8ce905a64e}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a7afe0eda4e65687842208f8ce905a64e}} 
+int {\bfseries Get\+D3\+D9\+Adapter\+Index} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a04a43b098747d72d59534db48ce7c293}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a04a43b098747d72d59534db48ce7c293}} 
+void {\bfseries Get\+DXGIOutput\+Info} (ref int pn\+Adapter\+Index)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a385592a6afe1b4695151161044f49e99}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a385592a6afe1b4695151161044f49e99}} 
+void {\bfseries Get\+Output\+Device} (ref ulong pn\+Device, ETexture\+Type texture\+Type, Int\+Ptr p\+Instance)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a9c4ab5e7989d6c1938159b7a1ec42b14}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a9c4ab5e7989d6c1938159b7a1ec42b14}} 
+bool {\bfseries Is\+Display\+On\+Desktop} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a4ade672a06d9ebb00320f2cc04314b52}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a4ade672a06d9ebb00320f2cc04314b52}} 
+bool {\bfseries Set\+Display\+Visibility} (bool b\+Is\+Visible\+On\+Desktop)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a6a55bc207915da3192b4580cf8130218}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a6a55bc207915da3192b4580cf8130218}} 
+void {\bfseries Get\+Device\+To\+Absolute\+Tracking\+Pose} (ETracking\+Universe\+Origin e\+Origin, float f\+Predicted\+Seconds\+To\+Photons\+From\+Now, \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_tracked_device_pose__t}{Tracked\+Device\+Pose\+\_\+t}}\mbox{[}$\,$\mbox{]} p\+Tracked\+Device\+Pose\+Array)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a117026af270ea0f9c11538c5e442b102}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a117026af270ea0f9c11538c5e442b102}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix34__t}{Hmd\+Matrix34\+\_\+t}} {\bfseries Get\+Seated\+Zero\+Pose\+To\+Standing\+Absolute\+Tracking\+Pose} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a018442755324a3f6a307f387678c2f72}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a018442755324a3f6a307f387678c2f72}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix34__t}{Hmd\+Matrix34\+\_\+t}} {\bfseries Get\+Raw\+Zero\+Pose\+To\+Standing\+Absolute\+Tracking\+Pose} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a61d567b7323b974b921d48b91c5e8932}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a61d567b7323b974b921d48b91c5e8932}} 
+uint {\bfseries Get\+Sorted\+Tracked\+Device\+Indices\+Of\+Class} (ETracked\+Device\+Class e\+Tracked\+Device\+Class, uint\mbox{[}$\,$\mbox{]} pun\+Tracked\+Device\+Index\+Array, uint un\+Relative\+To\+Tracked\+Device\+Index)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a0daef57d1ec6478a14450cb05febca59}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a0daef57d1ec6478a14450cb05febca59}} 
+EDevice\+Activity\+Level {\bfseries Get\+Tracked\+Device\+Activity\+Level} (uint un\+Device\+Id)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_ae8763c74f425d9eec719a555ea3995fd}\label{class_valve_1_1_v_r_1_1_c_v_r_system_ae8763c74f425d9eec719a555ea3995fd}} 
+void {\bfseries Apply\+Transform} (ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_tracked_device_pose__t}{Tracked\+Device\+Pose\+\_\+t}} p\+Output\+Pose, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_tracked_device_pose__t}{Tracked\+Device\+Pose\+\_\+t}} p\+Tracked\+Device\+Pose, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix34__t}{Hmd\+Matrix34\+\_\+t}} p\+Transform)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a44fda444e868474cbc41dd2fc1fe8d81}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a44fda444e868474cbc41dd2fc1fe8d81}} 
+uint {\bfseries Get\+Tracked\+Device\+Index\+For\+Controller\+Role} (ETracked\+Controller\+Role un\+Device\+Type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_ae337e057f5d2beb2993405773207d78a}\label{class_valve_1_1_v_r_1_1_c_v_r_system_ae337e057f5d2beb2993405773207d78a}} 
+ETracked\+Controller\+Role {\bfseries Get\+Controller\+Role\+For\+Tracked\+Device\+Index} (uint un\+Device\+Index)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_ac397038d675df987d6da168edb72068d}\label{class_valve_1_1_v_r_1_1_c_v_r_system_ac397038d675df987d6da168edb72068d}} 
+ETracked\+Device\+Class {\bfseries Get\+Tracked\+Device\+Class} (uint un\+Device\+Index)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_aeba3d5d5d782b1a343ae1555b30c4c3f}\label{class_valve_1_1_v_r_1_1_c_v_r_system_aeba3d5d5d782b1a343ae1555b30c4c3f}} 
+bool {\bfseries Is\+Tracked\+Device\+Connected} (uint un\+Device\+Index)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_af4e5f993f956f6a825bafb95f8c1f680}\label{class_valve_1_1_v_r_1_1_c_v_r_system_af4e5f993f956f6a825bafb95f8c1f680}} 
+bool {\bfseries Get\+Bool\+Tracked\+Device\+Property} (uint un\+Device\+Index, ETracked\+Device\+Property prop, ref ETracked\+Property\+Error p\+Error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a6695017d8f8b2e6492fc003f7910a49e}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a6695017d8f8b2e6492fc003f7910a49e}} 
+float {\bfseries Get\+Float\+Tracked\+Device\+Property} (uint un\+Device\+Index, ETracked\+Device\+Property prop, ref ETracked\+Property\+Error p\+Error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_abe82e7c658121c24812c9cfc444a750c}\label{class_valve_1_1_v_r_1_1_c_v_r_system_abe82e7c658121c24812c9cfc444a750c}} 
+int {\bfseries Get\+Int32\+Tracked\+Device\+Property} (uint un\+Device\+Index, ETracked\+Device\+Property prop, ref ETracked\+Property\+Error p\+Error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a2cde74d7011dc5d9f2727c29f3a9e8c1}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a2cde74d7011dc5d9f2727c29f3a9e8c1}} 
+ulong {\bfseries Get\+Uint64\+Tracked\+Device\+Property} (uint un\+Device\+Index, ETracked\+Device\+Property prop, ref ETracked\+Property\+Error p\+Error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_af01c2051f20b88132e757879a4869e80}\label{class_valve_1_1_v_r_1_1_c_v_r_system_af01c2051f20b88132e757879a4869e80}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix34__t}{Hmd\+Matrix34\+\_\+t}} {\bfseries Get\+Matrix34\+Tracked\+Device\+Property} (uint un\+Device\+Index, ETracked\+Device\+Property prop, ref ETracked\+Property\+Error p\+Error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_abf54d8807c8b17fd968b0d46b405c56d}\label{class_valve_1_1_v_r_1_1_c_v_r_system_abf54d8807c8b17fd968b0d46b405c56d}} 
+uint {\bfseries Get\+Array\+Tracked\+Device\+Property} (uint un\+Device\+Index, ETracked\+Device\+Property prop, uint prop\+Type, Int\+Ptr p\+Buffer, uint un\+Buffer\+Size, ref ETracked\+Property\+Error p\+Error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a7832bc9cd34345dacb66731bc39d8f2a}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a7832bc9cd34345dacb66731bc39d8f2a}} 
+uint {\bfseries Get\+String\+Tracked\+Device\+Property} (uint un\+Device\+Index, ETracked\+Device\+Property prop, System.\+Text.\+String\+Builder pch\+Value, uint un\+Buffer\+Size, ref ETracked\+Property\+Error p\+Error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a416e8b65c6d1c54c84196346a17c9e90}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a416e8b65c6d1c54c84196346a17c9e90}} 
+string {\bfseries Get\+Prop\+Error\+Name\+From\+Enum} (ETracked\+Property\+Error error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a1680564a6dab625afe34b14d4920a263}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a1680564a6dab625afe34b14d4920a263}} 
+bool {\bfseries Poll\+Next\+Event} (ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_event__t}{VREvent\+\_\+t}} p\+Event, uint uncb\+VREvent)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a95d7cf29714d23acf0e6a6748370e788}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a95d7cf29714d23acf0e6a6748370e788}} 
+bool {\bfseries Poll\+Next\+Event\+With\+Pose} (ETracking\+Universe\+Origin e\+Origin, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_event__t}{VREvent\+\_\+t}} p\+Event, uint uncb\+VREvent, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_tracked_device_pose__t}{Tracked\+Device\+Pose\+\_\+t}} p\+Tracked\+Device\+Pose)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_af1e8543cb021f7215c6252db5c0b5e3d}\label{class_valve_1_1_v_r_1_1_c_v_r_system_af1e8543cb021f7215c6252db5c0b5e3d}} 
+string {\bfseries Get\+Event\+Type\+Name\+From\+Enum} (EVREvent\+Type e\+Type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a8fe7073e6d0c927bc986388a935a48ca}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a8fe7073e6d0c927bc986388a935a48ca}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hidden_area_mesh__t}{Hidden\+Area\+Mesh\+\_\+t}} {\bfseries Get\+Hidden\+Area\+Mesh} (EVREye e\+Eye, EHidden\+Area\+Mesh\+Type type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_ae999de6c51a207b9fe9e32e06ca34335}\label{class_valve_1_1_v_r_1_1_c_v_r_system_ae999de6c51a207b9fe9e32e06ca34335}} 
+bool {\bfseries Get\+Controller\+State} (uint un\+Controller\+Device\+Index, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_controller_state__t}{VRController\+State\+\_\+t}} p\+Controller\+State, uint un\+Controller\+State\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_af7c299caf58916815c437b40c6ce6e12}\label{class_valve_1_1_v_r_1_1_c_v_r_system_af7c299caf58916815c437b40c6ce6e12}} 
+bool {\bfseries Get\+Controller\+State\+With\+Pose} (ETracking\+Universe\+Origin e\+Origin, uint un\+Controller\+Device\+Index, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_controller_state__t}{VRController\+State\+\_\+t}} p\+Controller\+State, uint un\+Controller\+State\+Size, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_tracked_device_pose__t}{Tracked\+Device\+Pose\+\_\+t}} p\+Tracked\+Device\+Pose)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a4fab070ac7de10c813b4d042a1d51fca}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a4fab070ac7de10c813b4d042a1d51fca}} 
+void {\bfseries Trigger\+Haptic\+Pulse} (uint un\+Controller\+Device\+Index, uint un\+Axis\+Id, ushort us\+Duration\+Micro\+Sec)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_acf572436320e18e574af8435fdb34c7a}\label{class_valve_1_1_v_r_1_1_c_v_r_system_acf572436320e18e574af8435fdb34c7a}} 
+string {\bfseries Get\+Button\+Id\+Name\+From\+Enum} (EVRButton\+Id e\+Button\+Id)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a67582b56e89890437a482f7259920ba8}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a67582b56e89890437a482f7259920ba8}} 
+string {\bfseries Get\+Controller\+Axis\+Type\+Name\+From\+Enum} (EVRController\+Axis\+Type e\+Axis\+Type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a911d8daa1d9b5d2d8cc9b7e36399187e}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a911d8daa1d9b5d2d8cc9b7e36399187e}} 
+bool {\bfseries Is\+Input\+Available} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a7f9a259b909f4dc21263352a3d122806}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a7f9a259b909f4dc21263352a3d122806}} 
+bool {\bfseries Is\+Steam\+VRDrawing\+Controllers} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a5bdcaf6bcb7f5f0e2564033e5df476d9}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a5bdcaf6bcb7f5f0e2564033e5df476d9}} 
+bool {\bfseries Should\+Application\+Pause} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a726687af31f242f9df5ea5a073150b8e}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a726687af31f242f9df5ea5a073150b8e}} 
+bool {\bfseries Should\+Application\+Reduce\+Rendering\+Work} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a807bef2cd4ed9817b4f1bfe06fafe6f9}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a807bef2cd4ed9817b4f1bfe06fafe6f9}} 
+EVRFirmware\+Error {\bfseries Perform\+Firmware\+Update} (uint un\+Device\+Index)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_ae9ec4861e040d13c4e5559e787e1a404}\label{class_valve_1_1_v_r_1_1_c_v_r_system_ae9ec4861e040d13c4e5559e787e1a404}} 
+void {\bfseries Acknowledge\+Quit\+\_\+\+Exiting} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_ab5e82ee61fb0945fc272529522bfe80f}\label{class_valve_1_1_v_r_1_1_c_v_r_system_ab5e82ee61fb0945fc272529522bfe80f}} 
+uint {\bfseries Get\+App\+Container\+File\+Paths} (System.\+Text.\+String\+Builder pch\+Buffer, uint un\+Buffer\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a39b1b5315d7d4a6ff769e093d441c7f6}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a39b1b5315d7d4a6ff769e093d441c7f6}} 
+string {\bfseries Get\+Runtime\+Version} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_system_a938817f7df43eeb0c9a2a63d65504a67}\label{class_valve_1_1_v_r_1_1_c_v_r_system_a938817f7df43eeb0c9a2a63d65504a67}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_i_v_r_system}{IVRSystem}} {\bfseries Fn\+Table}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Plugins/openvr\+\_\+api.\+cs\end{DoxyCompactItemize}

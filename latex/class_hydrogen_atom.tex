@@ -1,0 +1,183 @@
+\hypertarget{class_hydrogen_atom}{}\doxysection{Hydrogen\+Atom Class Reference}
+\label{class_hydrogen_atom}\index{HydrogenAtom@{HydrogenAtom}}
+Inheritance diagram for Hydrogen\+Atom\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hydrogen_atom}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_hydrogen_atom_1_1atom_state}{atom\+State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a99372be0e732a8baca2077724388b450}\label{class_hydrogen_atom_a99372be0e732a8baca2077724388b450}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_af984d6cdee2c229f9a8cc5f7ac80d48f}\label{class_hydrogen_atom_af984d6cdee2c229f9a8cc5f7ac80d48f}} 
+void {\bfseries Setup} ()
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a9e201392ff57f97ac2df18ece16e9211}\label{class_hydrogen_atom_a9e201392ff57f97ac2df18ece16e9211}} 
+void {\bfseries Step} ()
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a15b5dfb5276c44be6a5bff4e1917eedf}\label{class_hydrogen_atom_a15b5dfb5276c44be6a5bff4e1917eedf}} 
+void {\bfseries Set\+Measurement} (bool hit, double gamma, Unity\+Engine.\+Vector3 m\+Position, bool force\+Measurement=false)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a0296fbca441f44f0c3d5db2ff1ace815}\label{class_hydrogen_atom_a0296fbca441f44f0c3d5db2ff1ace815}} 
+void {\bfseries Set\+Paused} (bool new\+State)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_aa15b18f000cf0a62340bda0b6704216b}\label{class_hydrogen_atom_aa15b18f000cf0a62340bda0b6704216b}} 
+void {\bfseries Set\+Phase\+Visualization} (bool new\+State)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a1dea8ea4e37bb798d4bbd9d93f62814f}\label{class_hydrogen_atom_a1dea8ea4e37bb798d4bbd9d93f62814f}} 
+void {\bfseries Set\+Gamma\+Decay} (float new\+Value)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a88b67961ea0e5d42a1d0f343419ab94d}\label{class_hydrogen_atom_a88b67961ea0e5d42a1d0f343419ab94d}} 
+void {\bfseries Set\+Measurement\+Gamma} (float new\+Value)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_aa1a5102747bad06bb1e8f7bbdb76e203}\label{class_hydrogen_atom_aa1a5102747bad06bb1e8f7bbdb76e203}} 
+void {\bfseries Set\+Simulation\+Time\+Dilation} (float new\+Value)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_ae3d98e2e1c1a85a048b7a0cf6a6016ad}\label{class_hydrogen_atom_ae3d98e2e1c1a85a048b7a0cf6a6016ad}} 
+void {\bfseries Set\+Energy\+Level} (float level)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_aec9791e8a6c4b7a3b54f2ba4103b6fe8}\label{class_hydrogen_atom_aec9791e8a6c4b7a3b54f2ba4103b6fe8}} 
+void {\bfseries Set\+Energy\+Level} (int level)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a8ad94dde58e4b89ae090ae27f181f49a}\label{class_hydrogen_atom_a8ad94dde58e4b89ae090ae27f181f49a}} 
+void {\bfseries Reset\+Atom} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a984aa2544b94b91753d1059ba3eebdfa}\label{class_hydrogen_atom_a984aa2544b94b91753d1059ba3eebdfa}} 
+float {\bfseries evolution\+Time\+Scaling} = 1
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_ad6b350f9eae4f6aa378e72abec8898ee}\label{class_hydrogen_atom_ad6b350f9eae4f6aa378e72abec8898ee}} 
+bool {\bfseries paused}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_aa7748fb0821e3d3752c8b1adad26896d}\label{class_hydrogen_atom_aa7748fb0821e3d3752c8b1adad26896d}} 
+double {\bfseries dt} =0.\+1
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a48521c65dadb5ed2f847263708431de5}\label{class_hydrogen_atom_a48521c65dadb5ed2f847263708431de5}} 
+Game\+Object {\bfseries voxel\+Prefab}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a9945894106332df1ff5c1c6b76a8c0f5}\label{class_hydrogen_atom_a9945894106332df1ff5c1c6b76a8c0f5}} 
+bool {\bfseries phase\+Visualization} = false
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a9d6e6e37fb2747865e82e3bd84b65165}\label{class_hydrogen_atom_a9d6e6e37fb2747865e82e3bd84b65165}} 
+bool {\bfseries debug\+Messages} = false
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a6d3c2b7b298bd7b1973d4b012be08b68}\label{class_hydrogen_atom_a6d3c2b7b298bd7b1973d4b012be08b68}} 
+int {\bfseries set\+Energy\+Level} = -\/1
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a0b148a4f6f394f66bd341947429afff9}\label{class_hydrogen_atom_a0b148a4f6f394f66bd341947429afff9}} 
+int {\bfseries most\+Probable\+Energy\+Level} = 0
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_aaad362b2f9be1c5fa7fad820a1f3bcad}\label{class_hydrogen_atom_aaad362b2f9be1c5fa7fad820a1f3bcad}} 
+bool {\bfseries is\+Measuring} = false
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a8676b6725daa925d3829ea6e19cc97c9}\label{class_hydrogen_atom_a8676b6725daa925d3829ea6e19cc97c9}} 
+bool {\bfseries Force\+Measurement} = false
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_ac91db6dfe405708ffd4f85f4596905cd}\label{class_hydrogen_atom_ac91db6dfe405708ffd4f85f4596905cd}} 
+Unity\+Engine.\+Vector3 {\bfseries measurement\+Location} = new Unity\+Engine.\+Vector3(0, 0, 0.\+5f)
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_aab82aa796a7b04f9a85fae1a0897151c}\label{class_hydrogen_atom_aab82aa796a7b04f9a85fae1a0897151c}} 
+float {\bfseries measurement\+Gamma} = 1.\+0f
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a264dd872a49d1a46ac05ca8cdc5f38f7}\label{class_hydrogen_atom_a264dd872a49d1a46ac05ca8cdc5f38f7}} 
+bool {\bfseries outcome\+Of\+Last\+Measurement} = false
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a6a83c6906d0cbbc35e5392efd06d626c}\label{class_hydrogen_atom_a6a83c6906d0cbbc35e5392efd06d626c}} 
+bool {\bfseries Pause\+After\+Successful\+Measurement} = false
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_af205e89045e398b42fecbf917ecfa4b6}\label{class_hydrogen_atom_af205e89045e398b42fecbf917ecfa4b6}} 
+bool {\bfseries Rotate\+Through\+States}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a73d7937333eebdc3f2eeb890e62c8770}\label{class_hydrogen_atom_a73d7937333eebdc3f2eeb890e62c8770}} 
+Transform {\bfseries Cutout\+Start}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a1875cc155839f022bd208f310e4df761}\label{class_hydrogen_atom_a1875cc155839f022bd208f310e4df761}} 
+bool {\bfseries Is\+Cutout\+Enabled}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a1c9736c57679d856e08d3da8d912d73c}\label{class_hydrogen_atom_a1c9736c57679d856e08d3da8d912d73c}} 
+float {\bfseries Max\+Probability} = 0
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a9962ccc0a0216e8348740c910747e9cb}\label{class_hydrogen_atom_a9962ccc0a0216e8348740c910747e9cb}} 
+Game\+Object {\bfseries Probability\+Scale\+Object}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_aaee8d1689cf8869bb25cfd47e5eb965c}\label{class_hydrogen_atom_aaee8d1689cf8869bb25cfd47e5eb965c}} 
+Game\+Object {\bfseries Phase\+Scale\+Object}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a664cb21050b98c45a91ff1e43f075d56}\label{class_hydrogen_atom_a664cb21050b98c45a91ff1e43f075d56}} 
+void {\bfseries Create\+Gradient} ()
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_ab150db1639952e2a1c1caaab98934d79}\label{class_hydrogen_atom_ab150db1639952e2a1c1caaab98934d79}} 
+void {\bfseries Initialize\+Visualization} ()
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a1c2c826fd86518fb40b361870ba61495}\label{class_hydrogen_atom_a1c2c826fd86518fb40b361870ba61495}} 
+void {\bfseries Update\+Visualization} (Vector$<$ double $>$ p\+\_\+grid, Vector$<$ Complex $>$ psi\+Grid, Vector$<$ double $>$ p\+\_\+basis, bool measurement\+Success)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_af1f700b2ed1c522e0d5a5027a8df3404}\label{class_hydrogen_atom_af1f700b2ed1c522e0d5a5027a8df3404}} 
+\mbox{\hyperlink{struct_hydrogen_atom_1_1atom_state}{atom\+State}} {\bfseries start\+State}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a22c9dda7aa9f5356b7a1bf3ba211f46c}\label{class_hydrogen_atom_a22c9dda7aa9f5356b7a1bf3ba211f46c}} 
+string {\bfseries Basis\+Vectors} = \char`\"{}\char`\"{}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_af0cedfc66566fcb9b3f7ead6777473d4}\label{class_hydrogen_atom_af0cedfc66566fcb9b3f7ead6777473d4}} 
+Gradient {\bfseries gradient}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_af5e32495f311fe730ee66e4a7d14fc92}\label{class_hydrogen_atom_af5e32495f311fe730ee66e4a7d14fc92}} 
+Gradient\+Color\+Key\mbox{[}$\,$\mbox{]} {\bfseries color\+Key}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a01839f663b9925e344c6612788d7fe2d}\label{class_hydrogen_atom_a01839f663b9925e344c6612788d7fe2d}} 
+Gradient\+Alpha\+Key\mbox{[}$\,$\mbox{]} {\bfseries alpha\+Key}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_af0d612c435fe96e5a313a8f3e6035895}\label{class_hydrogen_atom_af0d612c435fe96e5a313a8f3e6035895}} 
+Texture3D {\bfseries texture}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_ad230d65c61ed05e9560e76fd17f7dbeb}\label{class_hydrogen_atom_ad230d65c61ed05e9560e76fd17f7dbeb}} 
+Color\mbox{[}$\,$\mbox{]} {\bfseries texture\+Colors}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_ab295c71179a50956ba58baf362ba4736}\label{class_hydrogen_atom_ab295c71179a50956ba58baf362ba4736}} 
+Unity\+Engine.\+Vector3\mbox{[}$\,$\mbox{]} {\bfseries atom\+To\+Pos}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a3eb591ff616fd60fa4eb2cfb496e50a5}\label{class_hydrogen_atom_a3eb591ff616fd60fa4eb2cfb496e50a5}} 
+int\mbox{[}$\,$\mbox{]} {\bfseries atom\+To\+Texture\+Color\+Index}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a1ee68fc98752b0cb1eca2b5fbba9f0b8}\label{class_hydrogen_atom_a1ee68fc98752b0cb1eca2b5fbba9f0b8}} 
+float {\bfseries voxel\+Size}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a5f2b1f5300f6ad614f53d68c8aa6ff6b}\label{class_hydrogen_atom_a5f2b1f5300f6ad614f53d68c8aa6ff6b}} 
+Renderer {\bfseries nucleus\+Renderer}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a9001cc38f815e24c8d2850eaf49e45f2}\label{class_hydrogen_atom_a9001cc38f815e24c8d2850eaf49e45f2}} 
+Game\+Object\mbox{[}$\,$\mbox{]} {\bfseries voxel\+Visualizations}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a7c01ca7ccd8a6211793d0b84c0846b40}\label{class_hydrogen_atom_a7c01ca7ccd8a6211793d0b84c0846b40}} 
+Renderer\mbox{[}$\,$\mbox{]} {\bfseries voxel\+Visualizations\+Renders}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a18340f2576772d3c8b10465ea5da76a4}\label{class_hydrogen_atom_a18340f2576772d3c8b10465ea5da76a4}} 
+\mbox{\hyperlink{class_atom_sim_controller}{Atom\+Sim\+Controller}} {\bfseries \+\_\+sim\+Controller}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a650345d431246ec6c038bdf4e466b64a}\label{class_hydrogen_atom_a650345d431246ec6c038bdf4e466b64a}} 
+\mbox{\hyperlink{classvr__hydrogen__backend_1_1_atom_sim}{Atom\+Sim}} {\bfseries \+\_\+sim}
+\item 
+\mbox{\Hypertarget{class_hydrogen_atom_a1da704ed87c58ec3e2b5f4a90e90d5ef}\label{class_hydrogen_atom_a1da704ed87c58ec3e2b5f4a90e90d5ef}} 
+float {\bfseries \+\_\+time\+Of\+Last\+Rotation}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Quantum\+Backend/Hydrogen\+Atom.\+cs\end{DoxyCompactItemize}

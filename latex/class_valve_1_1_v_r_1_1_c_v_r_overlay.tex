@@ -1,0 +1,255 @@
+\hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay}{}\doxysection{Valve.\+VR.\+CVROverlay Class Reference}
+\label{class_valve_1_1_v_r_1_1_c_v_r_overlay}\index{Valve.VR.CVROverlay@{Valve.VR.CVROverlay}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_c_v_r_overlay_1_1_poll_next_overlay_event_union}{Poll\+Next\+Overlay\+Event\+Union}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_ab5ba01ab05993d19f36d985909c71677}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_ab5ba01ab05993d19f36d985909c71677}} 
+EVROverlay\+Error {\bfseries Find\+Overlay} (string pch\+Overlay\+Key, ref ulong p\+Overlay\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a4b1c60e2e0e778f30b2a39a987f96de5}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a4b1c60e2e0e778f30b2a39a987f96de5}} 
+EVROverlay\+Error {\bfseries Create\+Overlay} (string pch\+Overlay\+Key, string pch\+Overlay\+Name, ref ulong p\+Overlay\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a6bbcbda8364751a199a9219de2142f23}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a6bbcbda8364751a199a9219de2142f23}} 
+EVROverlay\+Error {\bfseries Destroy\+Overlay} (ulong ul\+Overlay\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_aa566bde97a99b71d8c98eb34b5849646}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_aa566bde97a99b71d8c98eb34b5849646}} 
+uint {\bfseries Get\+Overlay\+Key} (ulong ul\+Overlay\+Handle, System.\+Text.\+String\+Builder pch\+Value, uint un\+Buffer\+Size, ref EVROverlay\+Error p\+Error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a98e6c5c559481da0602375dcd09276c0}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a98e6c5c559481da0602375dcd09276c0}} 
+uint {\bfseries Get\+Overlay\+Name} (ulong ul\+Overlay\+Handle, System.\+Text.\+String\+Builder pch\+Value, uint un\+Buffer\+Size, ref EVROverlay\+Error p\+Error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_ae759f9f42507c41ad025441db77102b0}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_ae759f9f42507c41ad025441db77102b0}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Name} (ulong ul\+Overlay\+Handle, string pch\+Name)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a7c2e857b9f28444253c53ed0d59d52b9}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a7c2e857b9f28444253c53ed0d59d52b9}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Image\+Data} (ulong ul\+Overlay\+Handle, Int\+Ptr pv\+Buffer, uint un\+Buffer\+Size, ref uint pun\+Width, ref uint pun\+Height)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_aa229e018f282d14374250dd370bcc93e}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_aa229e018f282d14374250dd370bcc93e}} 
+string {\bfseries Get\+Overlay\+Error\+Name\+From\+Enum} (EVROverlay\+Error error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a7f2d7727b2865cec887468397e65c07b}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a7f2d7727b2865cec887468397e65c07b}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Rendering\+Pid} (ulong ul\+Overlay\+Handle, uint un\+PID)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_aba8e674f3848298ac879e4e1e1f4161e}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_aba8e674f3848298ac879e4e1e1f4161e}} 
+uint {\bfseries Get\+Overlay\+Rendering\+Pid} (ulong ul\+Overlay\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a5e79960d92824eb6bf45bc0ca27c00b4}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a5e79960d92824eb6bf45bc0ca27c00b4}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Flag} (ulong ul\+Overlay\+Handle, VROverlay\+Flags e\+Overlay\+Flag, bool b\+Enabled)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a12cddf2fd4ccd4456585f0826d3b531e}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a12cddf2fd4ccd4456585f0826d3b531e}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Flag} (ulong ul\+Overlay\+Handle, VROverlay\+Flags e\+Overlay\+Flag, ref bool pb\+Enabled)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a53887eb449bfbd1548bb43b021f8a47e}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a53887eb449bfbd1548bb43b021f8a47e}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Flags} (ulong ul\+Overlay\+Handle, ref uint p\+Flags)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_ad2423261de779a1da057aedd586e4ce1}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_ad2423261de779a1da057aedd586e4ce1}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Color} (ulong ul\+Overlay\+Handle, float f\+Red, float f\+Green, float f\+Blue)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a862754bec837227cde72f59b18274054}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a862754bec837227cde72f59b18274054}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Color} (ulong ul\+Overlay\+Handle, ref float pf\+Red, ref float pf\+Green, ref float pf\+Blue)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a813f1c421db4878560061db98e26d252}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a813f1c421db4878560061db98e26d252}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Alpha} (ulong ul\+Overlay\+Handle, float f\+Alpha)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_aaa54b1fb8ac9ad522c89d714e56e607c}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_aaa54b1fb8ac9ad522c89d714e56e607c}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Alpha} (ulong ul\+Overlay\+Handle, ref float pf\+Alpha)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a4d1c10992a6ee3a4f110e7ffc8b117d9}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a4d1c10992a6ee3a4f110e7ffc8b117d9}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Texel\+Aspect} (ulong ul\+Overlay\+Handle, float f\+Texel\+Aspect)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_aa8a1e4190b56b2cf528b57b660719ebf}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_aa8a1e4190b56b2cf528b57b660719ebf}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Texel\+Aspect} (ulong ul\+Overlay\+Handle, ref float pf\+Texel\+Aspect)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a457d52502206c08eec6d881bacd7e8ec}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a457d52502206c08eec6d881bacd7e8ec}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Sort\+Order} (ulong ul\+Overlay\+Handle, uint un\+Sort\+Order)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a94c15b933d503b6ee5202ec86af44455}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a94c15b933d503b6ee5202ec86af44455}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Sort\+Order} (ulong ul\+Overlay\+Handle, ref uint pun\+Sort\+Order)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a7fc09f63d5eb98b12972eb77acea0cd1}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a7fc09f63d5eb98b12972eb77acea0cd1}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Width\+In\+Meters} (ulong ul\+Overlay\+Handle, float f\+Width\+In\+Meters)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a0a9ae53f6db2d67c61f4b64a835690db}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a0a9ae53f6db2d67c61f4b64a835690db}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Width\+In\+Meters} (ulong ul\+Overlay\+Handle, ref float pf\+Width\+In\+Meters)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a6d45246742c6556a888890ba2b048d88}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a6d45246742c6556a888890ba2b048d88}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Curvature} (ulong ul\+Overlay\+Handle, float f\+Curvature)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_ad4fa32ee6204819292ba8d23657e170e}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_ad4fa32ee6204819292ba8d23657e170e}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Curvature} (ulong ul\+Overlay\+Handle, ref float pf\+Curvature)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a3cbb113af32f788ca793a39edee39477}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a3cbb113af32f788ca793a39edee39477}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Texture\+Color\+Space} (ulong ul\+Overlay\+Handle, EColor\+Space e\+Texture\+Color\+Space)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a4d83986df1c1bc6596e827f20d3d3c41}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a4d83986df1c1bc6596e827f20d3d3c41}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Texture\+Color\+Space} (ulong ul\+Overlay\+Handle, ref EColor\+Space pe\+Texture\+Color\+Space)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a8db6be23797cb69a764fac38be6bb046}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a8db6be23797cb69a764fac38be6bb046}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Texture\+Bounds} (ulong ul\+Overlay\+Handle, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_texture_bounds__t}{VRTexture\+Bounds\+\_\+t}} p\+Overlay\+Texture\+Bounds)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_ab347e37cf63cc5481f6a629212126e5d}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_ab347e37cf63cc5481f6a629212126e5d}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Texture\+Bounds} (ulong ul\+Overlay\+Handle, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_texture_bounds__t}{VRTexture\+Bounds\+\_\+t}} p\+Overlay\+Texture\+Bounds)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_aa02ca92f757e30beca7ac9ded8f6472a}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_aa02ca92f757e30beca7ac9ded8f6472a}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Transform\+Type} (ulong ul\+Overlay\+Handle, ref VROverlay\+Transform\+Type pe\+Transform\+Type)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a8a03e164747126f2bd2bf28b5f0f1775}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a8a03e164747126f2bd2bf28b5f0f1775}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Transform\+Absolute} (ulong ul\+Overlay\+Handle, ETracking\+Universe\+Origin e\+Tracking\+Origin, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix34__t}{Hmd\+Matrix34\+\_\+t}} pmat\+Tracking\+Origin\+To\+Overlay\+Transform)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a5108e385210ae62c370ceecbe62f6aae}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a5108e385210ae62c370ceecbe62f6aae}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Transform\+Absolute} (ulong ul\+Overlay\+Handle, ref ETracking\+Universe\+Origin pe\+Tracking\+Origin, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix34__t}{Hmd\+Matrix34\+\_\+t}} pmat\+Tracking\+Origin\+To\+Overlay\+Transform)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_aa959512be1624a75d9e44db50e20dcb3}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_aa959512be1624a75d9e44db50e20dcb3}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Transform\+Tracked\+Device\+Relative} (ulong ul\+Overlay\+Handle, uint un\+Tracked\+Device, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix34__t}{Hmd\+Matrix34\+\_\+t}} pmat\+Tracked\+Device\+To\+Overlay\+Transform)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_ad9de7c6f37c6d0102e0f1239e57a94db}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_ad9de7c6f37c6d0102e0f1239e57a94db}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Transform\+Tracked\+Device\+Relative} (ulong ul\+Overlay\+Handle, ref uint pun\+Tracked\+Device, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix34__t}{Hmd\+Matrix34\+\_\+t}} pmat\+Tracked\+Device\+To\+Overlay\+Transform)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_ac4e364aeb27f4553cc90edf4b3f95837}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_ac4e364aeb27f4553cc90edf4b3f95837}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Transform\+Tracked\+Device\+Component} (ulong ul\+Overlay\+Handle, uint un\+Device\+Index, string pch\+Component\+Name)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_af663765f0c438d849a9c9e3983bd173d}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_af663765f0c438d849a9c9e3983bd173d}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Transform\+Tracked\+Device\+Component} (ulong ul\+Overlay\+Handle, ref uint pun\+Device\+Index, System.\+Text.\+String\+Builder pch\+Component\+Name, uint un\+Component\+Name\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_ac33ac44e9c4371235387157d4435381e}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_ac33ac44e9c4371235387157d4435381e}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Transform\+Overlay\+Relative} (ulong ul\+Overlay\+Handle, ref ulong ul\+Overlay\+Handle\+Parent, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix34__t}{Hmd\+Matrix34\+\_\+t}} pmat\+Parent\+Overlay\+To\+Overlay\+Transform)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a0e7a0d1d21be7f81f87f5456793024d8}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a0e7a0d1d21be7f81f87f5456793024d8}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Transform\+Overlay\+Relative} (ulong ul\+Overlay\+Handle, ulong ul\+Overlay\+Handle\+Parent, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix34__t}{Hmd\+Matrix34\+\_\+t}} pmat\+Parent\+Overlay\+To\+Overlay\+Transform)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_aa5e49891b782e8de8a57b2fe1abd59a9}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_aa5e49891b782e8de8a57b2fe1abd59a9}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Transform\+Cursor} (ulong ul\+Cursor\+Overlay\+Handle, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_vector2__t}{Hmd\+Vector2\+\_\+t}} pv\+Hotspot)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_aafb10bf1161549abbafa330f92f987cc}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_aafb10bf1161549abbafa330f92f987cc}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Transform\+Cursor} (ulong ul\+Overlay\+Handle, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_vector2__t}{Hmd\+Vector2\+\_\+t}} pv\+Hotspot)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a68bd4f0b4ad82f2f28a6fa2702bd5151}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a68bd4f0b4ad82f2f28a6fa2702bd5151}} 
+EVROverlay\+Error {\bfseries Show\+Overlay} (ulong ul\+Overlay\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a528c66aaede6c6da73daf0aa1e05186f}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a528c66aaede6c6da73daf0aa1e05186f}} 
+EVROverlay\+Error {\bfseries Hide\+Overlay} (ulong ul\+Overlay\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a3fff124048fa05c2312f899eb7c26b8e}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a3fff124048fa05c2312f899eb7c26b8e}} 
+bool {\bfseries Is\+Overlay\+Visible} (ulong ul\+Overlay\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a4243118984e980d39391875cb1faaf93}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a4243118984e980d39391875cb1faaf93}} 
+EVROverlay\+Error {\bfseries Get\+Transform\+For\+Overlay\+Coordinates} (ulong ul\+Overlay\+Handle, ETracking\+Universe\+Origin e\+Tracking\+Origin, \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_vector2__t}{Hmd\+Vector2\+\_\+t}} coordinates\+In\+Overlay, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix34__t}{Hmd\+Matrix34\+\_\+t}} pmat\+Transform)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_ac2d2b7c13bc798f3aa6518a588270899}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_ac2d2b7c13bc798f3aa6518a588270899}} 
+bool {\bfseries Poll\+Next\+Overlay\+Event} (ulong ul\+Overlay\+Handle, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_event__t}{VREvent\+\_\+t}} p\+Event, uint uncb\+VREvent)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_adc16b864ffaae52d5e294b1e2349b74f}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_adc16b864ffaae52d5e294b1e2349b74f}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Input\+Method} (ulong ul\+Overlay\+Handle, ref VROverlay\+Input\+Method pe\+Input\+Method)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a721f82585ced5b9cacbfebb58152c368}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a721f82585ced5b9cacbfebb58152c368}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Input\+Method} (ulong ul\+Overlay\+Handle, VROverlay\+Input\+Method e\+Input\+Method)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a0a5564aac6f9b1382125ee7bba858e94}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a0a5564aac6f9b1382125ee7bba858e94}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Mouse\+Scale} (ulong ul\+Overlay\+Handle, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_vector2__t}{Hmd\+Vector2\+\_\+t}} pvec\+Mouse\+Scale)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a2ad8de82b2f52064ad5e765225869dd7}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a2ad8de82b2f52064ad5e765225869dd7}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Mouse\+Scale} (ulong ul\+Overlay\+Handle, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_vector2__t}{Hmd\+Vector2\+\_\+t}} pvec\+Mouse\+Scale)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a1ce5f32391e533cd95c573152a2b0d1e}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a1ce5f32391e533cd95c573152a2b0d1e}} 
+bool {\bfseries Compute\+Overlay\+Intersection} (ulong ul\+Overlay\+Handle, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_overlay_intersection_params__t}{VROverlay\+Intersection\+Params\+\_\+t}} p\+Params, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_overlay_intersection_results__t}{VROverlay\+Intersection\+Results\+\_\+t}} p\+Results)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_ac91d70f1ab82315f0211bd3511e39965}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_ac91d70f1ab82315f0211bd3511e39965}} 
+bool {\bfseries Is\+Hover\+Target\+Overlay} (ulong ul\+Overlay\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_ad46d3895589f3577b462e07df50713a4}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_ad46d3895589f3577b462e07df50713a4}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Intersection\+Mask} (ulong ul\+Overlay\+Handle, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_overlay_intersection_mask_primitive__t}{VROverlay\+Intersection\+Mask\+Primitive\+\_\+t}} p\+Mask\+Primitives, uint un\+Num\+Mask\+Primitives, uint un\+Primitive\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_addb88de768d055000b0b1fe8295c48fc}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_addb88de768d055000b0b1fe8295c48fc}} 
+EVROverlay\+Error {\bfseries Trigger\+Laser\+Mouse\+Haptic\+Vibration} (ulong ul\+Overlay\+Handle, float f\+Duration\+Seconds, float f\+Frequency, float f\+Amplitude)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a0c119b2a80a9a59bc7509eb1a2505c0d}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a0c119b2a80a9a59bc7509eb1a2505c0d}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Cursor} (ulong ul\+Overlay\+Handle, ulong ul\+Cursor\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_aa54651939e3d28f60bade842142a2449}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_aa54651939e3d28f60bade842142a2449}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Cursor\+Position\+Override} (ulong ul\+Overlay\+Handle, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_vector2__t}{Hmd\+Vector2\+\_\+t}} pv\+Cursor)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a56ef5571ce668698282d2b9ee9b12148}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a56ef5571ce668698282d2b9ee9b12148}} 
+EVROverlay\+Error {\bfseries Clear\+Overlay\+Cursor\+Position\+Override} (ulong ul\+Overlay\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_ae92d75776584ef4e1f63872d2fccf5f7}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_ae92d75776584ef4e1f63872d2fccf5f7}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Texture} (ulong ul\+Overlay\+Handle, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_texture__t}{Texture\+\_\+t}} p\+Texture)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a5b5225eecf368458d61264b16342e399}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a5b5225eecf368458d61264b16342e399}} 
+EVROverlay\+Error {\bfseries Clear\+Overlay\+Texture} (ulong ul\+Overlay\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a8148f302723c7c8b1546453561427328}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a8148f302723c7c8b1546453561427328}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+Raw} (ulong ul\+Overlay\+Handle, Int\+Ptr pv\+Buffer, uint un\+Width, uint un\+Height, uint un\+Bytes\+Per\+Pixel)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a39816b5a3dd5dbfb23ac888bd3ce0e7f}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a39816b5a3dd5dbfb23ac888bd3ce0e7f}} 
+EVROverlay\+Error {\bfseries Set\+Overlay\+From\+File} (ulong ul\+Overlay\+Handle, string pch\+File\+Path)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a9a45ac264cc0959968883880b3e7231b}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a9a45ac264cc0959968883880b3e7231b}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Texture} (ulong ul\+Overlay\+Handle, ref Int\+Ptr p\+Native\+Texture\+Handle, Int\+Ptr p\+Native\+Texture\+Ref, ref uint p\+Width, ref uint p\+Height, ref uint p\+Native\+Format, ref ETexture\+Type p\+APIType, ref EColor\+Space p\+Color\+Space, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_texture_bounds__t}{VRTexture\+Bounds\+\_\+t}} p\+Texture\+Bounds)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_aea1b0d3f05c135c46c04dd0f68c53e5c}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_aea1b0d3f05c135c46c04dd0f68c53e5c}} 
+EVROverlay\+Error {\bfseries Release\+Native\+Overlay\+Handle} (ulong ul\+Overlay\+Handle, Int\+Ptr p\+Native\+Texture\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a408660f373e733686610b6b8815c04be}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a408660f373e733686610b6b8815c04be}} 
+EVROverlay\+Error {\bfseries Get\+Overlay\+Texture\+Size} (ulong ul\+Overlay\+Handle, ref uint p\+Width, ref uint p\+Height)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a3010fee626abfe4227ccbf2c53186508}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a3010fee626abfe4227ccbf2c53186508}} 
+EVROverlay\+Error {\bfseries Create\+Dashboard\+Overlay} (string pch\+Overlay\+Key, string pch\+Overlay\+Friendly\+Name, ref ulong p\+Main\+Handle, ref ulong p\+Thumbnail\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a2f8245632633538da1d5a48addc76559}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a2f8245632633538da1d5a48addc76559}} 
+bool {\bfseries Is\+Dashboard\+Visible} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a68413569ad106e17b3503f392f11de76}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a68413569ad106e17b3503f392f11de76}} 
+bool {\bfseries Is\+Active\+Dashboard\+Overlay} (ulong ul\+Overlay\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_ae2953273d370a8ecbbac3513392cfc09}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_ae2953273d370a8ecbbac3513392cfc09}} 
+EVROverlay\+Error {\bfseries Set\+Dashboard\+Overlay\+Scene\+Process} (ulong ul\+Overlay\+Handle, uint un\+Process\+Id)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a1741a80ecf6cd56ce4374955e81791e4}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a1741a80ecf6cd56ce4374955e81791e4}} 
+EVROverlay\+Error {\bfseries Get\+Dashboard\+Overlay\+Scene\+Process} (ulong ul\+Overlay\+Handle, ref uint pun\+Process\+Id)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_ac731a2fc3a7a6a3fc3bfb949545cf986}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_ac731a2fc3a7a6a3fc3bfb949545cf986}} 
+void {\bfseries Show\+Dashboard} (string pch\+Overlay\+To\+Show)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_af060f8de9c6282c904fe3cc6ba6fc186}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_af060f8de9c6282c904fe3cc6ba6fc186}} 
+uint {\bfseries Get\+Primary\+Dashboard\+Device} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a1e1b3041d65ca309a67abd7964ea2d3d}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a1e1b3041d65ca309a67abd7964ea2d3d}} 
+EVROverlay\+Error {\bfseries Show\+Keyboard} (int e\+Input\+Mode, int e\+Line\+Input\+Mode, uint un\+Flags, string pch\+Description, uint un\+Char\+Max, string pch\+Existing\+Text, ulong u\+User\+Value)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a5e8589c51ef98eb2e8d26355b8f8cd99}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a5e8589c51ef98eb2e8d26355b8f8cd99}} 
+EVROverlay\+Error {\bfseries Show\+Keyboard\+For\+Overlay} (ulong ul\+Overlay\+Handle, int e\+Input\+Mode, int e\+Line\+Input\+Mode, uint un\+Flags, string pch\+Description, uint un\+Char\+Max, string pch\+Existing\+Text, ulong u\+User\+Value)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a7615afd64ce4f563313b3db7284d0d54}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a7615afd64ce4f563313b3db7284d0d54}} 
+uint {\bfseries Get\+Keyboard\+Text} (System.\+Text.\+String\+Builder pch\+Text, uint cch\+Text)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a2fa3d6db14e52d72267aebc1fec6de27}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a2fa3d6db14e52d72267aebc1fec6de27}} 
+void {\bfseries Hide\+Keyboard} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_af389a27b7be568bcfac9d0682a57f47d}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_af389a27b7be568bcfac9d0682a57f47d}} 
+void {\bfseries Set\+Keyboard\+Transform\+Absolute} (ETracking\+Universe\+Origin e\+Tracking\+Origin, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix34__t}{Hmd\+Matrix34\+\_\+t}} pmat\+Tracking\+Origin\+To\+Keyboard\+Transform)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_afaf593636880c06d2965a59ae839e3d8}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_afaf593636880c06d2965a59ae839e3d8}} 
+void {\bfseries Set\+Keyboard\+Position\+For\+Overlay} (ulong ul\+Overlay\+Handle, \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_rect2__t}{Hmd\+Rect2\+\_\+t}} avoid\+Rect)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a8a66ef45b00adbf6aa674ca2f8976f92}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a8a66ef45b00adbf6aa674ca2f8976f92}} 
+VRMessage\+Overlay\+Response {\bfseries Show\+Message\+Overlay} (string pch\+Text, string pch\+Caption, string pch\+Button0\+Text, string pch\+Button1\+Text, string pch\+Button2\+Text, string pch\+Button3\+Text)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_a2b2c9997673969df0565f26144132867}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_a2b2c9997673969df0565f26144132867}} 
+void {\bfseries Close\+Message\+Overlay} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_overlay_af905e3ebb7bd2f7fd7b6e7b5151f233e}\label{class_valve_1_1_v_r_1_1_c_v_r_overlay_af905e3ebb7bd2f7fd7b6e7b5151f233e}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_i_v_r_overlay}{IVROverlay}} {\bfseries Fn\+Table}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Plugins/openvr\+\_\+api.\+cs\end{DoxyCompactItemize}

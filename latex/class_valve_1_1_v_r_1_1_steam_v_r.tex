@@ -1,0 +1,209 @@
+\hypertarget{class_valve_1_1_v_r_1_1_steam_v_r}{}\doxysection{Valve.\+VR.\+Steam\+VR Class Reference}
+\label{class_valve_1_1_v_r_1_1_steam_v_r}\index{Valve.VR.SteamVR@{Valve.VR.SteamVR}}
+Inheritance diagram for Valve.\+VR.\+Steam\+VR\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_v_r_1_1_steam_v_r}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a09db867d75bbc654801bb318dd85a5e3}\label{class_valve_1_1_v_r_1_1_steam_v_r_a09db867d75bbc654801bb318dd85a5e3}} 
+enum {\bfseries Initialized\+States} \{ {\bfseries None}
+, {\bfseries Initializing}
+, {\bfseries Initialize\+Success}
+, {\bfseries Initialize\+Failure}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_aeca75cfda440de007158c8c5402346a1}\label{class_valve_1_1_v_r_1_1_steam_v_r_aeca75cfda440de007158c8c5402346a1}} 
+EDevice\+Activity\+Level {\bfseries Get\+Headset\+Activity\+Level} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a13ba3127f1a23072a6b0dfb3caff1a4e}\label{class_valve_1_1_v_r_1_1_steam_v_r_a13ba3127f1a23072a6b0dfb3caff1a4e}} 
+string {\bfseries Get\+Tracked\+Device\+String} (uint device\+Id)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_aa666244fcba18f8449b71660f4f39a79}\label{class_valve_1_1_v_r_1_1_steam_v_r_aa666244fcba18f8449b71660f4f39a79}} 
+string {\bfseries Get\+String\+Property} (ETracked\+Device\+Property prop, uint device\+Id=Open\+VR.\+k\+\_\+un\+Tracked\+Device\+Index\+\_\+\+Hmd)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a05f845baaf8d6e9cfe4c9fb39970f305}\label{class_valve_1_1_v_r_1_1_steam_v_r_a05f845baaf8d6e9cfe4c9fb39970f305}} 
+float {\bfseries Get\+Float\+Property} (ETracked\+Device\+Property prop, uint device\+Id=Open\+VR.\+k\+\_\+un\+Tracked\+Device\+Index\+\_\+\+Hmd)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_acaae89d6f6cdb0682de93832f464b926}\label{class_valve_1_1_v_r_1_1_steam_v_r_acaae89d6f6cdb0682de93832f464b926}} 
+void {\bfseries Dispose} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_aadf47465fb865356218674c6120f0f28}\label{class_valve_1_1_v_r_1_1_steam_v_r_aadf47465fb865356218674c6120f0f28}} 
+static void {\bfseries Initialize} (bool force\+Unity\+VRMode=false)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_af84660d96abb07e1e6d776a27568f058}\label{class_valve_1_1_v_r_1_1_steam_v_r_af84660d96abb07e1e6d776a27568f058}} 
+static bool {\bfseries Initialize\+Temporary\+Session} (bool init\+Input=false)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_afb99eabf5440c7e76beefad597182ee1}\label{class_valve_1_1_v_r_1_1_steam_v_r_afb99eabf5440c7e76beefad597182ee1}} 
+static void {\bfseries Exit\+Temporary\+Session} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a98cdf4fc1441a46697f3e5c6d58f40c6}\label{class_valve_1_1_v_r_1_1_steam_v_r_a98cdf4fc1441a46697f3e5c6d58f40c6}} 
+static string {\bfseries Generate\+App\+Key} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a8e23ccbdd8fdb8e26f0c3c9f3ea8e159}\label{class_valve_1_1_v_r_1_1_steam_v_r_a8e23ccbdd8fdb8e26f0c3c9f3ea8e159}} 
+static string {\bfseries Generate\+Clean\+Product\+Name} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a05fdc10324d14933a6826c40e1106a10}\label{class_valve_1_1_v_r_1_1_steam_v_r_a05fdc10324d14933a6826c40e1106a10}} 
+static void {\bfseries Safe\+Dispose} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_ab18af3cf2ec5ed39ceee8901c9df6f1f}\label{class_valve_1_1_v_r_1_1_steam_v_r_ab18af3cf2ec5ed39ceee8901c9df6f1f}} 
+ETexture\+Type {\bfseries texture\+Type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_aebdf879d97763960970090cfff20a8a7}\label{class_valve_1_1_v_r_1_1_steam_v_r_aebdf879d97763960970090cfff20a8a7}} 
+static Initialized\+States {\bfseries initialized\+State} = Initialized\+States.\+None
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a4e095c403f7656c9ccb476658f7b4197}\label{class_valve_1_1_v_r_1_1_steam_v_r_a4e095c403f7656c9ccb476658f7b4197}} 
+static bool\mbox{[}$\,$\mbox{]} {\bfseries connected} = new bool\mbox{[}Open\+VR.\+k\+\_\+un\+Max\+Tracked\+Device\+Count\mbox{]}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_ab14fecc8ada6097d491ec89532dc2edf}\label{class_valve_1_1_v_r_1_1_steam_v_r_ab14fecc8ada6097d491ec89532dc2edf}} 
+const string {\bfseries default\+Unity\+App\+Key\+Template} = \char`\"{}application.\+generated.\+unity.\{0\}.exe\char`\"{}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a90671d13e29563cc9e9ba27055566cd6}\label{class_valve_1_1_v_r_1_1_steam_v_r_a90671d13e29563cc9e9ba27055566cd6}} 
+const string {\bfseries default\+App\+Key\+Template} = \char`\"{}application.\+generated.\{0\}\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_ad98d1d8dafb84740b3a005d435da62a5}\label{class_valve_1_1_v_r_1_1_steam_v_r_ad98d1d8dafb84740b3a005d435da62a5}} 
+static bool {\bfseries active}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a01a7ae168e43e04628afa31f6b4334a8}\label{class_valve_1_1_v_r_1_1_steam_v_r_a01a7ae168e43e04628afa31f6b4334a8}} 
+static bool {\bfseries enabled}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_af374389920329f77814037a571f6bf2f}\label{class_valve_1_1_v_r_1_1_steam_v_r_af374389920329f77814037a571f6bf2f}} 
+static \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} {\bfseries instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_ae5409008a8d99e33625353d01cb3461a}\label{class_valve_1_1_v_r_1_1_steam_v_r_ae5409008a8d99e33625353d01cb3461a}} 
+static bool {\bfseries using\+Native\+Support}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a8d2a06793f921d45801b50af18f0c413}\label{class_valve_1_1_v_r_1_1_steam_v_r_a8d2a06793f921d45801b50af18f0c413}} 
+static \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___settings}{Steam\+VR\+\_\+\+Settings}} {\bfseries settings}\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_ac39286e713a282760df8619b882d62ea}\label{class_valve_1_1_v_r_1_1_steam_v_r_ac39286e713a282760df8619b882d62ea}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_c_v_r_system}{CVRSystem}} {\bfseries hmd}\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a86bfdab460046b7ed13adbea400b31a4}\label{class_valve_1_1_v_r_1_1_steam_v_r_a86bfdab460046b7ed13adbea400b31a4}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_c_v_r_compositor}{CVRCompositor}} {\bfseries compositor}\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a18a7c3184731127a2f61881101c98fd4}\label{class_valve_1_1_v_r_1_1_steam_v_r_a18a7c3184731127a2f61881101c98fd4}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_c_v_r_overlay}{CVROverlay}} {\bfseries overlay}\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_acde154731d95b91617b4c36f1ff79eda}\label{class_valve_1_1_v_r_1_1_steam_v_r_acde154731d95b91617b4c36f1ff79eda}} 
+static bool {\bfseries initializing}\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a0620766e7885e7fffdf1bdf508038a72}\label{class_valve_1_1_v_r_1_1_steam_v_r_a0620766e7885e7fffdf1bdf508038a72}} 
+static bool {\bfseries calibrating}\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a7bc04449525c5e7a08c5b4e176213145}\label{class_valve_1_1_v_r_1_1_steam_v_r_a7bc04449525c5e7a08c5b4e176213145}} 
+static bool {\bfseries out\+Of\+Range}\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a7df4ec5a0f2bcf39ef4fdf927331d552}\label{class_valve_1_1_v_r_1_1_steam_v_r_a7df4ec5a0f2bcf39ef4fdf927331d552}} 
+float {\bfseries scene\+Width}\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_ab5c24a4287f97f08beff73ab02f0af18}\label{class_valve_1_1_v_r_1_1_steam_v_r_ab5c24a4287f97f08beff73ab02f0af18}} 
+float {\bfseries scene\+Height}\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_ae9a8d12812c86e7b54610af007e6f586}\label{class_valve_1_1_v_r_1_1_steam_v_r_ae9a8d12812c86e7b54610af007e6f586}} 
+float {\bfseries aspect}\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_ac2e3b297c96238cbfd14dcf91b9bff02}\label{class_valve_1_1_v_r_1_1_steam_v_r_ac2e3b297c96238cbfd14dcf91b9bff02}} 
+float {\bfseries field\+Of\+View}\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a1604204782f9234389de756d3a23ffd1}\label{class_valve_1_1_v_r_1_1_steam_v_r_a1604204782f9234389de756d3a23ffd1}} 
+Vector2 {\bfseries tan\+Half\+Fov}\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a9d2e49d50ea742ea390a3e73b741a56f}\label{class_valve_1_1_v_r_1_1_steam_v_r_a9d2e49d50ea742ea390a3e73b741a56f}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_texture_bounds__t}{VRTexture\+Bounds\+\_\+t}}\mbox{[}$\,$\mbox{]} {\bfseries texture\+Bounds}\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a4dc5f4746e8fbe537e5e02d2f989be30}\label{class_valve_1_1_v_r_1_1_steam_v_r_a4dc5f4746e8fbe537e5e02d2f989be30}} 
+\mbox{\hyperlink{struct_steam_v_r___utils_1_1_rigid_transform}{Steam\+VR\+\_\+\+Utils.\+Rigid\+Transform}}\mbox{[}$\,$\mbox{]} {\bfseries eyes}\hspace{0.3cm}{\ttfamily  \mbox{[}getprivate set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a308791a915ec09b90ad335e70b9b1350}\label{class_valve_1_1_v_r_1_1_steam_v_r_a308791a915ec09b90ad335e70b9b1350}} 
+string {\bfseries hmd\+\_\+\+Tracking\+System\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_ada446ef9b5017d9ca6eda9279cfc5d23}\label{class_valve_1_1_v_r_1_1_steam_v_r_ada446ef9b5017d9ca6eda9279cfc5d23}} 
+string {\bfseries hmd\+\_\+\+Model\+Number}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_acd5b6dcff4258d20e8d1554978bb241a}\label{class_valve_1_1_v_r_1_1_steam_v_r_acd5b6dcff4258d20e8d1554978bb241a}} 
+string {\bfseries hmd\+\_\+\+Serial\+Number}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a01bdd0bc430955f15ce834cf8206d176}\label{class_valve_1_1_v_r_1_1_steam_v_r_a01bdd0bc430955f15ce834cf8206d176}} 
+string {\bfseries hmd\+\_\+\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a06b32b2353f1702c09ffdedf137628f9}\label{class_valve_1_1_v_r_1_1_steam_v_r_a06b32b2353f1702c09ffdedf137628f9}} 
+float {\bfseries hmd\+\_\+\+Seconds\+From\+Vsync\+To\+Photons}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a1fc2e51a5472228e0d09258b96cd35c8}\label{class_valve_1_1_v_r_1_1_steam_v_r_a1fc2e51a5472228e0d09258b96cd35c8}} 
+float {\bfseries hmd\+\_\+\+Display\+Frequency}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_acb0dfebb1ea442d7c1fb15a1cd536954}\label{class_valve_1_1_v_r_1_1_steam_v_r_acb0dfebb1ea442d7c1fb15a1cd536954}} 
+void {\bfseries On\+Initializing} (bool initializing)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a12af7fa5b0a0367258b226fe6dc3f658}\label{class_valve_1_1_v_r_1_1_steam_v_r_a12af7fa5b0a0367258b226fe6dc3f658}} 
+void {\bfseries On\+Calibrating} (bool calibrating)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a56cb54d97347e4333fd6256da16a22f9}\label{class_valve_1_1_v_r_1_1_steam_v_r_a56cb54d97347e4333fd6256da16a22f9}} 
+void {\bfseries On\+Out\+Of\+Range} (bool out\+Of\+Range)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a17112718379071069228f0a647537e77}\label{class_valve_1_1_v_r_1_1_steam_v_r_a17112718379071069228f0a647537e77}} 
+void {\bfseries On\+Device\+Connected} (int i, bool connected)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_af6bf7774ed78fae80117a2300eb555a7}\label{class_valve_1_1_v_r_1_1_steam_v_r_af6bf7774ed78fae80117a2300eb555a7}} 
+void {\bfseries On\+New\+Poses} (\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_tracked_device_pose__t}{Tracked\+Device\+Pose\+\_\+t}}\mbox{[}$\,$\mbox{]} poses)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_aa3daef475e10880bdcab35c40e8786d0}\label{class_valve_1_1_v_r_1_1_steam_v_r_aa3daef475e10880bdcab35c40e8786d0}} 
+void {\bfseries Dispose} (bool disposing)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_ae1f25817fd02943b5e8a612a63ede4b6}\label{class_valve_1_1_v_r_1_1_steam_v_r_ae1f25817fd02943b5e8a612a63ede4b6}} 
+static void {\bfseries Report\+General\+Errors} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_aca3cf39256e7b7d3afcc91439a680e67}\label{class_valve_1_1_v_r_1_1_steam_v_r_aca3cf39256e7b7d3afcc91439a680e67}} 
+static \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} {\bfseries Create\+Instance} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_aa14c97aaa9a37d1992cf5b5b32264afe}\label{class_valve_1_1_v_r_1_1_steam_v_r_aa14c97aaa9a37d1992cf5b5b32264afe}} 
+static void {\bfseries Report\+Error} (EVRInit\+Error error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a7d8aba7c41ca1fa8ae3a16f176cb7129}\label{class_valve_1_1_v_r_1_1_steam_v_r_a7d8aba7c41ca1fa8ae3a16f176cb7129}} 
+static string {\bfseries Get\+Manifest\+File} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a916fe4018b042d201c633485f051f972}\label{class_valve_1_1_v_r_1_1_steam_v_r_a916fe4018b042d201c633485f051f972}} 
+static void {\bfseries Identify\+Editor\+Application} (bool show\+Logs=true)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a30389aad5df6eac0c6f4550f3d364db2}\label{class_valve_1_1_v_r_1_1_steam_v_r_a30389aad5df6eac0c6f4550f3d364db2}} 
+static bool {\bfseries \+\_\+enabled} = true
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a64b700683bcda82518e9b0bda5c8e592}\label{class_valve_1_1_v_r_1_1_steam_v_r_a64b700683bcda82518e9b0bda5c8e592}} 
+static \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} {\bfseries \+\_\+instance}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r_a7b0c840b68e2d6029600632112491692}\label{class_valve_1_1_v_r_1_1_steam_v_r_a7b0c840b68e2d6029600632112491692}} 
+static bool {\bfseries running\+Temporary\+Session} = false
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Scripts/Steam\+VR.\+cs\end{DoxyCompactItemize}

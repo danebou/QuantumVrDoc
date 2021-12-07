@@ -1,0 +1,78 @@
+\hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models}{}\doxysection{Valve.\+VR.\+CVRRender\+Models Class Reference}
+\label{class_valve_1_1_v_r_1_1_c_v_r_render_models}\index{Valve.VR.CVRRenderModels@{Valve.VR.CVRRenderModels}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_c_v_r_render_models_1_1_get_component_state_union}{Get\+Component\+State\+Union}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_a6be099382011169eae6acb8d374ceae9}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_a6be099382011169eae6acb8d374ceae9}} 
+EVRRender\+Model\+Error {\bfseries Load\+Render\+Model\+\_\+\+Async} (string pch\+Render\+Model\+Name, ref Int\+Ptr pp\+Render\+Model)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_ad36fe11f2fe3aeac575a5e48daaa12e1}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_ad36fe11f2fe3aeac575a5e48daaa12e1}} 
+void {\bfseries Free\+Render\+Model} (Int\+Ptr p\+Render\+Model)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_af399586b6d1e2baffab9c62e3f5e0a6f}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_af399586b6d1e2baffab9c62e3f5e0a6f}} 
+EVRRender\+Model\+Error {\bfseries Load\+Texture\+\_\+\+Async} (int texture\+Id, ref Int\+Ptr pp\+Texture)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_ae2431db2c9cb3de9c208315c71b974e0}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_ae2431db2c9cb3de9c208315c71b974e0}} 
+void {\bfseries Free\+Texture} (Int\+Ptr p\+Texture)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_ab3a742c51f8ca3f667b99d8cdbadd366}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_ab3a742c51f8ca3f667b99d8cdbadd366}} 
+EVRRender\+Model\+Error {\bfseries Load\+Texture\+D3\+D11\+\_\+\+Async} (int texture\+Id, Int\+Ptr p\+D3\+D11\+Device, ref Int\+Ptr pp\+D3\+D11\+Texture2D)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_ac30a0d95adaa26064a9e52ca97241bdc}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_ac30a0d95adaa26064a9e52ca97241bdc}} 
+EVRRender\+Model\+Error {\bfseries Load\+Into\+Texture\+D3\+D11\+\_\+\+Async} (int texture\+Id, Int\+Ptr p\+Dst\+Texture)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_a3c553e473aea38d521f81ca755f3ee38}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_a3c553e473aea38d521f81ca755f3ee38}} 
+void {\bfseries Free\+Texture\+D3\+D11} (Int\+Ptr p\+D3\+D11\+Texture2D)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_aa45f9059f410da9f6946d41dad29561c}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_aa45f9059f410da9f6946d41dad29561c}} 
+uint {\bfseries Get\+Render\+Model\+Name} (uint un\+Render\+Model\+Index, System.\+Text.\+String\+Builder pch\+Render\+Model\+Name, uint un\+Render\+Model\+Name\+Len)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_ae327ea4ed3891f4dc5dfadc349d099ac}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_ae327ea4ed3891f4dc5dfadc349d099ac}} 
+uint {\bfseries Get\+Render\+Model\+Count} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_a568ad8302d430ae46af582059489a5dd}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_a568ad8302d430ae46af582059489a5dd}} 
+uint {\bfseries Get\+Component\+Count} (string pch\+Render\+Model\+Name)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_aff8d40ef614d7ecfaadac708a7d4f04d}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_aff8d40ef614d7ecfaadac708a7d4f04d}} 
+uint {\bfseries Get\+Component\+Name} (string pch\+Render\+Model\+Name, uint un\+Component\+Index, System.\+Text.\+String\+Builder pch\+Component\+Name, uint un\+Component\+Name\+Len)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_af4d1ca37dde0f9fcd1d5d155cb128f84}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_af4d1ca37dde0f9fcd1d5d155cb128f84}} 
+ulong {\bfseries Get\+Component\+Button\+Mask} (string pch\+Render\+Model\+Name, string pch\+Component\+Name)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_a1fb89266de3f332bc3c51b623943eb2d}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_a1fb89266de3f332bc3c51b623943eb2d}} 
+uint {\bfseries Get\+Component\+Render\+Model\+Name} (string pch\+Render\+Model\+Name, string pch\+Component\+Name, System.\+Text.\+String\+Builder pch\+Component\+Render\+Model\+Name, uint un\+Component\+Render\+Model\+Name\+Len)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_ad8b4389985fb3dad9cfb1c4525f25ad5}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_ad8b4389985fb3dad9cfb1c4525f25ad5}} 
+bool {\bfseries Get\+Component\+State\+For\+Device\+Path} (string pch\+Render\+Model\+Name, string pch\+Component\+Name, ulong device\+Path, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_render_model___controller_mode___state__t}{Render\+Model\+\_\+\+Controller\+Mode\+\_\+\+State\+\_\+t}} p\+State, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_render_model___component_state__t}{Render\+Model\+\_\+\+Component\+State\+\_\+t}} p\+Component\+State)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_afda07fd17044f2e257525df29febea5a}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_afda07fd17044f2e257525df29febea5a}} 
+bool {\bfseries Get\+Component\+State} (string pch\+Render\+Model\+Name, string pch\+Component\+Name, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_controller_state__t}{VRController\+State\+\_\+t}} p\+Controller\+State, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_render_model___controller_mode___state__t}{Render\+Model\+\_\+\+Controller\+Mode\+\_\+\+State\+\_\+t}} p\+State, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_render_model___component_state__t}{Render\+Model\+\_\+\+Component\+State\+\_\+t}} p\+Component\+State)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_accd21964d7bf57ddddee33251dd38701}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_accd21964d7bf57ddddee33251dd38701}} 
+bool {\bfseries Render\+Model\+Has\+Component} (string pch\+Render\+Model\+Name, string pch\+Component\+Name)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_a3b4303443fb1a0ab9b5688f6cf1811b8}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_a3b4303443fb1a0ab9b5688f6cf1811b8}} 
+uint {\bfseries Get\+Render\+Model\+Thumbnail\+URL} (string pch\+Render\+Model\+Name, System.\+Text.\+String\+Builder pch\+Thumbnail\+URL, uint un\+Thumbnail\+URLLen, ref EVRRender\+Model\+Error pe\+Error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_a5a20531712ff8070bb1bbc02ae7b36fd}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_a5a20531712ff8070bb1bbc02ae7b36fd}} 
+uint {\bfseries Get\+Render\+Model\+Original\+Path} (string pch\+Render\+Model\+Name, System.\+Text.\+String\+Builder pch\+Original\+Path, uint un\+Original\+Path\+Len, ref EVRRender\+Model\+Error pe\+Error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_aa930abc30e6fdb3f7dbc438cda44b6b1}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_aa930abc30e6fdb3f7dbc438cda44b6b1}} 
+string {\bfseries Get\+Render\+Model\+Error\+Name\+From\+Enum} (EVRRender\+Model\+Error error)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_render_models_a1f75fa088c499d1e218d85fa59cc51e7}\label{class_valve_1_1_v_r_1_1_c_v_r_render_models_a1f75fa088c499d1e218d85fa59cc51e7}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_i_v_r_render_models}{IVRRender\+Models}} {\bfseries Fn\+Table}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Plugins/openvr\+\_\+api.\+cs\end{DoxyCompactItemize}

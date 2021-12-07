@@ -1,0 +1,112 @@
+\hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input}{}\doxysection{Valve.\+VR.\+CVRInput Class Reference}
+\label{class_valve_1_1_v_r_1_1_c_v_r_input}\index{Valve.VR.CVRInput@{Valve.VR.CVRInput}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a8d87a662f5616e4861e844b1edbc415d}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a8d87a662f5616e4861e844b1edbc415d}} 
+EVRInput\+Error {\bfseries Set\+Action\+Manifest\+Path} (string pch\+Action\+Manifest\+Path)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_acab9fd21a87197d93ad858f568118f68}\label{class_valve_1_1_v_r_1_1_c_v_r_input_acab9fd21a87197d93ad858f568118f68}} 
+EVRInput\+Error {\bfseries Get\+Action\+Set\+Handle} (string pch\+Action\+Set\+Name, ref ulong p\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a8db69981ead338c62f3955e9b3a1ac66}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a8db69981ead338c62f3955e9b3a1ac66}} 
+EVRInput\+Error {\bfseries Get\+Action\+Handle} (string pch\+Action\+Name, ref ulong p\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a26142f29606f17823f465e181892a0ab}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a26142f29606f17823f465e181892a0ab}} 
+EVRInput\+Error {\bfseries Get\+Input\+Source\+Handle} (string pch\+Input\+Source\+Path, ref ulong p\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a66a85da0b39801d0c6c7cec21010a4be}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a66a85da0b39801d0c6c7cec21010a4be}} 
+EVRInput\+Error {\bfseries Update\+Action\+State} (\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_active_action_set__t}{VRActive\+Action\+Set\+\_\+t}}\mbox{[}$\,$\mbox{]} p\+Sets, uint un\+Size\+Of\+VRSelected\+Action\+Set\+\_\+t)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a1b3a25ef4577dfeed2d75eb81424bd5b}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a1b3a25ef4577dfeed2d75eb81424bd5b}} 
+EVRInput\+Error {\bfseries Get\+Digital\+Action\+Data} (ulong action, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_digital_action_data__t}{Input\+Digital\+Action\+Data\+\_\+t}} p\+Action\+Data, uint un\+Action\+Data\+Size, ulong ul\+Restrict\+To\+Device)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a67e83bd0fced9bfd2d9a75743d65e64f}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a67e83bd0fced9bfd2d9a75743d65e64f}} 
+EVRInput\+Error {\bfseries Get\+Analog\+Action\+Data} (ulong action, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_analog_action_data__t}{Input\+Analog\+Action\+Data\+\_\+t}} p\+Action\+Data, uint un\+Action\+Data\+Size, ulong ul\+Restrict\+To\+Device)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_ac6e41040d2bc3e72549cfe3a48f4d306}\label{class_valve_1_1_v_r_1_1_c_v_r_input_ac6e41040d2bc3e72549cfe3a48f4d306}} 
+EVRInput\+Error {\bfseries Get\+Pose\+Action\+Data\+Relative\+To\+Now} (ulong action, ETracking\+Universe\+Origin e\+Origin, float f\+Predicted\+Seconds\+From\+Now, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_pose_action_data__t}{Input\+Pose\+Action\+Data\+\_\+t}} p\+Action\+Data, uint un\+Action\+Data\+Size, ulong ul\+Restrict\+To\+Device)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_aee7296ad30e91ce3452cbb41fc8d39f1}\label{class_valve_1_1_v_r_1_1_c_v_r_input_aee7296ad30e91ce3452cbb41fc8d39f1}} 
+EVRInput\+Error {\bfseries Get\+Pose\+Action\+Data\+For\+Next\+Frame} (ulong action, ETracking\+Universe\+Origin e\+Origin, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_pose_action_data__t}{Input\+Pose\+Action\+Data\+\_\+t}} p\+Action\+Data, uint un\+Action\+Data\+Size, ulong ul\+Restrict\+To\+Device)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a98350a9bdb1877c5943da40d2b9b2927}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a98350a9bdb1877c5943da40d2b9b2927}} 
+EVRInput\+Error {\bfseries Get\+Skeletal\+Action\+Data} (ulong action, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_skeletal_action_data__t}{Input\+Skeletal\+Action\+Data\+\_\+t}} p\+Action\+Data, uint un\+Action\+Data\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a40760bf21953861f15f1add74c151d29}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a40760bf21953861f15f1add74c151d29}} 
+EVRInput\+Error {\bfseries Get\+Dominant\+Hand} (ref ETracked\+Controller\+Role pe\+Dominant\+Hand)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a7407f00ac422c308ec9827934b92938f}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a7407f00ac422c308ec9827934b92938f}} 
+EVRInput\+Error {\bfseries Set\+Dominant\+Hand} (ETracked\+Controller\+Role e\+Dominant\+Hand)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a900b3c10d417e7833d5013f877a32e7a}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a900b3c10d417e7833d5013f877a32e7a}} 
+EVRInput\+Error {\bfseries Get\+Bone\+Count} (ulong action, ref uint p\+Bone\+Count)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_aaf3880229679983b97fe8d1695c7005d}\label{class_valve_1_1_v_r_1_1_c_v_r_input_aaf3880229679983b97fe8d1695c7005d}} 
+EVRInput\+Error {\bfseries Get\+Bone\+Hierarchy} (ulong action, int\mbox{[}$\,$\mbox{]} p\+Parent\+Indices)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a5070c6028a318616089fec51e137b930}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a5070c6028a318616089fec51e137b930}} 
+EVRInput\+Error {\bfseries Get\+Bone\+Name} (ulong action, int n\+Bone\+Index, System.\+Text.\+String\+Builder pch\+Bone\+Name, uint un\+Name\+Buffer\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a41cba6082aea201d1420bcc0cd227634}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a41cba6082aea201d1420bcc0cd227634}} 
+EVRInput\+Error {\bfseries Get\+Skeletal\+Reference\+Transforms} (ulong action, EVRSkeletal\+Transform\+Space e\+Transform\+Space, EVRSkeletal\+Reference\+Pose e\+Reference\+Pose, \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_bone_transform__t}{VRBone\+Transform\+\_\+t}}\mbox{[}$\,$\mbox{]} p\+Transform\+Array)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a068d729d5cc82bed9bfec96d925911c3}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a068d729d5cc82bed9bfec96d925911c3}} 
+EVRInput\+Error {\bfseries Get\+Skeletal\+Tracking\+Level} (ulong action, ref EVRSkeletal\+Tracking\+Level p\+Skeletal\+Tracking\+Level)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a4e5a4d9bc61f7274653a46955fd4f7e5}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a4e5a4d9bc61f7274653a46955fd4f7e5}} 
+EVRInput\+Error {\bfseries Get\+Skeletal\+Bone\+Data} (ulong action, EVRSkeletal\+Transform\+Space e\+Transform\+Space, EVRSkeletal\+Motion\+Range e\+Motion\+Range, \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_bone_transform__t}{VRBone\+Transform\+\_\+t}}\mbox{[}$\,$\mbox{]} p\+Transform\+Array)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_ae07956b21b561d2cdf926fec4de044c1}\label{class_valve_1_1_v_r_1_1_c_v_r_input_ae07956b21b561d2cdf926fec4de044c1}} 
+EVRInput\+Error {\bfseries Get\+Skeletal\+Summary\+Data} (ulong action, EVRSummary\+Type e\+Summary\+Type, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_skeletal_summary_data__t}{VRSkeletal\+Summary\+Data\+\_\+t}} p\+Skeletal\+Summary\+Data)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a1cf34cb3404a64c3ee90959add5add32}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a1cf34cb3404a64c3ee90959add5add32}} 
+EVRInput\+Error {\bfseries Get\+Skeletal\+Bone\+Data\+Compressed} (ulong action, EVRSkeletal\+Motion\+Range e\+Motion\+Range, Int\+Ptr pv\+Compressed\+Data, uint un\+Compressed\+Size, ref uint pun\+Required\+Compressed\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a13492296e23c033e30a145bf22e4f9b2}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a13492296e23c033e30a145bf22e4f9b2}} 
+EVRInput\+Error {\bfseries Decompress\+Skeletal\+Bone\+Data} (Int\+Ptr pv\+Compressed\+Buffer, uint un\+Compressed\+Buffer\+Size, EVRSkeletal\+Transform\+Space e\+Transform\+Space, \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_bone_transform__t}{VRBone\+Transform\+\_\+t}}\mbox{[}$\,$\mbox{]} p\+Transform\+Array)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a667dfa7b1d63a185be2614b8fb772077}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a667dfa7b1d63a185be2614b8fb772077}} 
+EVRInput\+Error {\bfseries Trigger\+Haptic\+Vibration\+Action} (ulong action, float f\+Start\+Seconds\+From\+Now, float f\+Duration\+Seconds, float f\+Frequency, float f\+Amplitude, ulong ul\+Restrict\+To\+Device)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_aab8014b2542cc8f97d52b540b06d8351}\label{class_valve_1_1_v_r_1_1_c_v_r_input_aab8014b2542cc8f97d52b540b06d8351}} 
+EVRInput\+Error {\bfseries Get\+Action\+Origins} (ulong action\+Set\+Handle, ulong digital\+Action\+Handle, ulong\mbox{[}$\,$\mbox{]} origins\+Out)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_ab948e02dd80ff0dbafdcf374182c283f}\label{class_valve_1_1_v_r_1_1_c_v_r_input_ab948e02dd80ff0dbafdcf374182c283f}} 
+EVRInput\+Error {\bfseries Get\+Origin\+Localized\+Name} (ulong origin, System.\+Text.\+String\+Builder pch\+Name\+Array, uint un\+Name\+Array\+Size, int un\+String\+Sections\+To\+Include)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_ad5e2114c76544ba963f7cf40a9a03d2b}\label{class_valve_1_1_v_r_1_1_c_v_r_input_ad5e2114c76544ba963f7cf40a9a03d2b}} 
+EVRInput\+Error {\bfseries Get\+Origin\+Tracked\+Device\+Info} (ulong origin, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_origin_info__t}{Input\+Origin\+Info\+\_\+t}} p\+Origin\+Info, uint un\+Origin\+Info\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a4486b92638aaa2875709d78b936b6405}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a4486b92638aaa2875709d78b936b6405}} 
+EVRInput\+Error {\bfseries Get\+Action\+Binding\+Info} (ulong action, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_binding_info__t}{Input\+Binding\+Info\+\_\+t}} p\+Origin\+Info, uint un\+Binding\+Info\+Size, uint un\+Binding\+Info\+Count, ref uint pun\+Returned\+Binding\+Info\+Count)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a9e307e6a2f80eb19e9de3dcf676bb1ef}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a9e307e6a2f80eb19e9de3dcf676bb1ef}} 
+EVRInput\+Error {\bfseries Show\+Action\+Origins} (ulong action\+Set\+Handle, ulong ul\+Action\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_ae14d978ca8eface087b4ffece3553d50}\label{class_valve_1_1_v_r_1_1_c_v_r_input_ae14d978ca8eface087b4ffece3553d50}} 
+EVRInput\+Error {\bfseries Show\+Bindings\+For\+Action\+Set} (\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_active_action_set__t}{VRActive\+Action\+Set\+\_\+t}}\mbox{[}$\,$\mbox{]} p\+Sets, uint un\+Size\+Of\+VRSelected\+Action\+Set\+\_\+t, ulong origin\+To\+Highlight)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_adcb19946b0bf1362a600477bf5bbc986}\label{class_valve_1_1_v_r_1_1_c_v_r_input_adcb19946b0bf1362a600477bf5bbc986}} 
+EVRInput\+Error {\bfseries Get\+Component\+State\+For\+Binding} (string pch\+Render\+Model\+Name, string pch\+Component\+Name, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_binding_info__t}{Input\+Binding\+Info\+\_\+t}} p\+Origin\+Info, uint un\+Binding\+Info\+Size, uint un\+Binding\+Info\+Count, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_render_model___component_state__t}{Render\+Model\+\_\+\+Component\+State\+\_\+t}} p\+Component\+State)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_aab17af14757bcd8bb44d83dcc4424e88}\label{class_valve_1_1_v_r_1_1_c_v_r_input_aab17af14757bcd8bb44d83dcc4424e88}} 
+bool {\bfseries Is\+Using\+Legacy\+Input} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_ac00b990a13787c560d21a3ef1dbc3e30}\label{class_valve_1_1_v_r_1_1_c_v_r_input_ac00b990a13787c560d21a3ef1dbc3e30}} 
+EVRInput\+Error {\bfseries Open\+Binding\+UI} (string pch\+App\+Key, ulong ul\+Action\+Set\+Handle, ulong ul\+Device\+Handle, bool b\+Show\+On\+Desktop)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_a62078d65eb8ba70cc34e92bc50190562}\label{class_valve_1_1_v_r_1_1_c_v_r_input_a62078d65eb8ba70cc34e92bc50190562}} 
+EVRInput\+Error {\bfseries Get\+Binding\+Variant} (ulong ul\+Device\+Path, System.\+Text.\+String\+Builder pch\+Variant\+Array, uint un\+Variant\+Array\+Size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_input_aac8d35cf8d518afec10a12abf7df1f7c}\label{class_valve_1_1_v_r_1_1_c_v_r_input_aac8d35cf8d518afec10a12abf7df1f7c}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_i_v_r_input}{IVRInput}} {\bfseries Fn\+Table}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Plugins/openvr\+\_\+api.\+cs\end{DoxyCompactItemize}

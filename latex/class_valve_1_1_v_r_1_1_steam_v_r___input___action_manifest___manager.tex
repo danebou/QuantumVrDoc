@@ -1,0 +1,100 @@
+\hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager}{}\doxysection{Valve.\+VR.\+Steam\+VR\+\_\+\+Input\+\_\+\+Action\+Manifest\+\_\+\+Manager Class Reference}
+\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager}\index{Valve.VR.SteamVR\_Input\_ActionManifest\_Manager@{Valve.VR.SteamVR\_Input\_ActionManifest\_Manager}}
+Inheritance diagram for Valve.\+VR.\+Steam\+VR\+\_\+\+Input\+\_\+\+Action\+Manifest\+\_\+\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a7b709e81ad8ce36517b9aa1e29f58ae0}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a7b709e81ad8ce36517b9aa1e29f58ae0}} 
+static void {\bfseries Create\+Partial} (string name, int version, bool overwrite\+Old, bool remove\+Unused)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a5ddf34cbcdb0e80b9dd2dfe8c0cbf3f7}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a5ddf34cbcdb0e80b9dd2dfe8c0cbf3f7}} 
+static void {\bfseries Clean\+Bindings} (bool verbose=false)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a4624c24312a8261dcf6256429431f86f}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a4624c24312a8261dcf6256429431f86f}} 
+static Dictionary$<$ string, List$<$ \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___partial_input_bindings}{Steam\+VR\+\_\+\+Partial\+Input\+Bindings}} $>$ $>$ {\bfseries Scan\+For\+Partials} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a88936a6c601772bc5f87cac96ae8ea64}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a88936a6c601772bc5f87cac96ae8ea64}} 
+const string {\bfseries partial\+Manifest\+Filename} = \char`\"{}steamvr\+\_\+partial\+\_\+manifest.\+json\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_ab2c7d1be12b6eb0b68f6b17464d924cb}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_ab2c7d1be12b6eb0b68f6b17464d924cb}} 
+static string {\bfseries Find\+Language\+In\+Dictionary} (Dictionary$<$ string, string $>$ dictionary)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a81d994e11943d34cc5447bc571f3cd4a}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a81d994e11943d34cc5447bc571f3cd4a}} 
+static int {\bfseries Import\+Localization} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___input___action_file}{Steam\+VR\+\_\+\+Input\+\_\+\+Action\+File}} current\+Actions\+File, \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___input___action_file}{Steam\+VR\+\_\+\+Input\+\_\+\+Action\+File}} new\+Actions\+File, \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___partial_input_bindings}{Steam\+VR\+\_\+\+Partial\+Input\+Bindings}} partial\+Binding)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_ae05cd013681c8f20325b146f570d42db}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_ae05cd013681c8f20325b146f570d42db}} 
+static int {\bfseries Import\+Action\+Sets} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___input___action_file}{Steam\+VR\+\_\+\+Input\+\_\+\+Action\+File}} current\+Actions\+File, \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___input___action_file}{Steam\+VR\+\_\+\+Input\+\_\+\+Action\+File}} new\+Actions\+File)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_af0f4c904c4fb8cd0d233a30c9b1b04fc}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_af0f4c904c4fb8cd0d233a30c9b1b04fc}} 
+static int {\bfseries Import\+Actions} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___input___action_file}{Steam\+VR\+\_\+\+Input\+\_\+\+Action\+File}} current\+Actions\+File, \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___input___action_file}{Steam\+VR\+\_\+\+Input\+\_\+\+Action\+File}} new\+Actions\+File)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a686bacb75cf86fba501b361d36f55e86}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a686bacb75cf86fba501b361d36f55e86}} 
+static \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___input___binding_file}{Steam\+VR\+\_\+\+Input\+\_\+\+Binding\+File}} {\bfseries Get\+Binding\+File\+Object} (string path)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_ab87ae830f2769600bc2073e0f9bd4ab5}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_ab87ae830f2769600bc2073e0f9bd4ab5}} 
+static void {\bfseries Write\+Binding\+File\+Object} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___input___binding_file}{Steam\+VR\+\_\+\+Input\+\_\+\+Binding\+File}} current\+Binding\+File, string current\+Binding\+Path)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a8391a5a51019c10a04745119ae1e16d5}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a8391a5a51019c10a04745119ae1e16d5}} 
+static void {\bfseries Import\+Bindings} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___input___action_file}{Steam\+VR\+\_\+\+Input\+\_\+\+Action\+File}} current\+Actions\+File, \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___input___action_file}{Steam\+VR\+\_\+\+Input\+\_\+\+Action\+File}} new\+Actions\+File, string directory)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_aab7a1f939743acbe656ba6da9c7d029e}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_aab7a1f939743acbe656ba6da9c7d029e}} 
+static void {\bfseries Import\+Partial\+Binding} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___partial_input_bindings}{Steam\+VR\+\_\+\+Partial\+Input\+Bindings}} partial\+Binding)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a5f6546aff673b524166ecf396e62a696}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a5f6546aff673b524166ecf396e62a696}} 
+static void {\bfseries Replace\+Binding} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___partial_input_bindings}{Steam\+VR\+\_\+\+Partial\+Input\+Bindings}} partial\+Binding)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a81b3856a73452d237088335d364adb99}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a81b3856a73452d237088335d364adb99}} 
+static T {\bfseries Read\+Json$<$ T $>$} (string path)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a480f4e31a64a74a566d749ad60822f3c}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a480f4e31a64a74a566d749ad60822f3c}} 
+static List$<$ \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___input___action_file___action}{Steam\+VR\+\_\+\+Input\+\_\+\+Action\+File\+\_\+\+Action}} $>$ {\bfseries Remove\+Old\+Actions} (List$<$ \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___partial_input_bindings}{Steam\+VR\+\_\+\+Partial\+Input\+Bindings}} $>$ partial\+Binding\+List)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a55e8ad83d72084e0e134ac5804ccf6c6}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a55e8ad83d72084e0e134ac5804ccf6c6}} 
+static List$<$ \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___input___action_file___action_set}{Steam\+VR\+\_\+\+Input\+\_\+\+Action\+File\+\_\+\+Action\+Set}} $>$ {\bfseries Remove\+Old\+Action\+Sets} (List$<$ \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___partial_input_bindings}{Steam\+VR\+\_\+\+Partial\+Input\+Bindings}} $>$ partial\+Binding\+List)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a7cf57180bbaf2b60179d87c2d0bc8dfb}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a7cf57180bbaf2b60179d87c2d0bc8dfb}} 
+static int {\bfseries Remove\+Old\+Localizations} (List$<$ \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___input___action_file___action}{Steam\+VR\+\_\+\+Input\+\_\+\+Action\+File\+\_\+\+Action}} $>$ removed\+Action\+List)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_adfd8e2c3221d8e9f790081d8f5afdadb}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_adfd8e2c3221d8e9f790081d8f5afdadb}} 
+static void {\bfseries Remove\+Old\+Actions\+And\+Sets\+From\+Bindings} (List$<$ \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___input___action_file___action_set}{Steam\+VR\+\_\+\+Input\+\_\+\+Action\+File\+\_\+\+Action\+Set}} $>$ sets\+To\+Remove, List$<$ \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___input___action_file___action}{Steam\+VR\+\_\+\+Input\+\_\+\+Action\+File\+\_\+\+Action}} $>$ actions\+To\+Remove)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_ac5a5b25cfebab833ec996fc78538af5f}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_ac5a5b25cfebab833ec996fc78538af5f}} 
+static void {\bfseries Remove\+Old\+Partial\+Bindings} (List$<$ \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___partial_input_bindings}{Steam\+VR\+\_\+\+Partial\+Input\+Bindings}} $>$ partial\+Binding\+List)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_af7cc91f9ef9ac980e2895ee1e749a77b}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_af7cc91f9ef9ac980e2895ee1e749a77b}} 
+static void {\bfseries Confirm\+Import} (List$<$ \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___partial_input_bindings}{Steam\+VR\+\_\+\+Partial\+Input\+Bindings}} $>$ partial\+Binding\+List)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_af24bac92a337589066ab3cb2ae03de50}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_af24bac92a337589066ab3cb2ae03de50}} 
+const string {\bfseries dont\+Ask\+Again\+Template} = \char`\"{}\{0\}\+\_\+\{1\}\+\_\+\+Dont\+Ask\+Again\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a6c86f9186c8c386b713b0a5452973e98}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a6c86f9186c8c386b713b0a5452973e98}} 
+static void {\bfseries On\+Postprocess\+All\+Assets} (string\mbox{[}$\,$\mbox{]} imported\+Assets, string\mbox{[}$\,$\mbox{]} deleted\+Assets, string\mbox{[}$\,$\mbox{]} moved\+Assets, string\mbox{[}$\,$\mbox{]} moved\+From\+Asset\+Paths)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a82b2192da0c2b8851d2731980ed3bf42}\label{class_valve_1_1_v_r_1_1_steam_v_r___input___action_manifest___manager_a82b2192da0c2b8851d2731980ed3bf42}} 
+static bool {\bfseries importing} = false
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Input/\+Editor/Steam\+VR\+\_\+\+Input\+\_\+\+Action\+Manifest\+\_\+\+Manager.\+cs\end{DoxyCompactItemize}

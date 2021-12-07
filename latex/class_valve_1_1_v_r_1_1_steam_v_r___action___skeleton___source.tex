@@ -1,0 +1,340 @@
+\hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source}{}\doxysection{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton\+\_\+\+Source Class Reference}
+\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source}\index{Valve.VR.SteamVR\_Action\_Skeleton\_Source@{Valve.VR.SteamVR\_Action\_Skeleton\_Source}}
+
+
+Skeleton Actions are our best approximation of where your hands are while holding vr controllers and pressing buttons. We give you 31 bones to help you animate hand models. For more information check out this blog post\+: \href{https://steamcommunity.com/games/250820/announcements/detail/1690421280625220068}{\texttt{ https\+://steamcommunity.\+com/games/250820/announcements/detail/1690421280625220068}}  
+
+
+Inheritance diagram for Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton\+\_\+\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.517986cm]{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a8341927740ab2699476e66d08d3124d3}{Preinitialize}} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action}{Steam\+VR\+\_\+\+Action}} wrapping\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources for\+Input\+Source)
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Sets up the internals of the action source before \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} has been initialized. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_af437a90257ecb494eb2c0b77747fe9d4}{Initialize}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Initializes the handle for the input\+Source, the skeletal action data size, and any other related \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} data. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a1a82efaf01e75995c388b03acde03039}{Remove\+All\+Listeners}} ()
+\begin{DoxyCompactList}\small\item\em Removes all listeners, useful for dispose pattern \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ab6af87a8b749735903ba744c168f7baa}{Update\+Value}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Updates the data for this action and this input source. Sends related events. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a1b70de6042eb094c05dcd7f905ff3abd}{Update\+Value}} (bool skip\+State\+And\+Event\+Updates)
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Updates the data for this action and this input source. Sends related events. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ae5740f83d6f5c8d12f81037674847d3c}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ae5740f83d6f5c8d12f81037674847d3c}} 
+uint {\bfseries Get\+Bone\+Count} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of bones in the skeleton for this action \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ac274f04131e0fc4692420b3ca59418c6}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ac274f04131e0fc4692420b3ca59418c6}} 
+int\mbox{[}$\,$\mbox{]} {\bfseries Get\+Bone\+Hierarchy} ()
+\begin{DoxyCompactList}\small\item\em Gets the ordering of the bone hierarchy \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a0c91ca98beac96d53d38bdcd80238344}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a0c91ca98beac96d53d38bdcd80238344}} 
+string {\bfseries Get\+Bone\+Name} (int bone\+Index)
+\begin{DoxyCompactList}\small\item\em Gets the name for a bone at the specified index \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_steam_v_r___utils_1_1_rigid_transform}{Steam\+VR\+\_\+\+Utils.\+Rigid\+Transform}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a3da258ff1cfd7494444af62f478451bf}{Get\+Reference\+Transforms}} (EVRSkeletal\+Transform\+Space transform\+Space, EVRSkeletal\+Reference\+Pose reference\+Pose)
+\begin{DoxyCompactList}\small\item\em Returns an array of positions/rotations that represent the state of each bone in a reference pose. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a4918503e361bba341ae4314a30150088}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a4918503e361bba341ae4314a30150088}} 
+EVRSkeletal\+Tracking\+Level {\bfseries Get\+Skeletal\+Tracking\+Level} ()
+\begin{DoxyCompactList}\small\item\em Get the accuracy level of the skeletal tracking data. 
+
+$\ast$ Estimated\+: Body part location can’t be directly determined by the device. Any skeletal pose provided by the device is estimated based on the active buttons, triggers, joysticks, or other input sensors. Examples include the Vive Controller and gamepads. 
+
+$\ast$ Partial\+: Body part location can be measured directly but with fewer degrees of freedom than the actual body part.\+Certain body part positions may be unmeasured by the device and estimated from other input data.\+Examples include Knuckles or gloves that only measure finger curl 
+
+$\ast$ Full\+: Body part location can be measured directly throughout the entire range of motion of the body part.\+Examples include hi-\/end mocap systems, or gloves that measure the rotation of each finger segment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a1fcdb6bf561b93c6afc6b9a9d692b47f}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a1fcdb6bf561b93c6afc6b9a9d692b47f}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_skeletal_summary_data__t}{VRSkeletal\+Summary\+Data\+\_\+t}} {\bfseries Get\+Skeletal\+Summary\+Data} (EVRSummary\+Type summary\+Type=EVRSummary\+Type.\+From\+Animation, bool force=false)
+\begin{DoxyCompactList}\small\item\em Get the skeletal summary data structure from \mbox{\hyperlink{class_valve_1_1_v_r_1_1_open_v_r}{Open\+VR}}. Contains curl and splay data in finger order\+: thumb, index, middlg, ring, pinky. Easier access at named members\+: index\+Curl, ring\+Splay, etc. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a753a170892d8ae0ed50988a98956afa8}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a753a170892d8ae0ed50988a98956afa8}} 
+void {\bfseries Update\+Skeletal\+Summary\+Data} (EVRSummary\+Type summary\+Type=EVRSummary\+Type.\+From\+Animation, bool force=false)
+\begin{DoxyCompactList}\small\item\em Updates the skeletal summary data structure from \mbox{\hyperlink{class_valve_1_1_v_r_1_1_open_v_r}{Open\+VR}}. Contains curl and splay data in finger order\+: thumb, index, middlg, ring, pinky. Easier access at named members\+: index\+Curl, ring\+Splay, etc. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a28767b72b6df82708843c477b3740ccb}{Check\+And\+Send\+Events}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a3b5bb5cca79e02c5864ca1025ebe7531}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a3b5bb5cca79e02c5864ca1025ebe7531}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_skeletal_summary_data__t}{VRSkeletal\+Summary\+Data\+\_\+t}} {\bfseries skeletal\+Summary\+Data} = new \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_skeletal_summary_data__t}{VRSkeletal\+Summary\+Data\+\_\+t}}()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a56cf3576253666dc4eaa5e9bca5b2936}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a56cf3576253666dc4eaa5e9bca5b2936}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_skeletal_summary_data__t}{VRSkeletal\+Summary\+Data\+\_\+t}} {\bfseries last\+Skeletal\+Summary\+Data} = new \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_skeletal_summary_data__t}{VRSkeletal\+Summary\+Data\+\_\+t}}()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a6c6d0f535d4caebf144e346f6af38091}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a6c6d0f535d4caebf144e346f6af38091}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton}{Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton}} {\bfseries skeleton\+Action}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a47b6f5f0ece31f09a0ef1a48fabf3f19}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a47b6f5f0ece31f09a0ef1a48fabf3f19}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_bone_transform__t}{VRBone\+Transform\+\_\+t}}\mbox{[}$\,$\mbox{]} {\bfseries temp\+Bone\+Transforms} = new \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_bone_transform__t}{VRBone\+Transform\+\_\+t}}\mbox{[}Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton.\+num\+Bones\mbox{]}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a3819cfb006a8663e4c4234c0d5fac34d}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a3819cfb006a8663e4c4234c0d5fac34d}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_skeletal_action_data__t}{Input\+Skeletal\+Action\+Data\+\_\+t}} {\bfseries skeleton\+Action\+Data} = new \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_skeletal_action_data__t}{Input\+Skeletal\+Action\+Data\+\_\+t}}()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a45e152296782a90488385f9e857432b1}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a45e152296782a90488385f9e857432b1}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_skeletal_action_data__t}{Input\+Skeletal\+Action\+Data\+\_\+t}} {\bfseries last\+Skeleton\+Action\+Data} = new \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_skeletal_action_data__t}{Input\+Skeletal\+Action\+Data\+\_\+t}}()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a37da7c1ece93c395dc6063eb74efccc8}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a37da7c1ece93c395dc6063eb74efccc8}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_skeletal_action_data__t}{Input\+Skeletal\+Action\+Data\+\_\+t}} {\bfseries temp\+Skeleton\+Action\+Data} = new \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_skeletal_action_data__t}{Input\+Skeletal\+Action\+Data\+\_\+t}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a347f1b8039bc8aa6f50d54cc27702407}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a347f1b8039bc8aa6f50d54cc27702407}} 
+static uint {\bfseries skeleton\+Action\+Data\+\_\+size} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a78116723d56c3e18adab89cb768b21fb}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a78116723d56c3e18adab89cb768b21fb}} 
+override bool {\bfseries active\+Binding}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if the action is bound\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_aaf02827980541f09b42d64a301c9f828}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_aaf02827980541f09b42d64a301c9f828}} 
+override bool {\bfseries last\+Active\+Binding}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if the action\textquotesingle{}s binding was active during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_acc0770e6b18402cdb9787c3abe4399b3}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_acc0770e6b18402cdb9787c3abe4399b3}} 
+Vector3\mbox{[}$\,$\mbox{]} {\bfseries bone\+Positions}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An array of the positions of the bones from the most recent update. Relative to skeletal\+Transform\+Space. See \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___joint_indexes}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Joint\+Indexes}} for bone indexes.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a808b69ed4642a20cd86db74953e11868}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a808b69ed4642a20cd86db74953e11868}} 
+Quaternion\mbox{[}$\,$\mbox{]} {\bfseries bone\+Rotations}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An array of the rotations of the bones from the most recent update. Relative to skeletal\+Transform\+Space. See \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___joint_indexes}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Joint\+Indexes}} for bone indexes.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a601384f599350e5d6a6ac875aa60d000}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a601384f599350e5d6a6ac875aa60d000}} 
+Vector3\mbox{[}$\,$\mbox{]} {\bfseries last\+Bone\+Positions}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em From the previous update\+: An array of the positions of the bones from the most recent update. Relative to skeletal\+Transform\+Space. See \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___joint_indexes}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Joint\+Indexes}} for bone indexes.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a3140bba743490896ed68bc3fe0850f5e}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a3140bba743490896ed68bc3fe0850f5e}} 
+Quaternion\mbox{[}$\,$\mbox{]} {\bfseries last\+Bone\+Rotations}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em From the previous update\+: An array of the rotations of the bones from the most recent update. Relative to skeletal\+Transform\+Space. See \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___joint_indexes}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Joint\+Indexes}} for bone indexes.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a40dadbdfafff861ded2fbca0b7a28a32}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a40dadbdfafff861ded2fbca0b7a28a32}} 
+EVRSkeletal\+Motion\+Range {\bfseries range\+Of\+Motion}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The range of motion the we\textquotesingle{}re using to get bone data from. With Controller being your hand while holding the controller.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a8ae0c4bdc929e9487bd90a5c131df32a}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a8ae0c4bdc929e9487bd90a5c131df32a}} 
+EVRSkeletal\+Transform\+Space {\bfseries skeletal\+Transform\+Space}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The space to get bone data in. Parent space by default\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a64c3e26f8fbca32c002baf41e2a15a2c}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a64c3e26f8fbca32c002baf41e2a15a2c}} 
+EVRSummary\+Type {\bfseries summary\+Data\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The type of summary data that will be retrieved by default. From\+Animation is smoothed data to based on the skeletal animation system. From\+Device is as recent from the device as we can get -\/ may be different data from smoothed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a7fa8a03fba2900cca13741074183a169}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a7fa8a03fba2900cca13741074183a169}} 
+float {\bfseries thumb\+Curl}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A 0-\/1 value representing how curled the thumb is. 0 being straight, 1 being fully curled.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a79620bcbfdd095ddd03a1bb72da2bd0b}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a79620bcbfdd095ddd03a1bb72da2bd0b}} 
+float {\bfseries index\+Curl}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A 0-\/1 value representing how curled the index finger is. 0 being straight, 1 being fully curled.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a5be1629291d3e36faa1db01c239cb482}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a5be1629291d3e36faa1db01c239cb482}} 
+float {\bfseries middle\+Curl}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A 0-\/1 value representing how curled the middle finger is. 0 being straight, 1 being fully curled.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a42e383285b52b18d4ab8e6e095895846}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a42e383285b52b18d4ab8e6e095895846}} 
+float {\bfseries ring\+Curl}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A 0-\/1 value representing how curled the ring finger is. 0 being straight, 1 being fully curled.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ad3b7dcc83376c702aa866eff8fe0fb61}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ad3b7dcc83376c702aa866eff8fe0fb61}} 
+float {\bfseries pinky\+Curl}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A 0-\/1 value representing how curled the pinky finger is. 0 being straight, 1 being fully curled.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a427103fac11299cd97a54c1949e973bd}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a427103fac11299cd97a54c1949e973bd}} 
+float {\bfseries thumb\+Index\+Splay}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A 0-\/1 value representing the size of the gap between the thumb and index fingers\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a7de16520442772d896be0a867046f859}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a7de16520442772d896be0a867046f859}} 
+float {\bfseries index\+Middle\+Splay}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A 0-\/1 value representing the size of the gap between the index and middle fingers\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a03672b4ae90abc42564d7775bdaf2fb4}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a03672b4ae90abc42564d7775bdaf2fb4}} 
+float {\bfseries middle\+Ring\+Splay}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A 0-\/1 value representing the size of the gap between the middle and ring fingers\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a28e97373e54fcb74766416b9ed5810c0}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a28e97373e54fcb74766416b9ed5810c0}} 
+float {\bfseries ring\+Pinky\+Splay}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A 0-\/1 value representing the size of the gap between the ring and pinky fingers\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a5df36c1b14347ffd7d64518678a6acbd}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a5df36c1b14347ffd7d64518678a6acbd}} 
+float {\bfseries last\+Thumb\+Curl}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}Previous Update\mbox{]} A 0-\/1 value representing how curled the thumb is. 0 being straight, 1 being fully curled.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_abfcf2cc02eb5bccf7b7b88572ffa2b86}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_abfcf2cc02eb5bccf7b7b88572ffa2b86}} 
+float {\bfseries last\+Index\+Curl}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}Previous Update\mbox{]} A 0-\/1 value representing how curled the index finger is. 0 being straight, 1 being fully curled.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a734295b474070aae8e37011cbf6e4faa}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a734295b474070aae8e37011cbf6e4faa}} 
+float {\bfseries last\+Middle\+Curl}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}Previous Update\mbox{]} A 0-\/1 value representing how curled the middle finger is. 0 being straight, 1 being fully curled.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a5f878d6e852719151688c69fb8c126d5}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a5f878d6e852719151688c69fb8c126d5}} 
+float {\bfseries last\+Ring\+Curl}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}Previous Update\mbox{]} A 0-\/1 value representing how curled the ring finger is. 0 being straight, 1 being fully curled.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_af4ae4f533115235085c78796c44115ad}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_af4ae4f533115235085c78796c44115ad}} 
+float {\bfseries last\+Pinky\+Curl}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}Previous Update\mbox{]} A 0-\/1 value representing how curled the pinky finger is. 0 being straight, 1 being fully curled.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a765af83dcfd5cfa898e0ada7c94afeee}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a765af83dcfd5cfa898e0ada7c94afeee}} 
+float {\bfseries last\+Thumb\+Index\+Splay}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}Previous Update\mbox{]} A 0-\/1 value representing the size of the gap between the thumb and index fingers\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a8bd182b3e5643a197add997e66f51a91}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a8bd182b3e5643a197add997e66f51a91}} 
+float {\bfseries last\+Index\+Middle\+Splay}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}Previous Update\mbox{]} A 0-\/1 value representing the size of the gap between the index and middle fingers\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a44f2709c947cd957b45809768ab3f245}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a44f2709c947cd957b45809768ab3f245}} 
+float {\bfseries last\+Middle\+Ring\+Splay}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}Previous Update\mbox{]} A 0-\/1 value representing the size of the gap between the middle and ring fingers\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a762a1fc95f5d6fe0b6830e119b578b6a}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a762a1fc95f5d6fe0b6830e119b578b6a}} 
+float {\bfseries last\+Ring\+Pinky\+Splay}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}Previous Update\mbox{]} A 0-\/1 value representing the size of the gap between the ring and pinky fingers\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a15a77d357e4e87b039735a2eb3cf9ea1}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a15a77d357e4e87b039735a2eb3cf9ea1}} 
+float\mbox{[}$\,$\mbox{]} {\bfseries finger\+Curls}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 0-\/1 values representing how curled the specified finger is. 0 being straight, 1 being fully curled. For indexes see\+: \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___finger_indexes}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Finger\+Indexes}}\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ae03d33e99edbf36ecd3fc8327d85b4e0}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ae03d33e99edbf36ecd3fc8327d85b4e0}} 
+float\mbox{[}$\,$\mbox{]} {\bfseries finger\+Splays}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 0-\/1 values representing how splayed the specified finger and it\textquotesingle{}s next index\textquotesingle{}d finger is. For indexes see\+: \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___finger_indexes}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Finger\+Indexes}}\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ae2e59cdb259c54bc3f5b733917d35a26}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ae2e59cdb259c54bc3f5b733917d35a26}} 
+float\mbox{[}$\,$\mbox{]} {\bfseries last\+Finger\+Curls}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}Previous Update\mbox{]} 0-\/1 values representing how curled the specified finger is. 0 being straight, 1 being fully curled. For indexes see\+: \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___finger_indexes}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Finger\+Indexes}}\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a4a29b57e497cb86893a7529abe4d6a83}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a4a29b57e497cb86893a7529abe4d6a83}} 
+float\mbox{[}$\,$\mbox{]} {\bfseries last\+Finger\+Splays}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}Previous Update\mbox{]} 0-\/1 values representing how splayed the specified finger and it\textquotesingle{}s next index\textquotesingle{}d finger is. For indexes see\+: \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___finger_indexes}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Finger\+Indexes}}\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a9f1a7a40aa6b4964e5153b263b4b8f35}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a9f1a7a40aa6b4964e5153b263b4b8f35}} 
+bool {\bfseries pose\+Changed}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Separate from \char`\"{}changed\char`\"{}. If the pose for this skeleton action has changed (root position/rotation)\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ae20e2a30c557dd5344527a45f56b82c7}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ae20e2a30c557dd5344527a45f56b82c7}} 
+bool {\bfseries only\+Update\+Summary\+Data}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Skips processing the full per bone data and only does the summary data\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_aaf248e7b316e530e1b742204f9de4296}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_aaf248e7b316e530e1b742204f9de4296}} 
+int {\bfseries bone\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of bones in the skeleton for this action \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a3d2d1a793268a78189508ab4b6fccd63}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a3d2d1a793268a78189508ab4b6fccd63}} 
+int\mbox{[}$\,$\mbox{]} {\bfseries bone\+Hierarchy}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the ordering of the bone hierarchy \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_aebe1b7e7ed80abc1bdcf1712092dddf8}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_aebe1b7e7ed80abc1bdcf1712092dddf8}} 
+EVRSkeletal\+Tracking\+Level {\bfseries skeletal\+Tracking\+Level}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Get the accuracy level of the skeletal tracking data. 
+
+$\ast$ Estimated\+: Body part location can’t be directly determined by the device. Any skeletal pose provided by the device is estimated based on the active buttons, triggers, joysticks, or other input sensors. Examples include the Vive Controller and gamepads. 
+
+$\ast$ Partial\+: Body part location can be measured directly but with fewer degrees of freedom than the actual body part.\+Certain body part positions may be unmeasured by the device and estimated from other input data.\+Examples include Knuckles or gloves that only measure finger curl 
+
+$\ast$ Full\+: Body part location can be measured directly throughout the entire range of motion of the body part.\+Examples include hi-\/end mocap systems, or gloves that measure the rotation of each finger segment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ac3a839e79fa9302d13226bc7a3c90495}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ac3a839e79fa9302d13226bc7a3c90495}} 
+new Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton.\+Active\+Change\+Handler {\bfseries on\+Active\+Change}
+\begin{DoxyCompactList}\small\item\em Event fires when the active state (Action\+Set active and binding active) changes\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_afafb5601f1e36a3801afec96e3d2d0c2}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_afafb5601f1e36a3801afec96e3d2d0c2}} 
+new Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton.\+Active\+Change\+Handler {\bfseries on\+Active\+Binding\+Change}
+\begin{DoxyCompactList}\small\item\em Event fires when the active state of the binding changes\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_aba69647625587197739051f0df32076e}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_aba69647625587197739051f0df32076e}} 
+new Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton.\+Change\+Handler {\bfseries on\+Change}
+\begin{DoxyCompactList}\small\item\em Event fires when the orientation of the pose or bones changes more than the change\+Tolerance\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a5ad6626808b28b817fc06003b1a9ca6a}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a5ad6626808b28b817fc06003b1a9ca6a}} 
+new Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton.\+Update\+Handler {\bfseries on\+Update}
+\begin{DoxyCompactList}\small\item\em Event fires when the action is updated\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a618a821a496c455217e722b5e4a5541c}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a618a821a496c455217e722b5e4a5541c}} 
+new Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton.\+Tracking\+Change\+Handler {\bfseries on\+Tracking\+Changed}
+\begin{DoxyCompactList}\small\item\em Event fires when the state of the tracking system that is used to create pose data (position, rotation, etc) changes\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a6fe9e466864ed83e2bb05bd40a1fc8b0}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a6fe9e466864ed83e2bb05bd40a1fc8b0}} 
+new Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton.\+Valid\+Pose\+Change\+Handler {\bfseries on\+Valid\+Pose\+Changed}
+\begin{DoxyCompactList}\small\item\em Event fires when the state of the pose data retrieved for this action changes validity (good/bad data from the tracking source)\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ac4627b06b07b39de764adbae3b05052d}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ac4627b06b07b39de764adbae3b05052d}} 
+new Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton.\+Device\+Connected\+Change\+Handler {\bfseries on\+Device\+Connected\+Changed}
+\begin{DoxyCompactList}\small\item\em Event fires when the device bound to this action is connected or disconnected\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Skeleton Actions are our best approximation of where your hands are while holding vr controllers and pressing buttons. We give you 31 bones to help you animate hand models. For more information check out this blog post\+: \href{https://steamcommunity.com/games/250820/announcements/detail/1690421280625220068}{\texttt{ https\+://steamcommunity.\+com/games/250820/announcements/detail/1690421280625220068}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a28767b72b6df82708843c477b3740ccb}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a28767b72b6df82708843c477b3740ccb}} 
+\index{Valve.VR.SteamVR\_Action\_Skeleton\_Source@{Valve.VR.SteamVR\_Action\_Skeleton\_Source}!CheckAndSendEvents@{CheckAndSendEvents}}
+\index{CheckAndSendEvents@{CheckAndSendEvents}!Valve.VR.SteamVR\_Action\_Skeleton\_Source@{Valve.VR.SteamVR\_Action\_Skeleton\_Source}}
+\doxysubsubsection{\texorpdfstring{CheckAndSendEvents()}{CheckAndSendEvents()}}
+{\footnotesize\ttfamily override void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton\+\_\+\+Source.\+Check\+And\+Send\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source}}.
+
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a3da258ff1cfd7494444af62f478451bf}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a3da258ff1cfd7494444af62f478451bf}} 
+\index{Valve.VR.SteamVR\_Action\_Skeleton\_Source@{Valve.VR.SteamVR\_Action\_Skeleton\_Source}!GetReferenceTransforms@{GetReferenceTransforms}}
+\index{GetReferenceTransforms@{GetReferenceTransforms}!Valve.VR.SteamVR\_Action\_Skeleton\_Source@{Valve.VR.SteamVR\_Action\_Skeleton\_Source}}
+\doxysubsubsection{\texorpdfstring{GetReferenceTransforms()}{GetReferenceTransforms()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_steam_v_r___utils_1_1_rigid_transform}{Steam\+VR\+\_\+\+Utils.\+Rigid\+Transform}}\mbox{[}$\,$\mbox{]} Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton\+\_\+\+Source.\+Get\+Reference\+Transforms (\begin{DoxyParamCaption}\item[{EVRSkeletal\+Transform\+Space}]{transform\+Space,  }\item[{EVRSkeletal\+Reference\+Pose}]{reference\+Pose }\end{DoxyParamCaption})}
+
+
+
+Returns an array of positions/rotations that represent the state of each bone in a reference pose. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transform\+Space} & What to get the position/rotation data relative to, the model, or the bone\textquotesingle{}s parent\\
+\hline
+{\em reference\+Pose} & Which reference pose to return\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_af437a90257ecb494eb2c0b77747fe9d4}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_af437a90257ecb494eb2c0b77747fe9d4}} 
+\index{Valve.VR.SteamVR\_Action\_Skeleton\_Source@{Valve.VR.SteamVR\_Action\_Skeleton\_Source}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Valve.VR.SteamVR\_Action\_Skeleton\_Source@{Valve.VR.SteamVR\_Action\_Skeleton\_Source}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily override void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton\+\_\+\+Source.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+{\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Initializes the handle for the input\+Source, the skeletal action data size, and any other related \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} data. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_ab25a681f8310683a3c6695973041acc0}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source}}.
+
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a8341927740ab2699476e66d08d3124d3}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a8341927740ab2699476e66d08d3124d3}} 
+\index{Valve.VR.SteamVR\_Action\_Skeleton\_Source@{Valve.VR.SteamVR\_Action\_Skeleton\_Source}!Preinitialize@{Preinitialize}}
+\index{Preinitialize@{Preinitialize}!Valve.VR.SteamVR\_Action\_Skeleton\_Source@{Valve.VR.SteamVR\_Action\_Skeleton\_Source}}
+\doxysubsubsection{\texorpdfstring{Preinitialize()}{Preinitialize()}}
+{\footnotesize\ttfamily override void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton\+\_\+\+Source.\+Preinitialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action}{Steam\+VR\+\_\+\+Action}}}]{wrapping\+Action,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{for\+Input\+Source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+{\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Sets up the internals of the action source before \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} has been initialized. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a2e4aacdbfb9d1a2c5edffcd42e2c3c0e}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source}}.
+
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a1a82efaf01e75995c388b03acde03039}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a1a82efaf01e75995c388b03acde03039}} 
+\index{Valve.VR.SteamVR\_Action\_Skeleton\_Source@{Valve.VR.SteamVR\_Action\_Skeleton\_Source}!RemoveAllListeners@{RemoveAllListeners}}
+\index{RemoveAllListeners@{RemoveAllListeners}!Valve.VR.SteamVR\_Action\_Skeleton\_Source@{Valve.VR.SteamVR\_Action\_Skeleton\_Source}}
+\doxysubsubsection{\texorpdfstring{RemoveAllListeners()}{RemoveAllListeners()}}
+{\footnotesize\ttfamily override void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton\+\_\+\+Source.\+Remove\+All\+Listeners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes all listeners, useful for dispose pattern 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_af437a9f539f0ed22bd95cd70b620a4a3}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source}}.
+
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ab6af87a8b749735903ba744c168f7baa}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_ab6af87a8b749735903ba744c168f7baa}} 
+\index{Valve.VR.SteamVR\_Action\_Skeleton\_Source@{Valve.VR.SteamVR\_Action\_Skeleton\_Source}!UpdateValue@{UpdateValue}}
+\index{UpdateValue@{UpdateValue}!Valve.VR.SteamVR\_Action\_Skeleton\_Source@{Valve.VR.SteamVR\_Action\_Skeleton\_Source}}
+\doxysubsubsection{\texorpdfstring{UpdateValue()}{UpdateValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton\+\_\+\+Source.\+Update\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+{\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Updates the data for this action and this input source. Sends related events. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a2b299c57d8709519f9dfb91da28bde4e}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source}}.
+
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a1b70de6042eb094c05dcd7f905ff3abd}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton___source_a1b70de6042eb094c05dcd7f905ff3abd}} 
+\index{Valve.VR.SteamVR\_Action\_Skeleton\_Source@{Valve.VR.SteamVR\_Action\_Skeleton\_Source}!UpdateValue@{UpdateValue}}
+\index{UpdateValue@{UpdateValue}!Valve.VR.SteamVR\_Action\_Skeleton\_Source@{Valve.VR.SteamVR\_Action\_Skeleton\_Source}}
+\doxysubsubsection{\texorpdfstring{UpdateValue()}{UpdateValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily override void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton\+\_\+\+Source.\+Update\+Value (\begin{DoxyParamCaption}\item[{bool}]{skip\+State\+And\+Event\+Updates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+{\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Updates the data for this action and this input source. Sends related events. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source_a0254cddea71deac6f822536c4232a452}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Input/Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton.\+cs\end{DoxyCompactItemize}

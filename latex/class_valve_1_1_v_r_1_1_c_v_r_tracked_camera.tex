@@ -1,0 +1,58 @@
+\hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera}{}\doxysection{Valve.\+VR.\+CVRTracked\+Camera Class Reference}
+\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera}\index{Valve.VR.CVRTrackedCamera@{Valve.VR.CVRTrackedCamera}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_aa39eb940b32bf3603c048bf01b720015}\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_aa39eb940b32bf3603c048bf01b720015}} 
+string {\bfseries Get\+Camera\+Error\+Name\+From\+Enum} (EVRTracked\+Camera\+Error e\+Camera\+Error)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_acfbdc354ce7283a9b3059361037229ce}\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_acfbdc354ce7283a9b3059361037229ce}} 
+EVRTracked\+Camera\+Error {\bfseries Has\+Camera} (uint n\+Device\+Index, ref bool p\+Has\+Camera)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_a6f5b1378d36c914562cb4edd80a8df65}\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_a6f5b1378d36c914562cb4edd80a8df65}} 
+EVRTracked\+Camera\+Error {\bfseries Get\+Camera\+Frame\+Size} (uint n\+Device\+Index, EVRTracked\+Camera\+Frame\+Type e\+Frame\+Type, ref uint pn\+Width, ref uint pn\+Height, ref uint pn\+Frame\+Buffer\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_a14c0112fec4074fee9eb035bd0341823}\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_a14c0112fec4074fee9eb035bd0341823}} 
+EVRTracked\+Camera\+Error {\bfseries Get\+Camera\+Intrinsics} (uint n\+Device\+Index, uint n\+Camera\+Index, EVRTracked\+Camera\+Frame\+Type e\+Frame\+Type, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_vector2__t}{Hmd\+Vector2\+\_\+t}} p\+Focal\+Length, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_vector2__t}{Hmd\+Vector2\+\_\+t}} p\+Center)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_af89b991a4c7e27dee9a0c01cc2bcd30f}\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_af89b991a4c7e27dee9a0c01cc2bcd30f}} 
+EVRTracked\+Camera\+Error {\bfseries Get\+Camera\+Projection} (uint n\+Device\+Index, uint n\+Camera\+Index, EVRTracked\+Camera\+Frame\+Type e\+Frame\+Type, float fl\+ZNear, float fl\+ZFar, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_hmd_matrix44__t}{Hmd\+Matrix44\+\_\+t}} p\+Projection)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_a088e0575a1a1a133ae56608e4e244e62}\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_a088e0575a1a1a133ae56608e4e244e62}} 
+EVRTracked\+Camera\+Error {\bfseries Acquire\+Video\+Streaming\+Service} (uint n\+Device\+Index, ref ulong p\+Handle)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_aee0ee9f7e4e1374a87b79139eba5ae2d}\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_aee0ee9f7e4e1374a87b79139eba5ae2d}} 
+EVRTracked\+Camera\+Error {\bfseries Release\+Video\+Streaming\+Service} (ulong h\+Tracked\+Camera)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_ada866b6a0bfbdc3a1a7c3ab399317481}\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_ada866b6a0bfbdc3a1a7c3ab399317481}} 
+EVRTracked\+Camera\+Error {\bfseries Get\+Video\+Stream\+Frame\+Buffer} (ulong h\+Tracked\+Camera, EVRTracked\+Camera\+Frame\+Type e\+Frame\+Type, Int\+Ptr p\+Frame\+Buffer, uint n\+Frame\+Buffer\+Size, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_camera_video_stream_frame_header__t}{Camera\+Video\+Stream\+Frame\+Header\+\_\+t}} p\+Frame\+Header, uint n\+Frame\+Header\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_a8edfe35e16e786063cf5749899751d8a}\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_a8edfe35e16e786063cf5749899751d8a}} 
+EVRTracked\+Camera\+Error {\bfseries Get\+Video\+Stream\+Texture\+Size} (uint n\+Device\+Index, EVRTracked\+Camera\+Frame\+Type e\+Frame\+Type, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_v_r_texture_bounds__t}{VRTexture\+Bounds\+\_\+t}} p\+Texture\+Bounds, ref uint pn\+Width, ref uint pn\+Height)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_a75788ecc02f0d8f2164f01678ff4186a}\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_a75788ecc02f0d8f2164f01678ff4186a}} 
+EVRTracked\+Camera\+Error {\bfseries Get\+Video\+Stream\+Texture\+D3\+D11} (ulong h\+Tracked\+Camera, EVRTracked\+Camera\+Frame\+Type e\+Frame\+Type, Int\+Ptr p\+D3\+D11\+Device\+Or\+Resource, ref Int\+Ptr pp\+D3\+D11\+Shader\+Resource\+View, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_camera_video_stream_frame_header__t}{Camera\+Video\+Stream\+Frame\+Header\+\_\+t}} p\+Frame\+Header, uint n\+Frame\+Header\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_a9e2a9c4bee0a46c9125d0b9c6babf639}\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_a9e2a9c4bee0a46c9125d0b9c6babf639}} 
+EVRTracked\+Camera\+Error {\bfseries Get\+Video\+Stream\+Texture\+GL} (ulong h\+Tracked\+Camera, EVRTracked\+Camera\+Frame\+Type e\+Frame\+Type, ref uint pgl\+Texture\+Id, ref \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_camera_video_stream_frame_header__t}{Camera\+Video\+Stream\+Frame\+Header\+\_\+t}} p\+Frame\+Header, uint n\+Frame\+Header\+Size)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_af058ef5a3335e96a1b4510c7bc7745ad}\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_af058ef5a3335e96a1b4510c7bc7745ad}} 
+EVRTracked\+Camera\+Error {\bfseries Release\+Video\+Stream\+Texture\+GL} (ulong h\+Tracked\+Camera, uint gl\+Texture\+Id)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_aca21053e2893c6184536cb39dadb3d60}\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_aca21053e2893c6184536cb39dadb3d60}} 
+void {\bfseries Set\+Camera\+Tracking\+Space} (ETracking\+Universe\+Origin e\+Universe)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_a729db61f843aace3d697d3079ea6549a}\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_a729db61f843aace3d697d3079ea6549a}} 
+ETracking\+Universe\+Origin {\bfseries Get\+Camera\+Tracking\+Space} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_acc3cbe489a9b3bb3d85c733feebdb44a}\label{class_valve_1_1_v_r_1_1_c_v_r_tracked_camera_acc3cbe489a9b3bb3d85c733feebdb44a}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_i_v_r_tracked_camera}{IVRTracked\+Camera}} {\bfseries Fn\+Table}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Plugins/openvr\+\_\+api.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,224 @@
+\hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source}{}\doxysection{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean\+\_\+\+Source Class Reference}
+\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source}\index{Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}}
+Inheritance diagram for Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean\+\_\+\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.735043cm]{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a35bf3460bf62e92bc67e371b16125c39}{Preinitialize}} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action}{Steam\+VR\+\_\+\+Action}} wrapping\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources for\+Input\+Source)
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Sets up the internals of the action source before \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} has been initialized. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_abf7892da581c5adc54514e02df609b4c}{Initialize}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Initializes the handle for the input\+Source, the action data size, and any other related \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a0116158866ab1e98bfea777a7a4bdd25}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a0116158866ab1e98bfea777a7a4bdd25}} 
+void {\bfseries Remove\+All\+Listeners} ()
+\begin{DoxyCompactList}\small\item\em Remove all listeners, useful for Dispose pattern \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a3a48e22c9912f24ad65e3b64a21cc54c}{Update\+Value}} ()
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Updates the data for this action and this input source. Sends related events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a548a08fed0cbd805a41b5c8fb6781ec7}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a548a08fed0cbd805a41b5c8fb6781ec7}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_digital_action_data__t}{Input\+Digital\+Action\+Data\+\_\+t}} {\bfseries action\+Data} = new \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_digital_action_data__t}{Input\+Digital\+Action\+Data\+\_\+t}}()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a8da087502c6d74720661c51b921ebb3b}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a8da087502c6d74720661c51b921ebb3b}} 
+\mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_digital_action_data__t}{Input\+Digital\+Action\+Data\+\_\+t}} {\bfseries last\+Action\+Data} = new \mbox{\hyperlink{struct_valve_1_1_v_r_1_1_input_digital_action_data__t}{Input\+Digital\+Action\+Data\+\_\+t}}()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_ab06d75d32615dfe0b2028e3e3b4d978d}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_ab06d75d32615dfe0b2028e3e3b4d978d}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean}{Steam\+VR\+\_\+\+Action\+\_\+\+Boolean}} {\bfseries boolean\+Action}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_ab45da73ac3ff33090639d347dbbe12bf}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_ab45da73ac3ff33090639d347dbbe12bf}} 
+static uint {\bfseries action\+Data\+\_\+size} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a63563619aa24bc698e0291a332ee68ae}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a63563619aa24bc698e0291a332ee68ae}} 
+bool {\bfseries state}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The current value of the boolean action. Note\+: Will only return true if the action is also active.\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_aee3c0e3480c1837b3455229733a2d58c}{state\+Down}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True when the action\textquotesingle{}s state changes from false to true. Note\+: Will only return true if the action is also active.\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a1fc319a221f4ca4f89c35b0836bd6d81}{state\+Up}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True when the action\textquotesingle{}s state changes from true to false. Note\+: Will only return true if the action is also active.\end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a2dce0c19bb9d547f63dc1d8432df2c95}{changed}}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True when the action\textquotesingle{}s state changed during the most recent update. Note\+: Will only return true if the action is also active.\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_ab00750875aeedfa74cd7ce19ecae2bac}{last\+State}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of the action\textquotesingle{}s \textquotesingle{}state\textquotesingle{} during the previous update\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_ae8ca6561a610cd2484229b1a8ff99911}{last\+State\+Down}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of the action\textquotesingle{}s \textquotesingle{}state\+Down\textquotesingle{} during the previous update\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_aabdbb44ebb825ceb88524a655f4bbdd9}{last\+State\+Up}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of the action\textquotesingle{}s \textquotesingle{}state\+Up\textquotesingle{} during the previous update\end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a0d4b059215ef754084e98c6b342cfdfd}{last\+Changed}}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of the action\textquotesingle{}s \textquotesingle{}changed\textquotesingle{} during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a182735fc4bd6d69000885ea290c95124}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a182735fc4bd6d69000885ea290c95124}} 
+override ulong {\bfseries active\+Origin}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The handle to the origin of the component that was used to update the value for this action\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_ad73216cbbb3caf2c1f42d736e86b7474}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_ad73216cbbb3caf2c1f42d736e86b7474}} 
+override ulong {\bfseries last\+Active\+Origin}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The handle to the origin of the component that was used to update the value for this action (for the previous update)\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_ae7f38ff0c9baf560ab3df37206ea19db}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_ae7f38ff0c9baf560ab3df37206ea19db}} 
+override bool {\bfseries active}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if this action is bound and the Action\+Set is active\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_aa5560617c43d44a46ed2b9bc2740e6a3}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_aa5560617c43d44a46ed2b9bc2740e6a3}} 
+override bool {\bfseries active\+Binding}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if the action is bound\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a797a1d5c573add8358c04e40de6151e6}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a797a1d5c573add8358c04e40de6151e6}} 
+override bool {\bfseries last\+Active}\hspace{0.3cm}{\ttfamily  \mbox{[}getprotected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if the action was bound and the Action\+Set was active during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a818becad695a366d83859d897240c88d}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a818becad695a366d83859d897240c88d}} 
+override bool {\bfseries last\+Active\+Binding}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if the action was bound during the previous update\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a047594426551baeff37ca81d6751ad69}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a047594426551baeff37ca81d6751ad69}} 
+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean.\+State\+Down\+Handler {\bfseries on\+State\+Down}
+\begin{DoxyCompactList}\small\item\em Event fires when the state of the action changes from false to true\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a1b52d5a2bfc5a5f364cd97827b2dd1dc}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a1b52d5a2bfc5a5f364cd97827b2dd1dc}} 
+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean.\+State\+Up\+Handler {\bfseries on\+State\+Up}
+\begin{DoxyCompactList}\small\item\em Event fires when the state of the action changes from true to false\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a90421a54054f0660a28d0d6703bdbc7e}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a90421a54054f0660a28d0d6703bdbc7e}} 
+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean.\+State\+Handler {\bfseries on\+State}
+\begin{DoxyCompactList}\small\item\em Event fires when the state of the action is true and the action gets updated\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a89f4c615f6cc510d0bf7326218d85759}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a89f4c615f6cc510d0bf7326218d85759}} 
+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean.\+Active\+Change\+Handler {\bfseries on\+Active\+Change}
+\begin{DoxyCompactList}\small\item\em Event fires when the active state (Action\+Set active and binding active) changes\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a39d21e4fc6f670f9289b2acd0c2c2bf3}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a39d21e4fc6f670f9289b2acd0c2c2bf3}} 
+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean.\+Active\+Change\+Handler {\bfseries on\+Active\+Binding\+Change}
+\begin{DoxyCompactList}\small\item\em Event fires when the active state of the binding changes\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a3499c4f9a10e45562c36d84f2cd0f834}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a3499c4f9a10e45562c36d84f2cd0f834}} 
+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean.\+Change\+Handler {\bfseries on\+Change}
+\begin{DoxyCompactList}\small\item\em Event fires when the state of the action changes from false to true or true to false\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a415211a4f88a14bcd67b25bf9daff709}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a415211a4f88a14bcd67b25bf9daff709}} 
+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean.\+Update\+Handler {\bfseries on\+Update}
+\begin{DoxyCompactList}\small\item\em Event fires when the action is updated\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_abf7892da581c5adc54514e02df609b4c}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_abf7892da581c5adc54514e02df609b4c}} 
+\index{Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily override void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean\+\_\+\+Source.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+{\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Initializes the handle for the input\+Source, the action data size, and any other related \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} data. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___source_aa4784c092cc0a4372812834bfcceab6d}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Source}}.
+
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a35bf3460bf62e92bc67e371b16125c39}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a35bf3460bf62e92bc67e371b16125c39}} 
+\index{Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}!Preinitialize@{Preinitialize}}
+\index{Preinitialize@{Preinitialize}!Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}}
+\doxysubsubsection{\texorpdfstring{Preinitialize()}{Preinitialize()}}
+{\footnotesize\ttfamily override void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean\+\_\+\+Source.\+Preinitialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action}{Steam\+VR\+\_\+\+Action}}}]{wrapping\+Action,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{for\+Input\+Source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+{\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Sets up the internals of the action source before \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} has been initialized. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___source_aa2bec7f32b37595de01f1456a3fa5bfe}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Source}}.
+
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a3a48e22c9912f24ad65e3b64a21cc54c}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a3a48e22c9912f24ad65e3b64a21cc54c}} 
+\index{Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}!UpdateValue@{UpdateValue}}
+\index{UpdateValue@{UpdateValue}!Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}}
+\doxysubsubsection{\texorpdfstring{UpdateValue()}{UpdateValue()}}
+{\footnotesize\ttfamily override void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean\+\_\+\+Source.\+Update\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+{\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Updates the data for this action and this input source. Sends related events. 
+
+
+
+Implements \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___in___source_a800b521715c6cbfe32e9b0b6db7e0a16}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+In\+\_\+\+Source}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a2dce0c19bb9d547f63dc1d8432df2c95}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a2dce0c19bb9d547f63dc1d8432df2c95}} 
+\index{Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}!changed@{changed}}
+\index{changed@{changed}!Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}}
+\doxysubsubsection{\texorpdfstring{changed}{changed}}
+{\footnotesize\ttfamily override bool Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean\+\_\+\+Source.\+changed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+True when the action\textquotesingle{}s state changed during the most recent update. Note\+: Will only return true if the action is also active.
+
+Action\+Set is ignored since get is coming from the native struct.\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a0d4b059215ef754084e98c6b342cfdfd}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a0d4b059215ef754084e98c6b342cfdfd}} 
+\index{Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}!lastChanged@{lastChanged}}
+\index{lastChanged@{lastChanged}!Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}}
+\doxysubsubsection{\texorpdfstring{lastChanged}{lastChanged}}
+{\footnotesize\ttfamily override bool Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean\+\_\+\+Source.\+last\+Changed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+The value of the action\textquotesingle{}s \textquotesingle{}changed\textquotesingle{} during the previous update
+
+Always returns the previous update state. Set is ignored since get is coming from the native struct.\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_ab00750875aeedfa74cd7ce19ecae2bac}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_ab00750875aeedfa74cd7ce19ecae2bac}} 
+\index{Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}!lastState@{lastState}}
+\index{lastState@{lastState}!Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}}
+\doxysubsubsection{\texorpdfstring{lastState}{lastState}}
+{\footnotesize\ttfamily bool Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean\+\_\+\+Source.\+last\+State\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The value of the action\textquotesingle{}s \textquotesingle{}state\textquotesingle{} during the previous update
+
+Always returns the previous update state\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_ae8ca6561a610cd2484229b1a8ff99911}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_ae8ca6561a610cd2484229b1a8ff99911}} 
+\index{Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}!lastStateDown@{lastStateDown}}
+\index{lastStateDown@{lastStateDown}!Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}}
+\doxysubsubsection{\texorpdfstring{lastStateDown}{lastStateDown}}
+{\footnotesize\ttfamily bool Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean\+\_\+\+Source.\+last\+State\+Down\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The value of the action\textquotesingle{}s \textquotesingle{}state\+Down\textquotesingle{} during the previous update
+
+Always returns the previous update state\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_aabdbb44ebb825ceb88524a655f4bbdd9}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_aabdbb44ebb825ceb88524a655f4bbdd9}} 
+\index{Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}!lastStateUp@{lastStateUp}}
+\index{lastStateUp@{lastStateUp}!Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}}
+\doxysubsubsection{\texorpdfstring{lastStateUp}{lastStateUp}}
+{\footnotesize\ttfamily bool Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean\+\_\+\+Source.\+last\+State\+Up\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The value of the action\textquotesingle{}s \textquotesingle{}state\+Up\textquotesingle{} during the previous update
+
+Always returns the previous update state\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_aee3c0e3480c1837b3455229733a2d58c}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_aee3c0e3480c1837b3455229733a2d58c}} 
+\index{Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}!stateDown@{stateDown}}
+\index{stateDown@{stateDown}!Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}}
+\doxysubsubsection{\texorpdfstring{stateDown}{stateDown}}
+{\footnotesize\ttfamily bool Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean\+\_\+\+Source.\+state\+Down\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+True when the action\textquotesingle{}s state changes from false to true. Note\+: Will only return true if the action is also active.
+
+Will only return true if the action is also active.\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a1fc319a221f4ca4f89c35b0836bd6d81}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___boolean___source_a1fc319a221f4ca4f89c35b0836bd6d81}} 
+\index{Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}!stateUp@{stateUp}}
+\index{stateUp@{stateUp}!Valve.VR.SteamVR\_Action\_Boolean\_Source@{Valve.VR.SteamVR\_Action\_Boolean\_Source}}
+\doxysubsubsection{\texorpdfstring{stateUp}{stateUp}}
+{\footnotesize\ttfamily bool Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Boolean\+\_\+\+Source.\+state\+Up\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+True when the action\textquotesingle{}s state changes from true to false. Note\+: Will only return true if the action is also active.
+
+Will only return true if the action is also active.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Input/Steam\+VR\+\_\+\+Action\+\_\+\+Boolean.\+cs\end{DoxyCompactItemize}

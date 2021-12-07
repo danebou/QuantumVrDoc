@@ -1,0 +1,205 @@
+\hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser}{}\doxysection{Valve.\+VR.\+Steam\+VR\+\_\+\+Skeleton\+\_\+\+Poser Class Reference}
+\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser}\index{Valve.VR.SteamVR\_Skeleton\_Poser@{Valve.VR.SteamVR\_Skeleton\_Poser}}
+Inheritance diagram for Valve.\+VR.\+Steam\+VR\+\_\+\+Skeleton\+\_\+\+Poser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_1_1_pose_blending_behaviour}{Pose\+Blending\+Behaviour}}
+\begin{DoxyCompactList}\small\item\em A filter applied to the base pose. Blends to a secondary pose by a certain weight. Can be masked per-\/finger \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_1_1_skeleton_blendable_pose}{Skeleton\+Blendable\+Pose}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_1_1_skeleton_blendable_pose}{Skeleton\+Blendable\+Pose}} holds a reference to a Skeleton\+\_\+\+Pose scriptable\+Object, and also contains some helper functions. Also handles pose-\/specific animation like additive finger motion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_aa78aff2ee1050b6b9d1e75fcdba716de}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_aa78aff2ee1050b6b9d1e75fcdba716de}} 
+void {\bfseries Set\+Blending\+Behaviour\+Value} (string behaviour\+Name, float value)
+\begin{DoxyCompactList}\small\item\em Set the blending value of a blending\+Behaviour. Works best on Manual type behaviours. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a7e788c608463b075fb08a1ac5971f14d}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a7e788c608463b075fb08a1ac5971f14d}} 
+float {\bfseries Get\+Blending\+Behaviour\+Value} (string behaviour\+Name)
+\begin{DoxyCompactList}\small\item\em Get the blending value of a blending\+Behaviour. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a9ffcecfe8838cd4b5d9b2d28e990c8b6}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a9ffcecfe8838cd4b5d9b2d28e990c8b6}} 
+void {\bfseries Set\+Blending\+Behaviour\+Enabled} (string behaviour\+Name, bool value)
+\begin{DoxyCompactList}\small\item\em Enable or disable a blending behaviour. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a450ef2915c0515576353689fad3ad3b7}{Get\+Blending\+Behaviour\+Enabled}} (string behaviour\+Name)
+\begin{DoxyCompactList}\small\item\em Check if a blending behaviour is enabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a1d908654738a4881221dc68fad3e8f4f}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a1d908654738a4881221dc68fad3e8f4f}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_1_1_pose_blending_behaviour}{Pose\+Blending\+Behaviour}} {\bfseries Get\+Blending\+Behaviour} (string behaviour\+Name)
+\begin{DoxyCompactList}\small\item\em Get a blending behaviour by name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a403f95ce0a6e6c69c48a27b40a719623}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a403f95ce0a6e6c69c48a27b40a719623}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___pose}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Pose}} {\bfseries Get\+Pose\+By\+Index} (int index)
+\item 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___pose_snapshot}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Pose\+Snapshot}} \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a0decc52524d496af9eeff38c8d9f1dab}{Get\+Blended\+Pose}} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton}{Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton}} skeleton\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources hand\+Type)
+\begin{DoxyCompactList}\small\item\em Retrieve the final animated pose, to be applied to a hand skeleton \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___pose_snapshot}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Pose\+Snapshot}} \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a4033ee62539b088df573ff5785cb7bd7}{Get\+Blended\+Pose}} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___skeleton}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Skeleton}} skeleton\+Behaviour)
+\begin{DoxyCompactList}\small\item\em Retrieve the final animated pose, to be applied to a hand skeleton \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a02450c90d63ca61606ef052ecf07785b}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a02450c90d63ca61606ef052ecf07785b}} 
+void {\bfseries Update\+Pose} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton}{Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton}} skeleton\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Updates all pose animation and blending. Can be called from different places without performance concerns, as it will only let itself run once per frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a772a4d84675a084d5ce38a702360151d}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a772a4d84675a084d5ce38a702360151d}} 
+Vector3 {\bfseries Get\+Target\+Hand\+Position} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___skeleton}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Skeleton}} hand, Transform origin)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_ad6b7cc5e68e683fe376f6e67d060dd3c}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_ad6b7cc5e68e683fe376f6e67d060dd3c}} 
+Quaternion {\bfseries Get\+Target\+Hand\+Rotation} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___skeleton}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Skeleton}} hand, Transform origin)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a47aa0b9803b361b0518695718955192a}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a47aa0b9803b361b0518695718955192a}} 
+bool {\bfseries pose\+Editor\+Expanded} = true
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a1bac4a8ce5dd0cedbc5126154932280f}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a1bac4a8ce5dd0cedbc5126154932280f}} 
+bool {\bfseries blend\+Editor\+Expanded} = true
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_abeafebc03bed7cc5d5623d83208a6e6d}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_abeafebc03bed7cc5d5623d83208a6e6d}} 
+string\mbox{[}$\,$\mbox{]} {\bfseries pose\+Names}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a818c159db1c80284b776137963b866b2}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a818c159db1c80284b776137963b866b2}} 
+Game\+Object {\bfseries override\+Preview\+Left\+Hand\+Prefab}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_afe0d010ea082027a3732be0dbac1c9a3}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_afe0d010ea082027a3732be0dbac1c9a3}} 
+Game\+Object {\bfseries override\+Preview\+Right\+Hand\+Prefab}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a2b3e48f48a00bd16a66e58c124e5ec45}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a2b3e48f48a00bd16a66e58c124e5ec45}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___pose}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Pose}} {\bfseries skeleton\+Main\+Pose}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a30d0f0bf1ff8e5473312926dbdeca283}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a30d0f0bf1ff8e5473312926dbdeca283}} 
+List$<$ \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___pose}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Pose}} $>$ {\bfseries skeleton\+Additional\+Poses} = new List$<$\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___pose}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Pose}}$>$()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a3b50d4d4b057f02bfe0a6a9295c96ea7}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a3b50d4d4b057f02bfe0a6a9295c96ea7}} 
+List$<$ \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_1_1_pose_blending_behaviour}{Pose\+Blending\+Behaviour}} $>$ {\bfseries blending\+Behaviours} = new List$<$\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_1_1_pose_blending_behaviour}{Pose\+Blending\+Behaviour}}$>$()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a6ac255b035d6ac7d96141e4767b4d038}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a6ac255b035d6ac7d96141e4767b4d038}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___pose_snapshot}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Pose\+Snapshot}} {\bfseries blended\+SnapshotL}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_afc6d17e124a917de2110c00b7c5f0377}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_afc6d17e124a917de2110c00b7c5f0377}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___pose_snapshot}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Pose\+Snapshot}} {\bfseries blended\+SnapshotR}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_aa03c5cbb4caafd113219eee161a887c7}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_aa03c5cbb4caafd113219eee161a887c7}} 
+float {\bfseries scale}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a814dc0d682cf294b1a81f41a4ae64f74}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a814dc0d682cf294b1a81f41a4ae64f74}} 
+void {\bfseries Awake} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a33f076461df44fe6da93d821c921780c}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a33f076461df44fe6da93d821c921780c}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_1_1_pose_blending_behaviour}{Pose\+Blending\+Behaviour}} {\bfseries Find\+Blending\+Behaviour} (string behaviour\+Name, bool throw\+Errors=true)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a70b791c62e9028d464a30cd48bdc79b8}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a70b791c62e9028d464a30cd48bdc79b8}} 
+void {\bfseries Apply\+Blender\+Behaviours} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton}{Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton}} skeleton\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source, \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___pose_snapshot}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Pose\+Snapshot}} snapshot)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a86281164f383edd92e20d57a57fafbb5}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a86281164f383edd92e20d57a57fafbb5}} 
+void {\bfseries Late\+Update} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_adc9b5a7251967eda89384cd100a12706}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_adc9b5a7251967eda89384cd100a12706}} 
+Vector3 {\bfseries Blend\+Vectors} (Vector3\mbox{[}$\,$\mbox{]} vectors, float\mbox{[}$\,$\mbox{]} weights)
+\begin{DoxyCompactList}\small\item\em Weighted average of n vector3s\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a512976b6887ba7727cdf155de454c467}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a512976b6887ba7727cdf155de454c467}} 
+Quaternion {\bfseries Blend\+Quaternions} (Quaternion\mbox{[}$\,$\mbox{]} quaternions, float\mbox{[}$\,$\mbox{]} weights)
+\begin{DoxyCompactList}\small\item\em Weighted average of n quaternions\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a099b2bc09cf978f79a755cfa0b3bdf62}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a099b2bc09cf978f79a755cfa0b3bdf62}} 
+bool {\bfseries show\+Left\+Preview} = false
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a92205c4f05ff19407be88cb0fb360ef5}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a92205c4f05ff19407be88cb0fb360ef5}} 
+bool {\bfseries show\+Right\+Preview} = true
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_af6bb854d4b8b8b42cea424a8d5f7c643}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_af6bb854d4b8b8b42cea424a8d5f7c643}} 
+Game\+Object {\bfseries preview\+Left\+Instance}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a74ec43e56444959bd3de102cf5c844d8}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a74ec43e56444959bd3de102cf5c844d8}} 
+Game\+Object {\bfseries preview\+Right\+Instance}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a734a92a17b0539f34e3b46d5437c1faf}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a734a92a17b0539f34e3b46d5437c1faf}} 
+int {\bfseries preview\+Pose\+Selection} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a5d7fc3c60a7e5204c951779ca781c39e}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a5d7fc3c60a7e5204c951779ca781c39e}} 
+int {\bfseries blend\+Pose\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a563f51ebfd7da4c8dfb55fbeb4b0a8a7}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a563f51ebfd7da4c8dfb55fbeb4b0a8a7}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___pose_snapshot}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Pose\+Snapshot}} {\bfseries Get\+Hand\+Snapshot} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a77c348c32d535533cc50cd1df8cb78cc}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a77c348c32d535533cc50cd1df8cb78cc}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_1_1_skeleton_blendable_pose}{Skeleton\+Blendable\+Pose}}\mbox{[}$\,$\mbox{]} {\bfseries blend\+Poses}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a501531b5d299e89c1c0d7dffdf36bd59}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a501531b5d299e89c1c0d7dffdf36bd59}} 
+int {\bfseries bone\+Count}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_aa0845534f4c967be8360eddabf706efb}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_aa0845534f4c967be8360eddabf706efb}} 
+bool {\bfseries pose\+Updated\+This\+Frame}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a0decc52524d496af9eeff38c8d9f1dab}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a0decc52524d496af9eeff38c8d9f1dab}} 
+\index{Valve.VR.SteamVR\_Skeleton\_Poser@{Valve.VR.SteamVR\_Skeleton\_Poser}!GetBlendedPose@{GetBlendedPose}}
+\index{GetBlendedPose@{GetBlendedPose}!Valve.VR.SteamVR\_Skeleton\_Poser@{Valve.VR.SteamVR\_Skeleton\_Poser}}
+\doxysubsubsection{\texorpdfstring{GetBlendedPose()}{GetBlendedPose()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___pose_snapshot}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Pose\+Snapshot}} Valve.\+VR.\+Steam\+VR\+\_\+\+Skeleton\+\_\+\+Poser.\+Get\+Blended\+Pose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___skeleton}{Steam\+VR\+\_\+\+Action\+\_\+\+Skeleton}}}]{skeleton\+Action,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{hand\+Type }\end{DoxyParamCaption})}
+
+
+
+Retrieve the final animated pose, to be applied to a hand skeleton 
+
+
+\begin{DoxyParams}{Parameters}
+{\em for\+Action} & The skeleton action you want to blend between\\
+\hline
+{\em hand\+Type} & If this is for the left or right hand\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a4033ee62539b088df573ff5785cb7bd7}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a4033ee62539b088df573ff5785cb7bd7}} 
+\index{Valve.VR.SteamVR\_Skeleton\_Poser@{Valve.VR.SteamVR\_Skeleton\_Poser}!GetBlendedPose@{GetBlendedPose}}
+\index{GetBlendedPose@{GetBlendedPose}!Valve.VR.SteamVR\_Skeleton\_Poser@{Valve.VR.SteamVR\_Skeleton\_Poser}}
+\doxysubsubsection{\texorpdfstring{GetBlendedPose()}{GetBlendedPose()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___pose_snapshot}{Steam\+VR\+\_\+\+Skeleton\+\_\+\+Pose\+Snapshot}} Valve.\+VR.\+Steam\+VR\+\_\+\+Skeleton\+\_\+\+Poser.\+Get\+Blended\+Pose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___behaviour___skeleton}{Steam\+VR\+\_\+\+Behaviour\+\_\+\+Skeleton}}}]{skeleton\+Behaviour }\end{DoxyParamCaption})}
+
+
+
+Retrieve the final animated pose, to be applied to a hand skeleton 
+
+
+\begin{DoxyParams}{Parameters}
+{\em skeleton\+Behaviour} & The skeleton behaviour you want to get the action/input source from to blend between\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a450ef2915c0515576353689fad3ad3b7}\label{class_valve_1_1_v_r_1_1_steam_v_r___skeleton___poser_a450ef2915c0515576353689fad3ad3b7}} 
+\index{Valve.VR.SteamVR\_Skeleton\_Poser@{Valve.VR.SteamVR\_Skeleton\_Poser}!GetBlendingBehaviourEnabled@{GetBlendingBehaviourEnabled}}
+\index{GetBlendingBehaviourEnabled@{GetBlendingBehaviourEnabled}!Valve.VR.SteamVR\_Skeleton\_Poser@{Valve.VR.SteamVR\_Skeleton\_Poser}}
+\doxysubsubsection{\texorpdfstring{GetBlendingBehaviourEnabled()}{GetBlendingBehaviourEnabled()}}
+{\footnotesize\ttfamily bool Valve.\+VR.\+Steam\+VR\+\_\+\+Skeleton\+\_\+\+Poser.\+Get\+Blending\+Behaviour\+Enabled (\begin{DoxyParamCaption}\item[{string}]{behaviour\+Name }\end{DoxyParamCaption})}
+
+
+
+Check if a blending behaviour is enabled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em behaviour\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Input/Steam\+VR\+\_\+\+Skeleton\+\_\+\+Poser.\+cs\end{DoxyCompactItemize}

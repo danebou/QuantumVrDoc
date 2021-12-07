@@ -1,0 +1,184 @@
+\hypertarget{classvr__hydrogen__backend_1_1_atom_sim}{}\doxysection{vr\+\_\+hydrogen\+\_\+backend.\+Atom\+Sim Class Reference}
+\label{classvr__hydrogen__backend_1_1_atom_sim}\index{vr\_hydrogen\_backend.AtomSim@{vr\_hydrogen\_backend.AtomSim}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a33595fbb0a79945bce4925d3856e9a7e}\label{classvr__hydrogen__backend_1_1_atom_sim_a33595fbb0a79945bce4925d3856e9a7e}} 
+Vector$<$ double $>$ {\bfseries get\+\_\+p\+\_\+basis} ()
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_afa8d557a6f6311e00190717c18840395}\label{classvr__hydrogen__backend_1_1_atom_sim_afa8d557a6f6311e00190717c18840395}} 
+Vector$<$ double $>$ {\bfseries get\+\_\+p\+\_\+grid} ()
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_adc3758e7d7ad5dd4ad599b6c02c1dd7e}\label{classvr__hydrogen__backend_1_1_atom_sim_adc3758e7d7ad5dd4ad599b6c02c1dd7e}} 
+Vector$<$ Complex $>$ {\bfseries get\+\_\+psi\+\_\+grid} ()
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a1c726a3a055012cf254823f2ef26d363}\label{classvr__hydrogen__backend_1_1_atom_sim_a1c726a3a055012cf254823f2ef26d363}} 
+int bool meas\+\_\+success {\bfseries time\+\_\+evolve} (double dt, bool do\+\_\+meas=false, double gamma\+\_\+meas=0, double x\+\_\+meas=0, double y\+\_\+meas=0, double z\+\_\+meas=0, bool force\+\_\+meas=false)
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a9f875a8ef16d383d38767041458b07dc}\label{classvr__hydrogen__backend_1_1_atom_sim_a9f875a8ef16d383d38767041458b07dc}} 
+void {\bfseries set\+\_\+to\+\_\+eigenstate} (int eig\+\_\+ind)
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a034927427f174cee2a895f6d7883d83a}\label{classvr__hydrogen__backend_1_1_atom_sim_a034927427f174cee2a895f6d7883d83a}} 
+{\bfseries Atom\+Sim} (string input\+\_\+data\+\_\+folder)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_ae8df601d48faed8f212547e79d46058a}\label{classvr__hydrogen__backend_1_1_atom_sim_ae8df601d48faed8f212547e79d46058a}} 
+double {\bfseries Gamma\+\_\+decay} = 0.\+5
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_ac9bc962b695c60fb63b3c925b42235a5}\label{classvr__hydrogen__backend_1_1_atom_sim_ac9bc962b695c60fb63b3c925b42235a5}} 
+double {\bfseries dx} = 1
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_ac1e2eb71996eabca5f1ac4711d915aaf}\label{classvr__hydrogen__backend_1_1_atom_sim_ac1e2eb71996eabca5f1ac4711d915aaf}} 
+double {\bfseries x\+\_\+max} = 10.\+25
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a44a61dff36ddfce40ea67f3ebab4a126}\label{classvr__hydrogen__backend_1_1_atom_sim_a44a61dff36ddfce40ea67f3ebab4a126}} 
+int {\bfseries basis\+\_\+sz}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a9e47a4e2ab5721a4ad983c58c6165057}\label{classvr__hydrogen__backend_1_1_atom_sim_a9e47a4e2ab5721a4ad983c58c6165057}} 
+int {\bfseries grid\+\_\+sz}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a9e29d1483d725c87148c051e9c366ccd}\label{classvr__hydrogen__backend_1_1_atom_sim_a9e29d1483d725c87148c051e9c366ccd}} 
+List$<$ double $>$ {\bfseries x}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_ac14df1da99496b4c04ae043516b1907c}\label{classvr__hydrogen__backend_1_1_atom_sim_ac14df1da99496b4c04ae043516b1907c}} 
+List$<$ double $>$ {\bfseries y}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a7a092a5396925356b7420ea284126ad3}\label{classvr__hydrogen__backend_1_1_atom_sim_a7a092a5396925356b7420ea284126ad3}} 
+List$<$ double $>$ {\bfseries z}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a0fcc79687ad3df575e3b961baa4b73e9}\label{classvr__hydrogen__backend_1_1_atom_sim_a0fcc79687ad3df575e3b961baa4b73e9}} 
+int {\bfseries which\+\_\+decay}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a3b0e1de3eb210a757374440e869f5d14}\label{classvr__hydrogen__backend_1_1_atom_sim_a3b0e1de3eb210a757374440e869f5d14}} 
+Vector$<$ Double $>$ {\bfseries normalize} (Vector$<$ Double $>$ p)
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a461ac0fb6b9aa052d45c6caa26b21c94}\label{classvr__hydrogen__backend_1_1_atom_sim_a461ac0fb6b9aa052d45c6caa26b21c94}} 
+double {\bfseries get\+\_\+norm\+\_\+sq} (Vector$<$ Complex $>$ psi)
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_af0787a58dd15a0b93063218576a1ca5e}\label{classvr__hydrogen__backend_1_1_atom_sim_af0787a58dd15a0b93063218576a1ca5e}} 
+double {\bfseries get\+\_\+norm} (Vector$<$ Complex $>$ psi)
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a5712cc9d896ea6ccdac6d62400ac62bd}\label{classvr__hydrogen__backend_1_1_atom_sim_a5712cc9d896ea6ccdac6d62400ac62bd}} 
+Vector$<$ Complex $>$ {\bfseries apply\+\_\+meas\+\_\+op} (int meas\+\_\+ind, double theta, double phi, Vector$<$ Complex $>$ psi\+\_\+init)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_aeb8cc2636af176a149337a988db320ac}\label{classvr__hydrogen__backend_1_1_atom_sim_aeb8cc2636af176a149337a988db320ac}} 
+static double {\bfseries gsl\+\_\+sf\+\_\+laguerre\+\_\+n\+\_\+e} (int n, double a, double x)
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_ab19526a02da5896f8cef8641344b9044}\label{classvr__hydrogen__backend_1_1_atom_sim_ab19526a02da5896f8cef8641344b9044}} 
+static double {\bfseries gsl\+\_\+sf\+\_\+legendre\+\_\+\+Pl\+\_\+e} (int l, double x)
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a3fc7d719912924ff3111e89ffe26e627}\label{classvr__hydrogen__backend_1_1_atom_sim_a3fc7d719912924ff3111e89ffe26e627}} 
+static double {\bfseries gsl\+\_\+sf\+\_\+legendre\+\_\+sph\+Plm\+\_\+e} (int l, int m, double x)
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a82bfec6ca01bb894f42984f64555d252}\label{classvr__hydrogen__backend_1_1_atom_sim_a82bfec6ca01bb894f42984f64555d252}} 
+static double {\bfseries laguerre\+Calculate} (int k, double x, int alpha)
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a97f2fe174af60883ca9214f5392de439}\label{classvr__hydrogen__backend_1_1_atom_sim_a97f2fe174af60883ca9214f5392de439}} 
+static double {\bfseries legendre\+\_\+\+Pmm} (int m, double x)
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a4b709b9801260ebcbbce5c0a853342bb}\label{classvr__hydrogen__backend_1_1_atom_sim_a4b709b9801260ebcbbce5c0a853342bb}} 
+static double {\bfseries legendre\+Calculate} (int l, int m, double x)
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a088e4014c599ac8472e6299939bddc5e}\label{classvr__hydrogen__backend_1_1_atom_sim_a088e4014c599ac8472e6299939bddc5e}} 
+static double {\bfseries get\+\_\+psi\+\_\+r} (double r, int n, int l, int m)
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a9959e4ea0d3603773b082add4be2c206}\label{classvr__hydrogen__backend_1_1_atom_sim_a9959e4ea0d3603773b082add4be2c206}} 
+static double {\bfseries get\+\_\+psi\+\_\+th} (double cth, int l, int m)
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a7153c66ee46474d98f1af5797e3ab900}\label{classvr__hydrogen__backend_1_1_atom_sim_a7153c66ee46474d98f1af5797e3ab900}} 
+static Complex {\bfseries get\+\_\+psi} (double r, double cth, double phi, int n, int l, int m)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a552cd7ba8093ae9bbd7de70327b37eac}\label{classvr__hydrogen__backend_1_1_atom_sim_a552cd7ba8093ae9bbd7de70327b37eac}} 
+double {\bfseries sigma\+\_\+meas} = 1.\+0
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_ad8561c83fdbb37696ab68681c5cc10d6}\label{classvr__hydrogen__backend_1_1_atom_sim_ad8561c83fdbb37696ab68681c5cc10d6}} 
+int {\bfseries n\+\_\+max} = 10
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_aa2372a3c0170c66502b8f778cbaddfe2}\label{classvr__hydrogen__backend_1_1_atom_sim_aa2372a3c0170c66502b8f778cbaddfe2}} 
+int {\bfseries rand\+\_\+seed} = 0
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a03ac592682293e4bb63041e6532e2c55}\label{classvr__hydrogen__backend_1_1_atom_sim_a03ac592682293e4bb63041e6532e2c55}} 
+Random {\bfseries rng}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a22bdd1989faf8c8e6160d7fe1f2fd1de}\label{classvr__hydrogen__backend_1_1_atom_sim_a22bdd1989faf8c8e6160d7fe1f2fd1de}} 
+Vector$<$ Complex $>$ {\bfseries psi}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_ab752fcf277231247677be40267ac8fad}\label{classvr__hydrogen__backend_1_1_atom_sim_ab752fcf277231247677be40267ac8fad}} 
+Matrix$<$ Complex $>$ {\bfseries U\+\_\+grid}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_abb046df8dac9d02ab3b61d381c014d7b}\label{classvr__hydrogen__backend_1_1_atom_sim_abb046df8dac9d02ab3b61d381c014d7b}} 
+Matrix$<$ Complex $>$ {\bfseries R\+\_\+x}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_aef31c4b4e411e014a63c7e8e6e3d6e6a}\label{classvr__hydrogen__backend_1_1_atom_sim_aef31c4b4e411e014a63c7e8e6e3d6e6a}} 
+Matrix$<$ Complex $>$ {\bfseries R\+\_\+x\+\_\+dag}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a2a202f8edb573e2bab763ffca4cf1906}\label{classvr__hydrogen__backend_1_1_atom_sim_a2a202f8edb573e2bab763ffca4cf1906}} 
+List$<$ double $>$ {\bfseries r}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a88ea600780031f1dceecc5701ce7064e}\label{classvr__hydrogen__backend_1_1_atom_sim_a88ea600780031f1dceecc5701ce7064e}} 
+List$<$ double $>$ {\bfseries cth}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a8bef92f22828d3971ad70f879159179a}\label{classvr__hydrogen__backend_1_1_atom_sim_a8bef92f22828d3971ad70f879159179a}} 
+List$<$ double $>$ {\bfseries phi}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_ab6671b4423a9d1a0ffeb80c096b651bd}\label{classvr__hydrogen__backend_1_1_atom_sim_ab6671b4423a9d1a0ffeb80c096b651bd}} 
+List$<$ int $>$ {\bfseries n}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_aa5e4deca8c54843802fd87d0761a2624}\label{classvr__hydrogen__backend_1_1_atom_sim_aa5e4deca8c54843802fd87d0761a2624}} 
+List$<$ int $>$ {\bfseries l}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a18497932680523b509c5531932eb7e7f}\label{classvr__hydrogen__backend_1_1_atom_sim_a18497932680523b509c5531932eb7e7f}} 
+List$<$ int $>$ {\bfseries m}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a8b2a6be2af204cc968c123e24d0fcee2}\label{classvr__hydrogen__backend_1_1_atom_sim_a8b2a6be2af204cc968c123e24d0fcee2}} 
+Vector$<$ Complex $>$ {\bfseries m\+\_\+complex}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a890fd82e0bf8d06dd52dfdf675785bc6}\label{classvr__hydrogen__backend_1_1_atom_sim_a890fd82e0bf8d06dd52dfdf675785bc6}} 
+Vector$<$ Complex $>$ {\bfseries E}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a53565ab7af7ccc9edd118b61b3de4c59}\label{classvr__hydrogen__backend_1_1_atom_sim_a53565ab7af7ccc9edd118b61b3de4c59}} 
+Vector$<$ Complex $>$ {\bfseries H\+\_\+decay}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a4ea6ebe785f6e5916aa386902c513efe}\label{classvr__hydrogen__backend_1_1_atom_sim_a4ea6ebe785f6e5916aa386902c513efe}} 
+List$<$ int $>$ {\bfseries state\+\_\+init\+\_\+lst}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a58aff9e480c7c4c9435b0776e86fdb38}\label{classvr__hydrogen__backend_1_1_atom_sim_a58aff9e480c7c4c9435b0776e86fdb38}} 
+List$<$ int $>$ {\bfseries state\+\_\+final\+\_\+lst}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a5a859b72af21e162b5676dcce0f7f9e2}\label{classvr__hydrogen__backend_1_1_atom_sim_a5a859b72af21e162b5676dcce0f7f9e2}} 
+List$<$ double $>$ {\bfseries decay\+\_\+rate\+\_\+lst}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_af1fd9b0a3c1820d25356b735628b9c3a}\label{classvr__hydrogen__backend_1_1_atom_sim_af1fd9b0a3c1820d25356b735628b9c3a}} 
+List$<$ Matrix$<$ Complex $>$ $>$ {\bfseries meas\+\_\+matr\+\_\+lst}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_ad9a1d1b34ad557ecd9fb791a04f0511d}\label{classvr__hydrogen__backend_1_1_atom_sim_ad9a1d1b34ad557ecd9fb791a04f0511d}} 
+List$<$ Matrix$<$ Complex $>$ $>$ {\bfseries R\+\_\+x\+\_\+lst}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_ab92c4e0d3b9919ec103a9a3239cf55b5}\label{classvr__hydrogen__backend_1_1_atom_sim_ab92c4e0d3b9919ec103a9a3239cf55b5}} 
+double {\bfseries dz0\+\_\+meas} = 0.\+1
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a73d7b312a0c1e28d695bffdadd0efbcb}\label{classvr__hydrogen__backend_1_1_atom_sim_a73d7b312a0c1e28d695bffdadd0efbcb}} 
+double {\bfseries z0\+\_\+meas\+\_\+max} = 10.\+0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvr__hydrogen__backend_1_1_atom_sim_a05b91b55feaff44ee0f956e0551c6641}\label{classvr__hydrogen__backend_1_1_atom_sim_a05b91b55feaff44ee0f956e0551c6641}} 
+static Complex {\bfseries im} = new Complex(0, 1)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Quantum\+Backend/Atom\+Sim.\+cs\end{DoxyCompactItemize}

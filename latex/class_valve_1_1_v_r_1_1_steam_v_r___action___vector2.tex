@@ -1,0 +1,339 @@
+\hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2}{}\doxysection{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2 Class Reference}
+\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2}\index{Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}}
+
+
+An analog action with two values generally from -\/1 to 1. Also provides a delta since the last update.  
+
+
+Inheritance diagram for Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.163032cm]{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a11d8b99df804d185a33c7c60791ef426}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a11d8b99df804d185a33c7c60791ef426}} 
+delegate void {\bfseries Axis\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2}{Steam\+VR\+\_\+\+Action\+\_\+\+Vector2}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, Vector2 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_afd401d7d248459f2e074dc2b04f4bdc9}{axis}}, Vector2 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_ad1de90619e8911feb3ad60732edefd51}{delta}})
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_ad01c83284de71c0d9cd8f7e673ce5ab5}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_ad01c83284de71c0d9cd8f7e673ce5ab5}} 
+delegate void {\bfseries Active\+Change\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2}{Steam\+VR\+\_\+\+Action\+\_\+\+Vector2}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, bool \mbox{\hyperlink{interface_valve_1_1_v_r_1_1_i_steam_v_r___action___source_a529749f5fa62c29a4faac767cd9ece8d}{active}})
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_ad390de62736aedd5be93238b1840ffec}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_ad390de62736aedd5be93238b1840ffec}} 
+delegate void {\bfseries Change\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2}{Steam\+VR\+\_\+\+Action\+\_\+\+Vector2}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, Vector2 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_afd401d7d248459f2e074dc2b04f4bdc9}{axis}}, Vector2 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_ad1de90619e8911feb3ad60732edefd51}{delta}})
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a3f6872fd8960cbb9f571b0362857d9b5}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a3f6872fd8960cbb9f571b0362857d9b5}} 
+delegate void {\bfseries Update\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2}{Steam\+VR\+\_\+\+Action\+\_\+\+Vector2}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, Vector2 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_afd401d7d248459f2e074dc2b04f4bdc9}{axis}}, Vector2 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_ad1de90619e8911feb3ad60732edefd51}{delta}})
+\item 
+Vector2 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a9313e35bdbdfc18a161484bdd0c8239b}{Get\+Axis}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em The current Vector2 value of the action\end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a87c7b602c486249f0bb0a8f908fb82c0}{Get\+Axis\+Delta}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em The Vector2 value difference between this update and the previous update.\end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_aaef8a836bd1040eb6854ba7ad5a5d042}{Get\+Last\+Axis}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em The Vector2 value of the action from the previous update.\end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a3bebc5e4564895072ce9ed9f532b7a97}{Get\+Last\+Axis\+Delta}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em The Vector2 value difference between the previous update and update before that. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a69cefbe63ef365944127b0ee3ab056c4}{Add\+On\+Active\+Change\+Listener}} (Active\+Change\+Handler function\+To\+Call, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Executes a function when the {\itshape functional} active state of this action (with the specified input\+Source) changes. This happens when the action is bound or unbound, or when the Action\+Set changes state.\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a7cceff632cff0062c1a2018032e84600}{Remove\+On\+Active\+Change\+Listener}} (Active\+Change\+Handler function\+To\+Stop\+Calling, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Stops executing a function when the {\itshape functional} active state of this action (with the specified input\+Source) changes. This happens when the action is bound or unbound, or when the Action\+Set changes state.\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a9ad74daee25b567d8961cd28d5357008}{Add\+On\+Active\+Binding\+Change\+Listener}} (Active\+Change\+Handler function\+To\+Call, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Executes a function when the active state of this action (with the specified input\+Source) changes. This happens when the action is bound or unbound\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a7ceb21535842b499cd8e73ffbee4be90}{Remove\+On\+Active\+Binding\+Change\+Listener}} (Active\+Change\+Handler function\+To\+Stop\+Calling, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Stops executing the function setup by the corresponding Add\+Listener\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a6ed8ca5d8b3b60d52a8c7d875506d3ad}{Add\+On\+Change\+Listener}} (Change\+Handler function\+To\+Call, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Executes a function when the axis changes by more than the specified change\+Tolerance\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a7449f5403cd5c68579091d9ab4f6084f}{Remove\+On\+Change\+Listener}} (Change\+Handler function\+To\+Stop\+Calling, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Stops executing the function setup by the corresponding Add\+Listener\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a12df05b3e447aaa26cc81b9ccae3cd2c}{Add\+On\+Update\+Listener}} (Update\+Handler function\+To\+Call, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Executes a function when the state of this action (with the specified input\+Source) is updated.\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a615865386254c66852cf687a8e330c3c}{Remove\+On\+Update\+Listener}} (Update\+Handler function\+To\+Stop\+Calling, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Stops executing the function setup by the corresponding Add\+Listener\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a52cf0999c3cb5f377a61d9b29189cfdd}{Add\+On\+Axis\+Listener}} (Axis\+Handler function\+To\+Call, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Executes a function when the Vector2 value of the action is non-\/zero.\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_add5f9659d86eed956636d7495f4af7de}{Remove\+On\+Axis\+Listener}} (Axis\+Handler function\+To\+Stop\+Calling, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Stops executing the function setup by the corresponding Add\+Listener\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_afbae4b6d3eaa2a212f27f3329e1c319c}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_afbae4b6d3eaa2a212f27f3329e1c319c}} 
+void {\bfseries Remove\+All\+Listeners} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+\_\+\+Sources)
+\begin{DoxyCompactList}\small\item\em Removes all listeners, useful for dispose pattern \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a339f6effe1596dd43a10ee68869f66e6}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a339f6effe1596dd43a10ee68869f66e6}} 
+Change\+Handler {\bfseries on\+Change}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} This event fires whenever the axis changes by more than the specified change\+Tolerance\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a26a550d86f7daabe09bc123e2ce7bd77}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a26a550d86f7daabe09bc123e2ce7bd77}} 
+Update\+Handler {\bfseries on\+Update}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} This event fires whenever the action is updated\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a8572a98f22c7a84fdbeabb69b34580b2}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a8572a98f22c7a84fdbeabb69b34580b2}} 
+Axis\+Handler {\bfseries on\+Axis}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} This event will fire whenever the Vector2 value of the action is non-\/zero\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_afaa6f3e9d0ef1e3ef5555401598de607}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_afaa6f3e9d0ef1e3ef5555401598de607}} 
+Active\+Change\+Handler {\bfseries on\+Active\+Change}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} Event fires when the active state (Action\+Set active and binding active) changes\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a0629b2634326464fc8ae3131e1c75ef4}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a0629b2634326464fc8ae3131e1c75ef4}} 
+Active\+Change\+Handler {\bfseries on\+Active\+Binding\+Change}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} Event fires when the active state of the binding changes\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_afd401d7d248459f2e074dc2b04f4bdc9}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_afd401d7d248459f2e074dc2b04f4bdc9}} 
+Vector2 {\bfseries axis}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} The current Vector2 value of the action. Note\+: Will only return non-\/zero if the action is also active.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_abfaa7777e33e79208c25062cba77d687}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_abfaa7777e33e79208c25062cba77d687}} 
+Vector2 {\bfseries last\+Axis}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} The Vector2 value of the action from the previous update. Note\+: Will only return non-\/zero if the action is also active.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_ad1de90619e8911feb3ad60732edefd51}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_ad1de90619e8911feb3ad60732edefd51}} 
+Vector2 {\bfseries delta}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} The Vector2 value difference between this update and the previous update. Note\+: Will only return non-\/zero if the action is also active.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a64aa5d73aa92d61abf982584d29a7175}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a64aa5d73aa92d61abf982584d29a7175}} 
+Vector2 {\bfseries last\+Delta}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} The Vector2 value difference between the previous update and update before that. Note\+: Will only return non-\/zero if the action is also active.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_adefcb2d45fad77ddfb99c33ecc3b9c2b}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_adefcb2d45fad77ddfb99c33ecc3b9c2b}} 
+void ISerialization\+Callback\+Receiver. {\bfseries On\+Before\+Serialize} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a4a3c37d75102b8ad7acffb9523ef8a1a}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a4a3c37d75102b8ad7acffb9523ef8a1a}} 
+void ISerialization\+Callback\+Receiver. {\bfseries On\+After\+Deserialize} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An analog action with two values generally from -\/1 to 1. Also provides a delta since the last update. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a9ad74daee25b567d8961cd28d5357008}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a9ad74daee25b567d8961cd28d5357008}} 
+\index{Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}!AddOnActiveBindingChangeListener@{AddOnActiveBindingChangeListener}}
+\index{AddOnActiveBindingChangeListener@{AddOnActiveBindingChangeListener}!Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}}
+\doxysubsubsection{\texorpdfstring{AddOnActiveBindingChangeListener()}{AddOnActiveBindingChangeListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2.\+Add\+On\+Active\+Binding\+Change\+Listener (\begin{DoxyParamCaption}\item[{Active\+Change\+Handler}]{function\+To\+Call,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Executes a function when the active state of this action (with the specified input\+Source) changes. This happens when the action is bound or unbound
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Call} & A local function that receives the boolean action who\textquotesingle{}s active state changes and the corresponding input source\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a69cefbe63ef365944127b0ee3ab056c4}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a69cefbe63ef365944127b0ee3ab056c4}} 
+\index{Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}!AddOnActiveChangeListener@{AddOnActiveChangeListener}}
+\index{AddOnActiveChangeListener@{AddOnActiveChangeListener}!Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}}
+\doxysubsubsection{\texorpdfstring{AddOnActiveChangeListener()}{AddOnActiveChangeListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2.\+Add\+On\+Active\+Change\+Listener (\begin{DoxyParamCaption}\item[{Active\+Change\+Handler}]{function\+To\+Call,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Executes a function when the {\itshape functional} active state of this action (with the specified input\+Source) changes. This happens when the action is bound or unbound, or when the Action\+Set changes state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Call} & A local function that receives the boolean action who\textquotesingle{}s active state changes and the corresponding input source\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a52cf0999c3cb5f377a61d9b29189cfdd}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a52cf0999c3cb5f377a61d9b29189cfdd}} 
+\index{Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}!AddOnAxisListener@{AddOnAxisListener}}
+\index{AddOnAxisListener@{AddOnAxisListener}!Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}}
+\doxysubsubsection{\texorpdfstring{AddOnAxisListener()}{AddOnAxisListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2.\+Add\+On\+Axis\+Listener (\begin{DoxyParamCaption}\item[{Axis\+Handler}]{function\+To\+Call,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Executes a function when the Vector2 value of the action is non-\/zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Call} & A local function that receives the boolean action who\textquotesingle{}s state has changed, the corresponding input source, and the new value\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a6ed8ca5d8b3b60d52a8c7d875506d3ad}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a6ed8ca5d8b3b60d52a8c7d875506d3ad}} 
+\index{Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}!AddOnChangeListener@{AddOnChangeListener}}
+\index{AddOnChangeListener@{AddOnChangeListener}!Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}}
+\doxysubsubsection{\texorpdfstring{AddOnChangeListener()}{AddOnChangeListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2.\+Add\+On\+Change\+Listener (\begin{DoxyParamCaption}\item[{Change\+Handler}]{function\+To\+Call,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Executes a function when the axis changes by more than the specified change\+Tolerance
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Call} & A local function that receives the boolean action who\textquotesingle{}s state has changed, the corresponding input source, and the new value\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a12df05b3e447aaa26cc81b9ccae3cd2c}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a12df05b3e447aaa26cc81b9ccae3cd2c}} 
+\index{Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}!AddOnUpdateListener@{AddOnUpdateListener}}
+\index{AddOnUpdateListener@{AddOnUpdateListener}!Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}}
+\doxysubsubsection{\texorpdfstring{AddOnUpdateListener()}{AddOnUpdateListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2.\+Add\+On\+Update\+Listener (\begin{DoxyParamCaption}\item[{Update\+Handler}]{function\+To\+Call,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Executes a function when the state of this action (with the specified input\+Source) is updated.
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Call} & A local function that receives the boolean action who\textquotesingle{}s state has changed, the corresponding input source, and the new value\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a9313e35bdbdfc18a161484bdd0c8239b}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a9313e35bdbdfc18a161484bdd0c8239b}} 
+\index{Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}!GetAxis@{GetAxis}}
+\index{GetAxis@{GetAxis}!Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}}
+\doxysubsubsection{\texorpdfstring{GetAxis()}{GetAxis()}}
+{\footnotesize\ttfamily Vector2 Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2.\+Get\+Axis (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+The current Vector2 value of the action
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a87c7b602c486249f0bb0a8f908fb82c0}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a87c7b602c486249f0bb0a8f908fb82c0}} 
+\index{Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}!GetAxisDelta@{GetAxisDelta}}
+\index{GetAxisDelta@{GetAxisDelta}!Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}}
+\doxysubsubsection{\texorpdfstring{GetAxisDelta()}{GetAxisDelta()}}
+{\footnotesize\ttfamily Vector2 Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2.\+Get\+Axis\+Delta (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+The Vector2 value difference between this update and the previous update.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_aaef8a836bd1040eb6854ba7ad5a5d042}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_aaef8a836bd1040eb6854ba7ad5a5d042}} 
+\index{Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}!GetLastAxis@{GetLastAxis}}
+\index{GetLastAxis@{GetLastAxis}!Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}}
+\doxysubsubsection{\texorpdfstring{GetLastAxis()}{GetLastAxis()}}
+{\footnotesize\ttfamily Vector2 Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2.\+Get\+Last\+Axis (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+The Vector2 value of the action from the previous update.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a3bebc5e4564895072ce9ed9f532b7a97}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a3bebc5e4564895072ce9ed9f532b7a97}} 
+\index{Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}!GetLastAxisDelta@{GetLastAxisDelta}}
+\index{GetLastAxisDelta@{GetLastAxisDelta}!Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}}
+\doxysubsubsection{\texorpdfstring{GetLastAxisDelta()}{GetLastAxisDelta()}}
+{\footnotesize\ttfamily Vector2 Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2.\+Get\+Last\+Axis\+Delta (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+The Vector2 value difference between the previous update and update before that. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a7ceb21535842b499cd8e73ffbee4be90}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a7ceb21535842b499cd8e73ffbee4be90}} 
+\index{Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}!RemoveOnActiveBindingChangeListener@{RemoveOnActiveBindingChangeListener}}
+\index{RemoveOnActiveBindingChangeListener@{RemoveOnActiveBindingChangeListener}!Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}}
+\doxysubsubsection{\texorpdfstring{RemoveOnActiveBindingChangeListener()}{RemoveOnActiveBindingChangeListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2.\+Remove\+On\+Active\+Binding\+Change\+Listener (\begin{DoxyParamCaption}\item[{Active\+Change\+Handler}]{function\+To\+Stop\+Calling,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Stops executing the function setup by the corresponding Add\+Listener
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Stop\+Calling} & The local function that you\textquotesingle{}ve setup to receive update events\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a7cceff632cff0062c1a2018032e84600}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a7cceff632cff0062c1a2018032e84600}} 
+\index{Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}!RemoveOnActiveChangeListener@{RemoveOnActiveChangeListener}}
+\index{RemoveOnActiveChangeListener@{RemoveOnActiveChangeListener}!Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}}
+\doxysubsubsection{\texorpdfstring{RemoveOnActiveChangeListener()}{RemoveOnActiveChangeListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2.\+Remove\+On\+Active\+Change\+Listener (\begin{DoxyParamCaption}\item[{Active\+Change\+Handler}]{function\+To\+Stop\+Calling,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Stops executing a function when the {\itshape functional} active state of this action (with the specified input\+Source) changes. This happens when the action is bound or unbound, or when the Action\+Set changes state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Stop\+Calling} & The local function that you\textquotesingle{}ve setup to receive update events\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_add5f9659d86eed956636d7495f4af7de}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_add5f9659d86eed956636d7495f4af7de}} 
+\index{Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}!RemoveOnAxisListener@{RemoveOnAxisListener}}
+\index{RemoveOnAxisListener@{RemoveOnAxisListener}!Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}}
+\doxysubsubsection{\texorpdfstring{RemoveOnAxisListener()}{RemoveOnAxisListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2.\+Remove\+On\+Axis\+Listener (\begin{DoxyParamCaption}\item[{Axis\+Handler}]{function\+To\+Stop\+Calling,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Stops executing the function setup by the corresponding Add\+Listener
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Stop\+Calling} & The local function that you\textquotesingle{}ve setup to receive update events\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a7449f5403cd5c68579091d9ab4f6084f}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a7449f5403cd5c68579091d9ab4f6084f}} 
+\index{Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}!RemoveOnChangeListener@{RemoveOnChangeListener}}
+\index{RemoveOnChangeListener@{RemoveOnChangeListener}!Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}}
+\doxysubsubsection{\texorpdfstring{RemoveOnChangeListener()}{RemoveOnChangeListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2.\+Remove\+On\+Change\+Listener (\begin{DoxyParamCaption}\item[{Change\+Handler}]{function\+To\+Stop\+Calling,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Stops executing the function setup by the corresponding Add\+Listener
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Stop\+Calling} & The local function that you\textquotesingle{}ve setup to receive on change events\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a615865386254c66852cf687a8e330c3c}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vector2_a615865386254c66852cf687a8e330c3c}} 
+\index{Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}!RemoveOnUpdateListener@{RemoveOnUpdateListener}}
+\index{RemoveOnUpdateListener@{RemoveOnUpdateListener}!Valve.VR.SteamVR\_Action\_Vector2@{Valve.VR.SteamVR\_Action\_Vector2}}
+\doxysubsubsection{\texorpdfstring{RemoveOnUpdateListener()}{RemoveOnUpdateListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vector2.\+Remove\+On\+Update\+Listener (\begin{DoxyParamCaption}\item[{Update\+Handler}]{function\+To\+Stop\+Calling,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Stops executing the function setup by the corresponding Add\+Listener
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Stop\+Calling} & The local function that you\textquotesingle{}ve setup to receive update events\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Input/Steam\+VR\+\_\+\+Action\+\_\+\+Vector2.\+cs\end{DoxyCompactItemize}

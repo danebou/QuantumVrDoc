@@ -1,0 +1,387 @@
+\hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{}\doxysection{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base\texorpdfstring{$<$}{<} Source\+Map, Source\+Element \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+
+
+The base pose action (pose and skeleton inherit from this)  
+
+
+Inheritance diagram for Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base\texorpdfstring{$<$}{<} Source\+Map, Source\+Element \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.938967cm]{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ad1269e7f3b8399dfe46e7fd85f8ed481}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ad1269e7f3b8399dfe46e7fd85f8ed481}} 
+virtual void {\bfseries Update\+Values} (bool skip\+State\+And\+Event\+Updates)
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Should not be called by user code\mbox{]}}} Updates the data for all the input sources the system has detected need to be updated. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a078b2d70fcd9796f0872f03c6eb4cd37}{Get\+Velocities\+At\+Time\+Offset}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source, float seconds\+From\+Now, out Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_aaf2089c742c29110276191454cda9c7a}{velocity}}, out Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a84bf81feaa02463f8151e1ea25e16825}{angular\+Velocity}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} keeps a log of past poses so you can retrieve old poses or estimated poses in the future by passing in a seconds\+From\+Now value that is negative or positive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a0edda26e08e24b20fe9f1bb2941ba4a6}{Get\+Pose\+At\+Time\+Offset}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source, float seconds\+From\+Now, out Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a532487bde5fc10e4f520822eacaf9b6f}{local\+Position}}, out Quaternion \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a6390b371b472fd2f7f4f501db7dacc96}{local\+Rotation}}, out Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_aaf2089c742c29110276191454cda9c7a}{velocity}}, out Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a84bf81feaa02463f8151e1ea25e16825}{angular\+Velocity}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} keeps a log of past poses so you can retrieve old poses or estimated poses in the future by passing in a seconds\+From\+Now value that is negative or positive. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a95ffd5217a271d75ca471c9ccdf36215}{Update\+Transform}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source, Transform transform\+To\+Update)
+\begin{DoxyCompactList}\small\item\em Update a transform\textquotesingle{}s local position and local roation to match the pose from the most recent update \end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ab007b14bb04c5d6fc1564ac4ffac1772}{Get\+Local\+Position}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em The local position of this action relative to the universe origin\end{DoxyCompactList}\item 
+Quaternion \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a4cd01c8865799b4abdb3aa05c9bce7a1}{Get\+Local\+Rotation}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em The local rotation of this action relative to the universe origin\end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a827a230f97d4cb064be1b679440a3593}{Get\+Velocity}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em The local velocity of this pose relative to the universe origin\end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a9e11dfd61cb934d7562f7ead82bd3977}{Get\+Angular\+Velocity}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em The local angular velocity of this pose relative to the universe origin\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a9a48969933cf18a41139748fc3fa1c58}{Get\+Device\+Is\+Connected}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em True if the device bound to this action and input source is connected\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ae83ce8dae5f87c106ccbd0860c8f1181}{Get\+Pose\+Is\+Valid}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em True if the pose retrieved for this action and input source is valid (good data from the tracking source)\end{DoxyCompactList}\item 
+ETracking\+Result \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ac4aa642c201073f77df62ff087351ca2}{Get\+Tracking\+Result}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em The state of the tracking system that is used to create pose data (position, rotation, etc)\end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ab2e7b7757252e937fb6c007f36da7f57}{Get\+Last\+Local\+Position}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em The local position for this pose during the previous update\end{DoxyCompactList}\item 
+Quaternion \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a39183e3163c2c45a353137b92c9475ce}{Get\+Last\+Local\+Rotation}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em The local rotation for this pose during the previous update\end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a21d4d04f961d37630361750444666774}{Get\+Last\+Velocity}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em The velocity for this pose during the previous update\end{DoxyCompactList}\item 
+Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a1c0012123202777151db1e7364ca7abe}{Get\+Last\+Angular\+Velocity}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em The angular velocity for this pose during the previous update\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a55d19b1a7931ed13d689a7c3acb31581}{Get\+Last\+Device\+Is\+Connected}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em True if the device bound to this action was connected during the previous update\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a0071aa67fdb7a1f25f261f58236f182d}{Get\+Last\+Pose\+Is\+Valid}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em True if the pose was valid during the previous update\end{DoxyCompactList}\item 
+ETracking\+Result \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a3c4f99bc27df78ccb09f30f20503c20e}{Get\+Last\+Tracking\+Result}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em The tracking state for this pose during the previous update\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a6fed3c51e6941259760bcd88bd17c2dc}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a6fed3c51e6941259760bcd88bd17c2dc}} 
+static void {\bfseries Set\+Universe\+Origin} (ETracking\+Universe\+Origin new\+Origin)
+\begin{DoxyCompactList}\small\item\em Sets all pose (and skeleton) actions to use the specified universe origin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a532487bde5fc10e4f520822eacaf9b6f}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a532487bde5fc10e4f520822eacaf9b6f}} 
+Vector3 {\bfseries local\+Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} The local position of this action relative to the universe origin\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a6390b371b472fd2f7f4f501db7dacc96}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a6390b371b472fd2f7f4f501db7dacc96}} 
+Quaternion {\bfseries local\+Rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} The local rotation of this action relative to the universe origin\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_af04d371ae8e8552385b022d1aa788d32}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_af04d371ae8e8552385b022d1aa788d32}} 
+ETracking\+Result {\bfseries tracking\+State}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} The state of the tracking system that is used to create pose data (position, rotation, etc)\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_aaf2089c742c29110276191454cda9c7a}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_aaf2089c742c29110276191454cda9c7a}} 
+Vector3 {\bfseries velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} The local velocity of this pose relative to the universe origin\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a84bf81feaa02463f8151e1ea25e16825}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a84bf81feaa02463f8151e1ea25e16825}} 
+Vector3 {\bfseries angular\+Velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} The local angular velocity of this pose relative to the universe origin\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_af6eb7cf17442bd20ab60aad306b49240}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_af6eb7cf17442bd20ab60aad306b49240}} 
+bool {\bfseries pose\+Is\+Valid}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} True if the pose retrieved for this action and input source is valid (good data from the tracking source)\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a352107e49074a23f2ece4ec51f7cbc2d}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a352107e49074a23f2ece4ec51f7cbc2d}} 
+bool {\bfseries device\+Is\+Connected}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} True if the device bound to this action and input source is connected\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ad202da8c9e48c17edb7a9619e51d9628}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ad202da8c9e48c17edb7a9619e51d9628}} 
+Vector3 {\bfseries last\+Local\+Position}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} The local position for this pose during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ae33de6962f9cf4dd2e217f87f21c00db}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ae33de6962f9cf4dd2e217f87f21c00db}} 
+Quaternion {\bfseries last\+Local\+Rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} The local rotation for this pose during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a6457af1bdc6f13c61d2171c320d660cb}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a6457af1bdc6f13c61d2171c320d660cb}} 
+ETracking\+Result {\bfseries last\+Tracking\+State}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} The tracking state for this pose during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a46d9cbd329e828e28127f7af2d470e8c}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a46d9cbd329e828e28127f7af2d470e8c}} 
+Vector3 {\bfseries last\+Velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} The velocity for this pose during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ae6b3169314d9d47df2d7346bd3514d88}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ae6b3169314d9d47df2d7346bd3514d88}} 
+Vector3 {\bfseries last\+Angular\+Velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} The angular velocity for this pose during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a88389de1985db0b02398dbbf1405eba9}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a88389de1985db0b02398dbbf1405eba9}} 
+bool {\bfseries last\+Pose\+Is\+Valid}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} True if the pose was valid during the previous update\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a879054dc94cfe2303fd3656be573af3f}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a879054dc94cfe2303fd3656be573af3f}} 
+bool {\bfseries last\+Device\+Is\+Connected}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Shortcut to\+: Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} True if the device bound to this action was connected during the previous update\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The base pose action (pose and skeleton inherit from this) \begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em Source\+Map} : {\em \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source___map}{Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source\+\_\+\+Map}}$<$Source\+Element$>$}]\item[{\em Source\+Map} : {\em new()}]\item[{\em Source\+Element} : {\em \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___source}{Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Source}}}]\item[{\em Source\+Element} : {\em new()}]\end{description}
+\end{Desc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a9e11dfd61cb934d7562f7ead82bd3977}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a9e11dfd61cb934d7562f7ead82bd3977}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetAngularVelocity@{GetAngularVelocity}}
+\index{GetAngularVelocity@{GetAngularVelocity}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetAngularVelocity()}{GetAngularVelocity()}}
+{\footnotesize\ttfamily Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Angular\+Velocity (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+The local angular velocity of this pose relative to the universe origin
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a9a48969933cf18a41139748fc3fa1c58}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a9a48969933cf18a41139748fc3fa1c58}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetDeviceIsConnected@{GetDeviceIsConnected}}
+\index{GetDeviceIsConnected@{GetDeviceIsConnected}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetDeviceIsConnected()}{GetDeviceIsConnected()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Device\+Is\+Connected (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+True if the device bound to this action and input source is connected
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a1c0012123202777151db1e7364ca7abe}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a1c0012123202777151db1e7364ca7abe}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetLastAngularVelocity@{GetLastAngularVelocity}}
+\index{GetLastAngularVelocity@{GetLastAngularVelocity}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetLastAngularVelocity()}{GetLastAngularVelocity()}}
+{\footnotesize\ttfamily Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Last\+Angular\+Velocity (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+The angular velocity for this pose during the previous update
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a55d19b1a7931ed13d689a7c3acb31581}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a55d19b1a7931ed13d689a7c3acb31581}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetLastDeviceIsConnected@{GetLastDeviceIsConnected}}
+\index{GetLastDeviceIsConnected@{GetLastDeviceIsConnected}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetLastDeviceIsConnected()}{GetLastDeviceIsConnected()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Last\+Device\+Is\+Connected (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+True if the device bound to this action was connected during the previous update
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ab2e7b7757252e937fb6c007f36da7f57}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ab2e7b7757252e937fb6c007f36da7f57}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetLastLocalPosition@{GetLastLocalPosition}}
+\index{GetLastLocalPosition@{GetLastLocalPosition}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetLastLocalPosition()}{GetLastLocalPosition()}}
+{\footnotesize\ttfamily Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Last\+Local\+Position (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+The local position for this pose during the previous update
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a39183e3163c2c45a353137b92c9475ce}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a39183e3163c2c45a353137b92c9475ce}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetLastLocalRotation@{GetLastLocalRotation}}
+\index{GetLastLocalRotation@{GetLastLocalRotation}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetLastLocalRotation()}{GetLastLocalRotation()}}
+{\footnotesize\ttfamily Quaternion \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Last\+Local\+Rotation (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+The local rotation for this pose during the previous update
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a0071aa67fdb7a1f25f261f58236f182d}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a0071aa67fdb7a1f25f261f58236f182d}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetLastPoseIsValid@{GetLastPoseIsValid}}
+\index{GetLastPoseIsValid@{GetLastPoseIsValid}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetLastPoseIsValid()}{GetLastPoseIsValid()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Last\+Pose\+Is\+Valid (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+True if the pose was valid during the previous update
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a3c4f99bc27df78ccb09f30f20503c20e}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a3c4f99bc27df78ccb09f30f20503c20e}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetLastTrackingResult@{GetLastTrackingResult}}
+\index{GetLastTrackingResult@{GetLastTrackingResult}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetLastTrackingResult()}{GetLastTrackingResult()}}
+{\footnotesize\ttfamily ETracking\+Result \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Last\+Tracking\+Result (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+The tracking state for this pose during the previous update
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a21d4d04f961d37630361750444666774}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a21d4d04f961d37630361750444666774}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetLastVelocity@{GetLastVelocity}}
+\index{GetLastVelocity@{GetLastVelocity}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetLastVelocity()}{GetLastVelocity()}}
+{\footnotesize\ttfamily Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Last\+Velocity (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+The velocity for this pose during the previous update
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ab007b14bb04c5d6fc1564ac4ffac1772}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ab007b14bb04c5d6fc1564ac4ffac1772}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetLocalPosition@{GetLocalPosition}}
+\index{GetLocalPosition@{GetLocalPosition}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetLocalPosition()}{GetLocalPosition()}}
+{\footnotesize\ttfamily Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Local\+Position (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+The local position of this action relative to the universe origin
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a4cd01c8865799b4abdb3aa05c9bce7a1}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a4cd01c8865799b4abdb3aa05c9bce7a1}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetLocalRotation@{GetLocalRotation}}
+\index{GetLocalRotation@{GetLocalRotation}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetLocalRotation()}{GetLocalRotation()}}
+{\footnotesize\ttfamily Quaternion \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Local\+Rotation (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+The local rotation of this action relative to the universe origin
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a0edda26e08e24b20fe9f1bb2941ba4a6}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a0edda26e08e24b20fe9f1bb2941ba4a6}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetPoseAtTimeOffset@{GetPoseAtTimeOffset}}
+\index{GetPoseAtTimeOffset@{GetPoseAtTimeOffset}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetPoseAtTimeOffset()}{GetPoseAtTimeOffset()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Pose\+At\+Time\+Offset (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source,  }\item[{float}]{seconds\+From\+Now,  }\item[{out Vector3}]{local\+Position,  }\item[{out Quaternion}]{local\+Rotation,  }\item[{out Vector3}]{velocity,  }\item[{out Vector3}]{angular\+Velocity }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} keeps a log of past poses so you can retrieve old poses or estimated poses in the future by passing in a seconds\+From\+Now value that is negative or positive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+{\em seconds\+From\+Now} & The time offset in the future (estimated) or in the past (previously recorded) you want to get data from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the call succeeded
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ae83ce8dae5f87c106ccbd0860c8f1181}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ae83ce8dae5f87c106ccbd0860c8f1181}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetPoseIsValid@{GetPoseIsValid}}
+\index{GetPoseIsValid@{GetPoseIsValid}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetPoseIsValid()}{GetPoseIsValid()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Pose\+Is\+Valid (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+True if the pose retrieved for this action and input source is valid (good data from the tracking source)
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ac4aa642c201073f77df62ff087351ca2}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_ac4aa642c201073f77df62ff087351ca2}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetTrackingResult@{GetTrackingResult}}
+\index{GetTrackingResult@{GetTrackingResult}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetTrackingResult()}{GetTrackingResult()}}
+{\footnotesize\ttfamily ETracking\+Result \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Tracking\+Result (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+The state of the tracking system that is used to create pose data (position, rotation, etc)
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a078b2d70fcd9796f0872f03c6eb4cd37}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a078b2d70fcd9796f0872f03c6eb4cd37}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetVelocitiesAtTimeOffset@{GetVelocitiesAtTimeOffset}}
+\index{GetVelocitiesAtTimeOffset@{GetVelocitiesAtTimeOffset}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetVelocitiesAtTimeOffset()}{GetVelocitiesAtTimeOffset()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Velocities\+At\+Time\+Offset (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source,  }\item[{float}]{seconds\+From\+Now,  }\item[{out Vector3}]{velocity,  }\item[{out Vector3}]{angular\+Velocity }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r}{Steam\+VR}} keeps a log of past poses so you can retrieve old poses or estimated poses in the future by passing in a seconds\+From\+Now value that is negative or positive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+{\em seconds\+From\+Now} & The time offset in the future (estimated) or in the past (previously recorded) you want to get data from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the call succeeded
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a827a230f97d4cb064be1b679440a3593}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a827a230f97d4cb064be1b679440a3593}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!GetVelocity@{GetVelocity}}
+\index{GetVelocity@{GetVelocity}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{GetVelocity()}{GetVelocity()}}
+{\footnotesize\ttfamily Vector3 \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Get\+Velocity (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+The local velocity of this pose relative to the universe origin
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a95ffd5217a271d75ca471c9ccdf36215}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base_a95ffd5217a271d75ca471c9ccdf36215}} 
+\index{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}!UpdateTransform@{UpdateTransform}}
+\index{UpdateTransform@{UpdateTransform}!Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$@{Valve.VR.SteamVR\_Action\_Pose\_Base$<$ SourceMap, SourceElement $>$}}
+\doxysubsubsection{\texorpdfstring{UpdateTransform()}{UpdateTransform()}}
+{\footnotesize\ttfamily virtual void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___pose___base}{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Pose\+\_\+\+Base}}$<$ Source\+Map, Source\+Element $>$.Update\+Transform (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source,  }\item[{Transform}]{transform\+To\+Update }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update a transform\textquotesingle{}s local position and local roation to match the pose from the most recent update 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+{\em transform\+To\+Update} & The transform of the object to be updated\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Input/Steam\+VR\+\_\+\+Action\+\_\+\+Pose.\+cs\end{DoxyCompactItemize}

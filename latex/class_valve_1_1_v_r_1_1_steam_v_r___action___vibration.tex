@@ -1,0 +1,213 @@
+\hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration}{}\doxysection{Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vibration Class Reference}
+\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration}\index{Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}}
+
+
+Vibration actions are used to trigger haptic feedback in vr controllers.  
+
+
+Inheritance diagram for Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vibration\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.843373cm]{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a7706b3c9b71de3bea16a3fab8a882f0b}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a7706b3c9b71de3bea16a3fab8a882f0b}} 
+delegate void {\bfseries Active\+Change\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration}{Steam\+VR\+\_\+\+Action\+\_\+\+Vibration}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, bool active)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_ac075e9e8f3e9eea89be32c403e6f86d5}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_ac075e9e8f3e9eea89be32c403e6f86d5}} 
+delegate void {\bfseries Execute\+Handler} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration}{Steam\+VR\+\_\+\+Action\+\_\+\+Vibration}} from\+Action, Steam\+VR\+\_\+\+Input\+\_\+\+Sources from\+Source, float seconds\+From\+Now, float duration\+Seconds, float frequency, float amplitude)
+\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_adf68478c0b7a984b01228ba17d1ce196}{Execute}} (float seconds\+From\+Now, float duration\+Seconds, float frequency, float amplitude, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Trigger the haptics at a certain time for a certain length \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_afce165e6e31e7a65b14d978976cd028c}{Add\+On\+Active\+Change\+Listener}} (Active\+Change\+Handler function\+To\+Call, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Executes a function when the {\itshape functional} active state of this action (with the specified input\+Source) changes. This happens when the action is bound or unbound, or when the Action\+Set changes state.\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a60f0e8aeed560759d517a576ff56bfa7}{Remove\+On\+Active\+Change\+Listener}} (Active\+Change\+Handler function\+To\+Stop\+Calling, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Stops executing a function when the {\itshape functional} active state of this action (with the specified input\+Source) changes. This happens when the action is bound or unbound, or when the Action\+Set changes state.\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_accfc5869c3abe1a5f4911c182679aef3}{Add\+On\+Active\+Binding\+Change\+Listener}} (Active\+Change\+Handler function\+To\+Call, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Executes a function when the active state of this action (with the specified input\+Source) changes. This happens when the action is bound or unbound\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a2f792bbebfd9c63d77a0c220bf2f22c0}{Remove\+On\+Active\+Binding\+Change\+Listener}} (Active\+Change\+Handler function\+To\+Stop\+Calling, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Stops executing the function setup by the corresponding Add\+Listener\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a9500575c412d448cd6f142429627b995}{Add\+On\+Execute\+Listener}} (Execute\+Handler function\+To\+Call, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Executes a function when the execute method of this action (with the specified input\+Source) is called. This happens when the action is bound or unbound\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a93047e7c0b65262fdab01a25dae48d52}{Remove\+On\+Execute\+Listener}} (Execute\+Handler function\+To\+Stop\+Calling, Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Stops executing the function setup by the corresponding Add\+Listener\end{DoxyCompactList}\item 
+override float \mbox{\hyperlink{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_ab4a746a1c972e2a301f82c326dbea34b}{Get\+Time\+Last\+Changed}} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\begin{DoxyCompactList}\small\item\em Returns the last time this action was executed \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a1dd64911f3d1caa2b78123bd178b0f7b}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a1dd64911f3d1caa2b78123bd178b0f7b}} 
+override bool {\bfseries Is\+Updating} (Steam\+VR\+\_\+\+Input\+\_\+\+Sources input\+Source)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a7e76205f9a2f175a2b5a6ad240e1b70a}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a7e76205f9a2f175a2b5a6ad240e1b70a}} 
+Active\+Change\+Handler {\bfseries on\+Active\+Change}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} This event fires whenever a change happens in the action\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a7a363819140be9e1483eb47fa145255f}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a7a363819140be9e1483eb47fa145255f}} 
+Active\+Change\+Handler {\bfseries on\+Active\+Binding\+Change}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} This event fires whenever a change happens in the action\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a01bd50ca9598959946e12dc9a22bd05d}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a01bd50ca9598959946e12dc9a22bd05d}} 
+Execute\+Handler {\bfseries on\+Execute}
+\begin{DoxyCompactList}\small\item\em {\bfseries{\mbox{[}Steam\+VR\+\_\+\+Input\+\_\+\+Sources.\+Any\mbox{]}}} This event fires whenever this action is executed\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a64324479b2504aae4d0681dd3aae2580}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a64324479b2504aae4d0681dd3aae2580}} 
+void ISerialization\+Callback\+Receiver. {\bfseries On\+Before\+Serialize} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_ab5eec2c0e8c73a47dc58cde9e47c9b11}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_ab5eec2c0e8c73a47dc58cde9e47c9b11}} 
+void ISerialization\+Callback\+Receiver. {\bfseries On\+After\+Deserialize} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Vibration actions are used to trigger haptic feedback in vr controllers. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_accfc5869c3abe1a5f4911c182679aef3}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_accfc5869c3abe1a5f4911c182679aef3}} 
+\index{Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}!AddOnActiveBindingChangeListener@{AddOnActiveBindingChangeListener}}
+\index{AddOnActiveBindingChangeListener@{AddOnActiveBindingChangeListener}!Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}}
+\doxysubsubsection{\texorpdfstring{AddOnActiveBindingChangeListener()}{AddOnActiveBindingChangeListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vibration.\+Add\+On\+Active\+Binding\+Change\+Listener (\begin{DoxyParamCaption}\item[{Active\+Change\+Handler}]{function\+To\+Call,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Executes a function when the active state of this action (with the specified input\+Source) changes. This happens when the action is bound or unbound
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Call} & A local function that receives the boolean action who\textquotesingle{}s active state changes and the corresponding input source\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_afce165e6e31e7a65b14d978976cd028c}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_afce165e6e31e7a65b14d978976cd028c}} 
+\index{Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}!AddOnActiveChangeListener@{AddOnActiveChangeListener}}
+\index{AddOnActiveChangeListener@{AddOnActiveChangeListener}!Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}}
+\doxysubsubsection{\texorpdfstring{AddOnActiveChangeListener()}{AddOnActiveChangeListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vibration.\+Add\+On\+Active\+Change\+Listener (\begin{DoxyParamCaption}\item[{Active\+Change\+Handler}]{function\+To\+Call,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Executes a function when the {\itshape functional} active state of this action (with the specified input\+Source) changes. This happens when the action is bound or unbound, or when the Action\+Set changes state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Call} & A local function that receives the boolean action who\textquotesingle{}s active state changes and the corresponding input source\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a9500575c412d448cd6f142429627b995}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a9500575c412d448cd6f142429627b995}} 
+\index{Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}!AddOnExecuteListener@{AddOnExecuteListener}}
+\index{AddOnExecuteListener@{AddOnExecuteListener}!Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}}
+\doxysubsubsection{\texorpdfstring{AddOnExecuteListener()}{AddOnExecuteListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vibration.\+Add\+On\+Execute\+Listener (\begin{DoxyParamCaption}\item[{Execute\+Handler}]{function\+To\+Call,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Executes a function when the execute method of this action (with the specified input\+Source) is called. This happens when the action is bound or unbound
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Call} & A local function that receives the boolean action who\textquotesingle{}s active state changes and the corresponding input source\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_adf68478c0b7a984b01228ba17d1ce196}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_adf68478c0b7a984b01228ba17d1ce196}} 
+\index{Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}!Execute@{Execute}}
+\index{Execute@{Execute}!Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vibration.\+Execute (\begin{DoxyParamCaption}\item[{float}]{seconds\+From\+Now,  }\item[{float}]{duration\+Seconds,  }\item[{float}]{frequency,  }\item[{float}]{amplitude,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Trigger the haptics at a certain time for a certain length 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seconds\+From\+Now} & How long from the current time to execute the action (in seconds -\/ can be 0)\\
+\hline
+{\em duration\+Seconds} & How long the haptic action should last (in seconds)\\
+\hline
+{\em frequency} & How often the haptic motor should bounce (0 -\/ 320 in hz. The lower end being more useful)\\
+\hline
+{\em amplitude} & How intense the haptic action should be (0 -\/ 1)\\
+\hline
+{\em input\+Source} & The device you would like to execute the haptic action. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_ab4a746a1c972e2a301f82c326dbea34b}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_ab4a746a1c972e2a301f82c326dbea34b}} 
+\index{Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}!GetTimeLastChanged@{GetTimeLastChanged}}
+\index{GetTimeLastChanged@{GetTimeLastChanged}!Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}}
+\doxysubsubsection{\texorpdfstring{GetTimeLastChanged()}{GetTimeLastChanged()}}
+{\footnotesize\ttfamily override float Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vibration.\+Get\+Time\+Last\+Changed (\begin{DoxyParamCaption}\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Returns the last time this action was executed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a2f792bbebfd9c63d77a0c220bf2f22c0}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a2f792bbebfd9c63d77a0c220bf2f22c0}} 
+\index{Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}!RemoveOnActiveBindingChangeListener@{RemoveOnActiveBindingChangeListener}}
+\index{RemoveOnActiveBindingChangeListener@{RemoveOnActiveBindingChangeListener}!Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}}
+\doxysubsubsection{\texorpdfstring{RemoveOnActiveBindingChangeListener()}{RemoveOnActiveBindingChangeListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vibration.\+Remove\+On\+Active\+Binding\+Change\+Listener (\begin{DoxyParamCaption}\item[{Active\+Change\+Handler}]{function\+To\+Stop\+Calling,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Stops executing the function setup by the corresponding Add\+Listener
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Stop\+Calling} & The local function that you\textquotesingle{}ve setup to receive update events\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a60f0e8aeed560759d517a576ff56bfa7}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a60f0e8aeed560759d517a576ff56bfa7}} 
+\index{Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}!RemoveOnActiveChangeListener@{RemoveOnActiveChangeListener}}
+\index{RemoveOnActiveChangeListener@{RemoveOnActiveChangeListener}!Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}}
+\doxysubsubsection{\texorpdfstring{RemoveOnActiveChangeListener()}{RemoveOnActiveChangeListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vibration.\+Remove\+On\+Active\+Change\+Listener (\begin{DoxyParamCaption}\item[{Active\+Change\+Handler}]{function\+To\+Stop\+Calling,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Stops executing a function when the {\itshape functional} active state of this action (with the specified input\+Source) changes. This happens when the action is bound or unbound, or when the Action\+Set changes state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Stop\+Calling} & The local function that you\textquotesingle{}ve setup to receive update events\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a93047e7c0b65262fdab01a25dae48d52}\label{class_valve_1_1_v_r_1_1_steam_v_r___action___vibration_a93047e7c0b65262fdab01a25dae48d52}} 
+\index{Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}!RemoveOnExecuteListener@{RemoveOnExecuteListener}}
+\index{RemoveOnExecuteListener@{RemoveOnExecuteListener}!Valve.VR.SteamVR\_Action\_Vibration@{Valve.VR.SteamVR\_Action\_Vibration}}
+\doxysubsubsection{\texorpdfstring{RemoveOnExecuteListener()}{RemoveOnExecuteListener()}}
+{\footnotesize\ttfamily void Valve.\+VR.\+Steam\+VR\+\_\+\+Action\+\_\+\+Vibration.\+Remove\+On\+Execute\+Listener (\begin{DoxyParamCaption}\item[{Execute\+Handler}]{function\+To\+Stop\+Calling,  }\item[{Steam\+VR\+\_\+\+Input\+\_\+\+Sources}]{input\+Source }\end{DoxyParamCaption})}
+
+
+
+Stops executing the function setup by the corresponding Add\+Listener
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+To\+Stop\+Calling} & The local function that you\textquotesingle{}ve setup to receive update events\\
+\hline
+{\em input\+Source} & The device you would like to get data from. Any if the action is not device specific.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Input/Steam\+VR\+\_\+\+Action\+\_\+\+Vibration.\+cs\end{DoxyCompactItemize}

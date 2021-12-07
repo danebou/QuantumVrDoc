@@ -1,0 +1,199 @@
+\hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive}{}\doxysection{Valve.\+VR.\+Interaction\+System.\+Circular\+Drive Class Reference}
+\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive}\index{Valve.VR.InteractionSystem.CircularDrive@{Valve.VR.InteractionSystem.CircularDrive}}
+Inheritance diagram for Valve.\+VR.\+Interaction\+System.\+Circular\+Drive\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a9a0227d59ad0af7a3422fcab9798b5dd}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a9a0227d59ad0af7a3422fcab9798b5dd}} 
+enum {\bfseries Axis\+\_\+t} \{ {\bfseries XAxis}
+, {\bfseries YAxis}
+, {\bfseries ZAxis}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a2f9b36dd2c045b2f4bc219f44a8f11da}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a2f9b36dd2c045b2f4bc219f44a8f11da}} 
+Axis\+\_\+t {\bfseries axis\+Of\+Rotation} = Axis\+\_\+t.\+XAxis
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a0011853018f4888638b3da5d80a9ea4f}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a0011853018f4888638b3da5d80a9ea4f}} 
+Collider {\bfseries child\+Collider} = null
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a1cbb357fea44834490a548d1c0aabe38}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a1cbb357fea44834490a548d1c0aabe38}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_linear_mapping}{Linear\+Mapping}} {\bfseries linear\+Mapping}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a6e182eb36a646459a16013762119cb26}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a6e182eb36a646459a16013762119cb26}} 
+bool {\bfseries hover\+Lock} = false
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a791a378c083be76541596cf8f0114f65}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a791a378c083be76541596cf8f0114f65}} 
+bool {\bfseries limited} = false
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a515609613e137b1444f0401aec533168}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a515609613e137b1444f0401aec533168}} 
+Vector2 {\bfseries frozen\+Distance\+Min\+Max\+Threshold} = new Vector2( 0.\+1f, 0.\+2f )
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_aa5f8b17da9994727affd36aecd5d638a}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_aa5f8b17da9994727affd36aecd5d638a}} 
+Unity\+Event {\bfseries on\+Frozen\+Distance\+Threshold}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a94c3a6e446bd4b264da0635cef83f240}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a94c3a6e446bd4b264da0635cef83f240}} 
+float {\bfseries min\+Angle} = -\/45.\+0f
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a92e4f8585a4bbe701388468402167461}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a92e4f8585a4bbe701388468402167461}} 
+bool {\bfseries freeze\+On\+Min} = false
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ac0e1d669f1f18a4229c18f09a843af27}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ac0e1d669f1f18a4229c18f09a843af27}} 
+Unity\+Event {\bfseries on\+Min\+Angle}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a6dd5a1ce6896c643324ef89b890557d2}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a6dd5a1ce6896c643324ef89b890557d2}} 
+float {\bfseries max\+Angle} = 45.\+0f
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ad8f3727a1120306fa69e3d6d56055aa9}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ad8f3727a1120306fa69e3d6d56055aa9}} 
+bool {\bfseries freeze\+On\+Max} = false
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a4b44323fd2fc1d9f21aa3adfb631697b}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a4b44323fd2fc1d9f21aa3adfb631697b}} 
+Unity\+Event {\bfseries on\+Max\+Angle}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a0f4cfceb109259e41800cce25dce0c3f}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a0f4cfceb109259e41800cce25dce0c3f}} 
+bool {\bfseries force\+Start} = false
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_aeb873828f646a744d57bd77b8ef7b1bd}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_aeb873828f646a744d57bd77b8ef7b1bd}} 
+float {\bfseries start\+Angle} = 0.\+0f
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a35df98d8e3d550859610175298fe32e6}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a35df98d8e3d550859610175298fe32e6}} 
+bool {\bfseries rotate\+Game\+Object} = true
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a155bba9d6c9819bce12a66f739c3e3a7}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a155bba9d6c9819bce12a66f739c3e3a7}} 
+bool {\bfseries debug\+Path} = false
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a4c793fa3de71c7d7063b70c8566516ec}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a4c793fa3de71c7d7063b70c8566516ec}} 
+int {\bfseries dbg\+Path\+Limit} = 50
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a918ce2445696801ab1e723fbf39522e3}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a918ce2445696801ab1e723fbf39522e3}} 
+Text\+Mesh {\bfseries debug\+Text} = null
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ae22ed245544a713344e01eafaf91122c}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ae22ed245544a713344e01eafaf91122c}} 
+float {\bfseries out\+Angle}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ad89df4cdc1d8c4b7d1df88b0c0ec2235}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ad89df4cdc1d8c4b7d1df88b0c0ec2235}} 
+void {\bfseries Freeze} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand}{Hand}} hand)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ae7316b8cb795e0245b0e20f7f4fe2de2}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ae7316b8cb795e0245b0e20f7f4fe2de2}} 
+void {\bfseries Un\+Freeze} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a221a106b1e499bafbb7c9c8e02d71f59}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a221a106b1e499bafbb7c9c8e02d71f59}} 
+void {\bfseries Awake} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_aea9aa62dc3caaaa0ecef26d95d5bb604}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_aea9aa62dc3caaaa0ecef26d95d5bb604}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a713dd0c2481f81fb5a69d94d4c6798bc}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a713dd0c2481f81fb5a69d94d4c6798bc}} 
+void {\bfseries On\+Disable} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_aaefd65aa6ee362b55e339eebda358fc7}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_aaefd65aa6ee362b55e339eebda358fc7}} 
+IEnumerator {\bfseries Haptic\+Pulses} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand}{Hand}} hand, float fl\+Magnitude, int n\+Count)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a5bc61cc63089ac7d0dc803eb4a44c722}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a5bc61cc63089ac7d0dc803eb4a44c722}} 
+void {\bfseries On\+Hand\+Hover\+Begin} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand}{Hand}} hand)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_aa894f00d219fddda4d58663b6717a9b1}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_aa894f00d219fddda4d58663b6717a9b1}} 
+void {\bfseries On\+Hand\+Hover\+End} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand}{Hand}} hand)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_adb78ba22ce9c5212abc1ea6dbf4504b5}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_adb78ba22ce9c5212abc1ea6dbf4504b5}} 
+void {\bfseries Hand\+Hover\+Update} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand}{Hand}} hand)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a098ede14499d126bc09b2f8f22ff02c5}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a098ede14499d126bc09b2f8f22ff02c5}} 
+Vector3 {\bfseries Compute\+To\+Transform\+Projected} (Transform x\+Form)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_accb2649cb39c119331aa946dad79ace7}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_accb2649cb39c119331aa946dad79ace7}} 
+void {\bfseries Draw\+Debug\+Path} (Transform x\+Form, Vector3 to\+Transform\+Projected)
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a0dc1e695a793ff0f8d88508cad7b6be5}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a0dc1e695a793ff0f8d88508cad7b6be5}} 
+void {\bfseries Update\+Linear\+Mapping} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a61a139c5fca44eaf1008e8b6a2c1fc24}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a61a139c5fca44eaf1008e8b6a2c1fc24}} 
+void {\bfseries Update\+Game\+Object} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a5e4d95d89bb661519c474b7e722c74f4}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a5e4d95d89bb661519c474b7e722c74f4}} 
+void {\bfseries Update\+Debug\+Text} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a104b55b6414252ede8850b61fe0010cf}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a104b55b6414252ede8850b61fe0010cf}} 
+void {\bfseries Update\+All} ()
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ab311b4e51e60f4164ab8f9a67eed950a}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ab311b4e51e60f4164ab8f9a67eed950a}} 
+void {\bfseries Compute\+Angle} (\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand}{Hand}} hand)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a5488045c362b1ee07befcef5d08cb067}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a5488045c362b1ee07befcef5d08cb067}} 
+Quaternion {\bfseries start}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a206a3db8435ea99c12626c5343fdeec2}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a206a3db8435ea99c12626c5343fdeec2}} 
+Vector3 {\bfseries world\+Plane\+Normal} = new Vector3( 1.\+0f, 0.\+0f, 0.\+0f )
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a7960b50c247a621a011f4da7f34f7395}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a7960b50c247a621a011f4da7f34f7395}} 
+Vector3 {\bfseries local\+Plane\+Normal} = new Vector3( 1.\+0f, 0.\+0f, 0.\+0f )
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_abf46f161db23e55e207f1674bd90a1fa}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_abf46f161db23e55e207f1674bd90a1fa}} 
+Vector3 {\bfseries last\+Hand\+Projected}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a13d5d3d79be217cb15db7274e950d0fc}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a13d5d3d79be217cb15db7274e950d0fc}} 
+Color {\bfseries red} = new Color( 1.\+0f, 0.\+0f, 0.\+0f )
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_aea07f5649826d351214bb9ea7551e144}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_aea07f5649826d351214bb9ea7551e144}} 
+Color {\bfseries green} = new Color( 0.\+0f, 1.\+0f, 0.\+0f )
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ab276862472962735878e1c4e843d1e0f}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ab276862472962735878e1c4e843d1e0f}} 
+Game\+Object\mbox{[}$\,$\mbox{]} {\bfseries dbg\+Hand\+Objects}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_adcdcf1b24e7b7c66e5017afbfe58aeba}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_adcdcf1b24e7b7c66e5017afbfe58aeba}} 
+Game\+Object\mbox{[}$\,$\mbox{]} {\bfseries dbg\+Proj\+Objects}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a222c2f181ba371958ddebd2ba187ec00}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a222c2f181ba371958ddebd2ba187ec00}} 
+Game\+Object {\bfseries dbg\+Objects\+Parent}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a858600d9081e754ed16c2d014b39bc06}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a858600d9081e754ed16c2d014b39bc06}} 
+int {\bfseries dbg\+Object\+Count} = 0
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a6efcf87771efaee128b7ed73d9c7598c}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a6efcf87771efaee128b7ed73d9c7598c}} 
+int {\bfseries dbg\+Object\+Index} = 0
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ac6f699630d8853405f4fabad687b79d0}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ac6f699630d8853405f4fabad687b79d0}} 
+bool {\bfseries driving} = false
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ab9119683a51fbbbcf1da2b3e3858fbc6}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ab9119683a51fbbbcf1da2b3e3858fbc6}} 
+float {\bfseries min\+Max\+Angular\+Threshold} = 1.\+0f
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a4a2622630b36bcb0beefe181bd39ab57}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a4a2622630b36bcb0beefe181bd39ab57}} 
+bool {\bfseries frozen} = false
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a2a020593cf7487c277b39b0c9996dce0}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a2a020593cf7487c277b39b0c9996dce0}} 
+float {\bfseries frozen\+Angle} = 0.\+0f
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a336e0d2cb48c04d9693293aae49f2a50}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a336e0d2cb48c04d9693293aae49f2a50}} 
+Vector3 {\bfseries frozen\+Hand\+World\+Pos} = new Vector3( 0.\+0f, 0.\+0f, 0.\+0f )
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ae13eb29c927f6744727dc437c5fbab94}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_ae13eb29c927f6744727dc437c5fbab94}} 
+Vector2 {\bfseries frozen\+Sq\+Distance\+Min\+Max\+Threshold} = new Vector2( 0.\+0f, 0.\+0f )
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a559cbc4e0d14b6cc64f7557173f0bb26}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a559cbc4e0d14b6cc64f7557173f0bb26}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_hand}{Hand}} {\bfseries hand\+Hover\+Locked} = null
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a746f4d49b4aeb1275f95eefca2f069a1}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a746f4d49b4aeb1275f95eefca2f069a1}} 
+\mbox{\hyperlink{class_valve_1_1_v_r_1_1_interaction_system_1_1_interactable}{Interactable}} {\bfseries interactable}
+\item 
+\mbox{\Hypertarget{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a768dee1518932ded03476f7d7cb04e9a}\label{class_valve_1_1_v_r_1_1_interaction_system_1_1_circular_drive_a768dee1518932ded03476f7d7cb04e9a}} 
+Grab\+Types {\bfseries grabbed\+With\+Type}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/daneb/\+Unity/\+Quantum\+Vr/\+Quantum\+VR/\+Assets/\+Steam\+VR/\+Interaction\+System/\+Core/\+Scripts/Circular\+Drive.\+cs\end{DoxyCompactItemize}
